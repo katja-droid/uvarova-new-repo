@@ -3,6 +3,7 @@ import OverlappingImages from './OverlappingImages'
 import ImageGrid from './ImageGrid'
 import { Box, Grid, ThemeProvider, Typography } from '@mui/material'
 import theme from '../theme'
+import ImageGridTwoRows from './ImageGridTwoRows'
 
 const PoliticalForumTesting = () => {
   return (
@@ -75,8 +76,21 @@ const PoliticalForumTesting = () => {
               </Box>
             </Grid>
           </Grid>
+          <Box sx={{display: {
+            xxs: 'none', 
+            lg: 'block'
+          }}}>
+          <ImageGrid />
+          </Box>
+          <Box sx={{display: {
+            xxs: 'none', 
+            sm: 'block',
+            lg: 'none'
+          }}}>
+          <ImageGridTwoRows/>
+          </Box>
         </Box>
-        <ImageGrid />
+     
         <Box
           sx={{
             position: 'relative',

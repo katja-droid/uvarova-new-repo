@@ -1,0 +1,43 @@
+.image-grid-container {
+    padding: 0 calc((100% - 258.76px * 4) / 8); 
+    overflow: hidden; /* Prevent overflow */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+  
+  .image-grid {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    gap: 0;
+    width: 100%;
+  }
+  
+  .image-wrapper {
+    text-align: center;
+    width: 258.76px; /* Fixed width for images */
+    position: relative;
+  }
+  
+  .image {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Overlap logic for images except the first one */
+  .overlap {
+    margin-left:   calc((100% - 258.76px * 4) / 2); 
+  }
+  
+  /* Ensure the first image does not have negative margin */
+  .image-item:first-child {
+    margin-left: 0;
+  }
+    /* Ensure the first image does not have negative margin */
+    .image-item:last-child {
+        right: 0; /* Make sure no large margin is applied */
+      }

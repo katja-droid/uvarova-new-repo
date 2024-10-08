@@ -226,7 +226,6 @@ const renderSection = () => {
     <Grid item xxs={12}>
 <PoliticalForumTesting/>
 </Grid></Grid></Container></div>
-
       {/* Footer */}
       <Footer />
     </ThemeProvider>

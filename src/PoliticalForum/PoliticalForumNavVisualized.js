@@ -1,0 +1,89 @@
+import React from 'react';
+import { Box, Typography, Container, Grid } from '@mui/material';
+import { ThemeProvider } from '@mui/material/styles';
+import theme from '../theme'; // Import your custom theme
+import image from '../assets/nav-visualized.png'; // Replace with the actual image path
+
+const PoliticalForumNavVisualized = () => {
+  return (
+    <ThemeProvider theme={theme}>
+      <Box
+        sx={{
+          position: 'relative',
+          width: '100%',
+          backgroundColor: '#fff',
+          color: '#0A0A14',
+          pt: { xxs: '24px', xs: '48px', sm: '60px', md: '84px', lg: '84px', xl: '84px', xxl: '97px' },
+          px: { xxs: '16px', sm: '24px', md: '48px', lg: '84px' },
+          overflowX: 'hidden', // Prevent horizontal overflow
+          boxSizing: 'border-box', // Account for padding in size calculations
+        }}
+        id="nav-v-pf"
+      >
+        <Container maxWidth={false} disableGutters>
+          <Grid container spacing={2} justifyContent="flex-start" alignItems="stretch">
+            {/* Section One */}
+            
+            {/* Image */}
+            <Grid item xxs={12} lg={6} xl={6} xxl={6} sx={{ order: { xxs: 2, lg: 1 }, textAlign: 'center' }}>
+              <Box sx={{ height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', overflow: 'hidden' }}>
+                <img
+                  src={image}
+                  alt="Nav Visualized"
+                  style={{ width: '100%', height: 'auto', maxHeight: '400px', borderRadius: '16px', objectFit: 'cover' }}
+                />
+              </Box>
+            </Grid>
+
+            {/* Text Section */}
+            <Grid item xxs={12} lg={6} xl={6} xxl={6} sx={{ order: { xxs: 1, lg: 2 } }}>
+              <Box sx={{ backgroundColor: '#fff', p: '24px', borderRadius: '16px', boxSizing: 'border-box' }}>
+                <Typography
+                  sx={{ fontSize: { md: '34px', sm: '28px', xxs: '22px' }, fontFamily: 'Playfair Display Bold', pb: '16px' }}
+                  variant="h4"
+                >
+                  Nav Visualized (Mobile)
+                </Typography>
+                <Typography sx={{ fontSize: '18px', lineHeight: '26px', fontFamily: 'Calibre Regular' }}>
+                  The mobile version of the site has four levels of navigation. In the desktop version, there is space for visible
+                  navigation tools, but nothing in the mobile version.
+                </Typography>
+              </Box>
+            </Grid>
+
+            {/* Section Two */}
+            <Grid item xxs={12} xl={6}  sx={{ order: { xxs: 3, lg: 3 }, overflowX: 'hidden' }}>
+              <Box sx={{ backgroundColor: '#fff', py: '24px', borderRadius: '16px', boxSizing: 'border-box' }}>
+                
+                <Typography sx={{ fontSize: '18px', lineHeight: '26px', fontFamily: 'Calibre Regular', mb: '8px' }}>
+                  After testing a collection of tasks for the client, we began research to identify tasks that were potentially
+                  important to all internal and external users.
+                </Typography>
+                <Typography sx={{ fontSize: '18px', lineHeight: '26px', fontFamily: 'Calibre Regular', mb: '8px' }}>
+                  Based on this, the following recommendations for designing mobile navigation were developed:
+                </Typography>
+                <Typography sx={{ fontSize: '18px', lineHeight: '26px', fontFamily: 'Calibre Regular', mb: '8px' }}>
+                  <strong>Menus:</strong> Use a visual hierarchy to separate primary and secondary navigation.
+                </Typography>
+                <Typography sx={{ fontSize: '18px', lineHeight: '26px', fontFamily: 'Calibre Regular', mb: '8px' }}>
+                  <strong>Sub-menus:</strong> Allow users to open and close menu folders to preview second and third level pages in
+                  multiple sections at the same time.
+                </Typography>
+                <Typography sx={{ fontSize: '18px', lineHeight: '26px', fontFamily: 'Calibre Regular', mb: '8px' }}>
+                  <strong>Current Location Indicator:</strong> Shows the page the user is on when he or she opens the main menu.
+                  For greater clarity, a breadcrumb navigation chain has been added.
+                </Typography>
+                <Typography sx={{ fontSize: '18px', lineHeight: '26px', fontFamily: 'Calibre Regular', mb: '8px' }}>
+                  <strong>Site-to-site navigation:</strong> For all subdomains and microsites, provide a link back to the primary
+                  site’s main page using a global header or coordination rule.
+                </Typography>
+              </Box>
+            </Grid>
+          </Grid>
+        </Container>
+      </Box>
+    </ThemeProvider>
+  );
+};
+
+export default PoliticalForumNavVisualized;

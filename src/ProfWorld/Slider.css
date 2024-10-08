@@ -1,0 +1,115 @@
+/* Slider container */
+.block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider-container {
+  width: 100%;  /* Full width for smaller screens */
+  margin: 0 auto;
+  position: relative;
+}
+
+@media (min-width: 1240px) { /* For xl and larger screens */
+  .slider-container {
+    width: 977px; /* Fixed width for xl screens */
+  }
+}
+
+/* The main image slider */
+.slider {
+  position: relative;
+  width: 100%; /* Default width 100% for smaller screens */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 1240px) { /* For xl and larger screens */
+  .slider {
+    width: 935px; /* Fixed width for xl screens */
+  }
+}
+
+.slider-image {
+  width: calc(100% - 40px);/* Full width for smaller screens */
+  height: 100%;
+  object-fit: cover;
+  box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.1); /* Even shadow on all sides */
+}
+
+@media (min-width: 1240px) { /* For xl and larger screens */
+  .slider-image {
+    width: calc(100% - 40px); /* Adjusted width for xl screens */
+  }
+}
+@media (min-width: 904px) { /* For xl and larger screens */
+  .arrow {
+   display: none;
+  }
+}
+/* Arrows for navigation */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  border: none;
+  z-index: 1;
+  user-select: none;
+  background-color: transparent;
+  padding: 0;
+}
+
+/* Left arrow: Positioned with the center on the left edge of the image block */
+.left-arrow {
+  left: 0;
+  background-image: url('../assets/arrow-default.svg');
+}
+
+.left-arrow:hover {
+  background-image: url('../assets/arrow-hover.svg');
+}
+
+/* Right arrow: Positioned with the center on the right edge of the image block */
+.right-arrow {
+  right: 0;
+  background-image: url('../assets/arrow-default.svg');
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.right-arrow:hover {
+  background-image: url('../assets/arrow-hover.svg');
+  transform: translateY(-50%) rotate(180deg);
+}
+
+/* Dots for navigation */
+.dots-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  background-image: url('../assets/slider-dot-default.svg');
+  background-size: cover;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.dot:hover {
+  background-image: url('../assets/slider-dot-default.svg');
+}
+
+.dot.active {
+  background-image: url('../assets/slider-dot-hover.svg');
+}

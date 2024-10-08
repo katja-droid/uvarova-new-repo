@@ -1,0 +1,58 @@
+.nav-links-overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  position: relative;  /* Ensure the container has positioning */
+  width: 100%;
+  background-color: white;
+  
+}
+* {
+  box-sizing: border-box;
+}
+
+.cross {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  padding: 15px 0;
+  z-index: 3;  /* Higher z-index for the cross */
+  position: absolute;  /* Required for z-index to work */
+  top: 0;
+}
+
+.cross img {
+  padding-right: 16px;
+}
+
+.nav-links-overlay-ul {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  z-index: 2;  /* Lower z-index for the nav links */
+  position: relative;  /* Required for z-index to work */
+  
+  width: 100%;
+}
+
+.nav-links-overlay-ul li {
+  display: block;
+}
+
+.nav-links-overlay-ul li a {
+  color: #8A8A8A;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Calibre Regular';
+  padding: 0;
+  font-size: 18px;
+  
+}

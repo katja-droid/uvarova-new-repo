@@ -1,0 +1,158 @@
+/* General Navbar Styling */
+/* Extra-small devices (phones, 0px and up) */
+/* Basic styles for the grid container */
+/* Default styles for small screens */
+
+.container {
+  width: 500%;
+}
+
+.navbar {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  z-index: 1;
+  height: 124px;
+  width: 100%; /* Ensure it spans the full width */
+  margin: 0; /* Ensure there's no auto centering or margins */
+}
+
+.nav-links ul {
+  display: flex;
+  list-style-type: none;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links ul li {
+  margin: 0 15px;
+}
+
+.nav-links ul li .nav-link {
+  color: #8A8A8A;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-family: 'Calibre Medium';
+}
+
+.nav-links ul li .nav-link:hover {
+  color: #0A0A14;
+  border-bottom: 1px solid #0A0A14;
+}
+
+/* Burger Menu Styling */
+.burger-menu {
+  display: none; /* Hidden by default on larger screens */
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.burger-menu .burger-line {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 4px 0;
+}
+
+.logo-container {
+  width: 139px;
+}
+
+.logo-container .logo {
+  width: 100%;
+}
+/* Full-screen overlay */
+/* Full-screen overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0; /* Align to the right */
+  height: 100vh;
+  width: 100vw; /* Full width by default */
+  background-color: rgba(0, 0, 0, 0.2); /* Semi-transparent background */
+  z-index: 999; /* On top of everything */
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  padding: 0;
+  margin: 0;
+}
+
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+
+/* Overlay only for screens between 480px and 600px */
+@media (min-width: 480px) and (max-width: 600px) {
+  .overlay {
+    width: calc(100% / 12 * 9); /* 3 columns wide */
+    right: 0; /* Align to the right */
+  }
+}
+
+
+/* Styling for active and hover links */
+.nav-links ul li .nav-link:hover,
+.nav-links ul li .nav-link.active {
+  color: #0A0A14;
+  border-bottom: 1px solid #0A0A14;
+}
+
+/* Default styling for links */
+.nav-links ul li .nav-link {
+  color: #8A8A8A;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-family: 'Calibre Medium';
+}
+
+/* Media Queries for Mobile View */
+@media (max-width: 599px) {
+  .logo-container {
+    width: 88px;
+    height: auto;
+    margin: 0;
+  }
+
+  .navbar {
+    justify-content: space-between;
+    align-items: center;
+    height: 56px;
+    width: 100%; /* Ensure it spans the full width */
+    padding: 0;
+    margin: 0;
+  }
+
+  .nav-links ul {
+    display: none; /* Hide menu by default on mobile */
+    flex-direction: column;
+    background-color: #fff;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 1000;
+  }
+
+  .burger-menu {
+    display: flex; /* Show burger menu on small screens */
+    justify-content: flex-end;
+    width: fit-content;
+    padding: 0;
+  }
+
+  .nav-links {
+    display: none;
+  }
+}

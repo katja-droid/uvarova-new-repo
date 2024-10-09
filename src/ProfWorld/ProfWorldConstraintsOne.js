@@ -4,13 +4,12 @@ import { Box, Grid, Typography } from '@mui/material';
 const ProfWorldConstraintsOne = () => {
   return (
     <Grid item sm={12} xs={12} md={12}>
-         <Box
-              sx={{
-                border: '1px solid #EFEFF8',
-                padding: '32px',
-               
-              }}
-            >
+    <Box
+      sx={{
+        border: '1px solid #EFEFF8',
+        padding: '32px',
+      }}
+    >
       <Box
         sx={{
           fontFamily: 'Calibre Regular',

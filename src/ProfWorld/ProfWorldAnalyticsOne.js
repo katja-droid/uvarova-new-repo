@@ -7,7 +7,7 @@ const ProfWorldAnalyticsOne = () => {
       <Grid item sm={12} xs={12} md={12}>
         <Grid container spacing={4}>
           {/* Each analytics card will be 6 columns wide */}
-          <Grid item sm={6} xs={12}>
+          <Grid item md={6} xs={12}>
             <Box
               sx={{
                 border: '1px solid #EFEFF8',
@@ -52,7 +52,7 @@ const ProfWorldAnalyticsOne = () => {
             </Box>
           </Grid>
 
-          <Grid item sm={6} xs={12}>
+          <Grid item md={6} xs={12}>
             <Box
               sx={{
                 border: '1px solid #EFEFF8',
@@ -97,7 +97,7 @@ const ProfWorldAnalyticsOne = () => {
             </Box>
           </Grid>
 
-          <Grid item sm={6} xs={12}>
+          <Grid item md={6} xs={12}>
             <Box
               sx={{
                 border: '1px solid #EFEFF8',
@@ -134,7 +134,7 @@ const ProfWorldAnalyticsOne = () => {
             </Box>
           </Grid>
 
-          <Grid item sm={6} xs={12}>
+          <Grid item md={6} xs={12}>
             <Box
               sx={{
                 border: '1px solid #EFEFF8',

@@ -3,7 +3,7 @@ import { Box, Grid, Typography } from '@mui/material';
 
 const ProjectsConstraintsCombined = () => {
   return (
-    <Grid item sm={12} xs={12} md={12}>
+    <Grid item sm={12} xs={12} md={10}>
       <Box
         sx={{
           border: '1px solid #EFEFF8',

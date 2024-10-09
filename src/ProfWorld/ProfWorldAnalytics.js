@@ -3,6 +3,7 @@ import React from 'react';
 import ProfWorldAnalyticsOne from './ProfWorldAnalyticsOne';
 import SliderDiv from '../Metlife/SliderDiv';
 import ProfWorldAnalyticsTwo from './ProfWorldAnalyticsTwo';
+import SliderDivWide from '../Metlife/SliderDivWide';
 
 const ProfWorldAnalytics = () => {
   const slides=[
@@ -10,10 +11,11 @@ const ProfWorldAnalytics = () => {
     <ProfWorldAnalyticsTwo/>
   ]
   return (
+    <>
     <Container id="profWorldAnalytics" disableGutters maxWidth={false}>
       {/* Container for the title */}
       <Grid container justifyContent="center" spacing={0} sx={{ py: 2 }}>
-        <Grid item sm={12} xxs={12} md={12}>
+        <Grid item xl={8} xxs={12} md={10}>
           <Typography
             variant="h3"
             sx={{
@@ -26,25 +28,28 @@ const ProfWorldAnalytics = () => {
           </Typography>
         </Grid>
       </Grid>
+      </Container>
+     
       <Box sx={{display: {
         md: 'block',
         xxs: 'none'
       }}}>
-<SliderDiv slides={slides}/>
+<SliderDivWide slides={slides}/>
 </Box>
 <Box sx={{display: {
         md: 'none',
         xxs: 'block'
       }}}>
+         
 <ProfWorldAnalyticsOne/>
 <ProfWorldAnalyticsTwo/>
 </Box>
       {/* Container for analytics cards that is 8 columns wide */}
     
-
+      <Container id="profWorldAnalytics" disableGutters maxWidth={false}>
       {/* Conclusion paragraph */}
       <Grid container justifyContent="center" sx={{ py: 2 }}>
-        <Grid item sm={12} xs={12} md={12}>
+      <Grid item xl={8} xxs={12} lg={10}>
           <Typography
             sx={{
               fontFamily: 'Calibre Regular',
@@ -80,6 +85,7 @@ const ProfWorldAnalytics = () => {
         </Grid>
       </Grid>
     </Container>
+    </>
   );
 };
 

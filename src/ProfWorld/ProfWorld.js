@@ -223,12 +223,27 @@ const ProfWorld = () => {
 
       {/* Full-width section */}
       <ProfFullWidthSection />
+      {activeSection !== "constraints" && activeSection !== "analytics" ? (
+        <>
       <Grid container justifyContent="center" spacing={0} sx={{ py: 2 }}>
         <Grid item xxs={12} lg={10} >
           <NavbarProject activeLink={activeSection} sections={sections} onSelectSection={handleSelectSection}  />
           {renderSection()}
         </Grid>
       </Grid>
+      </>) :
+      (<>
+       <Grid container justifyContent="center" spacing={0} sx={{ py: 2 }}>
+       <Grid container justifyContent="center" spacing={0} sx={{ py: 2 }}>
+        <Grid item xxs={12} lg={10} >
+          <NavbarProject activeLink={activeSection} sections={sections} onSelectSection={handleSelectSection}  />
+        </Grid>
+      </Grid>
+      
+      {renderSection()}
+      </Grid>
+      </>
+      )}
       <Container disableGutters maxWidth={false} sx={{ minHeight: '100vh', color: '#0A0A14' }}>
       <Grid container justifyContent="center" spacing={0} sx={{ py: 2 }}>
       <Grid item  xxs={12} lg={10}>

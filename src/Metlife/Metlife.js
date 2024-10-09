@@ -38,6 +38,7 @@ import after2 from '../assets/after2.png';
 import before3 from '../assets/before3.png'; 
 import after3 from '../assets/after3.png'; 
 import BeforeAfterLayout from './BeforeAfterLayout';
+import SliderDivWide from './SliderDivWide';
 
 const contribution = [
   { id: 1, name: 'User Research', color: '#FFE9E3' },
@@ -253,6 +254,7 @@ const renderSection = () => {
 <MetDesignSystem/>
 <div ref={calendarRef}>
 <MoreSectionMet/>
+
 </div>
       {/* Footer */}
       <Footer />

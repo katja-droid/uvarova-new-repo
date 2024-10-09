@@ -237,12 +237,13 @@ const renderSection = () => {
       }}>
         <FixedNavbar sections={sections_} onSelectSection={handleSelectSection_} />
       </div>
-      <Container disableGutters maxWidth={false}>
-<Grid item xxs={12} sx={{ py: {md: '80px', xxs: '16px'}}}>
-  <div ref={mainLayoutRef}>
+      <Container disableGutters maxWidth={false} sx={{overflow: 'visible'}}>
+<Grid item xxs={12} sx={{ py: {md: '80px', xxs: '16px', overflow: 'visible'}}}>
+ 
+</Grid>
+<div ref={mainLayoutRef}>
 <MetLifeDesignSprints />
 </div>
-</Grid>
 <MetFinalDesign/>
 <MetLifeSummary/>
 <TestingSection/>

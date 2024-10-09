@@ -28,7 +28,6 @@ const MetLifeDesignSprints = () => {
         container
         justifyContent="flex-start"
         alignItems="flex-start"
-        spacing={4}
         sx={{ padding: 0, margin: 0 }}
       >
         {/* Text Section */}
@@ -44,7 +43,7 @@ const MetLifeDesignSprints = () => {
               xs: '100%', // Full width on smaller screens
             },
             textAlign: 'left', // Align text to the left
-           
+           padding: 0
           }}
         >
           <Typography variant="h4" sx={{ mb: 2, fontFamily: 'Playfair Display Bold' }}>
@@ -61,24 +60,23 @@ const MetLifeDesignSprints = () => {
         {/* Image Section */}
         <Grid
           container
-          item
-          spacing={4}
+          itemScope
           sx={{
             flexDirection: { xs: 'column', md: 'row' }, // Row for md and above, column for below
-          }}
+          }} spacing={2}
         >
-          <Grid item xs={12} md={6}>
+          <Grid item xs={12} md={6} sx={{padding: 0, margin: 0}}>
             <img
               src={image1}
               alt="Sprint Image 1"
-              style={{ width: '100%', height: 'auto', boxShadow: '0 15px 20px 0 rgba(0, 0, 0, 0.1)' }}
+              style={{ width: '100%', height: 'auto'}}
             />
           </Grid>
-          <Grid item xs={12} md={6}>
+          <Grid item xs={12} md={6} sx={{padding: 0, margin: 0}}>
             <img
               src={image2}
               alt="Sprint Image 2"
-              style={{ width: '100%', height: 'auto', boxShadow: '0 15px 20px 0 rgba(0, 0, 0, 0.1)' }}
+              style={{ width: '100%', height: 'auto' }}
             />
           </Grid>
         </Grid>

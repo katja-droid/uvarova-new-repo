@@ -29,9 +29,14 @@ const PoliticalForumGoal = () => {
                 sx={{
                   border: '1px solid #EFEFF8',
                   padding: '32px',
-                  display: 'flex',
-                  flexDirection: 'column',
-                  justifyContent: 'space-between',
+                  height: {
+                    xxxl: '198px',
+                    xl: '198px',
+                    lg: '198px',
+                    md: '208px',
+                    sm: 'auto',
+                    xxs: 'auto', // Auto height for smaller screens
+                  },
                 }}
               >
                 <Typography
@@ -39,7 +44,7 @@ const PoliticalForumGoal = () => {
                     fontFamily: 'Calibre Regular',
                     fontSize: '20px', // Headings 20px
                     fontWeight: 'bold',
-                    pb: '8px',
+                    pb: '16px', // 16px gap between heading and paragraph
                   }}
                 >
                   1. Long-term goal of the project
@@ -48,7 +53,6 @@ const PoliticalForumGoal = () => {
                   sx={{
                     fontFamily: 'Calibre Regular',
                     fontSize: '18px', // Text 18px
-                    pb: '8px',
                   }}
                 >
                   Improve access to information and increase public awareness of ongoing campaigns (engagement) through the website group.
@@ -61,10 +65,14 @@ const PoliticalForumGoal = () => {
                 sx={{
                   border: '1px solid #EFEFF8',
                   padding: '32px',
-                  display: 'flex',
-                  flexDirection: 'column',
-                  justifyContent: 'space-between',
-                  
+                  height: {
+                    xxxl: '198px',
+                    xl: '198px',
+                    lg: '198px',
+                    md: '208px',
+                    sm: 'auto',
+                    xxs: 'auto', // Auto height for smaller screens
+                  },
                 }}
               >
                 <Typography
@@ -72,7 +80,7 @@ const PoliticalForumGoal = () => {
                     fontFamily: 'Calibre Regular',
                     fontSize: '20px', // Headings 20px
                     fontWeight: 'bold',
-                    pb: '8px',
+                    pb: '16px', // 16px gap between heading and paragraph
                   }}
                 >
                   2. My goal in the project
@@ -81,7 +89,6 @@ const PoliticalForumGoal = () => {
                   sx={{
                     fontFamily: 'Calibre Regular',
                     fontSize: '18px', // Text 18px
-                    pb: '8px',
                   }}
                 >
                   Improve navigation and search to help both internal and external stakeholders find what they are looking for faster.

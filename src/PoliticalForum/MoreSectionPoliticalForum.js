@@ -3,10 +3,10 @@ import { Box, Grid, Typography, Container } from '@mui/material';
 
 import image1 from '../assets/more-nutritionist.png'; // Replace with your image paths
 import image2 from '../assets/more-met.png';
-import image3 from '../assets/more-forum.png';
+import image3 from '../assets/more-prof.png';
 import { Link } from 'react-router-dom';
 
-const MoreSectionProf = () => {
+const MoreSectionPoliticalForum = () => {
   return (
     <Box
       sx={{
@@ -45,6 +45,27 @@ const MoreSectionProf = () => {
 
         {/* Responsive Grid */}
         <Grid container spacing={2}>
+        <Grid item xs={12} sm={12} md={6} lg={4}>
+            <Box>
+              <img src={image3} alt="Prof.world: automated recruiting" style={{ width: '100%' }} />
+              <Typography align="center" mt={2}>
+                <Link
+                  to="/prof-world"
+                  underline="none"
+                  style={{
+                    fontFamily: 'Calibre Regular',
+                    fontWeight: 400, // Calibre Regular
+                    fontSize: '18px',
+                    color: '#0A0A14',
+                    
+                    textDecoration: 'none'
+                  }}
+                >
+                  <b>Prof.world:</b> Automated Recruiting
+                </Link>
+              </Typography>
+            </Box>
+          </Grid>
           {/* Item 1: Image + Text */}
           <Grid item xs={12} sm={12} md={6} lg={4}>
             <Box>
@@ -92,30 +113,11 @@ const MoreSectionProf = () => {
           </Grid>
 
           {/* Item 3: Image + Text */}
-          <Grid item xs={12} sm={12} md={6} lg={4}>
-            <Box>
-              <img src={image3} alt="Forum: Multi-Level Navigation" style={{ width: '100%' }} />
-              <Typography align="center" mt={2}>
-                <Link
-                  to="/political-forum"
-                  underline="none"
-                  style={{
-                    fontFamily: 'Calibre Regular',
-                    fontWeight: 400, // Calibre Regular
-                    fontSize: '18px',
-                    color: '#0A0A14',
-                    textDecoration: 'none'
-                  }}
-                >
-                  <b>Forum:</b>  Multi-Level Navigation
-                </Link>
-              </Typography>
-            </Box>
-          </Grid>
+          
         </Grid>
       </Container>
     </Box>
   );
 };
 
-export default MoreSectionProf;
+export default MoreSectionPoliticalForum;

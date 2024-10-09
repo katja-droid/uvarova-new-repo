@@ -29,24 +29,27 @@ import ImageGrid from './ImageGrid';
 import FixedNavbar from '../FixedNavbar';
 import TestingSection from '../Metlife/TestingSection';
 import PoliticalForumTesting from './PoliticalForumTesting';
+import MoreSectionPoliticalForum from './MoreSectionPoliticalForum';
 
 const contribution = [
   { id: 1, name: 'User Research', color: '#FFE9E3' },
-  { id: 2, name: 'Competitive App Analysis', color: '#E4DBEA' },
-  { id: 3, name: 'User Surveys', color: '#E7EDFF' },
-  { id: 4, name: 'Prototype Testing', color: '#FAF6C8' },
-  { id: 5, name: 'User Experience Analysis', color: '#E7EDFF' },
-  { id: 6, name: 'Research on User Needs and Preferences', color: '#E4DBEA' },
-  { id: 7, name: 'Evaluation of Interface Accessibility and Usability', color: '#FFE9E3' },
-  { id: 8, name: 'Studying Modern Trends in Health and Fitness', color: '#FAF6C8' },
+  { id: 2, name: 'Sketching', color: '#E4DBEA' },
+  { id: 3, name: 'Prototyping', color: '#E7EDFF' },
+  { id: 4, name: 'Web Mob Design', color: '#FAF6C8' },
+  { id: 5, name: 'Compiling Specifications', color: '#E7EDFF' },
+  { id: 6, name: 'Design System', color: '#E4DBEA' },
+  { id: 7, name: 'Usability Testing', color: '#FFE9E3' },
 ];
 
 const tools = [
+  { id: 1, name: 'Excel', href: '#', color: '#FFE9E3' },
   { id: 1, name: 'Figma', href: '#', color: '#FFE9E3' },
-  { id: 2, name: 'OptimalSort', href: '#', color: '#E4DBEA' },
-  { id: 3, name: 'System Usability Score', href: '#', color: '#E7EDFF' },
-  { id: 4, name: 'Human Interface Guidelines', href: '#', color: '#FAF6C8' },
-  { id: 5, name: 'Material Design', href: '#', color: '#E7EDFF' },
+  { id: 2, name: 'OptimalSort', href: 'https://www.optimalworkshop.com/homepage', color: '#E4DBEA' },
+ 
+  { id: 3, name: 'Google Forms', href: '#', color: '#E7EDFF' },
+  { id: 3, name: 'Core Web Vitals', href: 'https://speedvitals.com/', color: '#E7EDFF' },
+  { id: 3, name: 'System Usability Score', href: 'https://stuart-cunningham.github.io/sus/', color: '#E7EDFF' },
+  { id: 4, name: 'Carbon Footprint Impact', href: 'https://www.websitecarbon.com/', color: '#FAF6C8' },
 ];
 
 const sections = [
@@ -111,7 +114,7 @@ const renderSection = () => {
     case 'problem':
       return <PoliticalForumProblem />;
     case 'users':
-      return <PoliticalForumConstraints />;
+      return <PoliticalForumUsers />;
    
     case 'goal':
       return <PoliticalForumGoal />;
@@ -141,9 +144,10 @@ const renderSection = () => {
         <Grid container direction="column" sx={{ py: 2 }}>
           <Grid item xs={12}>
             <Box sx={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
-            <Typography variant='h1' sx={{ textAlign: 'center', fontSize: {lg: '64px', md: '54px', xxs: '44px'}, fontFamily: 'DMSerifText-Regular', fontWeight: 'normal', pb: '30px', pt: {lg: '66px', md: '64px', xxs: '24px' } }}>Virtual PoliticalForum</Typography>
+            <Typography variant='h1' sx={{ textAlign: 'center', fontSize: {lg: '64px', md: '54px', xxs: '44px'}, fontFamily: 'DMSerifText-Regular', fontWeight: 'normal', pb: '30px', pt: {lg: '66px', md: '64px', xxs: '24px' } }}>Political Forum</Typography>
               <Typography sx={{ textAlign: 'center', fontSize: {md: '20px', xxs: '18px'}, fontFamily: 'Calibre Medium', pb: {lg: '91px', md: '55px', xxs: '76px' }, width: {md: '100%', sm: '182px', xxs: '184px'} }}>
-                Health monitoring apps for iOS platform
+              UX Assignment: Multi-Level Navigation
+
               </Typography>
               
             </Box>
@@ -185,20 +189,46 @@ const renderSection = () => {
       {/* Full-width section */}
       <PoliticalForumFullWidthSection />
 
-      <Grid container justifyContent="center" spacing={0} sx={{ py: 2 }}>
+      <Grid container justifyContent="center" spacing={0} >
 <Grid item xxs={12} lg={8} >
-     <NavbarProject sections={sections} onSelectSection={handleSelectSection} activeLink={activeSection} // Pass active section as prop
+    
+     <Grid item xxs={12} sx={ {py: { 
+            xxs: '24px', 
+            xs: '48px', 
+            sm: '60px', 
+            md: '84px', 
+            lg: '84px', 
+            xl: '84px', 
+            xxl: '97px' 
+          },
+        }} >
+           <NavbarProject sections={sections} onSelectSection={handleSelectSection} activeLink={activeSection} // Pass active section as prop
      ></NavbarProject>
      {renderSection()}
-     
+     </Grid>
      </Grid>
    
      </Grid>
-     <Container disableGutters maxWidth={'100vw'} sx={{ color: '#0A0A14' }}>
-  <Grid container justifyContent="center" spacing={4} sx={{ py: 4 }}>
-    <Grid item xxs={12}>
+     <Container disableGutters maxWidth={'100vw'} sx={{ color: '#0A0A14',
+          backgroundColor: '#F7F7F6' }}>
+  <Grid container justifyContent="center"   >
+    <Grid item xxs={12} sx={ {py: { 
+            xxs: '24px', 
+            xs: '48px', 
+            sm: '60px', 
+            md: '84px', 
+            lg: '84px', 
+            xl: '84px', 
+            xxl: '97px'
+          },
+          overflow: 'visible'
+        }} >
       <BeforeAfterLayout beforeImage={before} afterImage={after} />
     </Grid>
+    </Grid>
+    </Container>
+    
+    
     <div ref={navbarRef} style={{
         position: 'fixed',
         top: '0',
@@ -208,10 +238,14 @@ const renderSection = () => {
       }}>
         <FixedNavbar sections={sections_} onSelectSection={handleSelectSection_} />
       </div>
+      <Container disableGutters maxWidth={'100vw'} sx={{ color: '#0A0A14' }}>
+
+    <Grid item xxs={12}  >
     <Grid item xxs={12} sx={{ mt: 1 }}>  {/* Add margin-top to ensure spacing */}
       <div ref={mainLayoutRef}>
       <PoliticalForumDesignSection />
       </div>
+    
     </Grid>
   </Grid>
   <PoliticalForumNavigationLevels/>
@@ -222,10 +256,11 @@ const renderSection = () => {
 <PoliticalForumNavVisualized/>
 <div ref={calendarRef}>
 <Container disableGutters maxWidth={'100vw'} sx={{ color: '#0A0A14' }}>
-  <Grid container justifyContent="center" spacing={4} sx={{ py: 4 }}>
+  <Grid container justifyContent="center" spacing={4} sx={{ }}>
     <Grid item xxs={12}>
 <PoliticalForumTesting/>
 </Grid></Grid></Container></div>
+<MoreSectionPoliticalForum/>
       {/* Footer */}
       <Footer />
     </ThemeProvider>

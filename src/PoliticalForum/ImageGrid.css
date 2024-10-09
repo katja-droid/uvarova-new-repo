@@ -6,6 +6,7 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
+    margin-top: 32px;
   }
   
   .image-grid {
@@ -41,3 +42,15 @@
     .image-item:last-child {
         right: 0; /* Make sure no large margin is applied */
       }
+
+      .image-wrapper h6 {
+        font-family: 'Calibre Regular';
+        font-size: 39px;
+        line-height: 43px;
+        letter-spacing: -0.87px;
+        font-weight: normal;
+        padding: 0;
+        margin: 0;
+        padding-bottom: 17px;
+      }
+      

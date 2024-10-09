@@ -28,17 +28,18 @@ const PoliticalForumConstraints = () => {
           listStyle: 'disc', // Adds default bullet markers
           paddingLeft: '20px', // Ensures default padding for list markers
           fontFamily: 'Calibre Regular',
+          pt: 0
         }}
       >
-        <li>Should have high top tasks completion rates</li>
-        <li>Have high error recovery rate</li>
+        <li>Should have<b> high top tasks completion rates</b></li>
+        <li>Have <b>high error recovery rate</b></li>
         <li>Work in at least 24 official languages</li>
-        <li>Fully accessible (AA level)</li>
-        <li>GDPR-compliant</li>
-        <li>Minimal environmental impact</li>
-        <li>Drive user’s engagement</li>
-        <li>Reduce the number of requests for the service desk</li>
-        <li>Improve the speed of publishing</li>
+        <li><b>Fully accessible</b> (AA level)</li>
+        <li><b>GDPR-compliant</b> </li>
+        <li><b>Minimal environmental impact</b></li>
+        <li><b>Drive user’s engagement</b></li>
+        <li><b>Reduce the number of requests </b>for the service desk</li>
+        <li><b>Improve the speed of publishing</b></li>
         <li>Everything available on the site right now must still be accessible on the site</li>
       </Box>
     </div>

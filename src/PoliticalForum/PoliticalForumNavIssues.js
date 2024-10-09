@@ -15,7 +15,7 @@ const PoliticalForumNavIssues = () => {
           width: '100%',
           backgroundColor: '#F7F7F6',
           color: '#0A0A14',
-          pt: { 
+          py: { 
             xxs: '24px', 
             xs: '48px', 
             sm: '60px', 
@@ -50,15 +50,25 @@ const PoliticalForumNavIssues = () => {
           >
             Identified Nav Issues
           </Typography>
+          <Box xl={6} lg={8} xxs={12}>
           <Typography
             sx={{
               fontSize: '18px',
               lineHeight: '26px',
               fontFamily: 'Calibre Regular',
+              color: 'EFEFF8',
+              pb: '24px',
+              width: {
+                xxxl: '628px', 
+                lg: '573px',
+                xxs: '100%'
+                
+              }
             }}
           >
             Although it was not included in the development, it allowed us to draw the following conclusions:
           </Typography>
+          </Box>
           <Grid container spacing={2} justifyContent="center" alignItems="stretch">
             {/* First Text Block */}
             <Grid item xxs={12} lg={6} xl={6} xxl={6}>

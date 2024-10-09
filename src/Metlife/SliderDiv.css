@@ -1,103 +1,107 @@
 /* Slider container */
 .blockDiv {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-  }
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.slider-containerDiv {
+  width: 100%;  /* Full width for smaller screens */
+  margin: 0 auto;
+  position: relative;
+  height: 100%;
+}
+
+@media (min-width: 1240px) { /* For xl and larger screens */
   .slider-containerDiv {
-    width: 100%;  /* Full width for smaller screens */
-    margin: 0 auto;
-    position: relative;
-    height: 100%;
+    width: 100%; /* Fixed width for xl screens */
   }
-  
-  @media (min-width: 1240px) { /* For xl and larger screens */
-    .slider-containerDiv {
-      width: 100%; /* Fixed width for xl screens */
-    }
-  }
-  
-  /* The main image slider */
-  .sliderDiv {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
- 
-  .slider-divDiv {
-    width: 100%; /* Full width for smaller screens */
-    height: 100%;
-    object-fit: cover; /* Ensure the content scales and fits */
-   
-  }
-  
-  /* Arrows for navigation */
+}
+
+/* The main image slider */
+.sliderDiv {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider-divDiv {
+  width: 100%; /* Full width for smaller screens */
+  height: 100%;
+  object-fit: cover; /* Ensure the content scales and fits */
+}
+
+/* Arrows for navigation */
+.arrowDiv {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  border: none;
+  z-index: 1;
+  user-select: none;
+  background-color: transparent;
+  padding: 0;
+}
+
+.left-arrowDiv {
+  left: -20px;
+  background-image: url('../assets/arrow-default.svg');
+}
+
+.left-arrowDiv:hover {
+  background-image: url('../assets/arrow-hover.svg');
+}
+
+.right-arrowDiv {
+  right: -20px;
+  background-image: url('../assets/arrow-default.svg');
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.right-arrowDiv:hover {
+  background-image: url('../assets/arrow-hover.svg');
+  transform: translateY(-50%) rotate(180deg);
+}
+
+/* Hide arrows for devices between 600px and 904px */
+@media (min-width: 600px) and (max-width: 904px) {
   .arrowDiv {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 40px;
-    height: 40px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    cursor: pointer;
-    border: none;
-    z-index: 1;
-    user-select: none;
-    background-color: transparent;
-    padding: 0;
+    display: none;
   }
-  
-  .left-arrowDiv {
-    left: -20px;
-    background-image: url('../assets/arrow-default.svg');
-  }
-  
-  .left-arrowDiv:hover {
-    background-image: url('../assets/arrow-hover.svg');
-  }
-  
-  .right-arrowDiv {
-    right: -20px;
-    background-image: url('../assets/arrow-default.svg');
-    transform: translateY(-50%) rotate(180deg);
-  }
-  
-  .right-arrowDiv:hover {
-    background-image: url('../assets/arrow-hover.svg');
-    transform: translateY(-50%) rotate(180deg);
-  }
-  
-  /* Dots for navigation */
-  .dots-containerDiv {
-    display: flex;
-    justify-content: center;
-    margin-top: 32px;
-  }
-  
-  .dotDiv {
-    width: 10px;
-    height: 10px;
-    margin: 0 5px;
-    background-image: url('../assets/slider-dot-default.svg');
-    background-size: cover;
-    cursor: pointer;
-    border-radius: 50%;
-  }
-  
-  .dotDiv:hover {
-    background-image: url('../assets/slider-dot-default.svg');
-  }
-  
-  .dotDiv.activeDiv {
-    background-image: url('../assets/slider-dot-hover.svg');
-  }
-  
+}
+
+/* Dots for navigation */
+.dots-containerDiv {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+}
+
+.dotDiv {
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  background-image: url('../assets/slider-dot-default.svg');
+  background-size: cover;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.dotDiv:hover {
+  background-image: url('../assets/slider-dot-default.svg');
+}
+
+.dotDiv.activeDiv {
+  background-image: url('../assets/slider-dot-hover.svg');
+}

@@ -56,11 +56,18 @@ const contribution = [
 ];
 
 const tools = [
-  { id: 1, name: 'Figma', href: '#', color: '#FFE9E3' },
-  { id: 2, name: 'OptimalSort', href: '#', color: '#E4DBEA' },
-  { id: 3, name: 'System Usability Score', href: '#', color: '#E7EDFF' },
-  { id: 4, name: 'Human Interface Guidelines', href: '#', color: '#FAF6C8' },
-  { id: 5, name: 'Material Design', href: '#', color: '#E7EDFF' },
+  { id: 1, name: 'UserInterviews', href: 'https://www.userinterviews.com/', color: '#FFE9E3' },
+  { id: 2, name: 'Carbon Design System', href: 'https://carbondesignsystem.com/', color: '#E4DBEA' },
+  { id: 3, name: 'PoC', href: 'https://formlabs.com/asia/blog/proof-of-concept-poc/', color: '#E7EDFF' },
+  { id: 4, name: 'NPS', href: 'https://www.surveysensum.com/blog/good-nps-score-for-saas', color: '#FAF6C8' },
+  { id: 5, name: 'Excel', href: '#', color: '#E7EDFF' },
+  { id: 5, name: 'Figma', href: '#', color: '#E7EDFF' },
+  { id: 5, name: 'Optimal Sort', href: 'https://www.card-sorting.com/optimalsort/', color: '#E7EDFF' },
+  { id: 5, name: 'Material System Guidelines', href: 'https://m2.material.io/design', color: '#E7EDFF' },
+  { id: 5, name: 'Google Forms', href: '#', color: '#E7EDFF' },
+  { id: 5, name: 'Core Web Vitals', href: 'https://speedvitals.com/', color: '#E7EDFF' },
+  
+  { id: 5, name: 'System Usability Score', href: 'https://stuart-cunningham.github.io/sus/', color: '#E7EDFF' },
 ];
 
 const sections = [
@@ -210,19 +217,25 @@ const ProfWorld = () => {
         </Grid>
       </Container>
 
-      <Container disableGutters maxWidth={false} sx={{ minHeight: '100vh', color: '#0A0A14' }}>
+      <Container disableGutters maxWidth={false} sx={{ color: '#0A0A14' }}>
         <FinalDesignSection />
       </Container>
 
       {/* Full-width section */}
       <ProfFullWidthSection />
       <Grid container justifyContent="center" spacing={0} sx={{ py: 2 }}>
-        <Grid item xxs={12} lg={10}>
-          <NavbarProject activeLink sections={sections} onSelectSection={handleSelectSection}  />
+        <Grid item xxs={12} lg={10} >
+          <NavbarProject activeLink={activeSection} sections={sections} onSelectSection={handleSelectSection}  />
           {renderSection()}
         </Grid>
       </Grid>
-
+      <Container disableGutters maxWidth={false} sx={{ minHeight: '100vh', color: '#0A0A14' }}>
+      <Grid container justifyContent="center" spacing={0} sx={{ py: 2 }}>
+      <Grid item  xxs={12} lg={10}>
+<BeginSection/>
+</Grid>
+</Grid>
+</Container>
       <CompanyRegistrationSection />
       <SecurityServiceSection />
       <CompanyRegistrationAfterSection />

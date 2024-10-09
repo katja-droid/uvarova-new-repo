@@ -5,7 +5,7 @@ const ProfWorldGoal = () => {
   return (
     <Container disableGutters maxWidth={false}>
       {/* Container for the title */}
-      <Grid container justifyContent="center" spacing={0} sx={{ py: 2 }}>
+      <Grid container justifyContent="center" spacing={0}  >
         <Grid item sm={12} xxs={12} md={12}>
           <Typography
             variant="h3"
@@ -24,7 +24,7 @@ const ProfWorldGoal = () => {
       <Grid
         container
         justifyContent="center"
-        sx={{ py: 2, fontFamily: 'Calibre Regular', fontSize: '18px' }}
+        sx={{  fontFamily: 'Calibre Regular', fontSize: '18px' }}
       >
         <Grid item sm={12} xs={12}>
           <Box
@@ -34,16 +34,7 @@ const ProfWorldGoal = () => {
               lineHeight: '26px',
             }}
           >
-            {/* Styled paragraph with separate color */}
-            <Typography
-              sx={{
-                color: '#646470', // Set color to the specified one
-                pb: '16px',
-              }}
-            >
-              The main goal of the Virtual Nutritionist project is to develop a cohesive, user-friendly health monitoring
-              application that:
-            </Typography>
+  
 
             <Box
               component="ul"
@@ -51,39 +42,63 @@ const ProfWorldGoal = () => {
                 listStyle: 'none',
                 paddingLeft: 0,
                 '& li': {
-                  mb: '25px', // Adds spacing between list items
+                  mb: '8px', // Adds spacing of 8px between list items
                 },
               }}
             >
               <li>
-                <Typography sx={{ fontWeight: 'bold' }}>
-                  1. Effective Tools for Diet and Physical Activity Control:
+                <Typography sx={{ fontWeight: 'bold', mb: '8px' }}>
+                  1. Main Objectives of the Project:
                 </Typography>
-                <Box component="ul" sx={{ listStyle: 'none', paddingLeft: 0 }}>
+                <Box
+                  component="ul"
+                  sx={{
+                    listStyleType: 'disc', // Set disc markers for sub-items
+                    '& li': {
+                      mb: '8px', // Adds spacing of 8px between sub-items
+                    },
+                  }}
+                >
                   <li>
-                    - Users receive effective tools to monitor their diet and physical activity, with <b>100%</b> expected to experience positive effects from their usage.
+                    <b>Automating the personnel selection process:</b> creating a system to ensure an effective match between an employee’s personality profile, job profile, and company profile.
+                  </li>
+                  <li>
+                  <b>Profile definition:</b> development of methods to accurately define the personality profile, job profile, and company profile for successful recruitment.
                   </li>
                 </Box>
               </li>
 
               <li>
-                <Typography sx={{ fontWeight: 'bold' }}>
-                  2. Enhanced Interaction with Healthcare Professionals:
+                <Typography sx={{ fontWeight: 'bold',  mb: '8px' }}>
+                  2. Secondary Goals of the Project:
                 </Typography>
-                <Box component="ul" sx={{ listStyle: 'none', paddingLeft: 0 }}>
+                <Box
+                  component="ul"
+                  sx={{
+                    listStyleType: 'disc', // Set disc markers for sub-items
+                  
+                    '& li': {
+                      mb: '8px', // Adds spacing of 8px between sub-items
+                    },
+                  }}
+                >
                   <li>
-                    - The platform facilitates interaction with healthcare professionals, leading to a <b>90%</b> satisfaction rate among users regarding their cooperation, ultimately enhancing their health.
+                  <b> Psychodiagnostics and testing:</b> implementation of tools for testing candidates and determining risks, compatibility with corporate culture, and team characteristics.
                   </li>
-                </Box>
-              </li>
-
-              <li>
-                <Typography sx={{ fontWeight: 'bold' }}>
-                  3. Personalized Dietary Recommendations:
-                </Typography>
-                <Box component="ul" sx={{ listStyle: 'none', paddingLeft: 0 }}>
                   <li>
-                    - The system offers personalized dietary recommendations based on the data entered, allowing <b>80%</b> of users to enjoy a positive experience.
+                  <b> Automation of HR functions:</b> integration of personnel assessment, administration, adaptation, and analytics functions to improve the efficiency of the HR department.
+                  </li>
+                  <li>
+                  <b>HR planning and management:</b> creation of tools for building organizational structure, team building, and vacancy planning.
+                  </li>
+                  <li>
+                  <b> Optimization of the recruitment process:</b> integration with job sites, automation of resume search and processing, advanced candidate search.
+                  </li>
+                  <li>
+                  <b> Evaluation and development:</b> development of a system for performance evaluation, training, and development of employees.
+                  </li>
+                  <li>
+                  <b> Analytics and reporting:</b> creation of functions to analyze the reasons for rejections, recruitment timelines, and other key performance indicators of the recruitment department.
                   </li>
                 </Box>
               </li>

@@ -46,15 +46,15 @@ const MetlifeGoal = () => {
               lineHeight: '26px',
             }}
           >
-            <Typography sx={{ pb: '16px', color: '#646470' }}>
-              The long-term goal of the project is to deliver digital journeys that heavily focus on first-class UX, high level of accuracy, and low abandonment rates.
-            </Typography>
+            <Typography sx={{ pb: '16px', color: '#0A0A14' }}>
+              The long-term goal of the project is to deliver <b>digital journeys that heavily focus on first-class UX, high level of accuracy, and low abandonment rates.
+              </b></Typography>
 
-            <Typography sx={{ pb: '16px', color: '#646470' }}>
+            <Typography sx={{ pb: '16px', color: '#0A0A14' }}>
               The insurance company wants to reduce processing times, processing costs, and expenses in customer support for new applicants, change requests, and general inquiries from prospect leads. The project is set out for the next year, and it includes a number of sub-goals that we need to achieve gradually.
             </Typography>
 
-            <Typography sx={{ pb: '16px', color: '#646470' }}>
+            <Typography sx={{ pb: '16px', color: '#0A0A14' }}>
               Ultimately, all printed forms need to be converted into well-designed digital equivalents. Forms should be fully accessible and usable by anyone who wishes to get a quote, sign up for an insurance plan, or change an existing plan.
             </Typography>
           </Box>

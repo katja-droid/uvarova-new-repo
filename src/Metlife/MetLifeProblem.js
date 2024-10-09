@@ -6,11 +6,14 @@ const MetLifeProblem = () => {
     <Container disableGutters maxWidth={false}>
       {/* Container for the title */}
       <Grid container justifyContent="center" spacing={0} sx={{ py: 2 }}>
-        <Grid item  xl={8}
+        <Grid
+          item
+          xl={8}
           lg={10} // 10 columns on lg
           md={12} // 100% on md and smaller
           sm={12}
-          xs={12}>
+          xs={12}
+        >
           <Typography
             variant="h3"
             sx={{
@@ -30,11 +33,14 @@ const MetLifeProblem = () => {
         justifyContent="center"
         sx={{ fontFamily: 'Calibre Regular', fontSize: '18px' }}
       >
-        <Grid item  xl={8}
+        <Grid
+          item
+          xl={8}
           lg={10} // 10 columns on lg
           md={12} // 100% on md and smaller
           sm={12}
-          xs={12}>
+          xs={12}
+        >
           <Box
             sx={{
               fontFamily: 'Calibre Regular',
@@ -57,14 +63,17 @@ const MetLifeProblem = () => {
                 <Typography sx={{ fontWeight: 'bold' }}>
                   1. Bounce Rates:
                 </Typography>
-                <Typography sx={{ pb: '4px' }}> {/* Reduced padding below each text block */}
-                  - Much of the traffic comes from search engines, but price comparison websites play a major role in the insurance industry.
+                <Typography sx={{ pb: '8px', pl: '16px' }}>
+                  Much of the traffic to the website comes from search engines, but especially in the health insurance business, price comparison websites play a major role.
                 </Typography>
-                <Typography>
-                  - Campaigns offer discounts, yet users frequently bounce between insurance services, leading to high bounce rates.
+                <Typography sx={{ pb: '8px', pl: '16px' }}>
+                  There are dozens of campaigns running at any given time, with incentives ranging from discounts to free months of insurance.
                 </Typography>
-                <Typography>
-                  - Users often abandon digital journeys at the first step when they see the price quote or the lengthy process.
+                <Typography sx={{ pb: '8px', pl: '16px' }}>
+                  Consequently, the bounce rates on client’s sites are quite high, with people jumping from one insurance service to the other.
+                </Typography>
+                <Typography sx={{ pb: '8px', pl: '16px' }}>
+                  For the digital journeys that are already created, users often abandon at the very first step when they noticed that 22 steps are required to complete a form, or when they see the price quote for an insurance.
                 </Typography>
               </li>
 
@@ -72,11 +81,11 @@ const MetLifeProblem = () => {
                 <Typography sx={{ fontWeight: 'bold' }}>
                   2. No Digital Forms:
                 </Typography>
-                <Typography sx={{ pb: '4px' }}>
-                  - Most forms are still in PDF format and haven’t been converted to digital.
+                <Typography sx={{ pb: '8px', pl: '16px' }}>
+                  In terms of change requests or final application submissions, most of the PDF forms haven’t been converted to digital forms yet.
                 </Typography>
-                <Typography>
-                  - Existing digital forms are poorly designed, making it hard for users to submit accurate data.
+                <Typography sx={{ pb: '8px', pl: '16px' }}>
+                  The ones that already exist are indeed used, but are poorly designed with a lot of issues blocking users from submitting accurate data.
                 </Typography>
               </li>
 
@@ -84,8 +93,8 @@ const MetLifeProblem = () => {
                 <Typography sx={{ fontWeight: 'bold' }}>
                   3. Form Bounce Rate on Mobile Devices:
                 </Typography>
-                <Typography sx={{ pb: '4px' }}>
-                  - Similar issues arise on mobile devices, leading to a high form abandonment rate.
+                <Typography sx={{ pb: '8px', pl: '16px' }}>
+                  Similar issues arise on mobile devices, where users often abandon the forms, leading to a high form bounce rate.
                 </Typography>
               </li>
 
@@ -93,8 +102,11 @@ const MetLifeProblem = () => {
                 <Typography sx={{ fontWeight: 'bold' }}>
                   4. Recurring Information:
                 </Typography>
-                <Typography sx={{ pb: '4px' }}>
-                  - Users often need to repeat the same information in multiple PDFs, leading to frustration.
+                <Typography sx={{ pb: '8px', pl: '16px' }}>
+                  Information that was specified in the first PDF is repeated in the third PDF.
+                </Typography>
+                <Typography sx={{ pb: '8px', pl: '16px' }}>
+                  This occurs due to the lack of categories and understanding of what the developer’s work will look like when implementing the project.
                 </Typography>
               </li>
             </Box>

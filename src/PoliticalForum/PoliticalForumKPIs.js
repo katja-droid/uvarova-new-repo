@@ -44,46 +44,8 @@ const PoliticalForumKPIs = () => {
         </Box>
       </Box>
 
-      <Typography sx={{ fontSize: '18px', fontFamily: 'Calibre Regular', pb: '16px' }}>
-        To assess the success of the application design, the following KPIs will be used:
-      </Typography>
-
-      <Box
-        component="ul"
-        sx={{
-          fontSize: '18px',
-          color: '#0A0A14',
-          lineHeight: '26px',
-          listStyleType: 'disc', // Enables bullet points
-          paddingLeft: '20px', // Adjust padding to align bullet points
-          fontFamily: 'Calibre Regular',
-        }}
-      >
-        <li>
-          <Typography sx={{ fontWeight: 'bold' }}>1. User Satisfaction Level:</Typography>
-          - Should be no less than <b>85%</b> according to surveys after using the application.<br />
-        </li>
-
-        <li>
-          <Typography sx={{ fontWeight: 'bold' }}>2. Engagement Level:</Typography>
-          - Users should spend an average of at least <b>30 minutes</b> per week interacting with the application.<br />
-        </li>
-
-        <li>
-          <Typography sx={{ fontWeight: 'bold' }}>3. User Conversion Rate:</Typography>
-          - We aim for <b>60%</b> of new users to actively use the application after initial registration.<br />
-        </li>
-
-        <li>
-          <Typography sx={{ fontWeight: 'bold' }}>4. Daily Active Users (DAU):</Typography>
-          - The goal is to reach <b>10,000 DAU</b> within the first 6 months after launch.<br />
-        </li>
-
-        <li>
-          <Typography sx={{ fontWeight: 'bold' }}>5. Loading Speed:</Typography>
-          - The application should load in less than <b>3 seconds</b> to ensure a comfortable user experience.<br />
-        </li>
-      </Box>
+ 
+     
 
       <Typography sx={{ fontSize: '18px', fontFamily: 'Calibre Regular', pt: '16px' }}>
         In detail, these attributes could be measured and tracked across a variety of user’s touch points:
@@ -100,17 +62,17 @@ const PoliticalForumKPIs = () => {
           fontFamily: 'Calibre Regular',
         }}
       >
-        <li>Top tasks completion rates for internal and external users<br /></li>
-        <li>Top tasks completion times on or off the website<br /></li>
-        <li>% of screen dedicated for content (mobile/desktop)<br /></li>
-        <li>Overall satisfaction with the content and experience on the site (clarity and speed of navigation)<br /></li>
-        <li>System Usability Scale Score &gt; 70<br /></li>
-        <li>Rate of errors and mistakes in navigation, search, and data input (e.g., filters, forms, search queries)<br /></li>
-        <li>Accuracy of data successfully submitted by users (how difficult it is to make mistakes)<br /></li>
-        <li>Frequency of dead ends (404s, empty search/filtering results, lock-out rates due to poor validation)<br /></li>
-        <li>Time to production, or how quickly users can publish quality content that matches content and design requirements<br /></li>
-        <li>Search query iterations, or how much time people spend refining keywords to find relevant results<br /></li>
-        <li>Carbon footprint impact, or how sustainable the website is in light of climate challenges<br /></li>
+        <li><b>top tasks completion rates</b> for internal and external users<br /></li>
+        <li><b>top tasks completion times</b> on or off the website<br /></li>
+        <li><b>% of screen dedicated for content</b>  (mobile/desktop)<br /></li>
+        <li><b>overall satisfaction</b>  with the content and experience on the site (clarity and speed of navigation)<br /></li>
+        <li><span style={{textDecoration: 'underline'}}>System Usability Scale Score</span> &gt; 70<br /></li>
+        <li><b>rate of errors</b> and mistakes in navigation, search, and data input (e.g., filters, forms, search queries)<br /></li>
+        <li><b>accuracy of data</b> successfully submitted by users (how difficult it is to make mistakes)<br /></li>
+        <li><b>frequency of dead ends</b> (404s, empty search/filtering results, lock-out rates due to poor validation)<br /></li>
+        <li><b>time to production</b>, or how quickly users can publish quality content that matches content and design requirements<br /></li>
+        <li><b>search query iterations</b>, or how much time people spend refining keywords to find relevant results<br /></li>
+        <li><span style={{textDecoration: 'underline'}}>Carbon footprint impact</span>, or how sustainable the website is in light of climate challenges<br /></li>
       
      
       </Box>

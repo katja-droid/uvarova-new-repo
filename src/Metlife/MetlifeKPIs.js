@@ -34,7 +34,9 @@ const MetLifeKPIs = () => {
               lineHeight: '26px',
             }}
           >
-           
+            <Typography sx={{ pb: '16px', color: '#646470' }}>
+              Our design KPIs must align with the project’s objectives. The focus is on optimizing digital journeys, ensuring fast and successful completions, and gathering accurate user data. These metrics can be tracked across various touch points:
+            </Typography>
 
             <Box
               component="ul"
@@ -42,49 +44,47 @@ const MetLifeKPIs = () => {
                 listStyle: 'none',
                 paddingLeft: 0,
                 '& li': {
-                  display: 'flex',
-                  alignItems: 'center',
+                  mb: '16px', // Adds spacing between list items
                 },
               }}
             >
-                 <Typography sx={{ pb: '16px' }}>
-              Our design KPIs must align with the project’s objectives. The focus is on optimizing digital journeys, ensuring fast and successful completions, and gathering accurate user data. These metrics can be tracked across various touch points:
-            </Typography>
               <li>
-                <span>•</span><Typography component="span">Completion rates</Typography><br />
+                <Typography><b>• Completion rates</b></Typography>
               </li>
               <li>
-                <span>•</span><Typography component="span">Completion times</Typography><br />
+                <Typography><b>• Completion times</b></Typography>
               </li>
               <li>
-                <span>•</span><Typography component="span">Frequency of errors and mistakes</Typography><br />
+                <Typography><b>• Frequency of errors and mistakes</b></Typography>
               </li>
               <li>
-                <span>•</span><Typography component="span">Error recovery rate</Typography><br />
+                <Typography><b>• Error recovery rate</b></Typography>
               </li>
               <li>
-                <span>•</span><Typography component="span">Accuracy of data successfully submitted by users</Typography><br />
+                <Typography><b>• Accuracy of data</b> successfully submitted by users</Typography>
               </li>
               <li>
-                <span>•</span><Typography component="span">Clarity of microcopy</Typography><br />
+                <Typography><b>• Clarity of microcopy</b></Typography>
               </li>
               <li>
-                <span>•</span><Typography component="span">Clarity of error messages</Typography><br />
+                <Typography><b>• Clarity of error messages</b></Typography>
               </li>
               <li>
-                <span>•</span><Typography component="span">Support of browser’s autofill</Typography><br />
+                <Typography><b>• Support of browser’s autofill</b></Typography>
               </li>
               <li>
-                <span>•</span><Typography component="span">% of screen dedicated for forms (mobile/desktop)</Typography><br />
+                <Typography><b>• % of screen dedicated for forms</b> (mobile/desktop)</Typography>
               </li>
               <li>
-                <span>•</span><Typography component="span">Overall satisfaction with the form flow and the experience on the site</Typography><br />
+                <Typography><b>• Overall satisfaction with the form flow and the experience on the site</b></Typography>
               </li>
               <li>
-                <span>•</span><Typography component="span">System Usability Scale Score > 70</Typography><br />
+                <Typography>• System Usability Scale Score<b> > 70</b> </Typography>
               </li>
               <li>
-                <span>•</span><Typography component="span">Time to production, or how quickly designers can create new forms based on the design guidelines established in the project</Typography><br />
+                <Typography>
+                <b> • Time to production, or how quickly designers can create new forms based on the design guidelines established in the project
+                </b> </Typography>
               </li>
             </Box>
           </Box>

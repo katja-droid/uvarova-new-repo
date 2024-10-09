@@ -31,6 +31,13 @@ import MetDesignSystem from './MetDesignSystem';
 import MoreSectionMet from './MoreSectionMet';
 import TestingSection from './TestingSection';
 import FixedNavbar from '../FixedNavbar';
+import before1 from '../assets/before1.png'; 
+import after1 from '../assets/after1.png'; 
+import before2 from '../assets/before2.png'; 
+import after2 from '../assets/after2.png'; 
+import before3 from '../assets/before3.png'; 
+import after3 from '../assets/after3.png'; 
+import BeforeAfterLayout from './BeforeAfterLayout';
 
 const contribution = [
   { id: 1, name: 'User Research', color: '#FFE9E3' },
@@ -69,7 +76,12 @@ const sections_ = [
   { id: 'testing-summary-met', label: 'Testing Summary' },
   { id: 'usability-testing', label: 'Usability Testing' },
 ];
-
+const slides = [
+  <BeforeAfterLayout beforeImage={before1} afterImage={after1} />,
+  <BeforeAfterLayout beforeImage={before2} afterImage={after2} />,
+  <BeforeAfterLayout beforeImage={before3} afterImage={after3} />,
+  // Add more BeforeAfterLayout components here if needed
+];
 const Metlife = () => {
   const [activeSection, setActiveSection] = useState('problem'); // Default section
   const [activeLink, setActiveLink] = useState('');
@@ -208,7 +220,7 @@ const renderSection = () => {
 <Grid item xxs={12} sx={{display: {xxs: 'none', lg: 'block'
 
 }, py: {md: '80px', xxs: '16px'}}}>
-<SliderDiv/>
+<SliderDiv slides={slides} />
 </Grid>   
 <Grid item xxs={12} sx={{display: {md: 'block', lg: 'none'
 

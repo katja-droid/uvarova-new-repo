@@ -16,7 +16,7 @@ const DesignSystemSectionProf = () => {
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
-          py: { 
+          pt: { 
             xxs: '24px', 
             xs: '48px', 
             sm: '60px', 
@@ -76,9 +76,18 @@ const DesignSystemSectionProf = () => {
           </Grid>
         </Container>
       </Box>
-
+       <Box sx={{pb: { 
+            xxs: '24px', 
+            xs: '48px', 
+            sm: '60px', 
+            md: '84px', 
+            lg: '84px', 
+            xl: '84px', 
+            xxl: '97px' 
+          }}}>
       {/* Full Width Image */}
       <img width="100%" src={image} alt="Design System" />
+      </Box>
     </ThemeProvider>
   );
 };

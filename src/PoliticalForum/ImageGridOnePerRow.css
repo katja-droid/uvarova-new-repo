@@ -1,0 +1,43 @@
+.image-grid-container-one-row {
+    padding: 0; /* No need for complex padding here */
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center;
+    align-items: center;
+    margin-top: 32px;
+  }
+  
+  .image-grid-one-row {
+    display: flex;
+    flex-direction: column; /* Stack images one per row */
+    width: 100%; /* Full width for each image row */
+  }
+  
+  .image-wrapper-one-row {
+    text-align: center;
+    width: 259px; /* Fixed width for images */
+    margin: 10px auto; /* Center each image with space between */
+  }
+  
+  .image-one-row {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .image-item-one-row:not(:last-child) {
+    padding: 0;
+    margin-bottom: 32px;
+  }
+  .image-wrapper-one-row h6 {
+    font-family: 'Calibre Regular';
+    font-size: 30px;
+    font-weight: normal;
+    padding: 0;
+    margin: 0;
+  }
+
+
+  

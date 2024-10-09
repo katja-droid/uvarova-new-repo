@@ -32,7 +32,7 @@ const PoliticalForumClientOverview = () => {
           fontSize: '18px'
         }}
       >
-        Political Forum NDA
+        Political Forum <span style={{color: '#8A8A8A'}}>NDA</span>
       </Typography>
 
       {/* Overview Section */}
@@ -60,35 +60,14 @@ const PoliticalForumClientOverview = () => {
       </Typography>
 
       <Typography sx={{ fontSize: '18px', lineHeight: '26px', pb: '8px', fontFamily: 'Calibre Regular' }}>
-        Within this website, there are between <b>98 and 175 websites in different fields</b>. No one knows the exact number. Sometimes new websites are created for new events, campaigns, new political groups, or committees.
+        Within this website, there are between <b>98 and 175 websites</b> in different fields. No one knows the exact number. Sometimes new websites are created for new events, campaigns, new political groups, or committees.
       </Typography>
 
       <Typography sx={{ fontSize: '18px', lineHeight: '26px', pb: '8px', fontFamily: 'Calibre Regular' }}>
-        Users want accurate information and tend to leave when they find it. Our top task analysis study provided insight into the main tasks that internal and external users frequently perform on websites and the current effectiveness of the platform in helping users navigate to the right pages and discover documents that match their interests.
+        Users want accurate information and tend to  <b>leave when they find it</b>. Our <b>top task analysis study</b> provided insight into the main tasks that internal and external users frequently perform on websites and the current effectiveness of the platform in <b>helping users navigate</b> to the right pages and discover documents that match their interests.
       </Typography>
 
-      {/* Project Participants Section */}
-      <Typography
-        variant='body1'
-        sx={{
-          fontSize: '14px',
-          background: 'linear-gradient(90deg, #0D99FF, #99FAF4)', 
-          WebkitBackgroundClip: 'text', 
-          WebkitTextFillColor: 'transparent', 
-          backgroundClip: 'text', 
-          textFillColor: 'transparent', 
-          fontFamily: 'Calibre Bold',
-          pb: '8px',
-          pt: { lg: '32px', xxs: '24px' },
-          textTransform: 'uppercase'
-        }}
-      >
-        Project Participants
-      </Typography>
-
-      <Typography sx={{ fontSize: '18px', lineHeight: '26px', pb: '8px', fontFamily: 'Calibre Regular' }}>
-        Project Manager, Back-end, Front-end, UX/UI Designer, HR, Psychologist
-      </Typography>
+   
     </Box>
   );
 };

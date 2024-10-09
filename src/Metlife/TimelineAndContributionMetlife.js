@@ -61,7 +61,8 @@ const TimelineAndContributionMetlife = ({ tools }) => {
         Timeline
       </Typography>
       <Typography sx={{ fontSize: '18px', lineHeight: '26px', pb: '8px', fontFamily: 'Calibre Regular' }}>
-        <b>May — Nov 2023</b> ~ 7 months
+        <b>Apr — Aug 2024</b>  ~ 5 months
+          
       </Typography>
 
       {/* My role */}
@@ -86,7 +87,16 @@ const TimelineAndContributionMetlife = ({ tools }) => {
         <b>UX/UI Designer</b>
       </Typography>
       <Typography sx={{ fontSize: '18px', lineHeight: '26px', pb: '8px', fontFamily: 'Calibre Regular' }}>
-        Throughout the project, I worked with designers and developers to create a specification process.
+        User research to identify needs and preferences.
+      </Typography>
+      <Typography sx={{ fontSize: '18px', lineHeight: '26px', pb: '8px', fontFamily: 'Calibre Regular' }}>
+        Creation of layouts, prototypes, and high-quality mockups to illustrate design concepts and meet project goals.
+      </Typography>
+      <Typography sx={{ fontSize: '18px', lineHeight: '26px', pb: '8px', fontFamily: 'Calibre Regular' }}>
+        Ensuring a consistent visual style across mobile and web versions of the application with an emphasis on usability and accessibility.
+      </Typography>
+      <Typography sx={{ fontSize: '18px', lineHeight: '26px', pb: '8px', fontFamily: 'Calibre Regular' }}>
+        Work closely with developers and web development team to ensure effective design implementation and maintain constant communication to address design-related issues.
       </Typography>
 
       {/* Contribution */}

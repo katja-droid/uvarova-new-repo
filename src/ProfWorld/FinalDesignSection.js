@@ -4,10 +4,14 @@ import Slider from './Slider'
 
 const FinalDesignSection = () => {
   return (
-    <Box sx={{display: 'flex', alignItems: 'center', flexDirection: 'column', py: {
-        xl: '80px', 
-        sm: '60px',
-        xxxs: '48px'
+    <Box sx={{display: 'flex', alignItems: 'center', flexDirection: 'column',  py: {
+      xxs: '24px',
+      xs: '48px',
+      sm: '60px',
+      md: '84px',
+      lg: '84px',
+      xl: '84px',
+      xxxl: '97px',
     }}}>
            <Typography
                   sx={{

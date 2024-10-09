@@ -1,9 +1,10 @@
 import React from 'react';
 import './NavbarProject.css';
+import { Box } from '@mui/material';
 
 const NavbarProject = ({ sections, onSelectSection, activeLink }) => {
   return (
-    <div className='navbarProject'>
+    <Box className='navbarProject' sx={{py: {lg: '47px', sm: '32px'}, mb: '16px'}}>
       <nav className="navbarProject-scroll">
         <ul className='navbarProject-scroll'>
           {sections.map((section) => (
@@ -22,7 +23,7 @@ const NavbarProject = ({ sections, onSelectSection, activeLink }) => {
           ))}
         </ul>
       </nav>
-    </div>
+    </Box>
   );
 };
 

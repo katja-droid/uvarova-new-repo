@@ -4,7 +4,7 @@ import { ThemeProvider } from '@mui/material/styles';
 import theme from '../theme'; // Import your custom theme
 import image from '../assets/political-design-proces.png';
 
-const GoalSection = () => {
+const PoliticalForumDesignSection = () => {
   return (
     <ThemeProvider theme={theme}>
       <Box
@@ -13,7 +13,15 @@ const GoalSection = () => {
           width: '100%',
           backgroundColor: '#fff',
           color: '#0A0A14',
-          pt: '73px'
+          py: { 
+            xxs: '24px', 
+            xs: '48px', 
+            sm: '60px', 
+            md: '84px', 
+            lg: '84px', 
+            xl: '84px', 
+            xxl: '97px' 
+          },
         }}
         id="design-process-pf"
       >
@@ -98,4 +106,4 @@ const GoalSection = () => {
   );
 };
 
-export default GoalSection;
+export default PoliticalForumDesignSection;

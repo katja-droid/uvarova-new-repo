@@ -24,69 +24,56 @@ const PoliticalForumProblem = () => {
           listStyle: 'none', // Remove default list markers
           paddingLeft: 0,
           '& li': {
-            mb: '25px', // Adds 25px gap between main list items
+            mb: '8px', // Reduce the gap between main list items to 8px
           },
           fontFamily: 'Calibre Regular',
         }}
       >
+        <Typography sx={{ color: 'EFEFF8', pb: '16px' }}>
+          Based on the user interviews that were conducted, the findings include:
+        </Typography>
         <li>
-          <Typography sx={{ fontWeight: 'bold' }}>
-            1. Intricate Navigation:
-          </Typography>
+          <Typography sx={{ fontWeight: 'bold' }}>1. Intricate Navigation:</Typography>
           <Box component="ul" sx={{ listStyle: 'none', paddingLeft: 0, marginTop: 0 }}>
             <li style={{ marginBottom: '0' }}>
-              - The navigation is intricate and the search feature is not optimal.
+            Search results are either overly broad, leading to many similar pages/sites, or overly narrow, displaying irrelevant information for a specific website.
             </li>
           </Box>
         </li>
         <li>
-          <Typography sx={{ fontWeight: 'bold' }}>
-            2. Inaccurate Search Results:
-          </Typography>
+          <Typography sx={{ fontWeight: 'bold' }}>2. Inaccurate Search Results:</Typography>
           <Box component="ul" sx={{ listStyle: 'none', paddingLeft: 0, marginTop: 0 }}>
             <li style={{ marginBottom: '0' }}>
-              - Search results are either overly broad, leading to many similar pages/sites, or overly narrow, displaying irrelevant information for a specific website.
+              Search results are either overly broad, leading to many similar pages/sites, or overly narrow, displaying irrelevant information for a specific website.
             </li>
           </Box>
         </li>
         <li>
-          <Typography sx={{ fontWeight: 'bold' }}>
-            3. Disconnect in Priorities:
-          </Typography>
+          <Typography sx={{ fontWeight: 'bold' }}>3. Disconnect in Priorities:</Typography>
           <Box component="ul" sx={{ listStyle: 'none', paddingLeft: 0, marginTop: 0 }}>
             <li style={{ marginBottom: '0' }}>
-              - A disconnect exists between the priorities showcased on the site and the priorities held by both citizens and staff.
-            </li>
+            A disconnect exists between the priorities showcased on the site and the priorities held by both citizens and staff.  </li>
           </Box>
         </li>
         <li>
-          <Typography sx={{ fontWeight: 'bold' }}>
-            4. Lack of User Awareness:
-          </Typography>
+          <Typography sx={{ fontWeight: 'bold' }}>4. Lack of User Awareness:</Typography>
           <Box component="ul" sx={{ listStyle: 'none', paddingLeft: 0, marginTop: 0 }}>
             <li style={{ marginBottom: '0' }}>
-              - Users arriving from search engines often lack awareness of their location and possible next steps.
-            </li>
+            Users arriving from search engines often lack awareness of their location and possible next steps.  </li>
           </Box>
         </li>
         <li>
-          <Typography sx={{ fontWeight: 'bold' }}>
-            5. Dispersed Information:
-          </Typography>
+          <Typography sx={{ fontWeight: 'bold' }}>5. Dispersed Information:</Typography>
           <Box component="ul" sx={{ listStyle: 'none', paddingLeft: 0, marginTop: 0 }}>
             <li style={{ marginBottom: '0' }}>
-              - Information is dispersed across departments, often duplicated and conflicting, and is presented in a manner that hinders quick understanding and access to answers.
-            </li>
+            Information is dispersed across departments, often duplicated and conflicting, and is presented in a manner that hinders quick understanding and access to answers.  </li>
           </Box>
         </li>
         <li>
-          <Typography sx={{ fontWeight: 'bold' }}>
-            6. Lack of Digital Experience Assessment:
-          </Typography>
+          <Typography sx={{ fontWeight: 'bold' }}>6. Lack of Digital Experience Assessment:</Typography>
           <Box component="ul" sx={{ listStyle: 'none', paddingLeft: 0, marginTop: 0 }}>
             <li style={{ marginBottom: '0' }}>
-              - There is no mutual agreement on whether the digital experience is progressing over time due to the absence of continuous user research and testing with actual website visitors.
-            </li>
+            There is no mutual agreement on whether the digital experience is progressing over time due to the absence of continuous user research and testing with actual website visitors.   </li>
           </Box>
         </li>
       </Box>

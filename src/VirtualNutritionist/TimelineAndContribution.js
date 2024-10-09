@@ -1,6 +1,7 @@
 import React from 'react';
 import { Box, Typography, useMediaQuery } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
+import { Link } from 'react-router-dom';
 
 const TimelineAndContribution = ({ tools }) => {
   const theme = useTheme();
@@ -164,7 +165,11 @@ const TimelineAndContribution = ({ tools }) => {
               mb: { xs: '8px', md: '10px' },
             }}
           >
+              <Link to={item.href} style={{ color: '#0A0A14', textDecoration: 'none', fontSize: '18px', fontFamily: 'Calibre Regular' }}>
+        
             {item.name}
+            </Link>
+            
           </Box>
         ))}
       </Box>

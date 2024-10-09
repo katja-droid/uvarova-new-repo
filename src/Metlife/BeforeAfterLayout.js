@@ -9,10 +9,9 @@ const BeforeAfterLayout = ({ beforeImage, afterImage }) => {
       sx={{
         width: '100%',
         height: '100%',
-        padding: 0,
-        margin: 0,
         alignItems: 'center',
         justifyContent: 'center',
+        overflow: 'visible'
       }}
     >
       {/* Before Block */}
@@ -24,6 +23,7 @@ const BeforeAfterLayout = ({ beforeImage, afterImage }) => {
           textAlign: 'center',
           padding: 0,
           margin: 0,
+          overflow: 'visible'
         }}
       >
         <Typography
@@ -31,10 +31,9 @@ const BeforeAfterLayout = ({ beforeImage, afterImage }) => {
           sx={{
             fontSize: { xxs: '24px', sm: '28px', md: '32px' },
             fontFamily: 'Playfair Display Bold',
-            mb: 2,
-            padding: 0,
-            margin: 0,
+            pb: '24px',
             textAlign: 'left',
+            pt: {xxs: '60px', lg:  '0'}
           }}
         >
           Before
@@ -64,6 +63,7 @@ const BeforeAfterLayout = ({ beforeImage, afterImage }) => {
           textAlign: 'center',
           padding: 0,
           margin: 0,
+          overflow: 'visible'
         }}
       >
         <Typography
@@ -71,10 +71,9 @@ const BeforeAfterLayout = ({ beforeImage, afterImage }) => {
           sx={{
             fontSize: { xxs: '24px', sm: '28px', md: '32px' },
             fontFamily: 'Playfair Display Bold',
-            mb: 2,
-            padding: 0,
-            margin: 0,
+            pb: '24px',
             textAlign: 'left',
+            pt: {xxs: '60px', lg:  '0'}
           }}
         >
           After

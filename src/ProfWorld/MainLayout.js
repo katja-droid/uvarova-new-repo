@@ -17,7 +17,7 @@ const MainLayout = () => {
           position: 'relative',
           width: '100%',
           color: '#0A0A14',
-          py: {
+          pb: {
             xxs: '24px',
             xs: '48px',
             sm: '60px',

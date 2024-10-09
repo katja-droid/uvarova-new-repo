@@ -35,7 +35,10 @@ const ProfWorldKPIs = () => {
             }}
           >
             <Typography sx={{ pb: '16px', color: '#646470' }}>
-              To assess the success of the application design, the following KPIs will be used:
+              For the successful implementation of the project aimed at automating the personnel preparation process, quantitative performance indicators (KPIs) were established within each category of constraints.
+            </Typography>
+            <Typography sx={{ fontWeight: 'bold' }}>
+              Potential KPIs and Target Values:
             </Typography>
 
             <Box
@@ -48,64 +51,153 @@ const ProfWorldKPIs = () => {
                 },
               }}
             >
+              {/* Time Constraints */}
               <li>
                 <Typography sx={{ fontWeight: 'bold' }}>
-                  1. User Satisfaction Level:
+                  1. Time Constraints:
                 </Typography>
-                <Box component="ul" sx={{ listStyle: 'none', paddingLeft: 0 }}>
+                <Box
+                  component="ul"
+                  sx={{
+                    listStyleType: 'disc',
+                    paddingLeft: '20px',
+                    '& li': {
+                      mb: 0, // Removes margin between disc items
+                    },
+                  }}
+                >
                   <li>
-                    - Should be no less than <b>85%</b> according to surveys after using the application.
+                    Project Completion Deadline: Finish 80% of tasks within 24 months; task completion time ≤ 15% of total project time.
+                  </li>
+                  <li>
+                    Supplier Coordination: Achieve 90% on-time delivery; system integration downtime ≤ 5%.
                   </li>
                 </Box>
               </li>
 
+              {/* Budget Constraints */}
               <li>
                 <Typography sx={{ fontWeight: 'bold' }}>
-                  2. Engagement Level:
+                  2. Budget Constraints:
                 </Typography>
-                <Box component="ul" sx={{ listStyle: 'none', paddingLeft: 0 }}>
+                <Box
+                  component="ul"
+                  sx={{
+                    listStyleType: 'disc',
+                    paddingLeft: '20px',
+                    '& li': {
+                      mb: 0, // Removes margin between disc items
+                    },
+                  }}
+                >
                   <li>
-                    - Users should spend an average of at least <b>30 minutes</b> per week interacting with the application.
+                    Financial Resource: Stay within budget, saving at least 10% of planned costs.
+                  </li>
+                  <li>
+                    Additional Expenses: Limit unaccounted expenses on training/support to 5% of the total budget.
                   </li>
                 </Box>
               </li>
 
+              {/* Technological Constraints */}
               <li>
                 <Typography sx={{ fontWeight: 'bold' }}>
-                  3. User Conversion Rate:
+                  3. Technological Constraints:
                 </Typography>
-                <Box component="ul" sx={{ listStyle: 'none', paddingLeft: 0 }}>
+                <Box
+                  component="ul"
+                  sx={{
+                    listStyleType: 'disc',
+                    paddingLeft: '20px',
+                    '& li': {
+                      mb: 0, // Removes margin between disc items
+                    },
+                  }}
+                >
                   <li>
-                    - We aim for <b>60%</b> of new users to actively use the application after initial registration.
+                    Compatibility: Integrate with 95% of existing power sources without new interfaces.
+                  </li>
+                  <li>
+                    Technology Implementation: Implement 80% of necessary technologies at the project’s start.
                   </li>
                 </Box>
               </li>
 
+              {/* Human Resources */}
               <li>
                 <Typography sx={{ fontWeight: 'bold' }}>
-                  4. Daily Active Users (DAU):
+                  4. Human Resources:
                 </Typography>
-                <Box component="ul" sx={{ listStyle: 'none', paddingLeft: 0 }}>
+                <Box
+                  component="ul"
+                  sx={{
+                    listStyleType: 'disc',
+                    paddingLeft: '20px',
+                    '& li': {
+                      mb: 0, // Removes margin between disc items
+                    },
+                  }}
+                >
                   <li>
-                    - The goal is to reach <b>10,000 DAU</b> within the first 6 months after launch.
+                    Employee Training: Train at least 90% of employees; training effectiveness ≥ 75%.
+                  </li>
+                  <li>
+                    Change Acceptance: Aim for an employee acceptance level of 85% post-implementation.
                   </li>
                 </Box>
               </li>
 
+              {/* Legal and Ethical Constraints */}
               <li>
                 <Typography sx={{ fontWeight: 'bold' }}>
-                  5. Loading Speed:
+                  5. Legal and Ethical Constraints:
                 </Typography>
-                <Box component="ul" sx={{ listStyle: 'none', paddingLeft: 0 }}>
+                <Box
+                  component="ul"
+                  sx={{
+                    listStyleType: 'disc',
+                    paddingLeft: '20px',
+                    '& li': {
+                      mb: 0, // Removes margin between disc items
+                    },
+                  }}
+                >
                   <li>
-                    - The application should load in less than <b>3 seconds</b> to ensure a comfortable user experience.
+                    Compliance with Legislation: 100% compliance with data processing laws; conduct at least 2 compliance checks.
+                  </li>
+                  <li>
+                    Ethical Standards: Ensure 90% compliance with ethical standards in testing/processes.
+                  </li>
+                </Box>
+              </li>
+
+              {/* Quality Constraints */}
+              <li>
+                <Typography sx={{ fontWeight: 'bold' }}>
+                  6. Quality Constraints:
+                </Typography>
+                <Box
+                  component="ul"
+                  sx={{
+                    listStyleType: 'disc',
+                    paddingLeft: '20px',
+                    '& li': {
+                      mb: 0, // Removes margin between disc items
+                    },
+                  }}
+                >
+                  <li>
+                    Data Quality: Input data accuracy of at least 95%; max errors in resumes/tests ≤ 5%.
+                  </li>
+                  <li>
+                    Profiling Methods: Update or validate 100% of profiling/testing methods before implementation.
                   </li>
                 </Box>
               </li>
             </Box>
 
             <Typography sx={{ pt: '16px' }}>
-              These aspects will help create a targeted, effective, and comprehensive solution for health monitoring using mobile and web technologies within the Virtual Nutritionist project.
+              These performance indicators will help not only to track the project results but also to manage all constraints, thereby ensuring its successful completion.
             </Typography>
           </Box>
         </Grid>

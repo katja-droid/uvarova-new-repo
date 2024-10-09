@@ -1,43 +1,66 @@
-.image-grid-container {
-  padding: 0 calc((100% - 259px * 2) / 4); /* Add padding on both sides */
-  overflow: hidden;
+.image-grid-container-two-rows {
+  padding: 0 calc((100% - 258.76px * 4) / 8); 
+  overflow: hidden; /* Prevent overflow */
   width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.image-grid {
-  display: flex;
-  flex-wrap: wrap; /* Allow wrapping into rows */
-  gap: 0;
-  width: auto;
   justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin-top: 32px;
 }
 
-.image-wrapper {
+.image-grid-two-rows {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  gap: 0;
+  width: 100%;
+}
+
+.image-wrapper-two-rows {
   text-align: center;
-  width: 259px; /* Fixed width for images */
+  width: 258.76px; /* Fixed width for images */
   position: relative;
 }
 
-.image {
+.image-two-rows {
   width: 100%;
   height: auto;
   transition: transform 0.3s ease-in-out;
 }
 
-/* Overlap for the second image in each row */
-.overlap {
-  margin-left: -50px; /* Adjust overlap as needed */
+/* Overlap logic for images except the first one */
+.overlap-two-rows {
+  margin-left: calc((100% - 258.76px * 4) / 2); 
 }
 
-/* No overlap for the first image in each row */
-.image-item:nth-child(odd) {
+/* Ensure the first image does not have negative margin */
+.image-item-two-rows:first-child {
   margin-left: 0;
 }
 
-/* Ensure no margin on the last image */
-.image-item:last-child {
-  margin-right: 0;
+/* Ensure the last image does not have a large margin */
+.image-item-two-rows:last-child {
+  right: 0; /* Make sure no large margin is applied */
+}
+.image-item-two-rows {
+  margin-bottom: 16px; /* Space between images */
+}
+.image-wrapper-two-rows h6 {
+  font-family: 'Calibre Regular';
+  font-size: 39px;
+  line-height: 43px;
+  letter-spacing: -0.87px;
+  font-weight: normal;
+  padding: 0;
+  margin: 0;
+}
+@media (max-width: 599px) {
+  .image-wrapper-two-rows h6 {
+    font-family: 'Calibre Regular';
+    font-size: 25px;
+    line-height: 43px;
+    letter-spacing: -0.87px;
+    font-weight: normal;
+  }
 }

@@ -48,10 +48,10 @@ const contribution = [
 
 const tools = [
   { id: 1, name: 'Figma', href: '#', color: '#FFE9E3' },
-  { id: 2, name: 'OptimalSort', href: '#', color: '#E4DBEA' },
-  { id: 3, name: 'System Usability Score', href: '#', color: '#E7EDFF' },
-  { id: 4, name: 'Human Interface Guidelines', href: '#', color: '#FAF6C8' },
-  { id: 5, name: 'Material Design', href: '#', color: '#E7EDFF' },
+  { id: 2, name: 'OptimalSort', href: 'https://www.optimalworkshop.com/homepage', color: '#E4DBEA' },
+  { id: 3, name: 'System Usability Score', href: 'https://stuart-cunningham.github.io/sus/', color: '#E7EDFF' },
+  { id: 4, name: 'Human Interface Guidelines', href: 'https://developer.apple.com/design/human-interface-guidelines/navigation-bars', color: '#FAF6C8' },
+  { id: 5, name: 'Material Design', href: 'https://m3.material.io/components/navigation-bar/overview', color: '#E7EDFF' },
 ];
 const sections = [
   { id: 'problem', label: 'Problem' },

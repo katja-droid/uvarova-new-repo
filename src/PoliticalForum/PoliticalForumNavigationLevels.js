@@ -16,14 +16,14 @@ const PoliticalForumNavigationLevels = () => {
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
-          py: { 
+          pt: { 
             xxs: '24px', 
             xs: '48px', 
             sm: '60px', 
-            md: '84px', 
-            lg: '84px', 
-            xl: '84px', 
-            xxl: '97px' 
+            md: '80px', 
+            lg: '80px', 
+            xl: '80px', 
+            xxxl: '80px' 
           },
         }}
         id="nav-levels-pf"
@@ -63,7 +63,17 @@ const PoliticalForumNavigationLevels = () => {
       </Box>
 
       {/* Full Width Image */}
+      <Box sx={{pb: { 
+        xxs: '24px', 
+        xs: '48px', 
+        sm: '60px', 
+        md: '80px', 
+        lg: '80px', 
+        xl: '80px', 
+        xxxl: '80px' 
+      },}}>
       <img width="100%" src={image} alt="Design System" />
+      </Box>
     </ThemeProvider>
   );
 };

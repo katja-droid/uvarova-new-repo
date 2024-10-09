@@ -53,7 +53,7 @@ const ProfWorldProblem = () => {
                   1. Inefficient Recruitment:
                 </Typography>
                 <Typography sx={{ pb: '8px' }}>
-                  - Inefficient and time-consuming recruitment process without automation.
+                 Inefficient and time-consuming recruitment process without automation.
                 </Typography>
               </li>
 
@@ -62,7 +62,7 @@ const ProfWorldProblem = () => {
                   2. Undefined Job Profiles:
                 </Typography>
                 <Typography sx={{ pb: '8px' }}>
-                  - Lack of clear definition of company, department, and position profiles, making it difficult to properly assess candidates.
+                  Lack of clear definition of company, department, and position profiles, making it difficult to properly assess candidates.
                 </Typography>
               </li>
 
@@ -71,7 +71,7 @@ const ProfWorldProblem = () => {
                   3. Delayed Candidate Testing:
                 </Typography>
                 <Typography sx={{ pb: '8px' }}>
-                  - Lack of promptness in testing candidates with interpretation output, leading to overlooked risks such as theft, information leakage, and others.
+                  Lack of promptness in testing candidates with interpretation output, leading to overlooked risks such as theft, information leakage, and others.
                 </Typography>
               </li>
 
@@ -80,7 +80,7 @@ const ProfWorldProblem = () => {
                   4. Inaccurate Personality Assessment:
                 </Typography>
                 <Typography sx={{ pb: '8px' }}>
-                  - Lack of accuracy in determining whether a candidate’s personality profile matches the job profile.
+                  Lack of accuracy in determining whether a candidate’s personality profile matches the job profile.
                 </Typography>
               </li>
 
@@ -89,7 +89,7 @@ const ProfWorldProblem = () => {
                   5. Lack of Psychodiagnostics:
                 </Typography>
                 <Typography sx={{ pb: '8px' }}>
-                  - Lack of effective psychodiagnostics to help determine people compatibility, team building, and identifying informal leaders.
+                  Lack of effective psychodiagnostics to help determine people compatibility, team building, and identifying informal leaders.
                 </Typography>
               </li>
 
@@ -98,7 +98,7 @@ const ProfWorldProblem = () => {
                   6. Insufficient HR Automation:
                 </Typography>
                 <Typography sx={{ pb: '8px' }}>
-                  - Insufficient automation of HR functions, making it difficult to evaluate personnel, build corporate culture, administration, and adaptation.
+                  Insufficient automation of HR functions, making it difficult to evaluate personnel, build corporate culture, administration, and adaptation.
                 </Typography>
               </li>
 
@@ -107,7 +107,7 @@ const ProfWorldProblem = () => {
                   7. Calendar Integration Issues:
                 </Typography>
                 <Typography sx={{ pb: '8px' }}>
-                  - Non-integrated Outlook calendar creates difficulties in planning and evaluating the execution of tasks.
+                  Non-integrated Outlook calendar creates difficulties in planning and evaluating the execution of tasks.
                 </Typography>
               </li>
             </Box>

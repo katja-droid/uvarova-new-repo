@@ -6,11 +6,7 @@ const MetLifeConstraints = () => {
     <Container disableGutters maxWidth={false}>
       {/* Container for the title */}
       <Grid container justifyContent="center" spacing={0} sx={{ py: 2 }}>
-        <Grid item  xl={8}
-          lg={10} // 10 columns on lg
-          md={12} // 100% on md and smaller
-          sm={12}
-          xs={12}>
+        <Grid item xl={8} lg={10} md={12} sm={12} xs={12}>
           <Typography
             variant="h3"
             sx={{
@@ -28,17 +24,9 @@ const MetLifeConstraints = () => {
       <Grid
         container
         justifyContent="center"
-        sx={{  fontFamily: 'Calibre Regular', fontSize: '18px' }}
+        sx={{ fontFamily: 'Calibre Regular', fontSize: '18px' }}
       >
-        <Grid
-          item
-          xxl={8}
-          xl={8}
-          lg={10}
-          md={12}
-          sm={12}
-          xs={12}
-        >
+        <Grid item xxl={8} xl={8} lg={10} md={12} sm={12} xs={12}>
           <Box
             sx={{
               fontFamily: 'Calibre Regular',
@@ -46,7 +34,9 @@ const MetLifeConstraints = () => {
               lineHeight: '26px',
             }}
           >
-           
+            <Typography sx={{ pb: '8px' }}>
+              The form design needs to address the issues listed above. The decisions made in the design process need to be measured and based on evidence from user research (design KPIs). Here are the main constraints that the new form designs need to respect:
+            </Typography>
 
             <Box
               component="ul"
@@ -54,43 +44,41 @@ const MetLifeConstraints = () => {
                 listStyle: 'none',
                 paddingLeft: 0,
                 '& li': {
-                  display: 'flex',
-                  alignItems: 'center',
+                  mb: '16px', // Adds spacing between list items
                 },
               }}
             >
-                 <Typography sx={{ pb: '16px'}}>
-              The form design needs to address the issues listed above. The decisions made in the design process need to be measured and be based on evidence from user research (design KPIs). Here are the main constraints that the new form designs need to respect:
-            </Typography>
               <li>
-                <span>•</span><Typography component="span">Should have high completion rates</Typography><br />
+                <Typography>• Should have <b>high completion rates</b></Typography>
               </li>
               <li>
-                <span>•</span><Typography component="span">Should have high accuracy rates</Typography><br />
+                <Typography>• Should have  <b>high accuracy rates</b></Typography>
               </li>
               <li>
-                <span>•</span><Typography component="span">Should have high error recovery rate</Typography><br />
+                <Typography>• Should have  <b>high error recovery rate</b></Typography>
               </li>
               <li>
-                <span>•</span><Typography component="span">Should support at least 7 languages (English, Spanish, German, French, Mandarin, Hebrew, and Arabic)</Typography><br />
+                <Typography>
+                  • Should support  <b>at least 7 languages</b> (English, Spanish, German, French, Mandarin, Hebrew, and Arabic)
+                </Typography>
               </li>
               <li>
-                <span>•</span><Typography component="span">Should be fully accessible (AAA level)</Typography><br />
+                <Typography>• Should be  <b>fully accessible</b> (AAA level)</Typography>
               </li>
               <li>
-                <span>•</span><Typography component="span">Should be CCPA/GDPR-compliant</Typography><br />
+                <Typography>• Should be  <b>CCPA/GDPR-compliant</b></Typography>
               </li>
               <li>
-                <span>•</span><Typography component="span">Should reduce the processing time for each form</Typography><br />
+                <Typography>• Should  <b>reduce the processing time</b> for each form</Typography>
               </li>
               <li>
-                <span>•</span><Typography component="span">Should reduce the number of requests for the service desk</Typography><br />
+                <Typography>• Should  <b>reduce the number of requests</b> for the service desk</Typography>
               </li>
               <li>
-                <span>•</span><Typography component="span">Should provide first-class UX and first-class accessibility</Typography><br />
+                <Typography>• Should provide  <b>first-class UX </b>and  <b>first-class accessibility</b></Typography>
               </li>
               <li>
-                <span>•</span><Typography component="span">Should be consistent across all forms provided by the company</Typography><br />
+                <Typography>• Should be  <b>consistent across all forms </b>provided by the company</Typography>
               </li>
             </Box>
           </Box>

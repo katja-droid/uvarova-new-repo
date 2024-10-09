@@ -37,7 +37,7 @@ const PoliticalForumNavVisualized = () => {
 
             {/* Text Section */}
             <Grid item xxs={12} lg={6} xl={6} xxl={6} sx={{ order: { xxs: 1, lg: 2 } }}>
-              <Box sx={{ backgroundColor: '#fff', p: '24px', borderRadius: '16px', boxSizing: 'border-box' }}>
+              <Box sx={{ backgroundColor: '#fff', borderRadius: '16px', boxSizing: 'border-box', display: 'flex', flexDirection: 'column', justifyContent: 'center', height: '100%' }}>
                 <Typography
                   sx={{ fontSize: { md: '34px', sm: '28px', xxs: '22px' }, fontFamily: 'Playfair Display Bold', pb: '16px' }}
                   variant="h4"
@@ -59,22 +59,22 @@ const PoliticalForumNavVisualized = () => {
                   After testing a collection of tasks for the client, we began research to identify tasks that were potentially
                   important to all internal and external users.
                 </Typography>
-                <Typography sx={{ fontSize: '18px', lineHeight: '26px', fontFamily: 'Calibre Regular', mb: '8px' }}>
+                <Typography sx={{ fontSize: '18px', lineHeight: '26px', fontFamily: 'Calibre Regular', mb: '8px', color: '#646470' }}>
                   Based on this, the following recommendations for designing mobile navigation were developed:
                 </Typography>
                 <Typography sx={{ fontSize: '18px', lineHeight: '26px', fontFamily: 'Calibre Regular', mb: '8px' }}>
-                  <strong>Menus:</strong> Use a visual hierarchy to separate primary and secondary navigation.
+                  1. Menus: Use a visual hierarchy to separate primary and secondary navigation.
                 </Typography>
                 <Typography sx={{ fontSize: '18px', lineHeight: '26px', fontFamily: 'Calibre Regular', mb: '8px' }}>
-                  <strong>Sub-menus:</strong> Allow users to open and close menu folders to preview second and third level pages in
+                  2. Sub-menus: Allow users to open and close menu folders to preview second and third level pages in
                   multiple sections at the same time.
                 </Typography>
                 <Typography sx={{ fontSize: '18px', lineHeight: '26px', fontFamily: 'Calibre Regular', mb: '8px' }}>
-                  <strong>Current Location Indicator:</strong> Shows the page the user is on when he or she opens the main menu.
+                  3. Current Location Indicator: Shows the page the user is on when he or she opens the main menu.
                   For greater clarity, a breadcrumb navigation chain has been added.
                 </Typography>
                 <Typography sx={{ fontSize: '18px', lineHeight: '26px', fontFamily: 'Calibre Regular', mb: '8px' }}>
-                  <strong>Site-to-site navigation:</strong> For all subdomains and microsites, provide a link back to the primary
+                  4. Site-to-site navigation: For all subdomains and microsites, provide a link back to the primary
                   site’s main page using a global header or coordination rule.
                 </Typography>
               </Box>

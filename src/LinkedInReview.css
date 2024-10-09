@@ -1,0 +1,21 @@
+.linkedin-review {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box; /* Ensures padding doesn't make it wider or taller */
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  .linkedin-review-image {
+    width: 100%;
+    max-width: 300px; /* Adjust as needed */
+    margin-bottom: 16px; /* Space between images */
+  }
+  
+  .linkedin-review-text {
+    font-family: 'Calibre Regular';
+    text-align: center;
+    width: 100%;
+  }
+  

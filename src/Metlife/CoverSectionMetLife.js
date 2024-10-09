@@ -15,29 +15,12 @@ const CoverSectionMetLife = () => {
           justifyContent: 'center',
           alignItems: 'center',
           overflow: 'hidden', // Ensure image doesn't overflow
-          backgroundColor: '#E6F2FD'
+          backgroundColor: '#E6F2FD',
+          pb: '16px'
         }}
       >
-        <Container
-          disableGutters
-          maxWidth={false}
-          sx={{
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-          }}
-        >
-            <Box sx={{
-              width: {
-                xxs: '100%',    // 100% width for extra small screens
-                sm: '459px',    // 459px for small screens
-                md: '592px',    // 592px for medium screens
-                lg: '855px',    // 855px for large screens
-                xl: '1185px',   // 1185px for extra-large screens
-                xxl: '1237px',  // 1237px for double extra-large screens
-                xxxl: '1280px', // 1280px for triple extra-large screens
-              }
-            }}>
+
+         
           <img
             width="100%"
             src={cover}
@@ -46,8 +29,6 @@ const CoverSectionMetLife = () => {
             // Add the sx property to manage width based on breakpoints
             
           />
-          </Box>
-        </Container>
       </Box>
     </ThemeProvider>
   );

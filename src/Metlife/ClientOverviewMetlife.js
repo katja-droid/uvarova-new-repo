@@ -61,29 +61,11 @@ const ClientOverviewMetlife = () => {
       </Typography>
       <Typography sx={{ fontSize: '18px', lineHeight: '26px', pb: '8px', fontFamily: 'Calibre Regular' }}>
       
-Unfortunately, the insurance realm is so complex that a single PDF often contains 10-12 pages and the customer usually has to complete 5-6 PDFs for a complex inquiry.
+Unfortunately, the <b>insurance realm is so complex</b> that a single PDF often contains <b>10-12 pages </b>and the customer usually has to complete<b> 5-6 PDFs</b> for a complex inquiry.
    </Typography>
  
-      <Typography
-        variant='body1'
-        sx={{
-          fontSize: '14px',
-          background: 'linear-gradient(90deg, #0D99FF, #99FAF4)', // Gradient as a string
-          WebkitBackgroundClip: 'text', // WebKit prefix for Safari and Chrome
-          WebkitTextFillColor: 'transparent', // WebKit text fill for Safari and Chrome
-          backgroundClip: 'text', // Standard background-clip
-          textFillColor: 'transparent', // Standard text-fill-color (for other browsers)
-          fontFamily: 'Calibre Bold',
-          pb: '8px',
-          pt: { lg: '32px', xxs: '24px' },
-          textTransform: 'uppercase', // Make text uppercase
-        }}
-      >
-        Project Participants
-      </Typography>
-      <Typography sx={{ fontSize: '18px', lineHeight: '26px', pb: '8px', fontFamily: 'Calibre Regular' }}>
-        Project Manager, Back-end, Front-end, UX/UI designer, Legal Advisor
-      </Typography>
+  
+   
     </Box>
   );
 };

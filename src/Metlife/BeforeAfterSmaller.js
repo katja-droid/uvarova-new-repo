@@ -9,7 +9,7 @@ import after3 from '../assets/after3.png';
 const BeforeAfterSmaller = () => {
   return (
     <div>    <BeforeAfterLayout beforeImage={before1} afterImage={after1} />
-    <BeforeAfterLayout beforeImage={before2} afterImage={after2} />
+    <BeforeAfterLayout beforeImage={before2} afterImage={after2}  />
     <BeforeAfterLayout beforeImage={before3} afterImage={after3} /></div>
   )
 }

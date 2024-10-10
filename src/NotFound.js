@@ -6,6 +6,7 @@ import theme from './theme';  // Your custom theme
 import image from './assets/404.png';
 import arrow from './assets/maki_arrow.svg';
 import { Link } from 'react-router-dom';
+import withScrollEffect from './withScrollEffect.js';
 
 const NotFound = () => {
   return (
@@ -136,4 +137,4 @@ const NotFound = () => {
   );
 };
 
-export default NotFound;
+export default withScrollEffect (NotFound);

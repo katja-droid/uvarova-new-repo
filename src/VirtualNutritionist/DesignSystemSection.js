@@ -3,6 +3,7 @@ import { Box, Typography, Container, Grid } from '@mui/material';
 import { ThemeProvider } from '@mui/material/styles';
 import theme from '../theme'; // Import your custom theme
 import image from '../assets/nutritionist-designs-system.png';
+import withScrollEffect from '../withScrollEffect.js';
 
 const DesignSystemSection = () => {
   return (
@@ -16,15 +17,7 @@ const DesignSystemSection = () => {
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
-          py: { 
-            xxs: '24px', 
-            xs: '48px', 
-            sm: '60px', 
-            md: '84px', 
-            lg: '84px', 
-            xl: '84px', 
-            xxl: '97px' 
-          },
+          py: { xl: '80px', lg: '40px', sm: '32px', xxs: '16px' },
         }}
       >
         <Container
@@ -84,4 +77,4 @@ const DesignSystemSection = () => {
   );
 };
 
-export default DesignSystemSection;
+export default withScrollEffect (DesignSystemSection);

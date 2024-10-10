@@ -1,11 +1,12 @@
 import { Box, Container, Grid, Typography } from '@mui/material';
 import React from 'react';
+import withScrollEffect from '../withScrollEffect.js';
 
 const MetGeneralImpression = () => {
   return (
-    <Container disableGutters maxWidth={false}>
+    <Container disableGutters maxWidth={false} sx={{pb:{ xl: '80px', lg: '40px', sm: '32px', xxs: '16px' }}}>
       {/* Container for the title */}
-      <Grid container justifyContent="center" spacing={0} sx={{ py: 2 }}>
+      <Grid container justifyContent="center" spacing={0}>
         <Grid item  xl={8}
           lg={10} // 10 columns on lg
           md={12} // 100% on md and smaller
@@ -121,4 +122,4 @@ const MetGeneralImpression = () => {
   );
 };
 
-export default MetGeneralImpression;
+export default withScrollEffect (MetGeneralImpression);

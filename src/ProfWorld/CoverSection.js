@@ -3,6 +3,7 @@ import { Box, Container } from '@mui/material';
 import theme from '../theme'; // Import your custom theme
 import { ThemeProvider } from '@mui/material/styles';
 import cover from '../assets/profworld-cover.png'; // Your cover image
+import withScrollEffect from '../withScrollEffect.js';
 
 const CoverSection = () => {
   return (
@@ -53,4 +54,4 @@ const CoverSection = () => {
   );
 };
 
-export default CoverSection;
+export default withScrollEffect (CoverSection);

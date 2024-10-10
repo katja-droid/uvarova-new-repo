@@ -4,6 +4,7 @@ import ProfWorldAnalyticsOne from './ProfWorldAnalyticsOne';
 import SliderDiv from '../Metlife/SliderDiv';
 import ProfWorldAnalyticsTwo from './ProfWorldAnalyticsTwo';
 import SliderDivWide from '../Metlife/SliderDivWide';
+import withScrollEffect from '../withScrollEffect.js';
 
 const ProfWorldAnalytics = () => {
   const slides=[
@@ -12,7 +13,7 @@ const ProfWorldAnalytics = () => {
   ]
   return (
     <>
-    <Container id="profWorldAnalytics" disableGutters maxWidth={false}>
+    <Container id="profWorldAnalytics" disableGutters maxWidth={false} sx={{pb: { xl: '80px', lg: '40px', sm: '32px', xxs: '16px' }}}>
       {/* Container for the title */}
       <Grid container justifyContent="center" spacing={0} sx={{ py: 2 }}>
         <Grid item xl={8} xxs={12} md={10}>
@@ -89,4 +90,4 @@ const ProfWorldAnalytics = () => {
   );
 };
 
-export default ProfWorldAnalytics;
+export default withScrollEffect (ProfWorldAnalytics);

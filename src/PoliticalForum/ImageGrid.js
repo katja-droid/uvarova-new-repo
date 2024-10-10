@@ -4,6 +4,7 @@ import img2 from '../assets/round2.svg';
 import img3 from '../assets/round3.svg';
 import img4 from '../assets/round4.svg';
 import './ImageGrid.css';
+import withScrollEffect from '../withScrollEffect.js';
 
 const ImageGrid = () => {
   const [applyOverlap, setApplyOverlap] = useState(false);
@@ -60,4 +61,4 @@ const ImageGrid = () => {
   );
 };
 
-export default ImageGrid;
+export default withScrollEffect (ImageGrid);

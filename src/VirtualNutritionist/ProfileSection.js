@@ -4,10 +4,13 @@ import { ThemeProvider } from '@mui/material/styles';
 import theme from '../theme'; // Import your custom theme
 import image from '../assets/nutritionist-profile.png'; // Import the background image
 import gif from '../assets/3 Profile.gif'; // Import the GIF
+import withScrollEffect from '../withScrollEffect.js';
 
 const ProfileSection = () => {
   return (
+    <div id="profile-v">
     <ThemeProvider theme={theme}>
+      <Box sx={{py: { xl: '80px', lg: '40px', sm: '32px', xxs: '16px' }}} >
       {/* Text Section */}
       <Box
         sx={{
@@ -18,15 +21,7 @@ const ProfileSection = () => {
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
-          py: {
-            xxs: '24px',
-            xs: '48px',
-            sm: '60px',
-            md: '84px',
-            lg: '84px',
-            xl: '84px',
-            xxl: '97px',
-          },
+          
         }}
       >
         <Container
@@ -133,8 +128,10 @@ const ProfileSection = () => {
           />
         </Box>
       </Box>
+      </Box>
     </ThemeProvider>
+    </div>
   );
 };
 
-export default ProfileSection;
+export default withScrollEffect (ProfileSection);

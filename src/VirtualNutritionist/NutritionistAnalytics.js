@@ -1,11 +1,12 @@
 import React from 'react';
 import { Box, Container, Grid, Typography } from '@mui/material';
+import withScrollEffect from '../withScrollEffect.js';
 
 const NutritionistAnalytics = () => {
   return (
-    <Container id="nutritionistAnalytics" disableGutters maxWidth={false}>
+    <Container id="nutritionistAnalytics" disableGutters maxWidth={false} sx={{ pb: { xl: '80px', lg: '40px', sm: '32px', xxs: '16px' } }}>
       {/* Container for the title */}
-      <Grid container justifyContent="center" spacing={0} sx={{ py: 2 }}>
+      <Grid container justifyContent="center" spacing={0} >
         <Grid item sm={12} xxs={12} md={12}>
           <Typography
             variant="h3"
@@ -134,4 +135,4 @@ const NutritionistAnalytics = () => {
   );
 };
 
-export default NutritionistAnalytics;
+export default withScrollEffect (NutritionistAnalytics);

@@ -5,6 +5,7 @@ import theme from '../theme'; // Import your custom theme
 import img from '../assets/pw7.gif'
 import bg from '../assets/begin-background.png'
 import RatioGif from './RatioGif';
+import withScrollEffect from '../withScrollEffect.js';
 
 const CompanyProfileSection = () => {
   return (
@@ -14,15 +15,7 @@ const CompanyProfileSection = () => {
           position: 'relative',
           width: '100%',
           color: '#0A0A14',
-          py: {
-            xxs: '24px',
-            xs: '48px',
-            sm: '60px',
-            md: '84px',
-            lg: '84px',
-            xl: '84px',
-            xxxl: '97px',
-          },
+          py: { xl: '80px', lg: '40px', sm: '32px', xxs: '16px' },
         }}
         id="company-profile-p"
       >
@@ -90,4 +83,4 @@ const CompanyProfileSection = () => {
   );
 };
 
-export default CompanyProfileSection;
+export default withScrollEffect(CompanyProfileSection);

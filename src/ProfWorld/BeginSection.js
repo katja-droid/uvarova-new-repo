@@ -4,6 +4,7 @@ import { ThemeProvider } from '@mui/material/styles';
 import theme from '../theme'; // Import your custom theme
 import backgroundImage from '../assets/begin-background.png'; // Import the background image
 import gif from '../assets/pw1.gif'; // Import the GIF
+import withScrollEffect from '../withScrollEffect.js';
 
 const BeginSection = () => {
   return (
@@ -18,15 +19,8 @@ const BeginSection = () => {
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
-          pt: {
-            xxs: '24px',
-            xs: '48px',
-            sm: '60px',
-            md: '84px',
-            lg: '84px',
-            xl: '84px',
-            xxxl: '97px',
-          },
+          pt: { xl: '80px', lg: '40px', sm: '32px', xxs: '16px' }
+          
         }}
       >
         <Container
@@ -155,4 +149,4 @@ const BeginSection = () => {
   );
 };
 
-export default BeginSection;
+export default withScrollEffect(BeginSection);

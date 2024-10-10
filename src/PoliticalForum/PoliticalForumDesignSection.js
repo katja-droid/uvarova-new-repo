@@ -3,6 +3,7 @@ import { Box, Typography, Container, Grid } from '@mui/material';
 import { ThemeProvider } from '@mui/material/styles';
 import theme from '../theme'; // Import your custom theme
 import image from '../assets/political-design-proces.png';
+import withScrollEffect from '../withScrollEffect.js';
 
 const PoliticalForumDesignSection = () => {
   return (
@@ -13,15 +14,7 @@ const PoliticalForumDesignSection = () => {
           width: '100%',
           backgroundColor: '#fff',
           color: '#0A0A14',
-          py: { 
-            xxs: '24px', 
-            xs: '48px', 
-            sm: '60px', 
-            md: '84px', 
-            lg: '84px', 
-            xl: '84px', 
-            xxl: '97px' 
-          },
+          py: { xl: '80px', lg: '40px', sm: '32px', xxs: '16px' },
         }}
         id="design-process-pf"
       >
@@ -106,4 +99,4 @@ const PoliticalForumDesignSection = () => {
   );
 };
 
-export default PoliticalForumDesignSection;
+export default withScrollEffect (PoliticalForumDesignSection);

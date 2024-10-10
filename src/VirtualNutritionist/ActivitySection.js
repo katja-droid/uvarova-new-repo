@@ -3,23 +3,17 @@ import { Box, Typography, Container, Grid } from '@mui/material';
 import { ThemeProvider } from '@mui/material/styles';
 import theme from '../theme'; // Import your custom theme
 import image from '../assets/nutritionist-activity.png';
+import withScrollEffect from '../withScrollEffect.js';
 
 const ActivitySection = () => {
   return (
+    <div id="activity-v">
     <ThemeProvider theme={theme}>
       <Box
         sx={{
           width: '100%',
           backgroundColor: '#fff',
-          py: {
-            xxs: '24px',
-            xs: '48px',
-            sm: '60px',
-            md: '84px',
-            lg: '84px',
-            xl: '84px',
-            xxl: '97px',
-          },
+          py: { xl: '80px', lg: '40px', sm: '32px', xxs: '16px' },
         }}
       >
         <Container maxWidth={false}>
@@ -85,7 +79,8 @@ const ActivitySection = () => {
         </Container>
       </Box>
     </ThemeProvider>
+    </div>
   );
 };
 
-export default ActivitySection;
+export default withScrollEffect (ActivitySection);

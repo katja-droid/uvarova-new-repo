@@ -3,6 +3,7 @@ import { Box, Typography, Container, Grid } from '@mui/material';
 import { ThemeProvider } from '@mui/material/styles';
 import theme from '../theme'; // Import your custom theme
 import img from '../assets/hranalytics.png'
+import withScrollEffect from '../withScrollEffect.js';
 
 const HRAnalyticsSection = () => {
   return (
@@ -12,15 +13,7 @@ const HRAnalyticsSection = () => {
           position: 'relative',
           width: '100%',
           color: '#0A0A14',
-          py: {
-            xxs: '24px',
-            xs: '48px',
-            sm: '60px',
-            md: '84px',
-            lg: '84px',
-            xl: '84px',
-            xxxl: '97px',
-          },
+          py: { xl: '80px', lg: '40px', sm: '32px', xxs: '16px' },
         }}
         id="hr-analytics-p"
       >
@@ -88,4 +81,4 @@ const HRAnalyticsSection = () => {
   );
 };
 
-export default HRAnalyticsSection;
+export default withScrollEffect (HRAnalyticsSection);

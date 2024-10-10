@@ -97,10 +97,13 @@ const Metlife = () => {
     setActiveSection(section);
   };
 
-  const handleSelectSection_ = (sectionId) => {
-    setActiveLink(sectionId);
-  };
 
+    const [activeSection_, setActiveSection_] = useState('problem'); // Default section
+
+// Handle section selection from navbar
+const handleSelectSection_ = (sectionId) => {
+  setActiveSection_(sectionId);
+};
   useEffect(() => {
     const handleScroll = () => {
       const mainLayoutTop = mainLayoutRef.current?.offsetTop || 0; 
@@ -220,12 +223,12 @@ const renderSection = () => {
 <Container disableGutters maxWidth={false}>
 <Grid item xxs={12} sx={{display: {xxs: 'none', lg: 'block'
 
-}, py: {md: '80px', xxs: '16px'}}}>
+}, py: { xl: '80px', lg: '40px', sm: '32px', xxs: '16px' }}}>
 <SliderDiv slides={slides} />
 </Grid>   
 <Grid item xxs={12} sx={{display: {md: 'block', lg: 'none'
 
-}, py: {md: '80px', xxs: '16px'}}}>
+}, py: { xl: '80px', lg: '40px', sm: '32px', xxs: '16px' }}}>
 <BeforeAfterSmaller/>
 </Grid>   
 </Container>
@@ -236,12 +239,10 @@ const renderSection = () => {
         zIndex: 1000,
         width: '100%',
       }}>
-        <FixedNavbar sections={sections_} onSelectSection={handleSelectSection_} />
+        <FixedNavbar sections={sections_} onSelectSection_={handleSelectSection_} activeSection_={activeSection_} />
       </div>
       <Container disableGutters maxWidth={false} sx={{overflow: 'visible'}}>
-<Grid item xxs={12} sx={{ py: {md: '80px', xxs: '16px', overflow: 'visible'}}}>
- 
-</Grid>
+
 <div ref={mainLayoutRef}>
 <MetLifeDesignSprints />
 </div>

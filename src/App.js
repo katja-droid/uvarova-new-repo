@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import './App.css';
-import Main from './Main';
-import About from './About';
+import Main from './Main/Main';
+import About from './About/About';
 import ProfWorld from './ProfWorld/ProfWorld';
 import VirtualNutritionist from './VirtualNutritionist/VirtualNutritionist';
 import NotFound from './NotFound';

@@ -2,6 +2,7 @@ import React from 'react';
 import { Box, Typography, Container, Grid } from '@mui/material';
 import { ThemeProvider } from '@mui/material/styles';
 import theme from '../theme'; // Import your custom theme
+import withScrollEffect from '../withScrollEffect.js';
 
 const ProfFullWidthSection = () => {
   return (
@@ -52,4 +53,4 @@ const ProfFullWidthSection = () => {
   );
 };
 
-export default ProfFullWidthSection;
+export default withScrollEffect (ProfFullWidthSection);

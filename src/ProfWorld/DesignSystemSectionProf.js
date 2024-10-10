@@ -3,6 +3,7 @@ import { Box, Typography, Container, Grid } from '@mui/material';
 import { ThemeProvider } from '@mui/material/styles';
 import theme from '../theme'; // Import your custom theme
 import image from '../assets/prof-design-system.png';
+import withScrollEffect from '../withScrollEffect.js';
 
 const DesignSystemSectionProf = () => {
   return (
@@ -16,15 +17,7 @@ const DesignSystemSectionProf = () => {
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
-          pt: { 
-            xxs: '24px', 
-            xs: '48px', 
-            sm: '60px', 
-            md: '84px', 
-            lg: '84px', 
-            xl: '84px', 
-            xxl: '97px' 
-          },
+          pt: { xl: '80px', lg: '40px', sm: '32px', xxs: '16px' },
         }}
       >
         <Container
@@ -92,4 +85,4 @@ const DesignSystemSectionProf = () => {
   );
 };
 
-export default DesignSystemSectionProf;
+export default withScrollEffect (DesignSystemSectionProf);

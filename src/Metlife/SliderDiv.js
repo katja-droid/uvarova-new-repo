@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../ProfWorld/Slider.css"; // Custom styles with your divs
 import './SliderDiv.css';
+import withScrollEffect from "../withScrollEffect.js";
 
 const SliderDiv = ({ slides }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -50,4 +51,4 @@ const SliderDiv = ({ slides }) => {
   );
 };
 
-export default SliderDiv;
+export default withScrollEffect (SliderDiv);

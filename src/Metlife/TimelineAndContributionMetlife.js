@@ -1,6 +1,7 @@
 import React from 'react';
 import { Box, Typography, useMediaQuery } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
+import withScrollEffect from '../withScrollEffect.js';
 
 const TimelineAndContributionMetlife = ({ tools }) => {
   const theme = useTheme();
@@ -42,7 +43,7 @@ const TimelineAndContributionMetlife = ({ tools }) => {
   const selectedContribution = (isXxs || isXs) ? xxsAndXsContribution : fullContribution;
 
   return (
-    <Box sx={{ display: 'flex', flexDirection: 'column', pt: { lg: '80px', md: '40px', sm: '32px', xxs: '16px' } }}>
+    <Box sx={{ display: 'flex', flexDirection: 'column', pt: { xl: '80px', lg: '40px', sm: '32px', xxs: '16px' } }}>
       {/* Timeline */}
       <Typography
         variant='body1'
@@ -143,4 +144,4 @@ const TimelineAndContributionMetlife = ({ tools }) => {
   );
 };
 
-export default TimelineAndContributionMetlife;
+export default withScrollEffect (TimelineAndContributionMetlife);

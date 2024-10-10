@@ -64,10 +64,13 @@ const sections = [
 const sections_ = [
   { id: 'solution-v', label: 'Solution' },
   { id: 'login-v', label: 'Log In' },
+  { id: 'personal-v', label: 'Personal Information' },
+  { id: 'questions-v', label: 'Questions' },
   { id: 'profile-v', label: 'Profile' },
   { id: 'analyses-v', label: 'Analyses' },
   { id: 'settings-v', label: 'Settings' },
   { id: 'goal-v', label: 'Goal' },
+  { id: 'activity-v', label: 'Activity' },
   { id: 'calendar-v', label: 'Calendar' },
 ];
 
@@ -80,8 +83,11 @@ const VirtualNutritionist = () => {
 const handleSelectSection = (section) => {
   setActiveSection(section);
 };
+const [activeSection_, setActiveSection_] = useState('problem'); // Default section
+
+// Handle section selection from navbar
 const handleSelectSection_ = (sectionId) => {
-  setActiveLink(sectionId);
+  setActiveSection_(sectionId);
 };
 
 const navbarRef = useRef(null);
@@ -199,7 +205,7 @@ const renderSection = () => {
      
 
 {/* Render Selected Section */}
-<Grid container justifyContent="center" spacing={0} sx={{  py: {md: '80px', xxs: '16px'}  }}>
+<Grid container justifyContent="center" spacing={0} sx={{  py: 0  }}>
 <Grid item xxs={12} lg={10} >
 <NavbarProject activeLink={activeSection} sections={sections} onSelectSection={handleSelectSection} />
       {renderSection()}
@@ -214,7 +220,7 @@ const renderSection = () => {
   zIndex: 1000,
   width: '100%',
 }}>
-  <FixedNavbar sections={sections_} onSelectSection={handleSelectSection_} />
+   <FixedNavbar sections={sections_} onSelectSection_={handleSelectSection_} activeSection_={activeSection_} />
 </div> 
 <div ref={mainLayoutRef}>
         <SolutionSection />

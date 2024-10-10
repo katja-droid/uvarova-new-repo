@@ -3,6 +3,7 @@ import { Box, Container } from '@mui/material';
 import theme from '../theme'; // Import your custom theme
 import { ThemeProvider } from '@mui/material/styles';
 import cover from '../assets/metlife.png'; // Your cover image
+import withScrollEffect from '../withScrollEffect.js';
 
 const CoverSectionMetLife = () => {
   return (
@@ -34,4 +35,4 @@ const CoverSectionMetLife = () => {
   );
 };
 
-export default CoverSectionMetLife;
+export default withScrollEffect (CoverSectionMetLife);

@@ -1,10 +1,11 @@
 import React from 'react';
 import { Box, Typography } from '@mui/material';
 import { Link } from 'react-router-dom';
+import withScrollEffect from '../withScrollEffect.js';
 
 const ProfTimelineAndContribution = ({ contribution, tools }) => {
   return (
-    <Box sx={{ display: 'flex', flexDirection: 'column', pt: { lg: '80px', md: '40px', sm: '32px', xxs: '16px' } }}>
+    <Box sx={{ display: 'flex', flexDirection: 'column', pt: { xl: '80px', lg: '40px', sm: '32px', xxs: '16px' } }}>
       {/* Timeline */}
       <Typography
         variant='body1'
@@ -135,4 +136,4 @@ const ProfTimelineAndContribution = ({ contribution, tools }) => {
   );
 };
 
-export default ProfTimelineAndContribution;
+export default withScrollEffect (ProfTimelineAndContribution);

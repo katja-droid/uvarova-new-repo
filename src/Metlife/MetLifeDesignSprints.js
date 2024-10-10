@@ -2,6 +2,7 @@ import { Box, Grid, Typography } from '@mui/material';
 import React from 'react';
 import image1 from '../assets/designsprints1.png'; // Replace with actual image paths
 import image2 from '../assets/designsprints2.png'; // Replace with actual image paths
+import withScrollEffect from '../withScrollEffect.js';
 
 const MetLifeDesignSprints = () => {
   return (
@@ -12,15 +13,7 @@ const MetLifeDesignSprints = () => {
         margin: 0, // No margin for full container control
         overflowX: 'hidden',
         maxWidth: '100%',
-        py: {
-          xxs: '24px',
-          xs: '48px',
-          sm: '60px',
-          md: '84px',
-          lg: '84px',
-          xl: '84px',
-          xxxl: '97px',
-        },
+        py: { xl: '80px', lg: '40px', sm: '32px', xxs: '16px' },
       }}
       id="design-sprints-met"
     >
@@ -84,4 +77,4 @@ const MetLifeDesignSprints = () => {
   );
 };
 
-export default MetLifeDesignSprints;
+export default withScrollEffect (MetLifeDesignSprints);

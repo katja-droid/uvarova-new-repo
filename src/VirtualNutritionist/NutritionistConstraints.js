@@ -1,11 +1,12 @@
 import { Box, Container, Grid, Typography } from '@mui/material';
 import React from 'react';
+import withScrollEffect from '../withScrollEffect.js';
 
 const NutritionistConstraints = () => {
   return (
-    <Container disableGutters maxWidth={false}>
+    <Container disableGutters maxWidth={false} sx={{ pb: { xl: '80px', lg: '40px', sm: '32px', xxs: '16px' } }}>
       {/* Container for the title */}
-      <Grid container justifyContent="center" spacing={0} sx={{ py: 2 }}>
+      <Grid container justifyContent="center" spacing={0} >
         <Grid item sm={12} xxs={12} md={12}>
           <Typography
             variant="h3"
@@ -99,4 +100,4 @@ const NutritionistConstraints = () => {
   );
 };
 
-export default NutritionistConstraints;
+export default withScrollEffect (NutritionistConstraints);

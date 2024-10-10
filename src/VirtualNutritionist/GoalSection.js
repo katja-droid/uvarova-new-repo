@@ -3,9 +3,11 @@ import { Box, Typography, Container, Grid } from '@mui/material';
 import { ThemeProvider } from '@mui/material/styles';
 import theme from '../theme'; // Import your custom theme
 import image from '../assets/nutritionist-goal.png';
+import withScrollEffect from '../withScrollEffect.js';
 
 const GoalSection = () => {
   return (
+    <div id="goal-v">
     <ThemeProvider theme={theme}>
       <Box
         sx={{
@@ -13,15 +15,7 @@ const GoalSection = () => {
           width: '100%',
           backgroundColor: '#fff',
           color: '#0A0A14',
-          py: {
-            xxs: '24px',
-            xs: '48px',
-            sm: '60px',
-            md: '84px',
-            lg: '84px',
-            xl: '84px',
-            xxl: '97px',
-          },
+          py: { xl: '80px', lg: '40px', sm: '32px', xxs: '16px' },
         }}
       >
         <Container
@@ -103,7 +97,8 @@ const GoalSection = () => {
         </Container>
       </Box>
     </ThemeProvider>
+    </div>
   );
 };
 
-export default GoalSection;
+export default withScrollEffect (GoalSection);

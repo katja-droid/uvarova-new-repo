@@ -4,6 +4,7 @@ import img2 from '../assets/round2.svg';
 import img3 from '../assets/round3.svg';
 import img4 from '../assets/round4.svg';
 import './ImageGridOnePerRow.css';
+import withScrollEffect from '../withScrollEffect.js';
 
 const ImageGridOnePerRow = () => {
   const images = [
@@ -29,4 +30,4 @@ const ImageGridOnePerRow = () => {
   );
 };
 
-export default ImageGridOnePerRow;
+export default withScrollEffect (ImageGridOnePerRow);

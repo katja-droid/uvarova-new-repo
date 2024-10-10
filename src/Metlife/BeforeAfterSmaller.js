@@ -6,6 +6,7 @@ import before2 from '../assets/before2.png';
 import after2 from '../assets/after2.png'; 
 import before3 from '../assets/before3.png'; 
 import after3 from '../assets/after3.png'; 
+import withScrollEffect from '../withScrollEffect.js';
 const BeforeAfterSmaller = () => {
   return (
     <div>    <BeforeAfterLayout beforeImage={before1} afterImage={after1} />
@@ -14,4 +15,4 @@ const BeforeAfterSmaller = () => {
   )
 }
 
-export default BeforeAfterSmaller
+export default withScrollEffect (BeforeAfterSmaller)

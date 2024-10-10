@@ -5,6 +5,7 @@ import image1 from '../assets/more-nutritionist.png'; // Replace with your image
 import image2 from '../assets/more-met.png';
 import image3 from '../assets/more-forum.png';
 import { Link } from 'react-router-dom';
+import withScrollEffect from '../withScrollEffect.js';
 
 const MoreSectionProf = () => {
   return (
@@ -14,15 +15,7 @@ const MoreSectionProf = () => {
         width: '100%',
         backgroundColor: '#fff',
         color: '#0A0A14',
-        pt: { 
-          xxs: '24px', 
-          xs: '48px', 
-          sm: '60px', 
-          md: '84px', 
-          lg: '84px', 
-          xl: '84px', 
-          xxl: '97px' 
-        },
+        py: { xl: '80px', lg: '40px', sm: '32px', xxs: '16px' },
       }}
     >
       <Container maxWidth={false}>
@@ -118,4 +111,4 @@ const MoreSectionProf = () => {
   );
 };
 
-export default MoreSectionProf;
+export default withScrollEffect (MoreSectionProf);

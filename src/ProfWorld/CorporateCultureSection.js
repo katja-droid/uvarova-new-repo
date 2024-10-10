@@ -8,6 +8,7 @@ import block2Image from '../assets/main2.png'; // Replace with your block 2 imag
 import gif from '../assets/pw-main.gif';
 import bg from '../assets/begin-background.png';
 import RatioGif from './RatioGif';
+import withScrollEffect from '../withScrollEffect.js';
 
 const CorporateCultureSection = () => {
   return (
@@ -17,15 +18,7 @@ const CorporateCultureSection = () => {
           position: 'relative',
           width: '100%',
           color: '#0A0A14',
-          py: {
-            xxs: '24px',
-            xs: '48px',
-            sm: '60px',
-            md: '84px',
-            lg: '84px',
-            xl: '84px',
-            xxxl: '97px',
-          },
+          py: { xl: '80px', lg: '40px', sm: '32px', xxs: '16px' },
         }}
         id="corporate-culture-p"
       >
@@ -73,4 +66,4 @@ const CorporateCultureSection = () => {
   );
 };
 
-export default CorporateCultureSection;
+export default withScrollEffect (CorporateCultureSection);

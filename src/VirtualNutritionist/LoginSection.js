@@ -3,9 +3,11 @@ import { Box, Typography, Container, Grid } from '@mui/material';
 import { ThemeProvider } from '@mui/material/styles';
 import theme from '../theme'; // Import your custom theme
 import gif from '../assets/1 Registration.gif'; // Import the GIF
+import withScrollEffect from '../withScrollEffect.js';
 
 const LoginSection = () => {
   return (
+    <div id="login-v">
     <ThemeProvider theme={theme}>
       <Box
         sx={{
@@ -16,15 +18,7 @@ const LoginSection = () => {
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
-          py: {
-            xxs: '24px',
-            xs: '48px',
-            sm: '60px',
-            md: '84px',
-            lg: '84px',
-            xl: '84px',
-            xxl: '97px',
-          },
+          py: { xl: '80px', lg: '40px', sm: '32px', xxs: '16px' } ,
         }}
       >
         <Container
@@ -145,7 +139,8 @@ const LoginSection = () => {
         </Container>
       </Box>
     </ThemeProvider>
+    </div>
   );
 };
 
-export default LoginSection;
+export default withScrollEffect (LoginSection);

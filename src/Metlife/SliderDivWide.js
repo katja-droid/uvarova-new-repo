@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "../ProfWorld/Slider.css"; // Custom styles with your divs
 import './SliderDivWide.css';
 import { Grid, Container } from "@mui/material";
+import withScrollEffect from "../withScrollEffect.js";
 
 const SliderDivWide = ({ slides }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -61,4 +62,4 @@ const SliderDivWide = ({ slides }) => {
   );
 };
 
-export default SliderDivWide;
+export default withScrollEffect (SliderDivWide);

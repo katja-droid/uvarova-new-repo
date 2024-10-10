@@ -1,9 +1,11 @@
 import { Box, Typography } from '@mui/material';
 import React from 'react';
+import withScrollEffect from '../withScrollEffect.js';
 
 const PoliticalForumKPIs = () => {
   return (
     <div id="nutritionistDesignKPIs" style={{ width: '100%' }}>
+       <Box sx={{ pb: { xl: '80px', lg: '40px', sm: '32px', xxs: '16px' } }}>
       <Typography
         variant="h3"
         sx={{
@@ -79,9 +81,9 @@ const PoliticalForumKPIs = () => {
       <Typography sx={{ fontSize: '18px', fontFamily: 'Calibre Regular', pt: '16px' }}>
       All design KPIs are explained and specified in a separate documents on design KPIs targets.
       </Typography>
-
+      </Box>
     </div>
   );
 };
 
-export default PoliticalForumKPIs;
+export default withScrollEffect (PoliticalForumKPIs);

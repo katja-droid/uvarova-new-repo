@@ -6,6 +6,7 @@ import ResponsiveGridMet from './ResponsiveGridMet';
 import arrow from '../assets/arrowcol.svg'; // Import your custom arrow SVG
 import arrowVert from '../assets/arrowcol-vert.svg'; // Import your custom arrow SVG
 import ResponsiveGridMetMob from './ResponsiveGridMetMob';
+import withScrollEffect from '../withScrollEffect.js';
 
 const ThreeColSection = () => {
   return (
@@ -91,4 +92,4 @@ const ThreeColSection = () => {
   );
 };
 
-export default ThreeColSection;
+export default withScrollEffect (ThreeColSection);

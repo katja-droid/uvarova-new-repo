@@ -1,18 +1,11 @@
 import { Box, Typography } from '@mui/material'
 import React from 'react'
 import Slider from './Slider'
+import withScrollEffect from '../withScrollEffect.js'
 
 const FinalDesignSection = () => {
   return (
-    <Box sx={{display: 'flex', alignItems: 'center', flexDirection: 'column',  py: {
-      xxs: '24px',
-      xs: '48px',
-      sm: '60px',
-      md: '84px',
-      lg: '84px',
-      xl: '84px',
-      xxxl: '97px',
-    }}}>
+    <Box sx={{display: 'flex', alignItems: 'center', flexDirection: 'column',  py: { xl: '80px', lg: '40px', sm: '32px', xxs: '16px' }}}>
            <Typography
                   sx={{
                     textAlign: 'center',
@@ -44,4 +37,4 @@ const FinalDesignSection = () => {
   )
 }
 
-export default FinalDesignSection
+export default withScrollEffect (FinalDesignSection)

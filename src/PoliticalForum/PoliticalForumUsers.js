@@ -1,9 +1,11 @@
 import React from 'react';
 import { Box, Grid, Typography } from '@mui/material';
+import withScrollEffect from '../withScrollEffect.js';
 
 const PoliticalForumUsers = () => {
   return (
     <>
+    <Box sx={{pb: { xl: '80px', lg: '40px', sm: '32px', xxs: '16px' }}}>
       <Grid item sm={8} xs={12}>
         <Typography
           variant="h3"
@@ -101,8 +103,9 @@ const PoliticalForumUsers = () => {
           </Box>
         </Grid>
       </Grid>
+      </Box>
     </>
   );
 };
 
-export default PoliticalForumUsers;
+export default withScrollEffect (PoliticalForumUsers);

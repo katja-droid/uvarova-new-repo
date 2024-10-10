@@ -4,7 +4,7 @@ import { Box } from '@mui/material';
 
 const NavbarProject = ({ sections, onSelectSection, activeLink }) => {
   return (
-    <Box className='navbarProject' sx={{py: {lg: '47px', sm: '32px'}, mb: '16px'}}>
+    <Box className='navbarProject' sx={{py: {lg: '47px', sm: '32px'}, mb: '16px', mt: { xl: '80px', lg: '40px', sm: '32px', xxs: '16px' }}}>
       <nav className="navbarProject-scroll">
         <ul className='navbarProject-scroll'>
           {sections.map((section) => (

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Box, Typography } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
+import withScrollEffect from '../withScrollEffect.js';
 
 const PoliticalForumTimelineAndContribution = ({ tools }) => {
   const theme = useTheme();
@@ -17,7 +18,7 @@ const PoliticalForumTimelineAndContribution = ({ tools }) => {
   ];
 
   return (
-    <Box sx={{ display: 'flex', flexDirection: 'column', pt: { lg: '80px', md: '40px', sm: '32px', xxs: '16px' } }}>
+    <Box sx={{ display: 'flex', flexDirection: 'column', pt: { xl: '80px', lg: '40px', sm: '32px', xxs: '16px' } }}>
       {/* Timeline */}
       <Typography
         variant='body1'
@@ -143,4 +144,4 @@ const PoliticalForumTimelineAndContribution = ({ tools }) => {
   );
 };
 
-export default PoliticalForumTimelineAndContribution;
+export default withScrollEffect (PoliticalForumTimelineAndContribution);

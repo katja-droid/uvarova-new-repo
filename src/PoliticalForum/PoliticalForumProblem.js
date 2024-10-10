@@ -1,9 +1,11 @@
 import { Box, Typography } from '@mui/material';
 import React from 'react';
+import withScrollEffect from '../withScrollEffect.js';
 
 const PoliticalForumProblem = () => {
   return (
     <div id="nutritionistProblem" style={{ width: '100%' }}>
+      <Box sx={{pb: { xl: '80px', lg: '40px', sm: '32px', xxs: '16px' }}}>
       <Typography
         variant="h3"
         sx={{
@@ -77,8 +79,10 @@ const PoliticalForumProblem = () => {
           </Box>
         </li>
       </Box>
+      </Box>
     </div>
+   
   );
 };
 
-export default PoliticalForumProblem;
+export default withScrollEffect (PoliticalForumProblem);

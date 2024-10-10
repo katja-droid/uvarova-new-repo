@@ -4,6 +4,7 @@ import { ThemeProvider } from '@mui/material/styles';
 import theme from '../theme'; // Import your custom theme
 import image from '../assets/nutritionist-calendar.png';
 import ResponsiveGrid from './ResponsiveGrid';
+import withScrollEffect from '../withScrollEffect.js';
 
 const TestingColorSection = () => {
   return (
@@ -18,15 +19,7 @@ const TestingColorSection = () => {
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
-            py: {
-              xxs: '24px',
-              xs: '48px',
-              sm: '60px',
-              md: '84px',
-              lg: '84px',
-              xl: '84px',
-              xxl: '97px',
-            },
+            py: { xl: '80px', lg: '40px', sm: '32px', xxs: '16px' },
           }}
         >
           <Container
@@ -118,4 +111,4 @@ const TestingColorSection = () => {
   );
 };
 
-export default TestingColorSection;
+export default withScrollEffect (TestingColorSection);

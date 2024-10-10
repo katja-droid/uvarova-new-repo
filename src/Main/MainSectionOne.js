@@ -1,9 +1,10 @@
 import React from 'react';
 import Grid from '@mui/material/Grid';
 import { Box, Typography } from '@mui/material';
-import olga from './assets/olga.png';
-import olgaMobile from './assets/olga-mobile.png';
-import arrow from './assets/maki_arrow.png';
+import olga from '../assets/olga.png';
+import olgaMobile from '../assets/olga-mobile.png';
+import arrow from '../assets/maki_arrow.png';
+import withScrollEffect from '../withScrollEffect.js';
 const MainSectionOne = () => {
   const technologies = [
     { id: 1, name: 'Saas', color: '#FFE9E3' },
@@ -27,12 +28,10 @@ const MainSectionOne = () => {
           my: 0,
           mx: 0,
           py: {
-            xs: '0', // vertical padding for extra-small screens
-            sm: '46px', // vertical padding for small screens
-            md: '68px', // vertical padding for medium screens
-            lg: '96px', // vertical padding for large screens
-            xl: '96px', // vertical padding for extra-large screens
-            xxl: '96px', // vertical padding for extra-extra-large screens
+            xxs: '0', // vertical padding for extra-small screens
+            md: '46px', // vertical padding for small screens
+            lg: '68px', // vertical padding for medium screens
+            xl: '96px', // vertical padding for large screens
           },
         }}
       >
@@ -191,4 +190,4 @@ const MainSectionOne = () => {
   );
 };
 
-export default MainSectionOne;
+export default withScrollEffect(MainSectionOne);

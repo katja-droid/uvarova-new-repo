@@ -1,10 +1,11 @@
 import React from 'react';
 import { Box, Typography } from '@mui/material';
 import { Link } from 'react-router-dom';
+import withScrollEffect from '../withScrollEffect.js';
 
 const PoliticalForumClientOverview = () => {
   return (
-    <Box sx={{ display: 'flex', flexDirection: 'column', pt: { lg: '80px', md: '40px', sm: '32px', xxs: '16px' } }}>
+    <Box sx={{ display: 'flex', flexDirection: 'column', pt: { xl: '80px', lg: '40px', sm: '32px', xxs: '16px' } }}>
       
       {/* Client Section */}
       <Typography
@@ -72,4 +73,4 @@ const PoliticalForumClientOverview = () => {
   );
 };
 
-export default PoliticalForumClientOverview;
+export default withScrollEffect (PoliticalForumClientOverview);

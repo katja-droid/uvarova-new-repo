@@ -5,6 +5,7 @@ import email from './assets/contact-email.svg';
 import linkedin from './assets/contact-linkedin.svg';
 import telegram from './assets/contact-telegram.svg';
 import facebook from './assets/contact-facebook.svg';
+import withScrollEffect from './withScrollEffect.js';
 
 const Contact = () => {
   // Array of icon image URLs and corresponding links
@@ -161,4 +162,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default withScrollEffect (Contact);

@@ -1,11 +1,14 @@
 import React from 'react';
 import { Box, Grid, Typography } from '@mui/material';
+import withScrollEffect from '../withScrollEffect.js';
 
 const PoliticalForumAnalytics = () => {
   return (
+    
     <div id="nutritionistAnalytics" style={{ width: '100%' }}>
+       <Box sx={{pb: { xl: '80px', lg: '40px', sm: '32px', xxs: '16px' }}}>
       {/* Container for the title */}
-      <Grid container justifyContent="center" spacing={0} sx={{ py: 2 }}>
+      <Grid container justifyContent="center" spacing={0} >
         <Grid item sm={12} xs={12}>
           <Typography
             variant="h3"
@@ -21,7 +24,7 @@ const PoliticalForumAnalytics = () => {
       </Grid>
 
       {/* Container for analytics cards that is 8 columns wide */}
-      <Grid container justifyContent="center" sx={{ py: 2 }}>
+      <Grid container justifyContent="center" >
         <Grid item sm={12} xs={12}>
           <Grid container spacing={4}>
             {/* Each analytics card will be 4 columns wide */}
@@ -69,6 +72,7 @@ const PoliticalForumAnalytics = () => {
           </Grid>
         </Grid>
       </Grid>
+      </Box>
     </div>
   );
 };
@@ -89,4 +93,4 @@ const getTextForAnalytics = (title) => {
   }
 };
 
-export default PoliticalForumAnalytics;
+export default withScrollEffect (PoliticalForumAnalytics);

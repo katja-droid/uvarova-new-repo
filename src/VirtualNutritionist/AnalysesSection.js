@@ -3,9 +3,11 @@ import { Box, Typography, Container, Grid } from '@mui/material';
 import { ThemeProvider } from '@mui/material/styles';
 import theme from '../theme'; // Import your custom theme
 import image from '../assets/nutritionist-analyses.png';
+import withScrollEffect from '../withScrollEffect.js';
 
 const AnalysesSection = () => {
   return (
+    <div id="analyses-v">
     <ThemeProvider theme={theme}>
       <Box
         sx={{
@@ -13,15 +15,7 @@ const AnalysesSection = () => {
           width: '100%',
           backgroundColor: '#F7F7F6', // Matches the background color of similar sections
           color: '#0A0A14',
-          py: { 
-            xxs: '24px', 
-            xs: '48px', 
-            sm: '60px', 
-            md: '84px', 
-            lg: '84px', 
-            xl: '84px', 
-            xxl: '97px' 
-          },
+          py: { xl: '80px', lg: '40px', sm: '32px', xxs: '16px' },
         }}
       >
         {/* Text Section - Full Width */}
@@ -67,7 +61,8 @@ const AnalysesSection = () => {
         
       </Box>
     </ThemeProvider>
+    </div>
   );
 };
 
-export default AnalysesSection;
+export default withScrollEffect (AnalysesSection);

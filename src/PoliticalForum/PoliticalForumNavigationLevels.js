@@ -3,6 +3,7 @@ import { Box, Typography, Container, Grid } from '@mui/material';
 import { ThemeProvider } from '@mui/material/styles';
 import theme from '../theme'; // Import your custom theme
 import image from '../assets/political-navigation-levels.png';
+import withScrollEffect from '../withScrollEffect.js';
 
 const PoliticalForumNavigationLevels = () => {
   return (
@@ -16,15 +17,7 @@ const PoliticalForumNavigationLevels = () => {
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
-          pt: { 
-            xxs: '24px', 
-            xs: '48px', 
-            sm: '60px', 
-            md: '80px', 
-            lg: '80px', 
-            xl: '80px', 
-            xxxl: '80px' 
-          },
+          pt: { xl: '80px', lg: '40px', sm: '32px', xxs: '16px' },
         }}
         id="nav-levels-pf"
       >

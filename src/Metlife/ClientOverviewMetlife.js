@@ -1,10 +1,11 @@
 import React from 'react';
 import { Box, Typography } from '@mui/material';
 import { Link } from 'react-router-dom';
+import withScrollEffect from '../withScrollEffect.js';
 
 const ClientOverviewMetlife = () => {
   return (
-    <Box sx={{ display: 'flex', flexDirection: 'column', pt: { lg: '80px', md: '40px', sm: '32px', xxs: '16px' } }}>
+    <Box sx={{ display: 'flex', flexDirection: 'column', pt: { xl: '80px', lg: '40px', sm: '32px', xxs: '16px' } }}>
       <Typography
         variant='body1'
         sx={{
@@ -70,4 +71,4 @@ Unfortunately, the <b>insurance realm is so complex</b> that a single PDF oft
   );
 };
 
-export default ClientOverviewMetlife;
+export default withScrollEffect (ClientOverviewMetlife);

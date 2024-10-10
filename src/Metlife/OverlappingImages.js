@@ -1,5 +1,6 @@
 import React from 'react';
 import { Box, Grid, useMediaQuery, useTheme } from '@mui/material';
+import withScrollEffect from '../withScrollEffect.js';
 
 const OverlappingImages = ({
   image1Src,

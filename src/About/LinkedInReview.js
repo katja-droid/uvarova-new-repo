@@ -1,9 +1,10 @@
 import React from 'react';
 import './LinkedInReview.css'; // Make sure to create this CSS file for styling
-import photoName from './assets/Photo_name.png';
-import quote from './assets/quotes.svg';
+import photoName from '../assets/Photo_name.png';
+import quote from '../assets/quotes.svg';
 import { Box, Typography } from '@mui/material';
 import { Link } from 'react-router-dom';
+import withScrollEffect from '../withScrollEffect.js';
 
 const LinkedInReview = () => {
   return (

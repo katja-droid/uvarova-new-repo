@@ -5,6 +5,7 @@ import theme from '../theme'; // Import your custom theme
 import gif from '../assets/pw3.gif'; // Replace with your GIF
 import bg from '../assets/begin-background.png'; // Replace with your background
 import RatioGif from './RatioGif';
+import withScrollEffect from '../withScrollEffect.js';
 
 const CompanyRegistrationAfterSection = () => {
   return (
@@ -93,4 +94,4 @@ const CompanyRegistrationAfterSection = () => {
   );
 };
 
-export default CompanyRegistrationAfterSection;
+export default withScrollEffect (CompanyRegistrationAfterSection);

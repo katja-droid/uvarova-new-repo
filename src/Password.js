@@ -6,6 +6,7 @@ import Navbar from './Navbar';
 import theme from './theme';  // Your custom theme
 import image from './assets/protected.svg';
 import arrow from './assets/Arrow.svg';
+import withScrollEffect from './withScrollEffect.js';
 
 const Password = ({ login }) => {
   const [inputValue, setInputValue] = useState("");
@@ -162,4 +163,4 @@ const Password = ({ login }) => {
   );
 };
 
-export default Password;
+export default withScrollEffect (Password);

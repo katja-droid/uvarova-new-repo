@@ -5,6 +5,7 @@ import { Box, Grid, ThemeProvider, Typography } from '@mui/material';
 import theme from '../theme';
 import ImageGridTwoRows from './ImageGridTwoRows';
 import ImageGridOnePerRow from './ImageGridOnePerRow';
+import withScrollEffect from '../withScrollEffect.js';
 
 const PoliticalForumTesting = () => {
   return (
@@ -15,15 +16,7 @@ const PoliticalForumTesting = () => {
             position: 'relative',
             width: '100%',
             color: '#0A0A14',
-            pt: {
-              xxs: '24px',
-              xs: '48px',
-              sm: '60px',
-              md: '84px',
-              lg: '84px',
-              xl: '84px',
-              xxxl: '97px',
-            },
+            pt: { xl: '80px', lg: '40px', sm: '32px', xxs: '16px' },
             mb: '32px', // Add 32px margin at the bottom to space it from the next section
             fontFamily: 'Calibre Regular'
           }}
@@ -175,4 +168,4 @@ const PoliticalForumTesting = () => {
   );
 };
 
-export default PoliticalForumTesting;
+export default withScrollEffect (PoliticalForumTesting);

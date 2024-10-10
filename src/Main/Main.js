@@ -1,10 +1,10 @@
 import React from 'react';
 import Grid from '@mui/material/Grid';
 import { Box, Typography } from '@mui/material';
-import olga from './assets/olga.png';
+import olga from '../assets/olga.png';
 import MainSectionOne from './MainSectionOne';
 import Projects from './Projects';
-import ScrollToTop from './ScrollToTop';
+import ScrollToTop from '../ScrollToTop';
 
 const Main = () => {
   const technologies = [

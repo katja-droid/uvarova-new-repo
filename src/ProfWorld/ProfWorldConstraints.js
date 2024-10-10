@@ -5,6 +5,7 @@ import ProfWorldConstraintsTwo from './ProfWorldConstraintsTwo';
 import ProfWorldConstraintsThree from './ProfWorldConstraintsThree';
 import ProfWorldConstraintsCombined from './ProfWorldConstraintsCombined';
 import SliderDivWide from '../Metlife/SliderDivWide';
+import withScrollEffect from '../withScrollEffect.js';
 
 const ProfWorldConstraints = () => {
   const slides = [
@@ -16,10 +17,10 @@ const ProfWorldConstraints = () => {
   return (
     <>
       {/* Container for the title and first text section */}
-      <Container disableGutters maxWidth={false} justifyContent="center">
+      <Container disableGutters maxWidth={false} justifyContent="center" sx={{pb: { xl: '80px', lg: '40px', sm: '32px', xxs: '16px' }}}>
         {/* Title Section */}
         <Grid container justifyContent="center" spacing={0} sx={{ py: 2 }}>
-          <Grid item sm={8} xxs={8} md={10} lg={8}>
+          <Grid item  xxs={12} md={10} lg={8}>
             <Typography
               variant="h3"
               sx={{
@@ -35,7 +36,7 @@ const ProfWorldConstraints = () => {
 
         {/* First Text Section */}
         <Grid container justifyContent="center" sx={{ py: 2, fontFamily: 'Calibre Regular', fontSize: '18px' }}>
-          <Grid item sm={8} xxs={8} md={10} lg={8}>
+          <Grid item  xxs={12} md={10} lg={8}>
             <Box sx={{ fontFamily: 'Calibre Regular', fontSize: '18px', lineHeight: '26px' }}>
               <Typography sx={{ pb: '16px', color: '#646470' }}>
                 When analyzing a project to automate the personnel training process, several key limitations (constraints) can be identified that can contribute to its successful implementation. Below are the possible options and their descriptions:
@@ -64,7 +65,7 @@ const ProfWorldConstraints = () => {
       <Container disableGutters maxWidth={false} justifyContent="center">
         {/* Second Text Section */}
         <Grid container justifyContent="center" sx={{ py: 2 }}>
-          <Grid item sm={12} xs={12} md={10} lg={8}>
+          <Grid item xxs={12} md={10} lg={8}>
             <Typography
               sx={{
                 fontFamily: 'Calibre Regular',
@@ -94,4 +95,4 @@ const ProfWorldConstraints = () => {
   );
 };
 
-export default ProfWorldConstraints;
+export default withScrollEffect (ProfWorldConstraints);

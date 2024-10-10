@@ -4,9 +4,11 @@ import { ThemeProvider } from '@mui/material/styles';
 import theme from '../theme'; // Import your custom theme
 import image from '../assets/nutritionist-calendar.png'; // Existing image
 import gif from '../assets/4 Calendar.gif'; // New GIF
+import withScrollEffect from '../withScrollEffect.js';
 
 const CalendarSection = () => {
   return (
+    <div id="calendar-v">
     <ThemeProvider theme={theme}>
       <Box
         sx={{
@@ -17,15 +19,7 @@ const CalendarSection = () => {
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
-          py: {
-            xxs: '24px',
-            xs: '48px',
-            sm: '60px',
-            md: '84px',
-            lg: '84px',
-            xl: '84px',
-            xxl: '97px',
-          },
+          py: { xl: '80px', lg: '40px', sm: '32px', xxs: '16px' },
         }}
       >
         <Container
@@ -140,7 +134,8 @@ const CalendarSection = () => {
         </Container>
       </Box>
     </ThemeProvider>
+    </div>
   );
 };
 
-export default CalendarSection;
+export default withScrollEffect (CalendarSection);

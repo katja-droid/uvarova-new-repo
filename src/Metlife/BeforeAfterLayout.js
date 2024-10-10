@@ -1,5 +1,6 @@
 import { Grid, Typography } from '@mui/material';
 import React from 'react';
+import withScrollEffect from '../withScrollEffect.js';
 
 const BeforeAfterLayout = ({ beforeImage, afterImage }) => {
   return (
@@ -94,4 +95,4 @@ const BeforeAfterLayout = ({ beforeImage, afterImage }) => {
   );
 };
 
-export default BeforeAfterLayout;
+export default withScrollEffect (BeforeAfterLayout);

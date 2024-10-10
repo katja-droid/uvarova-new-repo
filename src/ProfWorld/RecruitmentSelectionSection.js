@@ -5,6 +5,7 @@ import theme from '../theme'; // Import your custom theme
 import img from '../assets/pw5.gif'; // Replace with your image
 import bg from '../assets/begin-background.png'; // Replace with your image
 import RatioGif from './RatioGif';
+import withScrollEffect from '../withScrollEffect.js';
 
 const RecruitmentSelectionSection = () => {
   return (
@@ -14,15 +15,7 @@ const RecruitmentSelectionSection = () => {
           position: 'relative',
           width: '100%',
           color: '#0A0A14',
-          py: {
-            xxs: '24px',
-            xs: '48px',
-            sm: '60px',
-            md: '84px',
-            lg: '84px',
-            xl: '84px',
-            xxxl: '97px',
-          },
+          py: { xl: '80px', lg: '40px', sm: '32px', xxs: '16px' },
         }}
         id="recruitment-p"
       >
@@ -98,4 +91,4 @@ In addition, this block provides customizable interview stages based on a com
   );
 };
 
-export default RecruitmentSelectionSection;
+export default withScrollEffect (RecruitmentSelectionSection);

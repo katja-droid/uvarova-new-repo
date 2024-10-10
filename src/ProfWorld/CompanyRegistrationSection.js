@@ -5,6 +5,7 @@ import theme from '../theme'; // Import your custom theme
 import gif from '../assets/pw2.gif'; // Replace with your GIF
 import bg from '../assets/begin-background.png'; // Replace with your background
 import RatioGif from './RatioGif';
+import withScrollEffect from '../withScrollEffect.js';
 
 const CompanyRegistrationSection = () => {
   return (
@@ -14,15 +15,7 @@ const CompanyRegistrationSection = () => {
           position: 'relative',
           width: '100%',
           color: '#0A0A14',
-          py: {
-            xxs: '24px',
-            xs: '48px',
-            sm: '60px',
-            md: '84px',
-            lg: '84px',
-            xl: '84px',
-            xxxl: '97px',
-          },
+          py: { xl: '80px', lg: '40px', sm: '32px', xxs: '16px' }
         }}
       >
         {/* Text and GIF Section */}
@@ -91,4 +84,4 @@ const CompanyRegistrationSection = () => {
   );
 };
 
-export default CompanyRegistrationSection;
+export default  withScrollEffect (CompanyRegistrationSection);

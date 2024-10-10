@@ -8,6 +8,7 @@ import image2 from '../assets/finaldesignsmet3.png';
 import image3 from '../assets/finaldesignsmet4.png';
 import image4 from '../assets/finaldesignsmet5.png';
 import OverlappingImages from './OverlappingImages'; // Import the new component
+import withScrollEffect from '../withScrollEffect.js';
 
 const MetFinalDesign = () => {
   const verticalOverlapPercentage = 6.17; // Vertical overlap percentage
@@ -21,15 +22,7 @@ const MetFinalDesign = () => {
           width: '100%',
           color: '#0A0A14',
           overflow: 'visible',
-          pb: { 
-            xxs: '24px', 
-            xs: '48px', 
-            sm: '60px', 
-            md: '84px', 
-            lg: '84px', 
-            xl: '84px', 
-            xxl: '97px' 
-          },
+          pt: { xl: '80px', lg: '40px', sm: '32px', xxs: '16px' },
         }}
         id="final-designs-met"
       >
@@ -127,15 +120,7 @@ const MetFinalDesign = () => {
       </Grid>
       
       </Container>
-      <Container disableGutters maxWidth={false} sx={{ width: '100%',   pb: { 
-            xxs: '24px', 
-            xs: '48px', 
-            sm: '60px', 
-            md: '84px', 
-            lg: '84px', 
-            xl: '84px', 
-            xxl: '97px' 
-          }, display:
+      <Container disableGutters maxWidth={false} sx={{ width: '100%',   pb: { xl: '80px', lg: '40px', sm: '32px', xxs: '16px' }, display:
           {
             md: 'none',
             xxs: 'block'
@@ -159,4 +144,4 @@ const MetFinalDesign = () => {
   );
 };
 
-export default MetFinalDesign;
+export default withScrollEffect (MetFinalDesign);

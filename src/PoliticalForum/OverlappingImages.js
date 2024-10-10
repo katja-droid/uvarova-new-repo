@@ -5,6 +5,7 @@ import image1 from '../assets/overlap-1.svg'
 import image2 from '../assets/overlap-1.svg'
 import image3 from '../assets/overlap-1.svg'
 import image4 from '../assets/overlap-1.svg'
+import withScrollEffect from '../withScrollEffect.js';
 const ImageBox = styled(Box)(({ theme }) => ({
   width: '258.76px',
   height: 'auto',
@@ -33,4 +34,4 @@ const OverlappingImages = () => {
   );
 };
 
-export default OverlappingImages;
+export default withScrollEffect (OverlappingImages);

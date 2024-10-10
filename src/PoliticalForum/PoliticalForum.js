@@ -5,8 +5,8 @@ import Navbar from '../Navbar';
 import Footer from '../Footer';
 import theme from '../theme';  // Your custom theme
 import ReadingProgressBar from '../ReadingProgressBar';  // Progress bar component
-import cover from '../assets/forum-cover.png';  // Your cover image
 
+import withScrollEffect from '../withScrollEffect.js';
 import PoliticalForumClientOverview from './PoliticalForumClientOverview';  // Subcomponent
 import PoliticalForumTimelineAndContribution from './PoliticalForumTimelineAndContribution';  // Subcomponent
 import PoliticalForumFullWidthSection from './PoliticalForumFullWidthSection';  // Subcomponent
@@ -30,6 +30,7 @@ import FixedNavbar from '../FixedNavbar';
 import TestingSection from '../Metlife/TestingSection';
 import PoliticalForumTesting from './PoliticalForumTesting';
 import MoreSectionPoliticalForum from './MoreSectionPoliticalForum';
+import PoliticalForumContent from './PoliticalForumContent.js';
 
 const contribution = [
   { id: 1, name: 'User Research', color: '#FFE9E3' },
@@ -75,15 +76,19 @@ const PoliticalForum = () => {
   const navbarRef = useRef(null);
   const calendarRef = useRef(null);
   const mainLayoutRef = useRef(null);  // Ref for MainLayout section
-
+  const PoliticalForumNavigationLevelsWithScroll = withScrollEffect(PoliticalForumNavigationLevels);
+  const PoliticalForumNavigationNavIssues = withScrollEffect(PoliticalForumNavIssues);
+  
   // Function to handle section selection
   const handleSelectSection = (section) => {
     setActiveSection(section);
   };
-  
-  const handleSelectSection_ = (sectionId) => {
-    setActiveLink(sectionId);
-  };
+  const [activeSection_, setActiveSection_] = useState('problem'); // Default section
+
+// Handle section selection from navbar
+const handleSelectSection_ = (sectionId) => {
+  setActiveSection_(sectionId);
+};
 
   // Scroll logic for showing/hiding the fixed navbar
   useEffect(() => {
@@ -129,6 +134,7 @@ const renderSection = () => {
       return <PoliticalForumProblem />;
   }
 };
+
   return (
     <ThemeProvider theme={theme}>
       <ReadingProgressBar />  {/* Reading Progress Bar */}
@@ -140,32 +146,7 @@ const renderSection = () => {
           </Grid>
         </Grid>
 
-        {/* Main content */}
-        <Grid container direction="column" sx={{ py: 2 }}>
-          <Grid item xs={12}>
-            <Box sx={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
-            <Typography variant='h1' sx={{ textAlign: 'center', fontSize: {lg: '64px', md: '54px', xxs: '44px'}, fontFamily: 'DMSerifText-Regular', fontWeight: 'normal', pb: '30px', pt: {lg: '66px', md: '64px', xxs: '24px' } }}>Political Forum</Typography>
-              <Typography sx={{ textAlign: 'center', fontSize: {md: '20px', xxs: '18px'}, fontFamily: 'Calibre Medium', pb: {lg: '91px', md: '55px', xxs: '76px' }, width: {md: '100%', sm: '182px', xxs: '184px'} }}>
-              UX Assignment: Multi-Level Navigation
-
-              </Typography>
-              
-            </Box>
-          </Grid>
-          <Grid container spacing={2} justifyContent="center">
-          <Grid item xs={12} md={8}  xxs={12} >
-            <Box sx={{
-      width: { xs: '100%', lg: '100%', md: '348px' } // For example, take full width on small screens and 80% on large screens
-    }}>
-  <img
-    src={cover}
-    alt="Virtual PoliticalForum Cover"
-    style={{ width: '100%' }} // Ensure image takes 100% width of the grid item
-  />
-  </Box>
-</Grid>
-</Grid>
-</Grid>
+       <PoliticalForumContent/>
 </Container>
 <Container disableGutters maxWidth={false} sx={{ minHeight: '100vh', color: '#0A0A14', pb: {md: '80px', xxs: '16px'} }}>
 <Grid container spacing={2} justifyContent="space-between">
@@ -192,16 +173,7 @@ const renderSection = () => {
       <Grid container justifyContent="center" spacing={0} >
 <Grid item xxs={12} lg={8} >
     
-     <Grid item xxs={12} sx={ {py: { 
-            xxs: '24px', 
-            xs: '48px', 
-            sm: '60px', 
-            md: '84px', 
-            lg: '84px', 
-            xl: '84px', 
-            xxl: '97px' 
-          },
-        }} >
+     <Grid item xxs={12} >
            <NavbarProject sections={sections} onSelectSection={handleSelectSection} activeLink={activeSection} // Pass active section as prop
      ></NavbarProject>
      {renderSection()}
@@ -212,15 +184,7 @@ const renderSection = () => {
      <Container disableGutters maxWidth={'100vw'} sx={{ color: '#0A0A14',
           backgroundColor: '#F7F7F6' }}>
   <Grid container justifyContent="center"   >
-    <Grid item xxs={12} sx={ {py: { 
-            xxs: '24px', 
-            xs: '48px', 
-            sm: '60px', 
-            md: '84px', 
-            lg: '84px', 
-            xl: '84px', 
-            xxl: '97px'
-          },
+    <Grid item xxs={12} sx={ {py: { xl: '80px', lg: '40px', sm: '32px', xxs: '16px' },
           overflow: 'visible'
         }} >
       <BeforeAfterLayout beforeImage={before} afterImage={after} />
@@ -236,7 +200,7 @@ const renderSection = () => {
         zIndex: 1000,
         width: '100%',
       }}>
-        <FixedNavbar sections={sections_} onSelectSection={handleSelectSection_} />
+        <FixedNavbar sections={sections_} onSelectSection_={handleSelectSection_} activeSection_={activeSection_}  />
       </div>
       <Container disableGutters maxWidth={'100vw'} sx={{ color: '#0A0A14' }}>
 
@@ -248,11 +212,11 @@ const renderSection = () => {
     
     </Grid>
   </Grid>
-  <PoliticalForumNavigationLevels/>
+  <PoliticalForumNavigationLevelsWithScroll />
 
 </Container>
 
-<PoliticalForumNavIssues/>
+<PoliticalForumNavigationNavIssues/>
 <PoliticalForumNavVisualized/>
 <div ref={calendarRef}>
 <Container disableGutters maxWidth={'100vw'} sx={{ color: '#0A0A14' }}>

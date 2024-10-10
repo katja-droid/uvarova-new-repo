@@ -5,6 +5,7 @@ import theme from '../theme'; // Import your custom theme
 import image2 from '../assets/political-nav-2.png';
 import image3 from '../assets/political-nav-3.png';
 import image4 from '../assets/political-nav-4.png';
+import withScrollEffect from '../withScrollEffect.js';
 
 const PoliticalForumNavIssues = () => {
   return (
@@ -15,15 +16,7 @@ const PoliticalForumNavIssues = () => {
           width: '100%',
           backgroundColor: '#F7F7F6',
           color: '#0A0A14',
-          py: { 
-            xxs: '24px', 
-            xs: '48px', 
-            sm: '60px', 
-            md: '84px', 
-            lg: '84px', 
-            xl: '84px', 
-            xxl: '97px' 
-          },
+          py: { xl: '80px', lg: '40px', sm: '32px', xxs: '16px' },
           textAlign: 'left',
           px: { xxs: '16px', sm: '24px', md: '48px', lg: '84px' }, 
           overflowX: 'hidden', // Prevent horizontal overflow

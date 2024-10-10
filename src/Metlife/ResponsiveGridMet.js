@@ -3,6 +3,7 @@ import { Grid, Typography, Box } from '@mui/material';
 import image1 from '../assets/threecol1.png';
 import image2 from '../assets/threecol2.png';
 import image3 from '../assets/threecol3.png';
+import withScrollEffect from '../withScrollEffect.js';
 
 const ResponsiveGridMet = () => {
   return (
@@ -127,4 +128,4 @@ const ResponsiveGridMet = () => {
   );
 };
 
-export default ResponsiveGridMet;
+export default withScrollEffect (ResponsiveGridMet);

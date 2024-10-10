@@ -62,6 +62,7 @@ const MetLifeDesignSprints = () => {
             <img
               src={image1}
               alt="Sprint Image 1"
+              style={{ width: '100%', height: 'auto' }}
             />
           </Grid>
           <Grid item xs={12} md={6} sx={{padding: 0, margin: 0}}>

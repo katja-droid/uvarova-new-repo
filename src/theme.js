@@ -23,27 +23,31 @@ const theme = createTheme({
             paddingLeft: '12px',
             paddingRight: '0',
           },
-          '@media (max-width: 479px)': {  // xs screens
+          '@media (min-width: 360px) and (max-width: 479px)': {  // xs screens
             paddingLeft: '16px',
             paddingRight: '16px',
           },
-          '@media (min-width: 600px)': {
+          '@media (min-width: 480px) and (max-width: 599px)': {  // sm screens
             paddingLeft: '16px',
             paddingRight: '16px',
           },
-          '@media (min-width: 905px)': {
+          '@media (min-width: 600px) and (max-width: 904px)': {  // md screens
+            paddingLeft: '16px',
+            paddingRight: '16px',
+          },
+          '@media (min-width: 905px)': {  // lg and above
             paddingLeft: '24px',
             paddingRight: '24px',
           },
-          '@media (min-width: 1240px)': {
+          '@media (min-width: 1240px)': {  // xl screens
             paddingLeft: '35px',
             paddingRight: '35px',
           },
-          '@media (min-width: 1440px)': {
+          '@media (min-width: 1440px)': {  // xxl screens
             paddingLeft: '135px',
             paddingRight: '135px',
           },
-          '@media (min-width: 1600px)': {
+          '@media (min-width: 1600px)': {  // xxxl screens
             paddingLeft: '160px',
             paddingRight: '160px',
           },

@@ -7,7 +7,7 @@ const ProfWorldUsers = () => {
     <Container disableGutters maxWidth={false} sx={{pb: { xl: '80px', lg: '40px', sm: '32px', xxs: '16px' }}}>
       {/* Container for the title */}
       <Grid container justifyContent="center" spacing={0} >
-        <Grid item sm={12} xxs={12} md={12}>
+        <Grid item xl={8} xxs={12} md={10}>
           <Typography
             variant="h3"
             sx={{
@@ -27,7 +27,7 @@ const ProfWorldUsers = () => {
         justifyContent="center"
         sx={{ py: 2, fontFamily: 'Calibre Regular', fontSize: '18px' }}
       >
-        <Grid item sm={12} xs={12} md={12}>
+        <Grid item xl={8} xxs={12} md={10}>
           <Grid container spacing={4}>
             {/* First row: Two items, half width */}
             <Grid item lg={6} md={6} xs={12}>

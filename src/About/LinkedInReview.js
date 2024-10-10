@@ -11,7 +11,7 @@ const LinkedInReview = () => {
     <Box 
       className="linkedin-review" 
       sx={{
-        padding: { lg: '24px', md: '14px', xxs: '24px' }, 
+        padding: { lg: '24px', md: '16px', xxs: '24px' }, 
         border: '1px solid #EFEFF8', 
         boxSizing: 'border-box', // Ensures padding doesn't affect width/height
         width: '100%', // Ensures it takes 100% of the container's width
@@ -24,10 +24,13 @@ const LinkedInReview = () => {
       <Box 
         sx={{
           width: { xl: '25px', md: '15px', xxs: '24px' }, 
-          height: 'auto', 
+          padding: 0,
+          margin: '16px 0', // Optional margin to space the quote image from other elements
+          display: 'flex', // Ensures the image remains inline
+          justifyContent: 'center', // Centers the quote image
         }}
       >
-        <img src={quote} alt="Quote Icon" className="linkedin-review-image" />
+        <img src={quote} alt="Quote Icon" className="linkedin-review-image" style={{ padding: 0, margin: 0 }} />
       </Box>
       <Typography 
         className="linkedin-review-text" 
@@ -35,8 +38,10 @@ const LinkedInReview = () => {
           fontSize: { xl: '18px', md: '14px', xxs: '18px' }, 
           textAlign: 'center', 
           lineHeight: '1.5',
-          
-    fontfamily: 'Calibre Regular'
+          fontFamily: 'Calibre Regular',
+          marginTop: '16px',
+          padding: '16px',
+          lineHeight: '26px'
         }}
       >
         Thanks to Oli’s mentorship, I not only improved my technical skills, but also gained a clearer understanding of what it means to be a user-centered designer.

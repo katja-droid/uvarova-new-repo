@@ -16,8 +16,9 @@ const ProfWorldConstraints = () => {
 
   return (
     <>
+    <Box sx={{pb: { xl: '80px', lg: '40px', sm: '32px', xxs: '16px' }}}>
       {/* Container for the title and first text section */}
-      <Container disableGutters maxWidth={false} justifyContent="center" sx={{pb: { xl: '80px', lg: '40px', sm: '32px', xxs: '16px' }}}>
+      <Container disableGutters maxWidth={false} justifyContent="center" >
         {/* Title Section */}
         <Grid container justifyContent="center" spacing={0} sx={{ py: 2 }}>
           <Grid item  xxs={12} md={10} lg={8}>
@@ -91,6 +92,7 @@ const ProfWorldConstraints = () => {
           </Grid>
         </Grid>
       </Container>
+      </Box>
     </>
   );
 };

@@ -31,12 +31,7 @@ const NoInternet = () => {
   return (
     <ThemeProvider theme={theme}>
       <Container disableGutters maxWidth={false} sx={{ minHeight: '100vh' }}>
-        {/* Navbar */}
-        <Grid container>
-          <Grid item xs={12}>
-            <Navbar />
-          </Grid>
-        </Grid>
+      
 
         {/* Main Content */}
         <Grid

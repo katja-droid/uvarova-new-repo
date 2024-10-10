@@ -30,7 +30,7 @@ const MajorProject = () => {
           m: 0, // Remove any margin
         }}
       >
-        One of my major projects was the development of a <b><Link to="/prof-word" style={{ color: '#0A0A14' }}>SaaS platform for automating HR processes</Link>, which reduced routine tasks by up to 70%</b>, covering all stages from defining the product’s goals to handing off the design to developers and ensuring quality.
+        One of my major projects was the development of a <b><Link to="/prof-word" style={{ color: '#0A0A14',  fontSize: '20px', }} className="link-text">SaaS platform for automating HR processes</Link>, which reduced routine tasks by up to 70%</b>, covering all stages from defining the product’s goals to handing off the design to developers and ensuring quality.
       </Typography>
     </>
   );

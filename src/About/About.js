@@ -28,7 +28,7 @@ const About = () => {
         py: 0,
       }}
     >
-      <Grid item xxl={8} xl={8} lg={8} md={8} sm={12} xs={12} sx={{ p: 0 }}>
+      <Grid item xxl={8} xl={8} lg={8} md={12} sm={12} xs={12} sx={{ p: 0 }}>
         <Grid container spacing={0} sx={{ p: 0, m: 0 }}>
           <Grid item xs={12} sx={{ mb: '24px' }}> {/* 48px margin bottom */}
             <Box sx={{ height: { xl: '343px', xx: '249px' }, p: 0 }}>
@@ -46,7 +46,7 @@ const About = () => {
           </Grid>
         </Grid>
         <Grid container spacing={0} sx={{ p: 0, m: 0 }}>
-          <Grid item xs={12} sx={{ mb: '24px' }}> {/* 48px margin bottom */}
+          <Grid item xs={12} sx={{ mb: '48px' }}> {/* 48px margin bottom */}
             <Certificates />
           </Grid>
           <Grid item xs={12} sx={{ mb: '24px' }}> {/* 48px margin bottom */}

@@ -26,7 +26,7 @@ const SelfDevelopment = () => {
           color: '#0A0A14',
         }}
       >
-        In addition to my professional activities, I actively strive for self-development by participating in thematic events and master classes in UX/UI design, public speaking, and English language learning. I also strive to continuously improve my skills and knowledge by publishing articles on <Link style={{color: '#0A0A14'}} to="https://medium.com/">Medium</Link> and completing basic <Link style={{color: '#0A0A14'}} to="https://owu.com.ua/">HTML/CSS</Link>  courses.
+        In addition to my professional activities, I actively strive for self-development by participating in thematic events and master classes in UX/UI design, public speaking, and English language learning. I also strive to continuously improve my skills and knowledge by publishing articles on <Link style={{color: '#0A0A14', fontSize: '20px',}} className="link-text" to="https://medium.com/">Medium</Link> and completing basic <Link style={{color: '#0A0A14', fontSize: '20px',}} className="link-text" to="https://owu.com.ua/">HTML/CSS</Link>  courses.
       </Typography>
     </>
   );

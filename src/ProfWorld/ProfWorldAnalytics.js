@@ -12,10 +12,10 @@ const ProfWorldAnalytics = () => {
     <ProfWorldAnalyticsTwo/>
   ]
   return (
-    <>
-    <Container id="profWorldAnalytics" disableGutters maxWidth={false} sx={{pb: { xl: '80px', lg: '40px', sm: '32px', xxs: '16px' }}}>
+    <Box sx={{pb: { xl: '80px', lg: '40px', sm: '32px', xxs: '16px' }}}>
+    <Container id="profWorldAnalytics" disableGutters maxWidth={false} >
       {/* Container for the title */}
-      <Grid container justifyContent="center" spacing={0} sx={{ py: 2 }}>
+      <Grid container justifyContent="center" spacing={0} >
         <Grid item xl={8} xxs={12} md={10}>
           <Typography
             variant="h3"
@@ -86,7 +86,7 @@ const ProfWorldAnalytics = () => {
         </Grid>
       </Grid>
     </Container>
-    </>
+    </Box>
   );
 };
 

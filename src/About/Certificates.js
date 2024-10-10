@@ -8,24 +8,36 @@ import withScrollEffect from '../withScrollEffect.js';
 
 const Certificates = () => {
   return (
-    <Grid container spacing={1} justifyContent="space-between"  >
-      <Grid item xxl={6} xl={4} lg={4} md={6} sm={12} xs={12} sx={{ display: 'flex', alignItems: 'stretch' }}>
-        <Box sx={{ flexGrow: 1 }}>
-          <img src={certificate1} width="100%" style={{ height: 'auto', objectFit: 'cover' }} alt="Certificate 1" />
+    <Grid container spacing={1} justifyContent="space-between">
+      <Grid item xl={6} lg={6} md={6} sm={12} xs={12} sx={{ display: 'flex', alignItems: 'stretch' }}>
+        <Box sx={{ flexGrow: 1, display: 'flex', alignItems: 'stretch' }}>
+          <img 
+            src={certificate1} 
+            alt="Certificate 1" 
+            style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
+          />
         </Box>
       </Grid>
-      <Grid item xxl={6} xl={4} lg={4} md={6} sm={12} xs={12} sx={{ display: 'flex', alignItems: 'stretch' }}>
-        <Box sx={{ flexGrow: 1 }}>
-          <img src={certificate2} width="100%" style={{ height: 'auto', objectFit: 'cover' }} alt="Certificate 2" />
+      <Grid item xl={6} lg={6} md={6} sm={12} xs={12} sx={{ display: 'flex', alignItems: 'stretch' }}>
+        <Box sx={{ flexGrow: 1, display: 'flex', alignItems: 'stretch' }}>
+          <img 
+            src={certificate2} 
+            alt="Certificate 2" 
+            style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
+          />
         </Box>
       </Grid>
-      <Grid item xxl={6} xl={4} lg={4} md={6} sm={12} xs={12} sx={{ display: 'flex', alignItems: 'stretch' }}>
-        <Box sx={{ flexGrow: 1 }}>
-          <img src={certificate3} width="100%" style={{ height: 'auto', objectFit: 'cover' }} alt="Certificate 3" />
+      <Grid item xl={6} lg={6} md={6} sm={12} xs={12} sx={{ display: 'flex', alignItems: 'stretch' }}>
+        <Box sx={{ flexGrow: 1, display: 'flex', alignItems: 'stretch' }}>
+          <img 
+            src={certificate3} 
+            alt="Certificate 3" 
+            style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
+          />
         </Box>
       </Grid>
-      <Grid item xxl={6} xl={4} lg={4} md={6} sm={12} xs={12} sx={{ display: 'flex', alignItems: 'stretch' }}>
-        <Box sx={{ flexGrow: 1 }}>
+      <Grid item xl={6} lg={6} md={6} sm={12} xs={12} sx={{ display: 'flex', alignItems: 'stretch' }}>
+        <Box sx={{ flexGrow: 1, display: 'flex', alignItems: 'stretch' }}>
           <LinkedInReview />
         </Box>
       </Grid>

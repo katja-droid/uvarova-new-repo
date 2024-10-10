@@ -226,10 +226,12 @@ const ProfWorld = () => {
       {activeSection !== "constraints" && activeSection !== "analytics" ? (
   <>
     <Grid container justifyContent="center" spacing={0}>
-      <Grid item xxs={12} lg={10}>
+    <Grid container justifyContent="center" spacing={0} >
+      <Grid item xxs={12} >
         <NavbarProject activeLink={activeSection} sections={sections} onSelectSection={handleSelectSection} />
         {/* Apply scroll effect to the rendered section */}
         {withScrollEffect(() => renderSection())()}
+      </Grid>
       </Grid>
     </Grid>
   </>

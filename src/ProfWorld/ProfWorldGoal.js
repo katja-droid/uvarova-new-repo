@@ -7,7 +7,7 @@ const ProfWorldGoal = () => {
     <Container disableGutters maxWidth={false} sx={{pb: { xl: '80px', lg: '40px', sm: '32px', xxs: '16px' }}}>
       {/* Container for the title */}
       <Grid container justifyContent="center" spacing={0}  >
-        <Grid item sm={12} xxs={12} md={12}>
+        <Grid item item xl={8} xxs={12} md={10}>
           <Typography
             variant="h3"
             sx={{
@@ -27,7 +27,7 @@ const ProfWorldGoal = () => {
         justifyContent="center"
         sx={{  fontFamily: 'Calibre Regular', fontSize: '18px' }}
       >
-        <Grid item sm={12} xs={12}>
+        <Grid item xl={8} xxs={12} md={10}>
           <Box
             sx={{
               fontFamily: 'Calibre Regular',

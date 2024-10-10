@@ -122,3 +122,33 @@
 html {
   scroll-behavior: smooth;
 }
+.link-text {
+  position: relative;
+}
+
+.link-text:hover {
+  background: linear-gradient(90deg, #0D99FF, #99FAF4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.link-text:hover::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 22%; /* Set to 0 or slightly adjust to position it closer */
+  width: 100%;
+  height: 1px; /* Adjust thickness of the underline */
+  background-color: #0D99FF; /* Adjust color of the underline */
+  transition: background-color 0.3s ease;
+}
+.gradient-text {
+  background: linear-gradient(90deg, #0D99FF, #99FAF4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+

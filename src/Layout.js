@@ -44,9 +44,10 @@ function Layout() {
           </Grid2>
         </Grid2>
 
-        {/* Conditionally render the footer */}
-        {!hiddenRoutes.includes(location.pathname) && <Footer />}
+     
       </Container>
+         {/* Conditionally render the footer */}
+         {!hiddenRoutes.includes(location.pathname) && <Footer />}
     </ThemeProvider>
   );
 }

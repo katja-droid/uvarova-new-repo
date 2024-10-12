@@ -5,13 +5,13 @@ import project2 from '../assets/project2.png';
 import project3 from '../assets/project3.png';
 import project4 from '../assets/project4.png';
 import arrow from '../assets/maki_arrow.svg';
-import withScrollEffect from '../withScrollEffect.js.js';
+import withScrollEffect from '../withScrollEffect.js';
 
 const items = [
   {
     heading: 'Prof.world',
     description: 'SaaS: automated recruiting, training, and payroll system for B2B',
-    linkText: 'Enter Password', // Default text
+    linkText: 'Enter Password',
     linkUrl: '/prof-world',
     bgColor: '#FAF6C8',
     imageUrl: project1,
@@ -19,7 +19,7 @@ const items = [
   {
     heading: 'Virtual Nutritionist',
     description: 'Health monitoring apps for iOS platform',
-    linkText: 'Read case study', // Already this way
+    linkText: 'Read case study',
     linkUrl: '/virtual-nutritionist',
     bgColor: '#E5F9EC',
     imageUrl: project2,
@@ -27,7 +27,7 @@ const items = [
   {
     heading: 'Metlife',
     description: 'UX/UI process for developing digital forms for an insurance company',
-    linkText: 'Enter Password', // Default text
+    linkText: 'Enter Password',
     linkUrl: '/metlife',
     bgColor: '#DDEFFF',
     imageUrl: project3,
@@ -35,7 +35,7 @@ const items = [
   {
     heading: 'Political Forum',
     description: 'UX Assignment: Multi-Level Navigation',
-    linkText: 'Enter Password', // Default text
+    linkText: 'Enter Password',
     linkUrl: '/political-forum',
     bgColor: '#E7EDFF',
     imageUrl: project4,
@@ -61,20 +61,78 @@ const Projects = () => {
     setHoverState((prevState) => ({ ...prevState, [index]: false }));
   };
 
+  const getImageStyles = (index) => {
+    switch (index) {
+      case 0: // Image 1, 3, 4 have the same border radius and alignment
+      case 2:
+      case 3:
+        return {
+          justifyContent: 'flex-end', // Align right
+          borderRadius: {
+            xxxl: '30px 0 0 0',
+            xxl: '30px 0 0 0',
+            xl: '30px 0 0 0',
+            lg: '16px 0 0 0',
+            md: '14px 0 0 0',
+            sm: '24px 0 0 0',
+            xxs: '24px 0 0 0',
+          },
+          height: {
+            xxxl: '482px',
+            xxl: '441px',
+            xl: '441px',
+            lg: '323px',
+            md: '214px',
+            sm: '346px',
+            xxs: '252px',
+          },
+        };
+      case 1: // Image 2 has different border radius and centered alignment
+        return {
+          justifyContent: 'center', // Align center
+          borderRadius: {
+            xxxl: '30px 30px 0 0',
+            xxl: '30px 30px 0 0',
+            xl: '30px 30px 0 0',
+            lg: '16px 16px 0 0',
+            md: '14px 14px 0 0',
+            sm: '24px 24px 0 0',
+            xxs: '24px 24px 0 0',
+          },
+          height: {
+            xxxl: '482px',
+            xxl: '441px',
+            xl: '441px',
+            lg: '323px',
+            md: '214px',
+            sm: '346px',
+            xxs: '252px',
+          },
+        };
+      default:
+        return {};
+    }
+  };
+
   return (
     <Grid container spacing={3} justifyContent="space-between">
       {items.map((item, index) => (
         <Grid item xs={12} sm={12} md={6} lg={6} xl={6} key={index}>
           <Box
-            style={{
+            sx={{
               backgroundColor: item.bgColor,
               color: '#0A0A14',
               display: 'flex',
               flexDirection: 'column',
               justifyContent: 'space-between',
-              borderRadius: '16px 16px 0 0',
+              height: '100%', // Ensure all blocks are the same height
+              borderRadius: '16px', // Apply 16px border radius to all corners
+              overflow: 'hidden', // Ensure content inside respects the border radius
+              boxShadow: '0 1px 4px rgba(0, 0, 0, 0.05)'
+
             }}
           >
+            {/* Content area at the top */}
             <Box
               sx={{
                 padding: {
@@ -85,10 +143,10 @@ const Projects = () => {
                   lg: '40px',
                   xl: '40px',
                 },
+                flexGrow: 1, // Allow content area to grow to fill available space
               }}
             >
               <Typography
-                variant="h3"
                 gutterBottom
                 sx={{
                   fontFamily: 'Playfair Display Bold',
@@ -115,14 +173,6 @@ const Projects = () => {
                     lg: '334px',
                     xl: '334px',
                   },
-                  height: {
-                    xxs: '44px',
-                    xs: '44px',
-                    sm: '38px',
-                    md: '50px',
-                    lg: '50px',
-                    xl: '50px',
-                  },
                   paddingTop: '0',
                   fontFamily: 'Calibre Regular',
                   fontSize: {
@@ -139,7 +189,6 @@ const Projects = () => {
                 {item.description}
               </Typography>
 
-              {/* Conditionally change linkText based on authentication */}
               <Link href={item.linkUrl} underline="none" color="inherit">
                 <Box
                   style={{
@@ -215,30 +264,37 @@ const Projects = () => {
                 </Box>
               </Link>
             </Box>
-          </Box>
-          <Box
-            display="flex"
-            width="100%"
-            alignItems="center"
-            justifyContent="space-between"
-            backgroundColor={item.bgColor}
-            sx={{
-              paddingTop: {
-                xxl: '122px',
-                xl: '50px',
-                lg: '50px',
-                md: '24px',
-                sm: '27px',
-                xs: '27px',
-                xxs: '27px',
-              },
-            }}
-          >
-            <img
-              src={item.imageUrl}
-              alt={item.heading}
-              style={{ width: '100%', borderRadius: '16px 16px 0 0' }}
-            />
+
+            {/* Image at the bottom */}
+            <Box
+              display="flex"
+              justifyContent={index === 1 ? 'center' : 'flex-end'} // Ensure center alignment for Nutritionist image
+              sx={{
+                alignSelf: 'flex-end',
+                width: '100%', // Make sure the Box takes up full width
+                paddingTop: {
+                  xxxl: '122px',
+                  xxl: '51px',
+                  xl: '51px',
+                  lg: '24px',
+                  md: '24px',
+                  sm: '27px',
+                  xxs: '12px',
+                }, // Add padding top for different breakpoints
+              }}
+            >
+              <Box
+                component="img"
+                src={item.imageUrl}
+                alt={item.heading}
+                sx={{
+                  height: getImageStyles(index).height, // Apply the specific height
+                  borderRadius: getImageStyles(index).borderRadius, // Apply custom border radius
+                  display: 'block',
+                  maxWidth: '100%', // Ensure the image doesn't overflow
+                }}
+              />
+            </Box>
           </Box>
         </Grid>
       ))}

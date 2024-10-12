@@ -92,6 +92,7 @@ const BeginSection = () => {
           alignItems: 'center',
           overflow: 'hidden',
           margin: '0 auto', // Center the entire block on the page
+          
         }}
       >
         {/* Background Image Container */}
@@ -105,7 +106,9 @@ const BeginSection = () => {
             backgroundImage: `url(${backgroundImage})`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
-            backgroundRepeat: 'no-repeat',
+            backgroundRepeat: 'no-repeat', // Ensure the GIF is above the background
+            borderRadius: '4px',
+           
           }}
         />
 
@@ -118,7 +121,7 @@ const BeginSection = () => {
             transform: 'translateX(-50%)', // Center the GIF horizontally
             width: '100%',
             height: '92%', // Adjust based on aspect ratio
-            zIndex: 2, // Ensure the GIF is above the background
+            zIndex: 2
           }}
         >
           <img

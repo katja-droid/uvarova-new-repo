@@ -126,7 +126,7 @@ const ProfTimelineAndContribution = ({ contribution, tools }) => {
               mb: { xs: '8px', md: '10px' },
             }}
           >
-            <Link to={item.href} style={{ color: '#0A0A14', textDecoration: 'none', fontSize: '18px', fontFamily: 'Calibre Regular' }}>
+            <Link to={item.href} style={{ color: '#0A0A14', textDecoration: 'none', fontSize: '18px', fontFamily: 'Calibre Regular', cursor: item.href === '#' ? 'default' : 'pointer',  }}>
               {item.name}
             </Link>
           </Box>

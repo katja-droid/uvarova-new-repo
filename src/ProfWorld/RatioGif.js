@@ -14,6 +14,7 @@ const RatioGif = ({ image, backgroundImage, aspectRatio = '66.95%' }) => {
         alignItems: 'center',
         overflow: 'hidden',
         margin: '0 auto', // Center the entire block
+        
       }}
     >
       {/* Background Image */}
@@ -29,7 +30,8 @@ const RatioGif = ({ image, backgroundImage, aspectRatio = '66.95%' }) => {
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
-            zIndex: 1, // Place background behind the GIF
+            zIndex: 1,
+          borderRadius: '4px'
           }}
         />
       )}
@@ -44,6 +46,7 @@ const RatioGif = ({ image, backgroundImage, aspectRatio = '66.95%' }) => {
           width: '100%',
           height: '92%', // Adjust based on aspect ratio
           zIndex: 2, // Place the GIF on top of the background
+          
         }}
       >
         <img

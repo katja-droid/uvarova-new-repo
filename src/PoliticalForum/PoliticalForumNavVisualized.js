@@ -43,7 +43,7 @@ const PoliticalForumNavVisualized = () => {
                   sx={{ fontSize: { md: '34px', sm: '28px', xxs: '22px' }, fontFamily: 'Playfair Display Bold', pb: '16px' }}
                   variant="h4"
                 >
-                  Nav Visualized (Mobile)
+                  Nav Visualized<br/> (Mobile)
                 </Typography>
                 <Typography sx={{ fontSize: '18px', lineHeight: '26px', fontFamily: 'Calibre Regular' }}>
                   The mobile version of the site has four levels of navigation. In the desktop version, there is space for visible
@@ -63,18 +63,18 @@ const PoliticalForumNavVisualized = () => {
                 <Typography sx={{ fontSize: '18px', lineHeight: '26px', fontFamily: 'Calibre Regular', mb: '8px', color: '#646470' }}>
                   Based on this, the following recommendations for designing mobile navigation were developed:
                 </Typography>
-                <Typography sx={{ fontSize: '18px', lineHeight: '26px', fontFamily: 'Calibre Regular', mb: '8px' }}>
+                <Typography sx={{ fontSize: '18px', lineHeight: '26px', fontFamily: 'Calibre Regular', mb: '8px', pl: '16px' }}>
                   1. Menus: Use a visual hierarchy to separate primary and secondary navigation.
                 </Typography>
-                <Typography sx={{ fontSize: '18px', lineHeight: '26px', fontFamily: 'Calibre Regular', mb: '8px' }}>
+                <Typography sx={{ fontSize: '18px', lineHeight: '26px', fontFamily: 'Calibre Regular', mb: '8px', pl: '16px' }}>
                   2. Sub-menus: Allow users to open and close menu folders to preview second and third level pages in
                   multiple sections at the same time.
                 </Typography>
-                <Typography sx={{ fontSize: '18px', lineHeight: '26px', fontFamily: 'Calibre Regular', mb: '8px' }}>
+                <Typography sx={{ fontSize: '18px', lineHeight: '26px', fontFamily: 'Calibre Regular', mb: '8px', pl: '16px' }}>
                   3. Current Location Indicator: Shows the page the user is on when he or she opens the main menu.
                   For greater clarity, a breadcrumb navigation chain has been added.
                 </Typography>
-                <Typography sx={{ fontSize: '18px', lineHeight: '26px', fontFamily: 'Calibre Regular', mb: '8px' }}>
+                <Typography sx={{ fontSize: '18px', lineHeight: '26px', fontFamily: 'Calibre Regular', mb: '8px', pl: '16px' }}>
                   4. Site-to-site navigation: For all subdomains and microsites, provide a link back to the primary
                   site’s main page using a global header or coordination rule.
                 </Typography>

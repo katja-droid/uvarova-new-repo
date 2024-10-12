@@ -78,7 +78,8 @@ const StaffTrainingSection = () => {
                 sx={{
                   width: '100%',
                   maxWidth: '673px',
-                  borderRadius: '8px', // Optional: add some styling to the image
+                  borderRadius: '4px', // Optional: add some styling to the image
+                  
                 }}
               />
             </Grid>

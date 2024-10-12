@@ -18,7 +18,7 @@ const MetLifeUsers = () => {
             sx={{
               fontSize: { xxs: '30px', sm: '34px', md: '40px' },
               fontFamily: 'Playfair Display Bold',
-              pb: '24px',
+              pb: {xl: '32px', xxs: '24px'},
             }}
           >
             Users
@@ -27,7 +27,7 @@ const MetLifeUsers = () => {
       </Grid>
 
       {/* Content for users */}
-      <Grid container justifyContent="center" sx={{ py: 2 }}>
+      <Grid container justifyContent="center" >
         <Grid
           item
           xxl={8} // 8 columns on xxxl-xl

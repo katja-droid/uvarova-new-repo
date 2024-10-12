@@ -30,42 +30,57 @@ const PoliticalForumNavigationLevels = () => {
             alignItems: 'center',
           }}
         >
-          <Grid container sx={{
-            display: 'flex',
-            flexDirection: 'column',
-            justifyContent: 'flexStart',
-            alignItems: 'center',
-          }}>
+          <Grid
+            container
+            sx={{
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'flex-start', // Keep alignment to flex-start for top alignment
+              alignItems: 'flex-start', // Change this to align the header to the left
+              width: '100%', // Ensure full width for the container
+            }}
+          >
             {/* First Column */}
             <Grid item xxs={12} xs={12} sm={12} md={10} lg={10} xl={10} xxl={10}>
-              <Box sx={{
-                width: {
-                  xs: '100%', sm: '100%', md: '100%', lg: '100%', xl: '100%', xxl: '100%'
-                },
-              }}>
-                <Typography sx={{ textAlign: 'left', fontSize: { md: '40px', sm: '34px', xxs: '25px' }, fontFamily: 'Playfair Display Bold', pb: '24px' }} variant='h3'>
-                Navigation Levels
+              <Box
+                sx={{
+                  width: '100%', // Ensure full width
+                  textAlign: 'left', // Align the box content to the left
+                }}
+              >
+                <Typography
+                  sx={{
+                    textAlign: 'left', // Left alignment for the text
+                    width: '100%',
+                    fontSize: { md: '40px', sm: '34px', xxs: '25px' },
+                    fontFamily: 'Playfair Display Bold',
+                    pb: '24px',
+                  }}
+                  variant="h3"
+                >
+                  Navigation Levels
                 </Typography>
-               
               </Box>
             </Grid>
-
-           
           </Grid>
         </Container>
       </Box>
 
       {/* Full Width Image */}
-      <Box sx={{pb: { 
-        xxs: '24px', 
-        xs: '48px', 
-        sm: '60px', 
-        md: '80px', 
-        lg: '80px', 
-        xl: '80px', 
-        xxxl: '80px' 
-      },}}>
-      <img width="100%" src={image} alt="Design System" />
+      <Box
+        sx={{
+          pb: {
+            xxs: '24px',
+            xs: '48px',
+            sm: '60px',
+            md: '80px',
+            lg: '80px',
+            xl: '80px',
+            xxxl: '80px',
+          },
+        }}
+      >
+        <img width="100%" src={image} alt="Design System" />
       </Box>
     </ThemeProvider>
   );

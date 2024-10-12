@@ -34,6 +34,7 @@
   width: 100%; /* Full width for smaller screens */
   height: 100%;
   object-fit: cover; /* Ensure the content scales and fits */
+  border-radius: 4px;
 }
 
 /* Arrows for navigation */

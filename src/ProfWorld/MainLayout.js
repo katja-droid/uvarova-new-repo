@@ -59,7 +59,8 @@ const MainLayout = () => {
               </Typography>
 
   {/* RatioGif Section */}
-  <Box sx={{ width: '100%', pb: '24px' }}>
+  <Box sx={{ width: '100%', pb: '24px', boxShadow: '0 10.14px 31.19px rgba(0, 0, 0, 0.1)'  
+ }}>
     <RatioGif image={gif} backgroundImage={bg} />
   </Box>
 </Grid>
@@ -115,6 +116,7 @@ const MainLayout = () => {
                     sx={{
                       width: '100%',
                       borderRadius: '8px',
+                      boxShadow: '0 2.11px 4.22px rgba(0, 0, 0, 0.08)'
                     }}
                   />
                 </Box>
@@ -162,6 +164,7 @@ const MainLayout = () => {
                     sx={{
                       width: '100%',
                       borderRadius: '8px',
+                      
                     }}
                   />
                 </Box>

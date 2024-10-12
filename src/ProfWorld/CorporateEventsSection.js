@@ -67,7 +67,8 @@ Each event is displayed in card format with details such as title, date, loca
               <Box sx={{ display: 'flex', justifyContent: 'center', // GIF comes second on smaller screens, first on larger screens
                 width:{
                     xxxl: '673px'
-                } }}>
+                },
+                 }}>
                 {/* Use RatioGif here with a GIF */}
               <img src={img} width="100%"/>
               </Box>

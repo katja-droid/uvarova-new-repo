@@ -69,7 +69,8 @@ This allows for a clearer assessment of the candidate, and user-friendly featu
               <Box sx={{ display: 'flex', justifyContent: 'center', // GIF comes second on smaller screens, first on larger screens
                 width:{
                     xxxl: '673px'
-                } }}>
+                },
+                 }}>
                 {/* Use RatioGif here with a GIF */}
               <RatioGif image={img} backgroundImage={bg}/>
               </Box>

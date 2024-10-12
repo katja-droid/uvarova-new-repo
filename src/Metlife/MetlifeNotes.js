@@ -13,7 +13,7 @@ const MetLifeNotes = () => {
             sx={{
               fontSize: { xxs: '30px', sm: '34px', md: '40px' },
               fontFamily: 'Playfair Display Bold',
-              pb: '24px',
+              pb: {xl: '32px', xxs: '24px'},
             }}
           >
             Notes
@@ -45,6 +45,7 @@ const MetLifeNotes = () => {
                   alignItems: 'start',
                   mb: '8px', // Add 8px margin bottom for spacing between items
                 },
+                mt: 0
               }}
             >
               <li>

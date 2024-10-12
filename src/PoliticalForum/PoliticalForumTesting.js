@@ -48,8 +48,8 @@ const PoliticalForumTesting = () => {
               >
                 Testing Summary
               </Typography>
-              <Typography sx={{fontSize: '18px', pb: '8px'}}>
-              We select no more than 23 mainaudience segments (age: {'<40'}, {'>40'}).
+              <Typography sx={{fontSize: '18px', pb: '8px',  fontFamily: 'Calibre Regular'}}>
+              We select no more than 23 main audience segments (age: {'<40'}, {'>40'}).
               </Typography>
               <Box
                 component="ul"
@@ -65,7 +65,7 @@ const PoliticalForumTesting = () => {
                   lineHeight: '26px',
                 }}
               >
-                <li style={{paddingBottom:'8px'}}><b>23</b>  participants were invited.</li>
+                <li style={{paddingBottom:'8px'}}><b>23 participants</b>  were invited.</li>
                 <li style={{paddingBottom:'8px'}}>
                   It usually takes <b>three rounds</b> of testing to achieve over 80%
                   completion rates.
@@ -154,10 +154,10 @@ const PoliticalForumTesting = () => {
                   mb: '8px', // Add margin bottom similar to list items
                   fontSize: '18px',
                   lineHeight: '26px',
-                             fontFamily: 'Calibre Regular'
+                  fontFamily: 'Calibre Regular'
                 }}
               >
-                To obtain a <b>high success rate</b>, we test the exact same <b>15 top task</b>    instructions, with repetition, on the exact same types of people over
+                To obtain a <b>high success rate</b>, we test the exact same <b>15 top task</b> instructions, with repetition, on the exact same types of people over
                 a period of time.
               </Typography>
             </Grid>
@@ -168,4 +168,4 @@ const PoliticalForumTesting = () => {
   );
 };
 
-export default withScrollEffect (PoliticalForumTesting);
+export default withScrollEffect(PoliticalForumTesting);

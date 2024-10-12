@@ -194,7 +194,7 @@ const renderSection = () => {
 </Grid>
 </Container>
 <CoverSectionMetLife/>
-<Container disableGutters maxWidth={false} sx={{ minHeight: '100vh', color: '#0A0A14', pb: {md: '80px', xxs: '16px'} }}>
+<Container disableGutters maxWidth={false} sx={{  color: '#0A0A14', pb: {md: '80px', xxs: '16px'} }}>
 <Grid container spacing={2} justifyContent="space-between">
   {/* First Column - Takes full width on small screens, and 5 out of 12 columns on medium screens and up */}
   <Grid item xs={12} lg={5}>
@@ -248,14 +248,14 @@ const renderSection = () => {
 </div>
 <MetFinalDesign/>
 <MetLifeSummary/>
-<TestingSection/>
 </Container>
 <ThreeColSection/>
 <MetUsabilityTesting/>
 <MetDesignSystem/>
 <div ref={calendarRef}>
+  <Box sx={{pt: { xl: '80px', lg: '40px', sm: '32px', xxs: '16px' }}}>
 <MoreSectionMet/>
-
+</Box>
 </div>
       {/* Footer */}
       <Footer />

@@ -37,6 +37,7 @@
   height: 100%;
   object-fit: cover;
   box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.1); /* Even shadow on all sides */
+  border-radius: 4px;
 }
 
 @media (min-width: 1240px) { /* For xl and larger screens */
@@ -44,7 +45,7 @@
     width: calc(100% - 40px); /* Adjusted width for xl screens */
   }
 }
-@media (min-width: 904px) { /* For xl and larger screens */
+@media (max-width: 904px) { /* For xl and larger screens */
   .arrow {
    display: none;
   }

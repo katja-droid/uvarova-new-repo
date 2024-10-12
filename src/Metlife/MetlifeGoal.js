@@ -17,7 +17,7 @@ const MetlifeGoal = () => {
             sx={{
               fontSize: { xxs: '30px', sm: '34px', md: '40px' },
               fontFamily: 'Playfair Display Bold',
-              pb: '24px',
+              pb: {xl: '32px', xxs: '24px'},
             }}
           >
             Goal of the Project
@@ -29,7 +29,7 @@ const MetlifeGoal = () => {
       <Grid
         container
         justifyContent="center"
-        sx={{ py: 2, fontFamily: 'Calibre Regular', fontSize: '18px' }}
+        sx={{  fontFamily: 'Calibre Regular', fontSize: '18px' }}
       >
         <Grid
           item

@@ -47,7 +47,6 @@ const BeforeAfterLayout = ({ beforeImage, afterImage }) => {
             height: 'auto',
             padding: 0,
             margin: 0,
-            boxShadow: '0 15px 20px 0 rgba(0, 0, 0, 0.1)', // Add shadow like an image
           }}
         />
       </Grid>
@@ -87,7 +86,6 @@ const BeforeAfterLayout = ({ beforeImage, afterImage }) => {
             height: 'auto',
             padding: 0,
             margin: 0,
-            boxShadow: '0 15px 20px 0 rgba(0, 0, 0, 0.1)', // Add shadow like an image
           }}
         />
       </Grid>

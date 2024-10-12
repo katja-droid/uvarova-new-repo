@@ -76,7 +76,8 @@ const TestingSection = () => {
                 sx={{
                   width: '100%',
                   maxWidth: '673px',
-                  borderRadius: '8px', // Optional: add some styling to the image
+                  borderRadius: '8px',
+
                 }}
               >
               <RatioGif image={img} backgroundImage={bg}></RatioGif>

@@ -15,7 +15,7 @@ const MoreSectionPoliticalForum = () => {
         width: '100%',
         backgroundColor: '#fff',
         color: '#0A0A14',
-        pt: { xl: '80px', lg: '40px', sm: '32px', xxs: '16px' },
+        py: { xl: '80px', lg: '40px', sm: '32px', xxs: '16px' },
       }}
     >
       <Container maxWidth={false}>
@@ -30,6 +30,7 @@ const MoreSectionPoliticalForum = () => {
               fontWeight: 600, // Calibre Semibold
               fontSize: '16px',
               color: '#0A0A14',
+                 mb:   '32px'
             }}
           >
             More Projects
@@ -39,7 +40,7 @@ const MoreSectionPoliticalForum = () => {
         {/* Responsive Grid */}
         <Grid container spacing={2}>
         <Grid item xs={12} sm={12} md={6} lg={4}>
-            <Box>
+            <Box sx={{boxShadow: '0 1px 4px rgba(0, 0, 0, 0.05)', pb: '32px', borderRadius: '16px' }}>
               <img src={image3} alt="Prof.world: automated recruiting" style={{ width: '100%' }} />
               <Typography align="center" mt={2}>
                 <Link
@@ -61,7 +62,7 @@ const MoreSectionPoliticalForum = () => {
           </Grid>
           {/* Item 1: Image + Text */}
           <Grid item xs={12} sm={12} md={6} lg={4}>
-            <Box>
+            <Box sx={{boxShadow: '0 1px 4px rgba(0, 0, 0, 0.05)', pb: '32px', borderRadius: '16px'}}>
               <img src={image1} alt="Prof.world: automated recruiting" style={{ width: '100%' }} />
               <Typography align="center" mt={2}>
                 <Link
@@ -84,7 +85,7 @@ const MoreSectionPoliticalForum = () => {
 
           {/* Item 2: Image + Text */}
           <Grid item xs={12} sm={12} md={6} lg={4}>
-            <Box>
+            <Box sx={{boxShadow: '0 1px 4px rgba(0, 0, 0, 0.05)', pb: '32px', borderRadius: '16px'}}>
               <img src={image2} alt="Metlife: digital forms" style={{ width: '100%' }} />
               <Typography align="center" mt={2}>
                 <Link

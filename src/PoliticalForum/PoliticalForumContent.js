@@ -33,7 +33,7 @@ const PoliticalForumContent = () => {
               textAlign: 'center',
               fontSize: { md: '20px', xxs: '18px' },
               fontFamily: 'Calibre Medium',
-              pb: { lg: '91px', md: '55px', xxs: '76px' },
+              height: {  xl: '103px', md: '84px',  xxs: '112px' },
               width: { md: '100%', sm: '182px', xxs: '184px' },
             }}
           >
@@ -44,10 +44,10 @@ const PoliticalForumContent = () => {
 
       {/* Image Section */}
       <Grid container spacing={2} justifyContent="center">
-        <Grid item xs={12} md={8} xxs={12}>
+        <Grid item xs={12} md={10} xxs={12}>
           <PoliticalForumNavigationBox
             sx={{
-              width: { xs: '100%', lg: '100%', md: '348px' }, // Responsive width for image
+              width: { xs: '100%', lg: '100%', md: '100%' }, // Responsive width for image
             }}
           >
             <img

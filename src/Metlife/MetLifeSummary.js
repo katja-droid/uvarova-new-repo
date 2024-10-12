@@ -26,7 +26,6 @@ const MetLifeSummary = () => {
               lg={8}
               sx={{
                 textAlign: 'left',
-                pb: '24px',
                 width: { xxs: '100%', lg: '100%'}, // 100% width for xxs-lg, 935px for xl and xxl
                 maxWidth: { xxs: '100%', lg: '100%' }, // Ensuring it doesn't exceed 935px on xl-xxl
                 mx: 'auto', // Center align the block horizontally

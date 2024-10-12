@@ -82,7 +82,8 @@ const CompanyRegistrationAfterSection = () => {
               <Box sx={{ display: 'flex', justifyContent: 'center', // GIF comes second on smaller screens, first on larger screens
                 width:{
                     xxxl: '673px'
-                } }}>
+                },
+                 }}>
                 {/* Use RatioGif here with a GIF */}
                 <RatioGif image={gif} backgroundImage={bg} aspectRatio="66.95%" />
               </Box>

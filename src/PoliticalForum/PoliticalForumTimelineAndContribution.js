@@ -2,6 +2,7 @@ import React from 'react';
 import { Box, Typography } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 import withScrollEffect from '../withScrollEffect.js';
+import { Link } from 'react-router-dom';
 
 const PoliticalForumTimelineAndContribution = ({ tools }) => {
   const theme = useTheme();
@@ -136,7 +137,9 @@ const PoliticalForumTimelineAndContribution = ({ tools }) => {
               mb: { xs: '8px', md: '10px' },
             }}
           >
-            {item.name}
+             <Link to={item.href} style={{ color: '#0A0A14', textDecoration: 'none', fontSize: '18px', fontFamily: 'Calibre Regular', cursor: item.href === '#' ? 'default' : 'pointer', }}>
+              {item.name}
+            </Link>
           </Box>
         ))}
       </Box>

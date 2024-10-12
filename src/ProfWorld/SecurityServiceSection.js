@@ -22,7 +22,8 @@ const SecurityServiceSection = () => {
           maxWidth={false}
           sx={{
             width: '100%',
-            py: 0, // Removed padding from container
+            py: 0, 
+            
           }}
         >
           <Grid container spacing={2} justifyContent="center" alignItems="center">
@@ -69,7 +70,8 @@ const SecurityServiceSection = () => {
                 justifyContent: 'center',
                 width:{
                     xxxl: '673px'
-                }
+                },
+                
               }}
             >
               <Box

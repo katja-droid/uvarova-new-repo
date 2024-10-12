@@ -13,7 +13,7 @@ const MetLifeKPIs = () => {
             sx={{
               fontSize: { xxs: '30px', sm: '34px', md: '40px' },
               fontFamily: 'Playfair Display Bold',
-              pb: '24px',
+              pb: {xl: '32px', xxs: '24px'},
             }}
           >
             Design KPIs
@@ -35,7 +35,7 @@ const MetLifeKPIs = () => {
               lineHeight: '26px',
             }}
           >
-            <Typography sx={{ pb: '16px', color: '#646470' }}>
+            <Typography sx={{ pb: '8px', color: '#646470' }}>
               Our design KPIs must align with the project’s objectives. The focus is on optimizing digital journeys, ensuring fast and successful completions, and gathering accurate user data. These metrics can be tracked across various touch points:
             </Typography>
 
@@ -45,8 +45,9 @@ const MetLifeKPIs = () => {
                 listStyle: 'none',
                 paddingLeft: 0,
                 '& li': {
-                  mb: '16px', // Adds spacing between list items
+                  mb: '8px', // Adds spacing between list items
                 },
+                mt: 0
               }}
             >
               <li>

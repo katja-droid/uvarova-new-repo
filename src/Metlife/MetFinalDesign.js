@@ -65,83 +65,94 @@ const MetFinalDesign = () => {
               >
                 Below is a detailed overview of the updated form.
               </Typography>
-              <Box sx={{ width: '100%', overflow: 'visible' }}>
+              <Box sx={{ width: '100%', overflow: 'visible', pb: {xxl: '80px', md: '60px', xxs: '24px'},   display: {
+            md: 'block',
+            xxs: 'none',
+          }, }}>
                 <img src={img} width="100%" style={{ boxShadow: '0 15px 20px 0 rgba(0, 0, 0, 0.1)' }} />
               </Box>
             </Grid>
           </Grid>
         </Container>
       </Box>
-      <Container disableGutters maxWidth={false} sx={{ width: '100%',   pb: { 
-            xxs: '24px', 
-            xs: '48px', 
-            sm: '60px', 
-            md: '84px', 
-            lg: '84px', 
-            xl: '84px', 
-            xxl: '97px' 
-          }, display:
-          {
+
+      <Container
+        disableGutters
+        maxWidth={false}
+        sx={{
+          width: '100%',
+          display: {
             md: 'block',
-            xxs: 'none'
-          } }}>
-          {/* Main Section */}
-          <Grid container spacing={2} justifyContent="center">
-      {/* Use OverlappingImages Component */}
-      <OverlappingImages
-        image1Src={image1}
-        image2Src={image2}
-        verticalOverlapPercentage={verticalOverlapPercentage}
-        horizontalSpacing={horizontalSpacing}
-      />
-      </Grid>
+            xxs: 'none',
+          },
+        }}
+      >
+        {/* Main Section */}
+        <Grid container spacing={2} justifyContent="center" sx={{ pb: { xxl: '128px', md: '104px', xxs: '48px' } }}>
+          {/* Use OverlappingImages Component */}
+          <OverlappingImages
+            image1Src={image1}
+            image2Src={image2}
+            verticalOverlapPercentage={verticalOverlapPercentage}
+            horizontalSpacing={horizontalSpacing}
+          />
+        </Grid>
       </Container>
-      <Container disableGutters maxWidth={false} sx={{ width: '100%',   pb: { 
-            xxs: '24px', 
-            xs: '48px', 
-            sm: '60px', 
-            md: '84px', 
-            lg: '84px', 
-            xl: '84px', 
-            xxl: '97px' 
-          }, display:
-          {
+
+      <Container
+        disableGutters
+        maxWidth={false}
+        sx={{
+          width: '100%',
+          pb: { xl: '104px', lg: '64px', sm: '56px', xxs: '30px' },
+          display: {
             md: 'block',
-            xxs: 'none'
-          } }}>
-          {/* Main Section */}
-          <Grid container spacing={2} justifyContent="center">
-         <OverlappingImages
-        image1Src={image3}
-        image2Src={image4}
-        verticalOverlapPercentage={verticalOverlapPercentage}
-        horizontalSpacing={horizontalSpacing}
-      />
-      </Grid>
-      
+            xxs: 'none',
+          },
+        }}
+      >
+        {/* Main Section */}
+        <Grid container spacing={2} justifyContent="center">
+          <OverlappingImages
+            image1Src={image3}
+            image2Src={image4}
+            verticalOverlapPercentage={verticalOverlapPercentage}
+            horizontalSpacing={horizontalSpacing}
+          />
+        </Grid>
       </Container>
-      <Container disableGutters maxWidth={false} sx={{ width: '100%',   pb: { xl: '80px', lg: '40px', sm: '32px', xxs: '16px' }, display:
-          {
+
+      <Container
+        disableGutters
+        maxWidth={false}
+        sx={{
+          width: '100%',
+          pb: { xl: '80px', lg: '40px', sm: '32px', xxs: '0px' }, // Remove padding-bottom on xxs
+          display: {
             md: 'none',
-            xxs: 'block'
-          } }}>
-          {/* Main Section */}
-          <Grid container spacing={2} justifyContent="center" sx={{py: '24px'}}>
-        <img src={image1} width="100%"></img>
-      </Grid>
-      <Grid container spacing={2} justifyContent="center" sx={{py: '24px'}}>
-        <img src={image2} width="100%"></img>
-      </Grid>
-      <Grid container spacing={2} justifyContent="center" sx={{py: '24px'}}>
-        <img src={image3} width="100%"></img>
-      </Grid>
-      <Grid container spacing={2} justifyContent="center" sx={{py: '24px'}}>
-        <img src={image4} width="100%"></img>
-      </Grid>
+            xxs: 'block',
+          },
+        }}
+      >
+        {/* Main Section for Mobile View */}
+        <Grid container spacing={2} justifyContent="center" sx={{ py: '24px' }}>
+          <img src={img} width="100%" />
+        </Grid>
+        <Grid container spacing={2} justifyContent="center" sx={{ py: '24px' }}>
+          <img src={image1} width="100%" />
+        </Grid>
+        <Grid container spacing={2} justifyContent="center" sx={{ py: '24px' }}>
+          <img src={image2} width="100%" />
+        </Grid>
+        <Grid container spacing={2} justifyContent="center" sx={{ py: '24px' }}>
+          <img src={image3} width="100%" />
+        </Grid>
+        <Grid container spacing={2} justifyContent="center" sx={{ py: '24px' }}>
+          <img src={image4} width="100%" />
+        </Grid>
       </Container>
-      
     </ThemeProvider>
   );
 };
 
-export default withScrollEffect (MetFinalDesign);
+export default withScrollEffect(MetFinalDesign);

@@ -151,4 +151,6 @@ html {
   background-clip: text;
   color: transparent;
 }
-
+.bigShadow{box-shadow: 0 10.14px 31.19px rgba(0, 0, 0, 0.1);}
+.midShadow{box-shadow: 0 7.49px 22.46px rgba(0, 0, 0, 0.1);}
+.smallShadow{box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);}

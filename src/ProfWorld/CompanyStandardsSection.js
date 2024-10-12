@@ -77,7 +77,7 @@ const CompanyStandardsSection = () => {
                   width: '100%',
                   maxWidth: '673px',
                   borderRadius: '8px', // Optional: add some styling to the image
-                  
+                   boxShadow: '0 2.11px 4.22px rgba(0, 0, 0, 0.08)'
                 }}
               />
             </Grid>

@@ -46,7 +46,7 @@ const RatioGif = ({ image, backgroundImage, aspectRatio = '66.95%' }) => {
           width: '100%',
           height: '92%', // Adjust based on aspect ratio
           zIndex: 2, // Place the GIF on top of the background
-          
+           boxShadow: '0 2.11px 4.22px rgba(0, 0, 0, 0.08)'
         }}
       >
         <img
@@ -57,6 +57,7 @@ const RatioGif = ({ image, backgroundImage, aspectRatio = '66.95%' }) => {
             height: '100%', // Fill the container height
             objectFit: 'cover', // Ensure the GIF fills and covers the area properly
           }}
+          className='midShadow'
         />
       </Box>
     </Box>

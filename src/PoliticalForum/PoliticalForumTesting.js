@@ -46,7 +46,7 @@ const PoliticalForumTesting = () => {
                 }}
                 variant="h3"
               >
-                Testing Summary
+                Testing 
               </Typography>
               <Typography sx={{fontSize: '18px', pb: '8px',  fontFamily: 'Calibre Regular'}}>
               We select no more than 23 main audience segments (age: {'<40'}, {'>40'}).

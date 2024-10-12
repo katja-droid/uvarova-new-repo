@@ -118,6 +118,7 @@ const MainLayout = () => {
                       borderRadius: '8px',
                       boxShadow: '0 2.11px 4.22px rgba(0, 0, 0, 0.08)'
                     }}
+                    
                   />
                 </Box>
               </Grid>
@@ -164,8 +165,10 @@ const MainLayout = () => {
                     sx={{
                       width: '100%',
                       borderRadius: '8px',
-                      
+                       boxShadow: '0 2.11px 4.22px rgba(0, 0, 0, 0.08)'
                     }}
+                    className='midShadow'
+                    
                   />
                 </Box>
               </Grid>

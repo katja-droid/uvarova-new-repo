@@ -121,7 +121,7 @@ const BeginSection = () => {
             transform: 'translateX(-50%)', // Center the GIF horizontally
             width: '100%',
             height: '92%', // Adjust based on aspect ratio
-            zIndex: 2
+            zIndex: 2,
           }}
         >
           <img
@@ -132,6 +132,7 @@ const BeginSection = () => {
               height: '100%', // Set the GIF height to fill the coverer
               objectFit: 'cover', // Ensure the GIF fits within the dimensions
             }}
+            className="bigShadow"
           />
         </Box>
       </Box>

@@ -34,7 +34,7 @@ const NutritionistUsers = () => {
           <Grid item  xl={8} lg={10} sm={12} xxs={12} md={12}>
             <Grid container spacing={4}>
               {/* Each card will be 4 columns wide */}
-              <Grid item sm={6} xs={12}>
+              <Grid item md={6} xs={12}>
                 <Box sx={{ border: '1px solid #EFEFF8', padding: '32px' }}>
                   <Typography
                     sx={{
@@ -66,7 +66,7 @@ const NutritionistUsers = () => {
                 </Box>
               </Grid>
 
-              <Grid item sm={6} xs={12}>
+              <Grid item md={6} xs={12}>
                 <Box sx={{ border: '1px solid #EFEFF8', padding: '32px' }}>
                   <Typography
                     sx={{
@@ -98,7 +98,7 @@ const NutritionistUsers = () => {
                 </Box>
               </Grid>
 
-              <Grid item sm={6} xs={12}>
+              <Grid item md={6} xs={12}>
                 <Box sx={{ border: '1px solid #EFEFF8', padding: '32px' }}>
                   <Typography
                     sx={{
@@ -130,7 +130,7 @@ const NutritionistUsers = () => {
                 </Box>
               </Grid>
 
-              <Grid item sm={6} xs={12}>
+              <Grid item md={6} xs={12}>
                 <Box sx={{ border: '1px solid #EFEFF8', padding: '32px' }}>
                   <Typography
                     sx={{

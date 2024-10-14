@@ -19,6 +19,7 @@ const MainLayout = () => {
           width: '100%',
           color: '#0A0A14',
           pb: { xl: '80px', sm: '60px', xxs: '48px' },
+          backgroundColor: '#F7F7F6'
         }}
         id="main-p"
       >
@@ -86,7 +87,7 @@ const MainLayout = () => {
                   display: 'flex',
                   justifyContent: 'center',
                   alignItems: 'center',
-                  textAlign: { xxs: 'left', sm: 'left', md: 'center', lg: 'center' },
+                  textAlign:  'center',
                   py: {
                     xxxl: '64px',
                     xl: '64px',
@@ -135,7 +136,7 @@ const MainLayout = () => {
                   display: 'flex',
                   justifyContent: 'center',
                   alignItems: 'center',
-                  textAlign: { xxs: 'left', sm: 'left', md: 'center', lg: 'center' },
+                  textAlign: 'center',
                   py: {
                     xxxl: '64px',
                     xl: '64px',

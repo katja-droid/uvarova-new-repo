@@ -34,7 +34,7 @@ const BeforeAfterLayout = ({ beforeImage, afterImage }) => {
             fontFamily: 'Playfair Display Bold',
             pb: '24px',
             textAlign: 'left',
-            pt: {xxs: '48px',sm: '60px', lg:  '0'}
+            pt:{ xl: '80px', sm: '60px', xxs: '48px' },
           }}
         >
           Before
@@ -75,7 +75,7 @@ const BeforeAfterLayout = ({ beforeImage, afterImage }) => {
             fontFamily: 'Playfair Display Bold',
             pb: '24px',
             textAlign: 'left',
-            pt: {xxs: '24px', lg:  '0'}
+            pt: { xl: '80px', sm: '60px', xxs: '48px' },
           }}
         >
           After

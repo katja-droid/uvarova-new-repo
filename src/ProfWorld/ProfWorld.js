@@ -278,7 +278,7 @@ const ProfWorld = () => {
         <FixedNavbar sections={sections_} onSelectSection_={handleSelectSection_} activeSection_={activeSection_} />
       </div>
       <div ref={mainLayoutRef}>
-        <Box sx={{height:   { xl: '80px', sm: '60px', xxs: '48px' },}}></Box>
+        <Box sx={{height:   { xl: '80px', sm: '60px', xxs: '48px' },  backgroundColor: '#F7F7F6'}}></Box>
       </div>
       {/* MainLayout Section */}
         <MainLayout />

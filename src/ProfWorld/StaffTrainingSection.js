@@ -26,7 +26,7 @@ const StaffTrainingSection = () => {
             py: 0, // Removed padding from container
           }}
         >
-          <Grid container spacing={2} justifyContent="center" alignItems="center">
+          <Grid container spacing={2} justifyContent="center" alignItems="center" xxs={12} lg={10} xl={12}  sx={{margin: '0 auto'}}>
             {/* Text Section */}
             <Grid 
               item 
@@ -65,7 +65,7 @@ const StaffTrainingSection = () => {
               sx={{
                 order: { xs: 2, lg: 2 }, // Image comes second on all screens
                 display: 'flex',
-                justifyContent: 'center',
+                justifyContent: {xxs: 'center', xxxl: 'flex-end'},
                 width:{
                     xxxl: '673px'
                 }
@@ -77,7 +77,7 @@ const StaffTrainingSection = () => {
                 alt="Security Service Office"
                 sx={{
                   width: '100%',
-                  maxWidth: '673px',
+                  maxWidth: {xxxl: '673px'},
                   borderRadius: '4px', // Optional: add some styling to the image
                   
                 }}

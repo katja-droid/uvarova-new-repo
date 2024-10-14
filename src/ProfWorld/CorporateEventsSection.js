@@ -27,7 +27,7 @@ const CorporateEventsSection = () => {
             py: 0, // Removed padding from container
           }}
         >
-          <Grid container spacing={2} justifyContent="center" alignItems="center">
+          <Grid container spacing={2} justifyContent="center" alignItems="center" xxs={12} lg={10} xl={12}  sx={{margin: '0 auto'}}>
             {/* Text Section */}
             <Grid 
               item 
@@ -65,9 +65,7 @@ Each event is displayed in card format with details such as title, date, loca
               }}
             >
               <Box sx={{ display: 'flex', justifyContent: 'center', // GIF comes second on smaller screens, first on larger screens
-                width:{
-                    xxxl: '673px'
-                },
+                 maxWidth: {xxxl: '673px'},
                  }}>
                 {/* Use RatioGif here with a GIF */}
               <img src={img} width="100%"/>

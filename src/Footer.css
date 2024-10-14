@@ -42,3 +42,12 @@ a{
     gap: 48px;
     margin-top: 16px;
 }
+/* 360px - 479px */
+@media only screen and (max-width: 1239px) {
+    .footer{
+        padding: 40px 0;
+        
+    }
+  }
+
+  

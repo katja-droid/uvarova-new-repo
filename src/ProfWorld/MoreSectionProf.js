@@ -40,7 +40,7 @@ const MoreSectionProf = () => {
         {/* Responsive Grid */}
         <Grid container spacing={2}>
           {/* Item 1: Image + Text */}
-          <Grid item xs={12} sm={12} md={6} lg={4}>
+          <Grid item xs={12} sm={12} lg={6} xl={4}>
             <Box  sx={{boxShadow: '0 1px 4px rgba(0, 0, 0, 0.05)', pb: '32px', borderRadius: '16px'}}>
               <img src={image1} alt="Prof.world: automated recruiting" style={{ width: '100%' }} />
               <Typography  sx={{px: '30px'}} mt={2}>
@@ -63,7 +63,7 @@ const MoreSectionProf = () => {
           </Grid>
 
           {/* Item 2: Image + Text */}
-          <Grid item xs={12} sm={12} md={6} lg={4}>
+          <Grid item xs={12} sm={12} lg={6} xl={4}>
             <Box  sx={{boxShadow: '0 1px 4px rgba(0, 0, 0, 0.05)', pb: '32px', borderRadius: '16px'}}>
               <img src={image2} alt="Metlife: digital forms" style={{ width: '100%' }} />
               <Typography  sx={{px: '30px'}} mt={2}>
@@ -86,7 +86,7 @@ const MoreSectionProf = () => {
           </Grid>
 
           {/* Item 3: Image + Text */}
-          <Grid item xs={12} sm={12} md={6} lg={4}>
+          <Grid item xs={12} sm={12} lg={6} xl={4}>
             <Box  sx={{boxShadow: '0 1px 4px rgba(0, 0, 0, 0.05)', pb: '32px', borderRadius: '16px'}}>
               <img src={image3} alt="Forum: Multi-Level Navigation" style={{ width: '100%' }} />
               <Typography  mt={2} sx={{px: '30px'}}>

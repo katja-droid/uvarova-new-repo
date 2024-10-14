@@ -220,7 +220,11 @@ const ProfWorld = () => {
           <Grid item xs={12} lg={5}>
             <ProfTimelineAndContribution contribution={contribution} tools={tools} />
           </Grid>
+          <Grid item xs={0} lg={1} />
         </Grid>
+        
+          {/* Spacer Column */}
+       
       </Container>
 
       <Container disableGutters maxWidth={false} sx={{ color: '#0A0A14' }}>

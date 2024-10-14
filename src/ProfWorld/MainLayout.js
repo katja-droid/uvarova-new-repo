@@ -19,76 +19,80 @@ const MainLayout = () => {
           width: '100%',
           color: '#0A0A14',
           pb: { xl: '80px', sm: '60px', xxs: '48px' },
-          backgroundColor: '#F7F7F6'
+          backgroundColor: '#F7F7F6',
         }}
         id="main-p"
       >
         <Container disableGutters maxWidth={false} sx={{ width: '100%', py: 0 }}>
           {/* Main Section */}
           <Grid container spacing={2} justifyContent="center">
-          <Grid
-  item
-  xs={12}
-  sx={{
-    textAlign: 'center',
-    pb: '24px',
-    width: { xxs: '100%', lg: '100%', xl: '935px', xxl: '935px' }, // 100% width for xxs-lg, 935px for xl and xxl
-    maxWidth: { xxs: '100%', lg: '100%', xl: '935px', xxl: '935px' }, // Ensuring it doesn't exceed 935px on xl-xxl
-    mx: 'auto', // Center align the block horizontally
-  }}
->
-  <Typography
-    sx={{
-      fontSize: { md: '40px', sm: '34px', xxs: '25px' },
-      fontFamily: 'Playfair Display Bold',
-      pb: '24px',
-    }}
-    variant="h3"
-  >
-    Main
-  </Typography>
-  <Typography
+            <Grid
+              item
+              xs={12}
+              xl={10}
+              lg={12}
+              sx={{
+                textAlign: 'center',
+                pb: '24px',
+                width: { xxs: '100%', xl: '100%' }, // Full width on xxs-xl
+                maxWidth: { xxs: '100%', xl: '935px' }, // Ensuring it doesn't exceed 935px on xl
+                mx: 'auto', // Center align the block horizontally
+              }}
+            >
+              <Typography
+                sx={{
+                  fontSize: { md: '40px', sm: '34px', xxs: '25px' },
+                  fontFamily: 'Playfair Display Bold',
+                  pb: '24px',
+                }}
+                variant="h3"
+              >
+                Main
+              </Typography>
+              <Typography
                 sx={{
                   pb: { md: '24px', xxs: '16px' },
                   fontSize: '18px',
                   lineHeight: '26px',
                   fontFamily: 'Calibre Regular',
-                  textAlign: {md: 'center', xxs: 'left'},
+                  textAlign: { md: 'center', xxs: 'left' },
+                  width: {xxs: '100%', lg: '83.33%', xl: '100%'},
+                  margin: '0 auto'
                 }}
               >
                 Essential information is provided to keep track of current data such as job postings, new job seekers added, job postings, tasks, and meetings. The calendar displays scheduled events, and notifications highlight important dates such as birthdays, tasks in progress, and other relevant reminders. The system is intended to streamline the recruitment process and strengthen the organization by providing easy access to and management of all critical information.
               </Typography>
 
-  {/* RatioGif Section */}
-  <Box sx={{ width: '100%', pb: '24px', boxShadow: '0 10.14px 31.19px rgba(0, 0, 0, 0.1)'  
- }}>
-    <RatioGif image={gif} backgroundImage={bg} />
-  </Box>
-</Grid>
-
+              {/* RatioGif Section */}
+              <Box
+                sx={{
+                  width: '100%',
+                  pb: '24px',
+                  boxShadow: '0 10.14px 31.19px rgba(0, 0, 0, 0.1)',
+                }}
+              >
+                <RatioGif image={gif} backgroundImage={bg} />
+              </Box>
+            </Grid>
 
             {/* Title Image Blocks */}
-            <Grid
-              container
-              spacing={2}
-              justifyContent="center"
-              direction="row" // Always keep row layout
-              sx={{ width: '100%' }}
-            >
+            <Grid container spacing={2} justifyContent="center" sx={{ width: '100%' }}>
               {/* Block 1 */}
               <Grid
                 item
-                xs={12}
-                sm={6}
-                lg={5}
-                xl={5}
-                xxxl={5}
+                xxs={12}
+                md={6}
+                lg={6}
+                xl={6}
                 sx={{
                   display: 'flex',
                   justifyContent: 'center',
                   alignItems: 'center',
-                  textAlign:  'center',
-                  py: {
+                  textAlign: 'center',
+                  
+                }}
+              >
+                <Box sx={{pt: {
                     xxxl: '64px',
                     xl: '64px',
                     lg: '64px',
@@ -96,10 +100,7 @@ const MainLayout = () => {
                     sm: '0',
                     xs: '0',
                     xxs: '0',
-                  },
-                }}
-              >
-                <Box>
+                  }}}>
                   <Typography
                     sx={{
                       fontSize: '18px',
@@ -117,9 +118,8 @@ const MainLayout = () => {
                     sx={{
                       width: '100%',
                       borderRadius: '8px',
-                      boxShadow: '0 2.11px 4.22px rgba(0, 0, 0, 0.08)'
+                      boxShadow: '0 2.11px 4.22px rgba(0, 0, 0, 0.08)',
                     }}
-                    
                   />
                 </Box>
               </Grid>
@@ -127,17 +127,19 @@ const MainLayout = () => {
               {/* Block 2 */}
               <Grid
                 item
-                xs={12}
-                sm={6}
-                lg={5}
-                xl={5}
-                xxxl={5}
+                xxs={12}
+                md={6}
+                lg={6}
+                xl={6}
                 sx={{
                   display: 'flex',
                   justifyContent: 'center',
                   alignItems: 'center',
                   textAlign: 'center',
-                  py: {
+                  
+                }}
+              >
+                <Box sx={{pt: {
                     xxxl: '64px',
                     xl: '64px',
                     lg: '64px',
@@ -145,10 +147,7 @@ const MainLayout = () => {
                     sm: '0',
                     xs: '0',
                     xxs: '0',
-                  },
-                }}
-              >
-                <Box>
+                  }}}>
                   <Typography
                     sx={{
                       fontSize: '18px',
@@ -166,10 +165,8 @@ const MainLayout = () => {
                     sx={{
                       width: '100%',
                       borderRadius: '8px',
-                       boxShadow: '0 2.11px 4.22px rgba(0, 0, 0, 0.08)'
+                      boxShadow: '0 2.11px 4.22px rgba(0, 0, 0, 0.08)',
                     }}
-                    className='midShadow'
-                    
                   />
                 </Box>
               </Grid>
@@ -181,4 +178,4 @@ const MainLayout = () => {
   );
 };
 
-export default withScrollEffect (MainLayout);
+export default withScrollEffect(MainLayout);

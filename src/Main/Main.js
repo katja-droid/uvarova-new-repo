@@ -19,7 +19,7 @@ const Main = () => {
   ];
 
   return (
-    <Box sx={{pb: { xl: '80px', lg: '40px', sm: '32px', xxs: '16px' }}}>
+    <Box sx={{pb:  { xl: '80px', sm: '60px', xxs: '48px' }}}>
       <ScrollToTop/>
       <MainSectionOne />
      

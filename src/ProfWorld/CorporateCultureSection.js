@@ -27,11 +27,11 @@ const CorporateCultureSection = () => {
           <Grid container spacing={2} justifyContent="center">
           <Grid
   item
-  xs={12}
+  xxs={12} lg={10} xl={12}
   sx={{
     textAlign: 'center',
     pb: '24px',
-    width: { xxs: '100%', lg: '100%', xl: '935px', xxl: '935px' }, // 100% width for xxs-lg, 935px for xl and xxl
+    width: { xxs: '100%',  xl: '935px', xxl: '935px' }, // 100% width for xxs-lg, 935px for xl and xxl
     maxWidth: { xxs: '100%', lg: '100%', xl: '935px', xxl: '935px' }, // Ensuring it doesn't exceed 935px on xl-xxl
     mx: 'auto', // Center align the block horizontally
   }}

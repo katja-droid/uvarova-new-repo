@@ -26,17 +26,17 @@ const CompanyRegistrationAfterSection = () => {
             width: '100%',
             py: 0, // Removed padding from container
           }}
+          
         >
-          <Grid container spacing={2} justifyContent="center" alignItems="center">
+          <Grid container spacing={2} justifyContent="center" alignItems="center" xxs={12} lg={10} xl={12}  sx={{margin: '0 auto'}}>
             {/* Text Section */}
             <Grid 
               item 
-              xs={12} 
-              lg={5} 
+              xxs={12} 
               xl={5} 
               xxl={5}
               sx={{
-                order: { xs: 1, lg: 2 }, // Text comes first on smaller screens, second on larger screens
+                order: { xxs: 1, xl: 2 }, // Text comes first on smaller screens, second on larger screens
                 display: 'flex',
                 flexDirection: 'column',
                 justifyContent: { xxs: 'center', lg: 'flex-start' }, // Center vertically on small screens
@@ -65,19 +65,19 @@ const CompanyRegistrationAfterSection = () => {
             {/* GIF Section - Takes 7 cols on lg and xxl */}
             <Grid 
               item 
-              xs={12} 
-              lg={7} 
+              xxs={12} 
               xl={7} 
               xxl={7}
               xxxl={7}
               sx={{
-                order: { xs: 2, lg: 1 }
+                order: { xxs: 2, xl: 1 }
               }}
             >
               <Box sx={{ display: 'flex', justifyContent: 'center', // GIF comes second on smaller screens, first on larger screens
-                width:{
-                    xxxl: '673px'
-                },
+                
+                  
+                  maxWidth: {xxxl: '673px'},
+                
                  }}>
                 {/* Use RatioGif here with a GIF */}
                 <RatioGif image={gif} backgroundImage={bg} aspectRatio="66.95%" />

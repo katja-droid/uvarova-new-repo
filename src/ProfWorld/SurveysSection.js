@@ -26,16 +26,15 @@ const SurveysSection = () => {
             py: 0, // Removed padding from container
           }}
         >
-          <Grid container spacing={2} justifyContent="center" alignItems="center">
+          <Grid container spacing={2} justifyContent="center" alignItems="center" xxs={12} lg={10} xl={12}  sx={{margin: '0 auto'}}>
             {/* Text Section */}
             <Grid 
               item 
-              xs={12} 
-              lg={5} 
+              xxs={12} 
               xl={5} 
               xxl={5}
               sx={{
-                order: { xs: 1, lg: 1 }, // Text comes first on all screens
+                order: { xxs: 1, xl: 1 }, // Text comes first on all screens
                 display: 'flex',
                 flexDirection: 'column',
                 justifyContent: { xxs: 'center', lg: 'flex-start' }, // Center vertically on small screens
@@ -57,15 +56,14 @@ const SurveysSection = () => {
                                  {/* Image Section - Takes 7 cols on lg and xxl */}
             <Grid 
               item 
-              xs={12} 
-              lg={7} 
+              xxs={12} 
               xl={7} 
               xxl={7}
               xxxl={7}
               sx={{
-                order: { xs: 2, lg: 2 }, // Image comes second on all screens
+                order: { xxs: 2, xl: 2 }, // Image comes second on all screens
                 display: 'flex',
-                justifyContent: 'center',
+                justifyContent: {xxs: 'center', xxxl: 'flex-end'},
                 width:{
                     xxxl: '673px'
                 }
@@ -78,6 +76,9 @@ const SurveysSection = () => {
                 sx={{
                   width: '100%',
                   borderRadius: '8px', // Optional: add some styling to the image
+                  
+                  maxWidth: {xxxl: '673px'},
+
                 }}
               />
             </Grid>

@@ -44,7 +44,7 @@ const ResultsSection = () => {
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
-            textAlign: 'center',
+            textAlign: 'left',
           }}
         >
           <Grid
@@ -53,7 +53,6 @@ const ResultsSection = () => {
               justifyContent: {
                 xs: 'center',
                 sm: 'center',
-                md: 'center',
                 lg: 'space-between',
                 xl: 'space-between',
                 xxxl: 'space-between',
@@ -66,14 +65,13 @@ const ResultsSection = () => {
               xxs={12}
               xs={12}
               sm={12}
-              md={5}
               lg={5}
               xl={5}
               sx={{
                 display: 'flex',
                 justifyContent: 'center',
                 alignItems: 'center',
-                textAlign: 'center',
+                textAlign: 'left',
               }}
             >
               <Box
@@ -104,6 +102,8 @@ const ResultsSection = () => {
                     },
                     fontFamily: 'Playfair Display Bold',
                     color: '#FFFFFF',
+                    textAlign: 'left',
+                    width: '100%'
                   }}
                   variant="h4"
                 >
@@ -130,7 +130,6 @@ const ResultsSection = () => {
               xxs={12}
               xs={12}
               sm={12}
-              md={7}
               lg={7}
               xl={7}
               sx={{

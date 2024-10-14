@@ -12,7 +12,7 @@ const MetUsabilityTesting = () => {
           position: 'relative',
           width: '100%',
           color: '#0A0A14',
-          py: { xl: '80px', lg: '40px', sm: '32px', xxs: '16px' },
+          py: { xl: '80px', sm: '60px', xxs: '48px' },
         }}
         id="usability-testing"
       >
@@ -26,7 +26,6 @@ const MetUsabilityTesting = () => {
               xl={8}
               sx={{
                 textAlign: 'left',
-                pb: '24px',
                 width: { xxs: '100%', lg: '100%' },
                 maxWidth: { xxs: '100%', lg: '100%' },
                 mx: 'auto', // Center align the block horizontally
@@ -56,20 +55,20 @@ const MetUsabilityTesting = () => {
                 }}
               >
                 <li>
-                  <span>1.</span>
-                  <Typography component="span" sx={{ pl: 1 }}>
-                   <b> Lo-fi</b> prototypes were tested with the stakeholders weekly to get feedback on the functionality, content, and interactivity of the product.
+                  <span style={{fontFamily: 'Calibre Regular', fontSize: '18px', lineHeight: '26px'}}>1.</span>
+                  <Typography component="span" sx={{ pl: 1, fontFamily: 'Calibre Regular', fontSize: '18px', pb: '24px', lineHeight: '26px' }}>
+                   <b> Lo-fi prototypes</b>  were tested with the stakeholders weekly to get feedback on the functionality, content, and interactivity of the product.
                   </Typography>
                 </li>
                 <li>
-                  <span>2.</span>
-                  <Typography component="span" sx={{ pl: 1 }}>
+                  <span style={{fontFamily: 'Calibre Regular', fontSize: '18px', lineHeight: '26px'}}>2.</span>
+                  <Typography component="span" sx={{ pl: 1, fontFamily: 'Calibre Regular', fontSize: '18px', mb: '24px', lineHeight: '26px' }}>
                   <b>Unmoderated User testing</b> — Several dummy groups were created for Metlife users to use the app. All participants used the app to perform hypothetical tasks.
                   </Typography>
                 </li>
                 <li>
-                  <span>3.</span>
-                  <Typography component="span" sx={{ pl: 1 }}>
+                  <span style={{fontFamily: 'Calibre Regular', fontSize: '18px', lineHeight: '26px'}}>3.</span>
+                  <Typography component="span" sx={{ pl: 1, fontFamily: 'Calibre Regular', fontSize: '18px', lineHeight: '26px' }}>
                   <b>Beta Testing</b> — Before releasing the digital forms, we tested them among Metlife members. The digital forms were used by them to process an insurance claim.
                   </Typography>
                 </li>

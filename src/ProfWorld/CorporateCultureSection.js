@@ -18,7 +18,7 @@ const CorporateCultureSection = () => {
           position: 'relative',
           width: '100%',
           color: '#0A0A14',
-          py: { xl: '80px', lg: '40px', sm: '32px', xxs: '16px' },
+          py: { xl: '80px', sm: '60px', xxs: '48px' },
         }}
         id="corporate-culture-p"
       >

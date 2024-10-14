@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Typography, Container, Grid } from '@mui/material';
+import { Box, Typography, Grid } from '@mui/material';
 import { ThemeProvider } from '@mui/material/styles';
 import theme from '../theme'; // Import your custom theme
 import withScrollEffect from '../withScrollEffect.js';
@@ -7,102 +7,81 @@ import withScrollEffect from '../withScrollEffect.js';
 const MetLifeSummary = () => {
   return (
     <ThemeProvider theme={theme}>
+      <div id="metlife-summary">
       <Box
         sx={{
           position: 'relative',
           width: '100%',
           color: '#0A0A14',
-          py: { xl: '80px', lg: '40px', sm: '32px', xxs: '16px' },
+          pt: { xl: '80px', sm: '60px', xxs: '48px' },
+          pb: '24px',
         }}
         id="summary-met"
       >
-        <Container disableGutters maxWidth={false} sx={{ width: '100%', py: 0 }}>
-          {/* Main Section */}
-          <Grid container spacing={2} justifyContent="center">
-            <Grid
-              item
-              xs={12}
-              xl={6}
-              lg={8}
+        {/* Main Section */}
+        <Grid container spacing={2} justifyContent="center">
+          <Grid
+            item
+            xs={12}
+            xl={6}
+            lg={8}
+            sx={{
+              textAlign: 'left',
+              width: { xxs: '100%', lg: '100%' }, // 100% width for xxs-lg
+              maxWidth: { xxs: '100%', lg: '100%' }, // Ensuring it doesn't exceed 935px on xl-xxl
+              mx: 'auto', // Center align the block horizontally
+            }}
+          >
+            <Typography
               sx={{
-                textAlign: 'left',
-                width: { xxs: '100%', lg: '100%'}, // 100% width for xxs-lg, 935px for xl and xxl
-                maxWidth: { xxs: '100%', lg: '100%' }, // Ensuring it doesn't exceed 935px on xl-xxl
-                mx: 'auto', // Center align the block horizontally
+                fontSize: { md: '40px', sm: '34px', xxs: '25px' },
+                fontFamily: 'Playfair Display Bold',
+                pb: '24px',
               }}
+              variant="h3"
             >
-              <Typography
-                sx={{
-                  fontSize: { md: '40px', sm: '34px', xxs: '25px' },
-                  fontFamily: 'Playfair Display Bold',
-                  pb: '24px',
-                }}
-                variant="h3"
-              >
-                The Summary
-              </Typography>
-              <Box
-                component="ul"
-                sx={{
-                  listStyle: 'none',
-                  paddingLeft: 0,
-                  '& li': {
-                    display: 'flex',
-                    alignItems: 'start',
-                    mb: '8px', // Add 8px margin bottom for spacing between items
-                    fontSize: '18px'
-                  },
-                }}
-              >
-                <li>
-                  <span>1.</span>
-                  <Typography component="span" sx={{ pl: 1 }}>
-                    Goal: to speed up accurate input and minimize errors.
+              The Summary
+            </Typography>
+            <Box>
+              {[
+                'Goal: to speed up accurate input and minimize errors.',
+                'Input budgets help us evaluate the quality of the form.',
+                'Separate inputs for dates, single input for time and names.',
+                'Text fields with padding, borders, labels, focus styles.',
+                'No tooltips. Display the tooltip directly in the field.',
+                'Label above the tooltip above the error above the text field.',
+                'Clear distinction between mandatory and optional text input fields.',
+              ].map((text, index) => (
+                <Typography
+                  key={index}
+                  sx={{
+                    fontSize: '18px',
+                    fontFamily: 'Calibre Regular',
+                    lineHeight: '26px',
+                    mb: '8px', // Margin bottom to space between lines
+                  }}
+                >
+                  <Typography
+                    component="span"
+                    sx={{
+                      fontFamily: 'Calibre Medium', // Highlight the number
+                      fontSize: '18px',
+                      lineHeight: '26px',
+                      pr: '4px', // Padding for space between number and text
+                    }}
+                  >
+                    {index + 1}.
                   </Typography>
-                </li>
-                <li>
-                  <span>2.</span>
-                  <Typography component="span" sx={{ pl: 1 }}>
-                    Input budgets help us evaluate the quality of the form.
-                  </Typography>
-                </li>
-                <li>
-                  <span>3.</span>
-                  <Typography component="span" sx={{ pl: 1 }}>
-                    Separate inputs for dates, single input for time and names.
-                  </Typography>
-                </li>
-                <li>
-                  <span>4.</span>
-                  <Typography component="span" sx={{ pl: 1 }}>
-                    Text fields with padding, borders, labels, focus styles.
-                  </Typography>
-                </li>
-                <li>
-                  <span>5.</span>
-                  <Typography component="span" sx={{ pl: 1 }}>
-                    No tooltips. Display the tooltip directly in the field.
-                  </Typography>
-                </li>
-                <li>
-                  <span>6.</span>
-                  <Typography component="span" sx={{ pl: 1 }}>
-                    Label above the tooltip above the error above the text field.
-                  </Typography>
-                </li>
-                <li>
-                  <span>7.</span>
-                  <Typography component="span" sx={{ pl: 1 }}>
-                    Clear distinction between mandatory and optional text input fields.
-                  </Typography>
-                </li>
-              </Box>
-            </Grid>
+                  {text}
+                </Typography>
+              ))}
+            </Box>
           </Grid>
-        </Container>
+        </Grid>
       </Box>
+      </div>
     </ThemeProvider>
   );
 };
 
-export default withScrollEffect (MetLifeSummary);
+export default withScrollEffect(MetLifeSummary);

@@ -4,16 +4,22 @@ import withScrollEffect from '../withScrollEffect.js';
 
 const NutritionistKPIs = () => {
   return (
-    <Container disableGutters maxWidth={false} sx={{ pb: { xl: '80px', lg: '40px', sm: '32px', xxs: '16px' } }}>
+    <Container disableGutters maxWidth={false} sx={{ pb: { xl: '80px', sm: '60px', xxs: '48px' }, }}>
       {/* Container for the title */}
       <Grid container justifyContent="center" spacing={0}>
-        <Grid item sm={12} xxs={12} md={12}>
+        <Grid item  xl={8} lg={10} sm={12} xxs={12} md={12}>
           <Typography
             variant="h3"
             sx={{
               fontSize: { xxs: '30px', sm: '34px', md: '40px' },
               fontFamily: 'Playfair Display Bold',
-              pb: '24px',
+              pb: {
+                xl: '32px',  // 32px for xl
+                lg: '24px',  // 24px for lg
+                md: '16px',  // 16px for md
+                sm: '16px',  // 16px for sm
+                xxs: '8px',  // 8px for xxs
+              },
             }}
           >
             Design KPIs
@@ -25,9 +31,9 @@ const NutritionistKPIs = () => {
       <Grid
         container
         justifyContent="center"
-        sx={{ py: 2, fontFamily: 'Calibre Regular', fontSize: '18px' }}
+        sx={{ fontFamily: 'Calibre Regular', fontSize: '18px' }}
       >
-        <Grid item sm={12} xs={12}>
+        <Grid item  xl={8} lg={10} sm={12} xxs={12} md={12}>
           <Box
             sx={{
               fontFamily: 'Calibre Regular',
@@ -35,7 +41,7 @@ const NutritionistKPIs = () => {
               lineHeight: '26px',
             }}
           >
-            <Typography sx={{ pb: '16px', color: '#646470' }}>
+            <Typography sx={{ pb: { xl: '32px', lg: '24px', md: '16px', sm: '16px', xxs: '8px' }, color: '#646470' }}>
               To assess the success of the application design, the following KPIs will be used:
             </Typography>
 
@@ -45,7 +51,7 @@ const NutritionistKPIs = () => {
                 listStyle: 'none',
                 paddingLeft: 0,
                 '& li': {
-                  mb: '25px', // Adds spacing between list items
+                  mb: { xl: '32px', lg: '24px', md: '16px', sm: '16px', xxs: '8px' }, // Adds vertical spacing between list items
                 },
               }}
             >
@@ -105,7 +111,7 @@ const NutritionistKPIs = () => {
               </li>
             </Box>
 
-            <Typography sx={{ pt: '16px' }}>
+            <Typography sx={{ pt: { xl: '32px', lg: '24px', md: '16px', sm: '16px', xxs: '8px' } }}>
               These aspects will help create a targeted, effective, and comprehensive solution for health monitoring using
               mobile and web technologies within the Virtual Nutritionist project.
             </Typography>
@@ -116,4 +122,4 @@ const NutritionistKPIs = () => {
   );
 };
 
-export default withScrollEffect (NutritionistKPIs);
+export default withScrollEffect(NutritionistKPIs);

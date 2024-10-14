@@ -46,14 +46,20 @@ import FixedNavbar from '../FixedNavbar';
 import withScrollEffect from '../withScrollEffect.js';
 const contribution = [
   { id: 1, name: 'User Research', color: '#FFE9E3' },
-  { id: 2, name: 'Competitive App Analysis', color: '#E4DBEA' },
-  { id: 3, name: 'User Surveys', color: '#E7EDFF' },
-  { id: 4, name: 'Prototype Testing', color: '#FAF6C8' },
-  { id: 5, name: 'User Experience Analysis', color: '#E7EDFF' },
-  { id: 6, name: 'Research on User Needs and Preferences', color: '#E4DBEA' },
-  { id: 7, name: 'Evaluation of Interface Accessibility and Usability', color: '#FFE9E3' },
-  { id: 8, name: 'Studying Modern Trends in Health and Fitness', color: '#FAF6C8' },
+  { id: 2, name: 'In-depth Interviews', color: '#E4DBEA' },
+  { id: 3, name: 'Sketching', color: '#E7EDFF' },
+  { id: 4, name: 'Prototyping', color: '#FAF6C8' },
+  { id: 5, name: 'Usability Testing', color: '#E7EDFF' },
+  { id: 6, name: 'MVP', color: '#E4DBEA' },
+  { id: 7, name: 'UX Writing', color: '#FFE9E3' },
+  { id: 8, name: 'Dashboards', color: '#FAF6C8' },
+  { id: 9, name: 'Compiling Specifications', color: '#E4DBEA' },
+  { id: 10, name: 'Search Design', color: '#E7EDFF' },
+  { id: 11, name: 'Web and Mobile Design', color: '#FAF6C8' },
+  { id: 12, name: 'Onboarding', color: '#FFE9E3' },
+  { id: 13, name: 'Design System', color: '#E7EDFF' }
 ];
+
 
 const tools = [
   { id: 1, name: 'UserInterviews', href: 'https://www.userinterviews.com/', color: '#FFE9E3' },
@@ -201,7 +207,7 @@ const ProfWorld = () => {
       <CoverSection />
 
       <Container disableGutters maxWidth={false} sx={{ color: '#0A0A14' }}>
-        <Grid container spacing={2} justifyContent="space-between">
+        <Grid container justifyContent="space-between">
           {/* First Column */}
           <Grid item xs={12} lg={5}>
             <ProfClientOverview />
@@ -227,11 +233,12 @@ const ProfWorld = () => {
   <>
     <Grid container justifyContent="center" spacing={0}>
     <Grid container justifyContent="center" spacing={0} >
-      <Grid item xxs={12} >
+      <Grid item xxs={12} justifyContent="center" >
         <NavbarProject activeLink={activeSection} sections={sections} onSelectSection={handleSelectSection} />
+        </Grid>
         {/* Apply scroll effect to the rendered section */}
         {withScrollEffect(() => renderSection())()}
-      </Grid>
+  
       </Grid>
     </Grid>
   </>
@@ -239,7 +246,7 @@ const ProfWorld = () => {
   <>
     <Grid container justifyContent="center" spacing={0} >
       <Grid container justifyContent="center" spacing={0} >
-        <Grid item xxs={12} lg={10}>
+        <Grid item xxs={12} >
           <NavbarProject activeLink={activeSection} sections={sections} onSelectSection={handleSelectSection} />
         </Grid>
       </Grid>
@@ -249,7 +256,7 @@ const ProfWorld = () => {
   </>
 )}
 
-      <Container disableGutters maxWidth={false} sx={{ minHeight: '100vh', color: '#0A0A14' }}>
+      <Container disableGutters maxWidth={false} sx={{  color: '#0A0A14' }}>
       <Grid container justifyContent="center" spacing={0} sx={{ py: 2 }}>
       <Grid item  xxs={12} lg={10}>
 <BeginSection/>
@@ -271,7 +278,7 @@ const ProfWorld = () => {
         <FixedNavbar sections={sections_} onSelectSection_={handleSelectSection_} activeSection_={activeSection_} />
       </div>
       <div ref={mainLayoutRef}>
-        <Box sx={{height: { xl: '80px', lg: '40px', sm: '32px', xxs: '16px' }}}></Box>
+        <Box sx={{height:   { xl: '80px', sm: '60px', xxs: '48px' },}}></Box>
       </div>
       {/* MainLayout Section */}
         <MainLayout />

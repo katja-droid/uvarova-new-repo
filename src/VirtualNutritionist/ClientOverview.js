@@ -25,8 +25,8 @@ const ClientOverview = () => {
 
       <Link
         to="https://www.getwin.com.ua/"
-        style={{ color: '#0A0A14', fontFamily: 'Calibre SemiBold', textDecoration: 'none' }}
-      >
+        style={{ color: '#0A0A14', fontFamily: 'Calibre SemiBold', textDecoration: 'none', fontSize: '23px', lineHeight: '26px', pb: '8px' }}
+      > 
         GetWin
       </Link>
 

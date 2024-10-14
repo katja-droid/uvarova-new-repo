@@ -15,7 +15,8 @@ const AnalysesSection = () => {
           width: '100%',
           backgroundColor: '#F7F7F6', // Matches the background color of similar sections
           color: '#0A0A14',
-          py: { xl: '80px', lg: '40px', sm: '32px', xxs: '16px' },
+          py: { xl: '80px', sm: '60px', xxs: '48px' },
+
         }}
       >
         {/* Text Section - Full Width */}

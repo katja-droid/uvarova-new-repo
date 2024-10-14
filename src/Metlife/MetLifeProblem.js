@@ -4,7 +4,7 @@ import withScrollEffect from '../withScrollEffect.js';
 
 const MetLifeProblem = () => {
   return (
-    <Container disableGutters maxWidth={false} sx={{pb:{ xl: '80px', lg: '40px', sm: '32px', xxs: '16px' }}}>
+    <Container disableGutters maxWidth={false} sx={{pb: { xl: '80px', lg: '60px', xxs: '0' }}}>
       {/* Container for the title */}
       <Grid container justifyContent="center" spacing={0}>
         <Grid
@@ -47,7 +47,6 @@ const MetLifeProblem = () => {
               fontFamily: 'Calibre Regular',
               fontSize: '18px',
               lineHeight: '26px',
-              px: '24px',
             }}
           >
             <Box
@@ -56,7 +55,7 @@ const MetLifeProblem = () => {
                 listStyle: 'none',
                 paddingLeft: 0,
                 '& li': {
-                  mb: '16px', // Reduced margin between list items
+                  mb: '8px', // Reduced margin between list items
                 },
                 mt: 0
               }}

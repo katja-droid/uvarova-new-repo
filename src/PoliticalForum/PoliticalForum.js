@@ -148,8 +148,8 @@ const renderSection = () => {
 
        <PoliticalForumContent/>
 </Container>
-<Container disableGutters maxWidth={false} sx={{ minHeight: '100vh', color: '#0A0A14', pb: {md: '80px', xxs: '16px'} }}>
-<Grid container spacing={2} justifyContent="space-between">
+<Container disableGutters maxWidth={false} sx={{ color: '#0A0A14', pb: {md: '80px', xxs: '16px'} }}>
+<Grid container justifyContent="space-between">
   {/* First Column - Takes full width on small screens, and 5 out of 12 columns on medium screens and up */}
   <Grid item xs={12} lg={5}>
     <PoliticalForumClientOverview />
@@ -170,21 +170,18 @@ const renderSection = () => {
       {/* Full-width section */}
       <PoliticalForumFullWidthSection />
 
-      <Grid container justifyContent="center" spacing={0} >
-<Grid item xxs={12} lg={8} >
-    
-     <Grid item xxs={12} >
-           <NavbarProject sections={sections} onSelectSection={handleSelectSection} activeLink={activeSection} // Pass active section as prop
+   
+
+      <Grid item xxs={12} lg={10} >
+     <NavbarProject sections={sections} onSelectSection={handleSelectSection} activeLink={activeSection} // Pass active section as prop
      ></NavbarProject>
      {renderSection()}
-     </Grid>
-     </Grid>
-   
-     </Grid>
+</Grid>
+
      <Container disableGutters maxWidth={'100vw'} sx={{ color: '#0A0A14',
           backgroundColor: '#F7F7F6' }}>
   <Grid container justifyContent="center"   >
-    <Grid item xxs={12} sx={ {py: { xl: '80px', lg: '40px', sm: '32px', xxs: '16px' },
+    <Grid item xxs={12} sx={ {pb: { xl: '80px', sm: '60px', xxs: '48px' },
           overflow: 'visible'
         }} >
       <BeforeAfterLayout beforeImage={before} afterImage={after} />

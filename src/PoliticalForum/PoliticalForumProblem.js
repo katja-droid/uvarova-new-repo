@@ -1,17 +1,30 @@
-import { Box, Typography } from '@mui/material';
+import { Box, Container, Grid, Typography } from '@mui/material';
 import React from 'react';
 import withScrollEffect from '../withScrollEffect.js';
 
 const PoliticalForumProblem = () => {
   return (
-    <div id="nutritionistProblem" style={{ width: '100%' }}>
-      <Box sx={{pb: { xl: '80px', lg: '40px', sm: '32px', xxs: '16px' }}}>
+<Container disableGutters maxWidth={false} sx={{pb: { xl: '80px', lg: '60px', xxs: '0' }}}>
+      {/* Container for the title */}
+      <Grid container justifyContent="center" spacing={0}>
+        <Grid
+          item
+          xl={8}
+          lg={10} // 10 columns on lg
+          md={12} // 100% on md and smaller
+          sm={12}
+          xs={12}
+        >    <div id="nutritionistProblem" style={{ width: '100%' }}>
+      <Box sx={{pb: { xl: '80px', sm: '60px', xxs: '48px' }}}>
       <Typography
         variant="h3"
         sx={{
           fontSize: { xxs: '30px', sm: '34px', md: '40px' },
           fontFamily: 'Playfair Display Bold',
-          pb: { xxs: '16px', sm: '24px', lg: '32px' }, // Responsive padding after heading
+          pb: {
+            lg: '24px', // 24px for lg
+            xxs: '0px', // 16px for xxs to md
+          },
         }}
       >
         The Problem
@@ -79,8 +92,10 @@ const PoliticalForumProblem = () => {
           </Box>
         </li>
       </Box>
-      </Box>
-    </div>
+      </Box> </div>
+      </Grid>
+   </Grid>
+   </Container> 
    
   );
 };

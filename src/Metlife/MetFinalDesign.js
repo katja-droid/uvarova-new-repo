@@ -16,13 +16,14 @@ const MetFinalDesign = () => {
 
   return (
     <ThemeProvider theme={theme}>
+      <Box sx={{   py: { xl: '80px', sm: '60px', xxs: '48px' }}}>
       <Box
         sx={{
           position: 'relative',
           width: '100%',
           color: '#0A0A14',
           overflow: 'visible',
-          pt: { xl: '80px', lg: '40px', sm: '32px', xxs: '16px' },
+       
         }}
         id="final-designs-met"
       >
@@ -56,7 +57,7 @@ const MetFinalDesign = () => {
               </Typography>
               <Typography
                 sx={{
-                  pb: { md: '24px', xxs: '16px' },
+                  pb: '24px',
                   fontSize: '18px',
                   lineHeight: '26px',
                   fontFamily: 'Calibre Regular',
@@ -135,22 +136,23 @@ const MetFinalDesign = () => {
         }}
       >
         {/* Main Section for Mobile View */}
-        <Grid container spacing={2} justifyContent="center" sx={{ py: '24px' }}>
-          <img src={img} width="100%" />
+        <Grid container spacing={2} justifyContent="center" >
+          <img src={img} width="100%"  style={{boxShadow: '0px 4.98px 14.94px 0px #0000001A'}}/>
         </Grid>
-        <Grid container spacing={2} justifyContent="center" sx={{ py: '24px' }}>
-          <img src={image1} width="100%" />
+        <Grid container spacing={2} justifyContent="center" sx={{ mt: '24px' }}>
+          <img src={image1} width="100%" style={{boxShadow: '0px 4.98px 14.94px 0px #0000001A'}}/>
         </Grid>
-        <Grid container spacing={2} justifyContent="center" sx={{ py: '24px' }}>
-          <img src={image2} width="100%" />
+        <Grid container spacing={2} justifyContent="center" sx={{ mt: '24px' }}>
+          <img src={image2} width="100%" style={{boxShadow: '0px 4.98px 14.94px 0px #0000001A'}}/>
         </Grid>
-        <Grid container spacing={2} justifyContent="center" sx={{ py: '24px' }}>
-          <img src={image3} width="100%" />
+        <Grid container spacing={2} justifyContent="center" sx={{ mt: '24px' }}>
+          <img src={image3} width="100%" style={{boxShadow: '0px 4.98px 14.94px 0px #0000001A'}}/>
         </Grid>
-        <Grid container spacing={2} justifyContent="center" sx={{ py: '24px' }}>
-          <img src={image4} width="100%" />
+        <Grid container spacing={2} justifyContent="center" sx={{ mt: '24px' }}>
+          <img src={image4} width="100%" style={{boxShadow: '0px 4.98px 14.94px 0px #0000001A'}}/>
         </Grid>
       </Container>
+      </Box>
     </ThemeProvider>
   );
 };

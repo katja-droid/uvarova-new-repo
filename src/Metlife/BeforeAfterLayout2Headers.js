@@ -1,8 +1,8 @@
-import { Box, Grid, Typography } from '@mui/material';
+import { Grid, Typography } from '@mui/material';
 import React from 'react';
 import withScrollEffect from '../withScrollEffect.js';
 
-const BeforeAfterLayout = ({ beforeImage, afterImage }) => {
+const BeforeAfterLayout2Headers = ({ beforeImage, afterImage }) => {
   return (
     <Grid
       container
@@ -34,23 +34,12 @@ const BeforeAfterLayout = ({ beforeImage, afterImage }) => {
             fontFamily: 'Playfair Display Bold',
             pb: '24px',
             textAlign: 'left',
-            pt: {xxs: '48px',sm: '60px', lg:  '0'}
+            pt: {xxs: '60px', lg:  '0'}
           }}
         >
           Before
         </Typography>
-        <Box sx={{boxShadow: {xxs: '0px 15px 20px 0px #0000000D', lg: '0px 20px 50px 0px #0000001A'}}}>
-        <img
-          src={beforeImage}
-          alt="Before"
-          style={{
-            width: '100%',
-            height: 'auto',
-            padding: 0,
-            margin: 0,
-          }}
-        />
-        </Box>
+      
       </Grid>
 
       {/* Gap between blocks only */}
@@ -75,26 +64,15 @@ const BeforeAfterLayout = ({ beforeImage, afterImage }) => {
             fontFamily: 'Playfair Display Bold',
             pb: '24px',
             textAlign: 'left',
-            pt: {xxs: '24px', lg:  '0'}
+            pt: {xxs: '60px', lg:  '0'}
           }}
         >
           After
         </Typography>
-        <Box sx={{boxShadow: {xxs: '0px 15px 20px 0px #0000000D', lg: '0px 20px 50px 0px #0000001A'}}}>
-        <img
-          src={afterImage}
-          alt="After"
-          style={{
-            width: '100%',
-            height: 'auto',
-            padding: 0,
-            margin: 0,
-          }}
-        />
-        </Box>
+      
       </Grid>
     </Grid>
   );
 };
 
-export default withScrollEffect (BeforeAfterLayout);
+export default withScrollEffect (BeforeAfterLayout2Headers);

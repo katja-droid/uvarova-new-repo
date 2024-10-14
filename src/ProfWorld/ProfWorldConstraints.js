@@ -21,13 +21,16 @@ const ProfWorldConstraints = () => {
       <Container disableGutters maxWidth={false} justifyContent="center" >
         {/* Title Section */}
         <Grid container justifyContent="center" spacing={0} sx={{ py: 2 }}>
-          <Grid item  xxs={12} md={10} lg={8}>
+          <Grid item  xxs={12} md={12} lg={9.6} xl={8}>
             <Typography
               variant="h3"
               sx={{
                 fontSize: { xxs: '30px', sm: '34px', md: '40px' },
                 fontFamily: 'Playfair Display Bold',
-                pb: '24px',
+                pb: {
+                  lg: '24px', // 24px for lg
+                  xxs: '16px', // 16px for xxs to md
+                },
               }}
             >
               Project's Constraints
@@ -37,7 +40,7 @@ const ProfWorldConstraints = () => {
 
         {/* First Text Section */}
         <Grid container justifyContent="center" sx={{ py: 2, fontFamily: 'Calibre Regular', fontSize: '18px' }}>
-          <Grid item  xxs={12} md={10} lg={8}>
+          <Grid item  xxs={12} md={10} lg={9.6} xl={8}>
             <Box sx={{ fontFamily: 'Calibre Regular', fontSize: '18px', lineHeight: '26px' }}>
               <Typography sx={{ pb: '16px', color: '#646470' }}>
                 When analyzing a project to automate the personnel training process, several key limitations (constraints) can be identified that can contribute to its successful implementation. Below are the possible options and their descriptions:
@@ -66,7 +69,7 @@ const ProfWorldConstraints = () => {
       <Container disableGutters maxWidth={false} justifyContent="center">
         {/* Second Text Section */}
         <Grid container justifyContent="center" sx={{ py: 2 }}>
-          <Grid item xxs={12} md={10} lg={8}>
+          <Grid item xxs={12} md={10} lg={9.6} xl={8}>
             <Typography
               sx={{
                 fontFamily: 'Calibre Regular',

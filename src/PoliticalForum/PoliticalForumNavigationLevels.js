@@ -17,7 +17,7 @@ const PoliticalForumNavigationLevels = () => {
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
-          pt: { xl: '80px', lg: '40px', sm: '32px', xxs: '16px' },
+          pt: { xl: '80px', sm: '60px', xxs: '48px' },
         }}
         id="nav-levels-pf"
       >
@@ -69,15 +69,7 @@ const PoliticalForumNavigationLevels = () => {
       {/* Full Width Image */}
       <Box
         sx={{
-          pb: {
-            xxs: '24px',
-            xs: '48px',
-            sm: '60px',
-            md: '80px',
-            lg: '80px',
-            xl: '80px',
-            xxxl: '80px',
-          },
+          pb: { xl: '80px', sm: '60px', xxs: '48px' },
         }}
       >
         <img width="100%" src={image} alt="Design System" />

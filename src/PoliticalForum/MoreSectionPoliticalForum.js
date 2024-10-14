@@ -42,7 +42,7 @@ const MoreSectionPoliticalForum = () => {
         <Grid item xs={12} sm={12} md={6} lg={4}>
             <Box sx={{boxShadow: '0 1px 4px rgba(0, 0, 0, 0.05)', pb: '32px', borderRadius: '16px' }}>
               <img src={image3} alt="Prof.world: automated recruiting" style={{ width: '100%' }} />
-              <Typography align="center" mt={2}>
+              <Typography sx={{px: '30px'}} mt={2}>
                 <Link
                   to="/prof-world"
                   underline="none"
@@ -64,7 +64,7 @@ const MoreSectionPoliticalForum = () => {
           <Grid item xs={12} sm={12} md={6} lg={4}>
             <Box sx={{boxShadow: '0 1px 4px rgba(0, 0, 0, 0.05)', pb: '32px', borderRadius: '16px'}}>
               <img src={image1} alt="Prof.world: automated recruiting" style={{ width: '100%' }} />
-              <Typography align="center" mt={2}>
+              <Typography sx={{px: '30px'}} mt={2}>
                 <Link
                   to="/virtual-nutritionist"
                   underline="none"
@@ -87,7 +87,7 @@ const MoreSectionPoliticalForum = () => {
           <Grid item xs={12} sm={12} md={6} lg={4}>
             <Box sx={{boxShadow: '0 1px 4px rgba(0, 0, 0, 0.05)', pb: '32px', borderRadius: '16px'}}>
               <img src={image2} alt="Metlife: digital forms" style={{ width: '100%' }} />
-              <Typography align="center" mt={2}>
+              <Typography sx={{px: '30px'}} mt={2}>
                 <Link
                   to="/metlife"
                   underline="none"

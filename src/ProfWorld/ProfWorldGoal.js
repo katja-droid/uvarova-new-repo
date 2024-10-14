@@ -7,13 +7,16 @@ const ProfWorldGoal = () => {
     <Container disableGutters maxWidth={false} sx={{pb: { xl: '80px', lg: '40px', sm: '32px', xxs: '16px' }}}>
       {/* Container for the title */}
       <Grid container justifyContent="center" spacing={0}  >
-        <Grid item item xl={8} xxs={12} md={10}>
+        <Grid item  xl={8} xxs={12} lg={10}>
           <Typography
             variant="h3"
             sx={{
               fontSize: { xxs: '30px', sm: '34px', md: '40px' },
               fontFamily: 'Playfair Display Bold',
-              pb: '24px',
+              pb: {
+                lg: '24px', // 24px for lg
+                xxs: '16px', // 16px for xxs to md
+              },
             }}
           >
             Goals of the Project
@@ -27,7 +30,7 @@ const ProfWorldGoal = () => {
         justifyContent="center"
         sx={{  fontFamily: 'Calibre Regular', fontSize: '18px' }}
       >
-        <Grid item xl={8} xxs={12} md={10}>
+        <Grid item xl={8} xxs={12} lg={10}>
           <Box
             sx={{
               fontFamily: 'Calibre Regular',

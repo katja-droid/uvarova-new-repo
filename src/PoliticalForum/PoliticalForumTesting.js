@@ -16,7 +16,7 @@ const PoliticalForumTesting = () => {
             position: 'relative',
             width: '100%',
             color: '#0A0A14',
-            pt: { xl: '80px', lg: '40px', sm: '32px', xxs: '16px' },
+            py: { xl: '80px', sm: '60px', xxs: '48px' },
             mb: '32px', // Add 32px margin at the bottom to space it from the next section
             fontFamily: 'Calibre Regular'
           }}
@@ -49,13 +49,14 @@ const PoliticalForumTesting = () => {
                 Testing 
               </Typography>
               <Typography sx={{fontSize: '18px', pb: '8px',  fontFamily: 'Calibre Regular'}}>
-              We select no more than 23 main audience segments (age: {'<40'}, {'>40'}).
+              We select no more than 3 main audience segments (age: {'<40'}, {'>40'}).
               </Typography>
               <Box
                 component="ul"
                 sx={{
                   listStyle: 'disc', // Change markers to discs
                   paddingLeft: '20px', // Add padding for better alignment
+
                   margin: 0,
                   pb: '24px',
                   '& li': {

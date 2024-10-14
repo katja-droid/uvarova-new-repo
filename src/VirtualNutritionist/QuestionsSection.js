@@ -18,7 +18,7 @@ const QuestionsSection = () => {
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
-          py: { xl: '80px', lg: '40px', sm: '32px', xxs: '16px' } ,
+          py: { xl: '80px', sm: '60px', xxs: '48px' },
         }}
       >
         <Container disableGutters maxWidth={false}>

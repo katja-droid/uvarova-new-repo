@@ -18,7 +18,7 @@ const MainLayout = () => {
           position: 'relative',
           width: '100%',
           color: '#0A0A14',
-          pb: { xl: '80px', lg: '40px', sm: '32px', xxs: '16px' },
+          pb: { xl: '80px', sm: '60px', xxs: '48px' },
         }}
         id="main-p"
       >

@@ -13,7 +13,10 @@ const ProfWorldKPIs = () => {
             sx={{
               fontSize: { xxs: '30px', sm: '34px', md: '40px' },
               fontFamily: 'Playfair Display Bold',
-              pb: '24px',
+              pb: {
+                lg: '24px', // 24px for lg
+                xxs: '16px', // 16px for xxs to md
+              },
             }}
           >
             Design KPIs

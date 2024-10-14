@@ -41,7 +41,7 @@ const ProfFullWidthSection = () => {
             {/* First Column */}
             <Grid item xxs={12} xs={12} sm={12} md={10} lg={8} xl={6} xxl={6}>
               <Typography variant='h3' sx={{fontSize: {xxs: '30px', sm: '34px', md: '40px'}, fontFamily: 'Playfair Display Bold', pb: '24px' }}>Defining the Problem</Typography>
-              <Typography sx={{ mt: 2, fontSize: '18px', fontFamily: 'Calibre Regular' }}>
+              <Typography sx={{  fontSize: '18px', fontFamily: 'Calibre Regular' }}>
               It is essential to consider the user’s unique lifestyle and professional needs, facilitate interaction with health professionals, provide comprehensive health analysis, and provide effective tools for meal planning and progress tracking in health monitoring applications. </Typography>
             </Grid>
 

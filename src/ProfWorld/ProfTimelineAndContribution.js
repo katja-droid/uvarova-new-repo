@@ -5,7 +5,7 @@ import withScrollEffect from '../withScrollEffect.js';
 
 const ProfTimelineAndContribution = ({ contribution, tools }) => {
   return (
-    <Box sx={{ display: 'flex', flexDirection: 'column', pt: { xl: '80px', lg: '40px', sm: '32px', xxs: '16px' } }}>
+    <Box sx={{ display: 'flex', flexDirection: 'column',  pt: { xl: '80px', lg: '40px', sm: '32px', xxs: '24px' } }}>
       {/* Timeline */}
       <Typography
         variant='body1'
@@ -23,7 +23,7 @@ const ProfTimelineAndContribution = ({ contribution, tools }) => {
       >
         Timeline
       </Typography>
-      <Typography sx={{ fontSize: '18px', lineHeight: '26px', pb: '8px', fontFamily: 'Calibre Regular' }}>
+      <Typography sx={{ fontSize: '18px', lineHeight: '26px', pb: '8px', fontFamily: 'Calibre Regular', fontSize: '23px', lineHeight: '26px', pb: '8px' }}>
         <b>May 2022 — May 2024</b> ~ 2 years
       </Typography>
 
@@ -45,7 +45,7 @@ const ProfTimelineAndContribution = ({ contribution, tools }) => {
       >
         My role
       </Typography>
-      <Typography sx={{ fontSize: '18px', lineHeight: '26px', pb: '8px', fontFamily: 'Calibre Regular' }}>
+      <Typography sx={{ fontSize: '18px', lineHeight: '26px', pb: '8px', fontFamily: 'Calibre Regular', fontSize: '23px', lineHeight: '26px', pb: '8px' }}>
         <b>UX/UI Designer</b> ~ 2 years
       </Typography>
       <Typography sx={{ fontSize: '18px', lineHeight: '26px', pb: '8px', fontFamily: 'Calibre Regular' }}>

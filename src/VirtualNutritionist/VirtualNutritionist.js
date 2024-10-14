@@ -179,7 +179,7 @@ const renderSection = () => {
 </Grid>
 </Container>
 <Container disableGutters maxWidth={false} sx={{ minHeight: '100vh', color: '#0A0A14', pb: {md: '80px', xxs: '16px'} }}>
-<Grid container spacing={2} justifyContent="space-between">
+<Grid container justifyContent="space-between">
   {/* First Column - Takes full width on small screens, and 5 out of 12 columns on medium screens and up */}
   <Grid item xs={12} lg={5}>
     <ClientOverview />
@@ -206,7 +206,7 @@ const renderSection = () => {
 
 {/* Render Selected Section */}
 <Grid container justifyContent="center" spacing={0} sx={{  py: 0  }}>
-<Grid item xxs={12} lg={10} >
+<Grid item xxs={12} >
 <NavbarProject activeLink={activeSection} sections={sections} onSelectSection={handleSelectSection} />
       {renderSection()}
       </Grid>

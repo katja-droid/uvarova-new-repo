@@ -25,8 +25,8 @@ const SliderDivWide = ({ slides }) => {
 
   return ( <Container disableGutters maxWidth={false} justifyContent="center">
     {/* Title Section */}
-    <Grid container justifyContent="center" sx={{ py: 2, margin: 0 }}>
-        <Grid item xxs={12} lg={10} className="slider-mui-slider" justifyContent="center">
+    <Grid container justifyContent="center" sx={{  margin: 0 }}>
+        <Grid item xxs={12} lg={12} xl={10} className="slider-mui-slider" justifyContent="center">
           {/* Navigation Arrow for Previous */}
           <button
             className="slider-mui-arrow slider-mui-arrow-left"
@@ -34,7 +34,7 @@ const SliderDivWide = ({ slides }) => {
           ></button>
 
           {/* Render the current slide */}
-          <Grid item xxs={12}  lg={9.6} md={10} className="slider-mui-slide" >
+          <Grid item xxs={12}  lg={9.6} md={12} className="slider-mui-slide" >
             {slides[currentIndex]}
           </Grid>
 

@@ -3,23 +3,18 @@ import { Box, Grid, Typography } from '@mui/material';
 
 const ProfWorldAnalyticsTwo = () => {
   return (
-    <Grid container justifyContent="center" sx={{ py: 2 }}>
+    <Grid container justifyContent="center">
       <Grid item sm={12} xs={12} md={12}>
-        <Grid container spacing={4}>
+        <Grid container spacing={{ xxs: 2, sm: 2, md: 2, lg: 3, xl: 4 }} alignItems="stretch">
           {/* Each analytics card will be 6 columns wide */}
-          <Grid item sm={6} xs={12}>
+          <Grid item md={6} xs={12} sx={{ display: 'flex', height: 'auto' }}>
             <Box
               sx={{
                 border: '1px solid #EFEFF8',
                 padding: '32px',
-                height: {
-                  xxxl: '245px',
-                  xl: '245px',
-                  lg: '245px',
-                  md: '280px',
-                  sm: 'auto',
-                  xxs: 'auto', // Auto height for smaller screens
-                },
+                display: 'flex',
+                flexDirection: 'column',
+                height: '100%',
               }}
             >
               <Typography
@@ -52,19 +47,14 @@ const ProfWorldAnalyticsTwo = () => {
             </Box>
           </Grid>
 
-          <Grid item sm={6} xs={12}>
+          <Grid item md={6} xs={12} sx={{ display: 'flex', height: 'auto' }}>
             <Box
               sx={{
                 border: '1px solid #EFEFF8',
                 padding: '32px',
-                height: {
-                  xxxl: '245px',
-                  xl: '245px',
-                  lg: '245px',
-                  md: '280px',
-                  sm: 'auto',
-                  xxs: 'auto', // Auto height for smaller screens
-                },
+                display: 'flex',
+                flexDirection: 'column',
+                height: '100%',
               }}
             >
               <Typography
@@ -97,19 +87,14 @@ const ProfWorldAnalyticsTwo = () => {
             </Box>
           </Grid>
 
-          <Grid item sm={6} xs={12}>
+          <Grid item md={6} xs={12} sx={{ display: 'flex', height: 'auto' }}>
             <Box
               sx={{
                 border: '1px solid #EFEFF8',
                 padding: '32px',
-                height: {
-                  xxxl: '245px',
-                  xl: '245px',
-                  lg: '245px',
-                  md: '280px',
-                  sm: 'auto',
-                  xxs: 'auto', // Auto height for smaller screens
-                },
+                display: 'flex',
+                flexDirection: 'column',
+                height: '100%',
               }}
             >
               <Typography
@@ -142,19 +127,14 @@ const ProfWorldAnalyticsTwo = () => {
             </Box>
           </Grid>
 
-          <Grid item sm={6} xs={12}>
+          <Grid item md={6} xs={12} sx={{ display: 'flex', height: 'auto' }}>
             <Box
               sx={{
                 border: '1px solid #EFEFF8',
                 padding: '32px',
-                height: {
-                  xxxl: '245px',
-                  xl: '245px',
-                  lg: '245px',
-                  md: '280px',
-                  sm: 'auto',
-                  xxs: 'auto', // Auto height for smaller screens
-                },
+                display: 'flex',
+                flexDirection: 'column',
+                height: '100%',
               }}
             >
               <Typography

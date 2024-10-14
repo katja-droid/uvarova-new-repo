@@ -20,8 +20,8 @@ const theme = createTheme({
           marginLeft: 'auto',
           paddingRight: 'auto',
           '@media (max-width: 359px)': {  // For xxs screens (below 360px)
-            paddingLeft: '12px',
-            paddingRight: '0',
+            paddingLeft: '8px',
+            paddingRight: '8px',
           },
           '@media (min-width: 360px) and (max-width: 479px)': {  // xs screens
             paddingLeft: '16px',

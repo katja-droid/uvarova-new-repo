@@ -17,7 +17,7 @@ const DesignSystemSectionProf = () => {
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
-          pt: { xl: '80px', lg: '40px', sm: '32px', xxs: '16px' },
+          pt: { xl: '80px', sm: '60px', xxs: '48px' },
         }}
       >
         <Container
@@ -69,15 +69,7 @@ const DesignSystemSectionProf = () => {
           </Grid>
         </Container>
       </Box>
-       <Box sx={{pb: { 
-            xxs: '24px', 
-            xs: '48px', 
-            sm: '60px', 
-            md: '84px', 
-            lg: '84px', 
-            xl: '84px', 
-            xxl: '97px' 
-          }}}>
+       <Box sx={{pb: { xl: '80px', sm: '60px', xxs: '48px' },}}>
       {/* Full Width Image */}
       <img width="100%" src={image} alt="Design System" />
       </Box>

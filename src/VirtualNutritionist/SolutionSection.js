@@ -17,7 +17,7 @@ const SolutionSection = () => {
           display: 'flex', // Enable flexbox on the container
           justifyContent: 'center', // Center the container horizontally
           alignItems: 'center', // Optional: Center the container vertically
-          py: { xl: '80px', lg: '40px', sm: '32px', xxs: '16px' } 
+          py: { xl: '80px', sm: '60px', xxs: '48px' },
         }}
       >
         <Container

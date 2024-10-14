@@ -42,7 +42,7 @@ const TimelineAndContribution = ({ tools }) => {
   const selectedContribution = (isXxs || isXs) ? xxsAndXsContribution : fullContribution;
 
   return (
-    <Box sx={{ display: 'flex', flexDirection: 'column', pt: { xl: '80px', lg: '40px', sm: '32px', xxs: '16px' } }}>
+    <Box sx={{ display: 'flex', flexDirection: 'column',  pt: { xl: '80px', lg: '40px', sm: '32px', xxs: '24px' }  }}>
       {/* Timeline */}
       <Typography
         variant='body1'
@@ -60,7 +60,7 @@ const TimelineAndContribution = ({ tools }) => {
       >
         Timeline
       </Typography>
-      <Typography sx={{ fontSize: '18px', lineHeight: '26px', pb: '8px', fontFamily: 'Calibre Regular' }}>
+      <Typography sx={{ fontSize: '23px', lineHeight: '26px', pb: '8px', fontFamily: 'Calibre Regular' }}>
         <b>Apr — Aug 2024</b> ~ 5 months
       </Typography>
 
@@ -82,7 +82,7 @@ const TimelineAndContribution = ({ tools }) => {
       >
         My role
       </Typography>
-      <Typography sx={{ fontSize: '18px', lineHeight: '26px', pb: '8px', fontFamily: 'Calibre Regular' }}>
+      <Typography sx={{ fontSize: '23px', lineHeight: '26px', pb: '8px', fontFamily: 'Calibre Regular' }}>
         <b>UX/UI Designer</b> ~ 5 months
       </Typography>
       <Typography sx={{ fontSize: '18px', lineHeight: '26px', pb: '8px', fontFamily: 'Calibre Regular' }}>

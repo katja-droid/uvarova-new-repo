@@ -17,7 +17,7 @@ const MetDesignSystem = () => {
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
-          pb: { xl: '80px', lg: '40px', sm: '32px', xxs: '16px' },
+          pt: { xl: '80px', sm: '60px', xxs: '48px' },
         }}
       >
         <Container

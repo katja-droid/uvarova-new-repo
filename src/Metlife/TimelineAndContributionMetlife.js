@@ -43,7 +43,7 @@ const TimelineAndContributionMetlife = ({ tools }) => {
   const selectedContribution = (isXxs || isXs) ? xxsAndXsContribution : fullContribution;
 
   return (
-    <Box sx={{ display: 'flex', flexDirection: 'column', pt: { xl: '80px', lg: '40px', sm: '32px', xxs: '16px' } }}>
+    <Box sx={{ display: 'flex', flexDirection: 'column', pt: { xl: '80px', lg: '40px', sm: '32px', xxs: '24px' } }}>
       {/* Timeline */}
       <Typography
         variant='body1'
@@ -61,7 +61,7 @@ const TimelineAndContributionMetlife = ({ tools }) => {
       >
         Timeline
       </Typography>
-      <Typography sx={{ fontSize: '18px', lineHeight: '26px', pb: '8px', fontFamily: 'Calibre Regular' }}>
+      <Typography sx={{ fontSize: '23px', lineHeight: '26px', pb: '8px', fontFamily: 'Calibre Regular' }}>
         <b>Apr — Aug 2024</b>  ~ 5 months
           
       </Typography>
@@ -84,7 +84,7 @@ const TimelineAndContributionMetlife = ({ tools }) => {
       >
         My role
       </Typography>
-      <Typography sx={{ fontSize: '18px', lineHeight: '26px', pb: '8px', fontFamily: 'Calibre Regular' }}>
+      <Typography sx={{ fontSize: '23px', lineHeight: '26px', pb: '8px', fontFamily: 'Calibre Regular' }}>
         <b>UX/UI Designer</b>
       </Typography>
       <Typography sx={{ fontSize: '18px', lineHeight: '26px', pb: '8px', fontFamily: 'Calibre Regular' }}>
@@ -96,7 +96,7 @@ const TimelineAndContributionMetlife = ({ tools }) => {
       <Typography sx={{ fontSize: '18px', lineHeight: '26px', pb: '8px', fontFamily: 'Calibre Regular' }}>
         Ensuring a consistent visual style across mobile and web versions of the application with an emphasis on usability and accessibility.
       </Typography>
-      <Typography sx={{ fontSize: '18px', lineHeight: '26px', pb: '8px', fontFamily: 'Calibre Regular' }}>
+      <Typography sx={{ fontSize: '18px', lineHeight: '26px', fontFamily: 'Calibre Regular' }}>
         Work closely with developers and web development team to ensure effective design implementation and maintain constant communication to address design-related issues.
       </Typography>
 
@@ -130,7 +130,7 @@ const TimelineAndContributionMetlife = ({ tools }) => {
               display: 'inline-block',
               color: '#0A0A14',
               mr: { xs: '8px', md: '10px' },
-              mb: { xs: '8px', md: '10px' },
+              mb: { xs: '8px', md: 0 },
             }}
           >
             {item.name}

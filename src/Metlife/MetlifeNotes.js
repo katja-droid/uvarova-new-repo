@@ -4,7 +4,7 @@ import withScrollEffect from '../withScrollEffect.js';
 
 const MetLifeNotes = () => {
   return (
-    <Container disableGutters maxWidth={false} sx={{pb:{ xl: '80px', lg: '40px', sm: '32px', xxs: '16px' }}}>
+    <Container disableGutters maxWidth={false} sx={{pb: { xl: '80px', lg: '60px', xxs: '0' }}}>
       {/* Container for the title */}
       <Grid container justifyContent="center" spacing={0}>
         <Grid item xl={8} lg={10} md={12} sm={12} xs={12}>
@@ -49,33 +49,29 @@ const MetLifeNotes = () => {
               }}
             >
               <li>
-                <span>1.</span>
                 <Typography component="span" sx={{ pl: 1 }}>
-                  Usually transforming print to digital by replicating forms 1:1 is a suboptimal idea since digital is a very different medium: it’s dynamic, we can provide users with timely feedback, and we can guide them towards answers and solutions with our interfaces. This isn’t an exercise in responsive layouts, but really rethinking the digital forms UX.
+                <span style={{fontFamily: 'Calibre Medium', fontSize: '18px'}}> 1.</span> Usually transforming print to digital by replicating forms 1:1 is a suboptimal idea since digital is a very different medium: it’s dynamic, we can provide users with timely feedback, and we can guide them towards answers and solutions with our interfaces. This isn’t an exercise in responsive layouts, but really rethinking the digital forms UX.
                 </Typography>
               </li>
               <li>
-                <span>2.</span>
                 <Typography component="span" sx={{ pl: 1 }}>
-                  You can challenge absolutely everything (as long as you meet constraints and drive KPIs).
+                <span style={{fontFamily: 'Calibre Medium', fontSize: '18px'}}> 2.</span> You can challenge absolutely everything (as long as you meet constraints and drive KPIs).
                 </Typography>
               </li>
               <li>
-                <span>3.</span>
                 <Typography component="span" sx={{ pl: 1 }}>
-                  Think of how we can avoid displaying irrelevant or inapplicable questions to customers. We need to surface the right questions and formulate them in the right way — but only if the questions actually make sense or apply to the context in which a user currently is.
+                <span style={{fontFamily: 'Calibre Medium', fontSize: '18px'}}> 3.</span> Think of how we can avoid displaying irrelevant or inapplicable questions to customers. We need to surface the right questions and formulate them in the right way — but only if the questions actually make sense or apply to the context in which a user currently is.
                 </Typography>
               </li>
               <li>
-                <span>4.</span>
+               
                 <Typography component="span" sx={{ pl: 1 }}>
-                  Think about useful features that will give users confidence about their progress and the safety of their data/input.
+                <span style={{fontFamily: 'Calibre Medium', fontSize: '18px'}}> 4.</span> Think about useful features that will give users confidence about their progress and the safety of their data/input.
                 </Typography>
               </li>
               <li>
-                <span>5.</span>
                 <Typography component="span" sx={{ pl: 1 }}>
-                  Think about the layout on mobile and on desktop. Ideally, we’d love to increase completion rates on both, but it’s going to be more challenging on mobile.
+                 <span style={{fontFamily: 'Calibre Medium', fontSize: '18px'}}>5.</span> Think about the layout on mobile and on desktop. Ideally, we’d love to increase completion rates on both, but it’s going to be more challenging on mobile.
                 </Typography>
               </li>
             </Box>

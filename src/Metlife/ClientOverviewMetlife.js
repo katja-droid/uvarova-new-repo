@@ -25,7 +25,7 @@ const ClientOverviewMetlife = () => {
 
       <Link
         to="https://www.metlife.ua/"
-        style={{ color: '#0A0A14', fontFamily: 'Calibre SemiBold', textDecoration: 'none' }}
+        style={{ color: '#0A0A14', fontFamily: 'Calibre SemiBold', textDecoration: 'none', fontSize: '23px' }}
       >
         MetLife
       </Link>

@@ -16,7 +16,7 @@ const PoliticalForumNavIssues = () => {
           width: '100%',
           backgroundColor: '#F7F7F6',
           color: '#0A0A14',
-          py: { xl: '80px', lg: '40px', sm: '32px', xxs: '16px' },
+          py: { xl: '80px', sm: '60px', xxs: '48px' },
           textAlign: 'left',
           px: { xxs: '16px', sm: '24px', md: '48px', lg: '84px' }, 
           overflowX: 'hidden', // Prevent horizontal overflow

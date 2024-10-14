@@ -15,7 +15,7 @@ const RecruitmentSelectionSection = () => {
           position: 'relative',
           width: '100%',
           color: '#0A0A14',
-          py: { xl: '80px', lg: '40px', sm: '32px', xxs: '16px' },
+          py: { xl: '80px', sm: '60px', xxs: '48px' },
         }}
         id="recruitment-p"
       >
@@ -40,9 +40,9 @@ const RecruitmentSelectionSection = () => {
                 order: { xs: 1, lg: 1 }, // Text comes first on all screens
                 display: 'flex',
                 flexDirection: 'column',
-                justifyContent: { xs: 'center', lg: 'flex-start' }, // Center vertically on small screens
-                alignItems: { xs: 'center', lg: 'flex-start' }, // Center horizontally on small screens
-                textAlign: { xs: 'center', lg: 'left' }, // Center text on small screens, left-align on large screens
+                justifyContent: { xxs: 'center', lg: 'flex-start' }, // Center vertically on small screens
+                alignItems: { xxs: 'center', lg: 'flex-start' }, // Center horizontally on small screens
+                textAlign: { lg: 'left' }, // Center text on small screens, left-align on large screens
               }}
             >
               <Box>

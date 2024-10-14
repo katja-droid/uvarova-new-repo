@@ -4,7 +4,7 @@ import withScrollEffect from '../withScrollEffect.js';
 
 const MetLifeConstraints = () => {
   return (
-    <Container disableGutters maxWidth={false} sx={{ pb: { xl: '80px', lg: '40px', sm: '32px', xxs: '16px' } }}>
+    <Container disableGutters maxWidth={false} sx={{pb: { xl: '80px', lg: '60px', xxs: '0' }}}>
       {/* Container for the title */}
       <Grid container justifyContent="center" spacing={0}>
         <Grid item xl={8} lg={10} md={12} sm={12} xs={12}>

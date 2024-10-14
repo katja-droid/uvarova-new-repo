@@ -10,7 +10,8 @@ const ProfileSection = () => {
   return (
     <div id="profile-v">
     <ThemeProvider theme={theme}>
-      <Box sx={{py: { xl: '80px', lg: '40px', sm: '32px', xxs: '16px' }}} >
+      <Box sx={{py: { xl: '80px', sm: '60px', xxs: '48px' }}}
+ >
       {/* Text Section */}
       <Box
         sx={{

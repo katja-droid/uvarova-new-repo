@@ -4,16 +4,19 @@ import withScrollEffect from '../withScrollEffect.js';
 
 const ProfWorldUsers = () => {
   return (
-    <Container disableGutters maxWidth={false} sx={{pb: { xl: '80px', lg: '40px', sm: '32px', xxs: '16px' }}}>
+    <Container disableGutters maxWidth={false} sx={{  pb:  { xl: '80px', sm: '60px', xxs: '48px' }}}>
       {/* Container for the title */}
-      <Grid container justifyContent="center" spacing={0} >
-        <Grid item xl={8} xxs={12} md={10}>
+      <Grid container justifyContent="center" spacing={0}>
+        <Grid item xl={8} xxs={12} lg={10}>
           <Typography
             variant="h3"
             sx={{
               fontSize: { xxs: '30px', sm: '34px', md: '40px' },
               fontFamily: 'Playfair Display Bold',
-              pb: '24px',
+              pb: {
+                lg: '8px', // 24px for lg
+                xxs: '0px', // 16px for xxs to md
+              },
             }}
           >
             Users
@@ -25,13 +28,22 @@ const ProfWorldUsers = () => {
       <Grid
         container
         justifyContent="center"
-        sx={{ py: 2, fontFamily: 'Calibre Regular', fontSize: '18px' }}
+        sx={{ 
+          py: 2, 
+          fontFamily: 'Calibre Regular', 
+          fontSize: '18px',
+        }}
+        spacing={{ xxs: 2, sm: 2, md: 2, lg: 3, xl: 4 }} // Adjust spacing for horizontal gaps
       >
-        <Grid item xl={8} xxs={12} md={10}>
-          <Grid container spacing={4}>
+        <Grid item xl={8} xxs={12} lg={10}>
+          <Grid 
+            container 
+            spacing={{ xxs: 2, sm: 2, md: 2, lg: 3, xl: 4 }} // Adjust spacing for vertical gaps
+            alignItems="stretch" // Ensure items in a row are of the same height
+          >
             {/* First row: Two items, half width */}
-            <Grid item lg={6} md={6} xs={12}>
-              <Box sx={{ border: '1px solid #EFEFF8', padding: '32px' }}>
+            <Grid item lg={6} md={6} xs={12} sx={{ display: 'flex' }}>
+              <Box sx={{ border: '1px solid #EFEFF8', padding: '32px', flex: 1 }}>
                 <Typography
                   sx={{
                     fontFamily: 'Calibre Regular',
@@ -62,8 +74,8 @@ const ProfWorldUsers = () => {
               </Box>
             </Grid>
 
-            <Grid item lg={6} md={6} xs={12}>
-              <Box sx={{ border: '1px solid #EFEFF8', padding: '32px' }}>
+            <Grid item lg={6} md={6} xs={12} sx={{ display: 'flex' }}>
+              <Box sx={{ border: '1px solid #EFEFF8', padding: '32px', flex: 1 }}>
                 <Typography
                   sx={{
                     fontFamily: 'Calibre Regular',
@@ -95,8 +107,8 @@ const ProfWorldUsers = () => {
             </Grid>
 
             {/* Second row: Full-width item */}
-            <Grid item lg={12} xs={12}>
-              <Box sx={{ border: '1px solid #EFEFF8', padding: '32px' }}>
+            <Grid item lg={12} xs={12} sx={{ display: 'flex' }}>
+              <Box sx={{ border: '1px solid #EFEFF8', padding: '32px', flex: 1 }}>
                 <Typography
                   sx={{
                     fontFamily: 'Calibre Regular',
@@ -133,4 +145,4 @@ const ProfWorldUsers = () => {
   );
 };
 
-export default withScrollEffect (ProfWorldUsers);
+export default withScrollEffect(ProfWorldUsers);

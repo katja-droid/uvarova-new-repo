@@ -39,6 +39,8 @@ import before3 from '../assets/before3.png';
 import after3 from '../assets/after3.png'; 
 import BeforeAfterLayout from './BeforeAfterLayout';
 import SliderDivWide from './SliderDivWide';
+import BeforeAfterLayout2 from './BeforeAfterLayout2';
+import BeforeAfterLayout2Headers from './BeforeAfterLayout2Headers';
 
 const contribution = [
   { id: 1, name: 'User Research', color: '#FFE9E3' },
@@ -74,15 +76,14 @@ const sections_ = [
   { id: 'design-sprints-met', label: 'Design Sprints' },
   { id: 'final-designs-met', label: 'Final Designs' },
   { id: 'summary-met', label: 'Summary' },
-  { id: 'testing-summary-met', label: 'Testing Summary' },
   { id: 'usability-testing', label: 'Usability Testing' },
 ];
 const slides = [
-  <BeforeAfterLayout beforeImage={before1} afterImage={after1} />,
-  <BeforeAfterLayout beforeImage={before2} afterImage={after2} />,
-  <BeforeAfterLayout beforeImage={before3} afterImage={after3} />,
+  <BeforeAfterLayout2 beforeImage={before1} afterImage={after1} />,
+  <BeforeAfterLayout2 beforeImage={before2} afterImage={after2} />,
+  <BeforeAfterLayout2 beforeImage={before3} afterImage={after3} />,
   // Add more BeforeAfterLayout components here if needed
-];
+]; 
 const Metlife = () => {
   const [activeSection, setActiveSection] = useState('problem'); // Default section
   const [activeLink, setActiveLink] = useState('');
@@ -194,8 +195,8 @@ const renderSection = () => {
 </Grid>
 </Container>
 <CoverSectionMetLife/>
-<Container disableGutters maxWidth={false} sx={{  color: '#0A0A14', pb: {md: '80px', xxs: '16px'} }}>
-<Grid container spacing={2} justifyContent="space-between">
+<Container disableGutters maxWidth={false} sx={{  color: '#0A0A14' }}>
+<Grid container justifyContent="space-between" sx={{pb: { xl: '80px', sm: '60px', xxs: '48px' }}}>
   {/* First Column - Takes full width on small screens, and 5 out of 12 columns on medium screens and up */}
   <Grid item xs={12} lg={5}>
     <ClientOverviewMetlife/>
@@ -223,12 +224,13 @@ const renderSection = () => {
 <Container disableGutters maxWidth={false}>
 <Grid item xxs={12} sx={{display: {xxs: 'none', lg: 'block'
 
-}, py: { xl: '80px', lg: '40px', sm: '32px', xxs: '16px' }}}>
+}, py: { xl: '80px', sm: '60px', xxs: '48px' }}}>
+  <BeforeAfterLayout2Headers/>
 <SliderDiv slides={slides} />
 </Grid>   
 <Grid item xxs={12} sx={{display: {md: 'block', lg: 'none'
 
-}, py: { xl: '80px', lg: '40px', sm: '32px', xxs: '16px' }}}>
+}, py: { xl: '80px', sm: '60px', xxs: '48px' }}}>
 <BeforeAfterSmaller/>
 </Grid>   
 </Container>
@@ -253,7 +255,7 @@ const renderSection = () => {
 <MetUsabilityTesting/>
 <MetDesignSystem/>
 <div ref={calendarRef}>
-  <Box sx={{pt: { xl: '80px', lg: '40px', sm: '32px', xxs: '16px' }}}>
+  <Box sx={{pt: { xl: '80px', sm: '60px', xxs: '48px' },}}>
 <MoreSectionMet/>
 </Box>
 </div>

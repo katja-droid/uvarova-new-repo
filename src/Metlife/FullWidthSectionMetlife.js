@@ -43,7 +43,7 @@ const FullWidthSectionMetlife = () => {
               <Typography variant='h3' sx={{fontSize: {xxs: '30px', sm: '34px', md: '40px'}, fontFamily: 'Playfair Display Bold', pb: '24px' }}>
                 Defining the Problem
               </Typography>
-              <Typography sx={{ mt: 2, fontSize: '18px', fontFamily: 'Calibre Regular' }}>
+              <Typography sx={{fontSize: '18px', fontFamily: 'Calibre Regular' }}>
                 How can we redesign work and specification processes to enable users to save more in their daily lives?
               </Typography>
             </Grid>

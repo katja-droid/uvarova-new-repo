@@ -5,7 +5,7 @@ import withScrollEffect from '../withScrollEffect.js'
 
 const FinalDesignSection = () => {
   return (
-    <Box sx={{display: 'flex', alignItems: 'center', flexDirection: 'column',  py: { xl: '80px', lg: '40px', sm: '32px', xxs: '16px' }}}>
+    <Box sx={{display: 'flex', alignItems: 'center', flexDirection: 'column',     py: { xl: '80px', sm: '60px', xxs: '48px' }}}>
            <Typography
                   sx={{
                     textAlign: 'center',

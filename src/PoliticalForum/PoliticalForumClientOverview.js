@@ -25,15 +25,8 @@ const PoliticalForumClientOverview = () => {
         Client
       </Typography>
 
-      <Typography
-        sx={{
-          color: '#0A0A14', 
-          fontFamily: 'Calibre SemiBold', 
-          textDecoration: 'none',
-          fontSize: '18px'
-        }}
-      >
-        Political Forum <span style={{color: '#8A8A8A'}}>NDA</span>
+      <Typography sx={{ fontSize: '23px', lineHeight: '26px', pb: '8px', fontFamily: 'Calibre Regular' }}>
+        <b>Political Forum </b><span style={{color: '#8A8A8A'}}>NDA</span>
       </Typography>
 
       {/* Overview Section */}
@@ -57,9 +50,11 @@ const PoliticalForumClientOverview = () => {
 
       <Typography sx={{ fontSize: '18px', lineHeight: '26px', pb: '8px', fontFamily: 'Calibre Regular' }}>
         <b>Forum for political debate and decision-making.</b> 
-        Industry: Legislature.
+       
       </Typography>
-
+      <Typography sx={{ fontSize: '18px', lineHeight: '26px', pb: '8px', fontFamily: 'Calibre Regular' }}>
+      Industry: Legislature.
+      </Typography>
       <Typography sx={{ fontSize: '18px', lineHeight: '26px', pb: '8px', fontFamily: 'Calibre Regular' }}>
         Within this website, there are between <b>98 and 175 websites</b> in different fields. No one knows the exact number. Sometimes new websites are created for new events, campaigns, new political groups, or committees.
       </Typography>

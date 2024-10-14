@@ -15,7 +15,7 @@ const CompanyRegistrationSection = () => {
           position: 'relative',
           width: '100%',
           color: '#0A0A14',
-          py: { xl: '80px', lg: '40px', sm: '32px', xxs: '16px' }
+          py: { xl: '80px', sm: '60px', xxs: '48px' },
         }}
       >
         {/* Text and GIF Section */}
@@ -39,15 +39,18 @@ const CompanyRegistrationSection = () => {
                 order: { xs: 1, lg: 2 }, // Text comes first on smaller screens, second on larger screens
                 display: 'flex',
                 flexDirection: 'column',
-                justifyContent: { xs: 'center', lg: 'flex-start' }, // Center vertically on small screens
-                alignItems: { xs: 'center', lg: 'flex-start' }, // Center horizontally on small screens
-                textAlign: { xs: 'center', lg: 'left' } // Center text on small screens, left-align on large
+                justifyContent: { xxs: 'center', lg: 'flex-start' }, // Center vertically on small screens
+                alignItems: { xxs: 'center', lg: 'flex-start' }, // Center horizontally on small screens
+                textAlign:  'left' // Center text on small screens, left-align on large
               }}
             >
               <Box>
-                <Typography sx={{ fontSize: { md: '40px', sm: '34px', xxs: '25px' }, fontFamily: 'Playfair Display Bold', pb: '24px' }} variant="h3">
-                Company Registration (after verification)
+                <Typography sx={{ fontSize: { md: '40px', sm: '34px', xxs: '25px' }, fontFamily: 'Playfair Display Bold' }} variant="h3">
+                Company Registration  </Typography>
+                <Typography sx={{ fontSize: { md: '24px',  xxs: '18px' }, fontFamily: 'Playfair Display Bold', pb: '24px'}} variant="h3">
+                (before verification)
                 </Typography>
+               
                 <Typography sx={{ pb: { md: '24px', xxs: '16px' }, fontSize: '18px', lineHeight: '26px', fontFamily: 'Calibre Regular' }}>
                   To register a company before verification, you must enter the company name, specify the number of employees, provide the EDRPO code, select the field of activity, and describe the main products.
                 </Typography>

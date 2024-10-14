@@ -42,7 +42,7 @@ const PoliticalForumFullWidthSection = () => {
             {/* First Column */}
             <Grid item xxs={12} xs={12} sm={12} md={10} lg={8} xl={6} xxl={6} sx={{p: 0}}>
               <Typography variant='h3' sx={{fontSize: {xxs: '30px', sm: '34px', md: '40px'}, fontFamily: 'Playfair Display Bold', pb: '24px' }}>Defining the Problem</Typography>
-              <Typography sx={{ mt: 2, fontSize: '18px', fontFamily: 'Calibre Regular' }}>
+              <Typography sx={{ fontSize: '18px', fontFamily: 'Calibre Regular' }}>
               User surveys revealed challenges with navigation and search capabilities.
               There is a disconnect between website priorities and user priorities, information is dispersed and not easily accessible, and there is a lack of consensus on the evolution of the digital experience due to a lack of ongoing user research and testing.
               </Typography>

@@ -8,6 +8,7 @@ import withScrollEffect from '../withScrollEffect.js';
 const DesignSystemSection = () => {
   return (
     <ThemeProvider theme={theme}>
+      <Box sx={{ py: { xl: '80px', sm: '60px', xxs: '48px'} }}>
       <Box
         sx={{
           position: 'relative',
@@ -17,7 +18,9 @@ const DesignSystemSection = () => {
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
-          py: { xl: '80px', lg: '40px', sm: '32px', xxs: '16px' },
+          
+
+
         }}
       >
         <Container
@@ -73,6 +76,7 @@ const DesignSystemSection = () => {
 
       {/* Full Width Image */}
       <img width="100%" src={image} alt="Design System" />
+      </Box>
     </ThemeProvider>
   );
 };

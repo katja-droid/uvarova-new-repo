@@ -12,17 +12,20 @@ const ProfWorldAnalytics = () => {
     <ProfWorldAnalyticsTwo/>
   ]
   return (
-    <Box sx={{pb: { xl: '80px', lg: '40px', sm: '32px', xxs: '16px' }}}>
+    <Box sx={{pb: { xl: '80px', sm: '60px', xxs: '48px' },}}>
     <Container id="profWorldAnalytics" disableGutters maxWidth={false} >
       {/* Container for the title */}
       <Grid container justifyContent="center" spacing={0} >
-        <Grid item xl={8} xxs={12} md={10}>
+        <Grid item xl={8} xxs={12} lg={10}>
           <Typography
             variant="h3"
             sx={{
               fontSize: { xxs: '30px', sm: '34px', md: '40px' },
               fontFamily: 'Playfair Display Bold',
-              pb: '32px',
+              pb: {
+                lg: '24px', // 24px for lg
+                xxs: '16px', // 16px for xxs to md
+              },
             }}
           >
             Analytics
@@ -41,15 +44,21 @@ const ProfWorldAnalytics = () => {
         md: 'none',
         xxs: 'block'
       }}}>
-         
+             <Container id="profWorldAnalytics" disableGutters maxWidth={false} >
+      {/* Container for the title */}
+      <Grid container justifyContent="center" spacing={0} >
+      
 <ProfWorldAnalyticsOne/>
 <ProfWorldAnalyticsTwo/>
+
+</Grid>
+</Container>
 </Box>
       {/* Container for analytics cards that is 8 columns wide */}
     
       <Container id="profWorldAnalytics" disableGutters maxWidth={false}>
       {/* Conclusion paragraph */}
-      <Grid container justifyContent="center" sx={{ py: 2 }}>
+      <Grid container justifyContent="center" sx={{ }}>
       <Grid item xl={8} xxs={12} lg={10}>
           <Typography
             sx={{

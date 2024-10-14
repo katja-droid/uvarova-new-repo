@@ -1,10 +1,37 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import './NavbarProject.css';
 import { Box } from '@mui/material';
 
 const NavbarProject = ({ sections, onSelectSection, activeLink }) => {
+  const navbarRef = useRef(null); // Create a ref for the navbar container
+  const [isOverflowing, setIsOverflowing] = useState(false); // State to track if navbar is overflowing
+
+  // Function to check if the navbar content is overflowing
+  const checkOverflow = () => {
+    if (navbarRef.current) {
+      const isOverflow = navbarRef.current.scrollWidth > navbarRef.current.clientWidth;
+      setIsOverflowing(isOverflow);
+    }
+  };
+
+  // Use effect to check for overflow on component mount and window resize
+  useEffect(() => {
+    checkOverflow();
+    window.addEventListener('resize', checkOverflow);
+    return () => window.removeEventListener('resize', checkOverflow);
+  }, []);
+
   return (
-    <Box className='navbarProject' sx={{py: {lg: '47px', sm: '32px'}, mb: '16px', mt: { xl: '80px', lg: '40px', sm: '32px', xxs: '16px' }}}>
+    <Box
+      className='navbarProject'
+      ref={navbarRef} // Attach the ref to the navbar container
+      sx={{
+        py: { lg: '47px', sm: '32px' },
+        mb: '16px',
+        mt: { xl: '80px', sm: '60px', xxs: '48px' },
+        justifyContent: isOverflowing ? 'flex-start' : 'center', // Dynamic justification based on overflow
+      }}
+    >
       <nav className="navbarProject-scroll">
         <ul className='navbarProject-scroll'>
           {sections.map((section) => (

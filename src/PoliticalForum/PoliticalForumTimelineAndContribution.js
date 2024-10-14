@@ -37,7 +37,7 @@ const PoliticalForumTimelineAndContribution = ({ tools }) => {
       >
         Timeline
       </Typography>
-      <Typography sx={{ fontSize: '18px', lineHeight: '26px', pb: '8px', fontFamily: 'Calibre Regular' }}>
+      <Typography sx={{ fontSize: '23px', lineHeight: '26px', pb: '8px', fontFamily: 'Calibre Regular' }}>
         <b>2023</b> ~ 9 months
       </Typography>
 
@@ -59,7 +59,7 @@ const PoliticalForumTimelineAndContribution = ({ tools }) => {
       >
         My role
       </Typography>
-      <Typography sx={{ fontSize: '18px', lineHeight: '26px', pb: '8px', fontFamily: 'Calibre Regular' }}>
+      <Typography sx={{ fontSize: '23px', lineHeight: '26px', pb: '8px', fontFamily: 'Calibre Regular' }}>
         <b>UX Designer</b> ~ 9 months
       </Typography>
       <Typography sx={{ fontSize: '18px', lineHeight: '26px', pb: '8px', fontFamily: 'Calibre Regular' }}>

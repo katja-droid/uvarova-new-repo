@@ -11,7 +11,7 @@ import withScrollEffect from '../withScrollEffect.js';
 const ThreeColSection = () => {
   return (
     <ThemeProvider theme={theme}>
-      <Box sx={{ display: 'flex', flexDirection: 'column' }}>
+      <Box sx={{ display: 'flex', flexDirection: 'column',     py: { xl: '80px', sm: '60px', xxs: '48px' }, }}>
         <Box
           sx={{
             position: 'relative',
@@ -21,6 +21,7 @@ const ThreeColSection = () => {
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
+       
           }}
         >
           <Container
@@ -76,14 +77,14 @@ const ThreeColSection = () => {
             alt="Arrow from image 1 to image 2"
             sx={{
               position: 'absolute',
-              top: { md: '30%', xxs: '38%', }, // Adjust to position arrow between the first and second items
-              left: { md: '41%', xxs: '91%', },
+              top: { md: '31%', xxs: '32%', }, // Adjust to position arrow between the first and second items
+              left: { md: '42%', xxs: '91%', },
               transform: {
                 md: 'translate(-50%, -50%)',
                 xxs: 'translate(-50%, -50%) scaleX(-1)', // Mirror the arrow horizontally below the md breakpoint
               },
               width: 'auto', // Using percentage-based width for responsiveness
-              height: { md: '17.8%', xxs: '12%',}, // Maintain aspect ratio
+              height: { xxs: '8%', md: '16.27%',}, // Maintain aspect ratio
             }}
           />
         </Container>

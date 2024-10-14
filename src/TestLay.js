@@ -17,7 +17,7 @@ const TestLay = ({closeOverlay}) => {
         </Box>
       </Grid> */}
 
-      <Grid item  xs={12} sx={{ backgroundColor: 'lightcoral', width: {xs: '100vw'} }} >
+      <Grid item  xs={12} sx={{ backgroundColor: 'lightcoral', width: {xxs: '100vw'} }} >
         <Box sx={{ height: '100vh' ,
        
         width: '100%', // 100vw for devices smaller than 360px

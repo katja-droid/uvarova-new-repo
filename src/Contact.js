@@ -24,15 +24,8 @@ const Contact = () => {
         alignItems: 'center',
         flexDirection: 'column',
         color: '#0A0A14',
-        padding: '104px 0',
-        '@media (max-width: 360px)': { marginTop: '16px' },
-        '@media (min-width: 360px) and (max-width: 479px)': { marginTop: '16px' },
-        '@media (min-width: 480px) and (max-width: 599px)': { marginTop: '24px' },
-        '@media (min-width: 600px) and (max-width: 904px)': { marginTop: '46px' },
-        '@media (min-width: 905px) and (max-width: 1239px)': { marginTop: '68px' },
-        '@media (min-width: 1240px) and (max-width: 1439px)': { marginTop: '86px' },
-        '@media (min-width: 1440px) and (max-width: 1599px)': { marginTop: '80px' },
-        '@media (min-width: 1600px) and (max-width: 1919px)': { marginTop: '80px' },
+        paddingTop: '104px',
+       
       }}
     >
       <Box
@@ -48,7 +41,7 @@ const Contact = () => {
           component="h4"
           sx={{
             fontSize: { xs: '44px', sm: '48px' },
-            fontFamily: 'Playfair Display Bold',
+            fontFamily: 'Calibre Regular',
             lineHeight: '32px',
             color: '#0A0A14',
             padding: 0,
@@ -64,28 +57,20 @@ const Contact = () => {
           sx={{
             fontSize: '20px',
             textAlign: 'center',
-            maxWidth: '377px',
             fontFamily: 'Calibre Regular',
             color: '#939393',
             padding: 0,
             margin: 0,
+            width: {
+              lg: '100%',
+              md:  '66.67%',
+              xxs: '100%'
+            }
           }}
         >
           Please feel free to reach out to me for collaboration and friendly greetings.
         </Typography>
-        <Link
-          href="mailto:olga.uvva@gmail.com"
-          className="contactLink"
-          component={RouterLink}
-          to="mailto: olga.uvva@gmail.com"
-          sx={{
-            fontSize: '18px',
-            textDecoration: 'none',
-            color: '#0D99FF',
-          }}
-        >
-          olga.uvva@gmail.com
-        </Link>
+      
         <Grid
           container
           justifyContent="center"

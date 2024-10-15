@@ -20,15 +20,8 @@ const NotFound = () => {
         </Grid>
 
         {/* Main Content */}
-        <Grid container justifyContent={'center'} spacing={0} sx={{padding: '104px 0',
-        '@media (max-width: 360px)': { marginTop: '16px' },
-        '@media (min-width: 360px) and (max-width: 479px)': { marginTop: '16px' },
-        '@media (min-width: 480px) and (max-width: 599px)': { marginTop: '24px' },
-        '@media (min-width: 600px) and (max-width: 904px)': { marginTop: '46px' },
-        '@media (min-width: 905px) and (max-width: 1239px)': { marginTop: '68px' },
-        '@media (min-width: 1240px) and (max-width: 1439px)': { marginTop: '86px' },
-        '@media (min-width: 1440px) and (max-width: 1599px)': { marginTop: '80px' },
-        '@media (min-width: 1600px) and (max-width: 1919px)': { marginTop: '80px' },
+        <Grid container justifyContent={'center'} spacing={0} sx={{paddingTop: '104px',
+       
       }}>
           {/* Image Container */}
           <Grid

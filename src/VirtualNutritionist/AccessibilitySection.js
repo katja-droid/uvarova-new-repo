@@ -1,11 +1,15 @@
 import React from 'react';
-import { Box, Typography, Container, Grid } from '@mui/material';
+import { Box, Typography, Container, Grid, useMediaQuery } from '@mui/material';
 import { ThemeProvider } from '@mui/material/styles';
 import theme from '../theme'; // Import your custom theme
-import image from '../assets/nutritionist-accessibility.png';
+import largeImage from '../assets/nutritionist-accessibility.png'; // Default image for md and above
+import smallImage from '../assets/nutritionist-accessibility-md.png'; // Image for below md
 import withScrollEffect from '../withScrollEffect.js';
 
 const AccessibilitySection = () => {
+  // Detect screen size below md
+  const isBelowMd = useMediaQuery(theme.breakpoints.down('lg'));
+
   return (
     <ThemeProvider theme={theme}>
       <Box
@@ -15,17 +19,15 @@ const AccessibilitySection = () => {
           backgroundColor: '#fff',
           color: '#0A0A14',
           py: { xl: '80px', sm: '60px', xxs: '48px' },
-
         }}
       >
         <Container disableGutters maxWidth={false}>
           <Grid container spacing={2}>
-            {/* First Row: Image (11 columns, aligned left) */}
-            <Grid item xxs={11} xs={11} sm={11} md={11} lg={11} xl={11}>
+            {/* First Row: Title (Full width) */}
+            <Grid item xxs={12} xs={12} sm={12} md={12} lg={12} xl={12}>
               <Box>
                 <Typography
                   sx={{
-                    textAlign: 'left',
                     fontSize: { md: '30px', xxs: '25px' },
                     fontFamily: 'Playfair Display Bold',
                     pb: '32px',
@@ -36,22 +38,30 @@ const AccessibilitySection = () => {
                 >
                   Accessibility Color
                 </Typography>
-                <Box>
-                  <img width="100%" src={image} alt="Accessibility color example" />
-                </Box>
               </Box>
             </Grid>
 
-            {/* Second Row: Text (6 columns, aligned right) */}
+            {/* Image Column: Display the image with conditional logic for screen size */}
+            <Grid item xxs={12} xs={12} sm={12} md={12} lg={12} xxxl={11}>
+              <Box>
+                <img
+                  width="100%"
+                  src={isBelowMd ? smallImage : largeImage}
+                  alt="Accessibility color example"
+                />
+              </Box>
+            </Grid>
+
+            {/* Second Row: Text Content (Aligned right on larger screens) */}
             <Grid item xxs={12} xs={12} sm={12} md={7} lg={6} xl={6} sx={{ ml: 'auto' }}>
               <Typography
                 sx={{
-                  textAlign: 'left', // Right-aligned as in original
+                  textAlign: 'left',
                   fontSize: '18px',
                   lineHeight: '26px',
                   fontFamily: 'Calibre Regular',
                   pb: { lg: '24px', xxs: '16px' },
-                  width: '100%', // Full width inside the grid
+                  width: '100%',
                 }}
               >
                 Unfortunately, despite my well-reasoned arguments and research, my proposal was not accepted and the selected colors failed accessibility testing during design implementation. 
@@ -65,4 +75,4 @@ const AccessibilitySection = () => {
   );
 };
 
-export default withScrollEffect (AccessibilitySection);
+export default withScrollEffect(AccessibilitySection);

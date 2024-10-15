@@ -1,130 +1,176 @@
 import React from 'react';
-import { Box, Typography, Container, Grid } from '@mui/material';
+import { Box, Typography, Container, Grid, useMediaQuery } from '@mui/material';
 import { ThemeProvider } from '@mui/material/styles';
 import theme from '../theme'; // Import your custom theme
-import image from '../assets/nutritionist-questions.png';
+import largeImage from '../assets/nutritionist-questions.png'; // Large image for lg and above
+import smallImage from '../assets/nutritionist-questions-md.png'; // Image for md and below
 import withScrollEffect from '../withScrollEffect.js';
 
 const QuestionsSection = () => {
+  // Detect screen size, true if screen size is lg or smaller
+  const isMdAndBelow = useMediaQuery(theme.breakpoints.down('lg'));
+
   return (
     <div id="questions-v">
-    <ThemeProvider theme={theme}>
-      <Box
-        sx={{
-          position: 'relative',
-          width: '100%',
-          backgroundColor: '#fff',
-          color: '#0A0A14', // Ensure consistent color
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          py: { xl: '80px', sm: '60px', xxs: '48px' },
-        }}
-      >
-        <Container disableGutters maxWidth={false}>
-          <Grid
-            container
+      <ThemeProvider theme={theme}>
+        <Box
+          sx={{
+            position: 'relative',
+            width: '100%',
+            backgroundColor: '#fff',
+            color: '#0A0A14',
+            display: 'flex',
+            justifyContent: 'flex-start',
+            alignItems: 'center',
+            py: { xl: '80px', sm: '60px', xxs: '48px' },
+          }}
+        >
+          <Container
+            disableGutters
+            maxWidth={false}
             sx={{
-              justifyContent: {
-                xs: 'center',
-                sm: 'center',
-                md: 'center',
-                lg: 'center',
-                xl: 'space-between',
-                xxl: 'space-between',
-              },
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+              textAlign: 'center',
             }}
           >
-            {/* First Column */}
             <Grid
-              item
-              xxs={12}
-              xs={12}
-              sm={12}
-              md={5}
-              lg={5}
-              xl={5}
-              justifyContent="center"
-              alignItems="center"
+              container
+              sx={{
+                justifyContent: {
+                  xxs: 'space-between',
+                  sm: 'space-between',
+                  md: 'center',
+                  lg: 'center',
+                  xl: 'space-between',
+                  xxl: 'space-between',
+                },
+              }}
             >
-              <Box
-                sx={{
-                  display: 'flex',
-                  width: {
-                    xs: '100%',
-                    sm: '100%',
-                    md: '100%',
-                    lg: '100%',
-                    xl: '100%',
-                    xxl: '275px',
-                  },
-                  justifyContent: 'center',
-                  alignItems: 'center',
-                  height: '100%',
-                  flexDirection: 'column',
-                }}
-              >
-                <Typography
-                  sx={{
-                    textAlign: 'left',
-                    fontSize: { md: '30px', xxs: '25px' },
-                    fontFamily: 'Playfair Display Bold', // Consistent heading font
-                    pb: '16px',
-                    width: '100%',
-                  }}
-                  variant="h4"
-                >
-                  Questions
-                </Typography>
-                <Typography
-                  sx={{
-                    textAlign: 'left',
-                    pb: { lg: '24px', xxs: '16px' },
-                    fontFamily: 'Calibre Regular', // Same paragraph font as the previous sections
-                  }}
-                >
-                  Based on the answers to each category, the user’s health status is analyzed, and necessary tests are identified.
-                </Typography>
-              </Box>
-            </Grid>
-
-            {/* Second Column - Image */}
-            <Grid item xxs={12} xs={12} sm={12} md={7} lg={7} xl={7} xxl={7}>
-              <Box
-                sx={{
-                  width: {
-                    xs: '2',
-                    sm: '2',
-                    md: '304px',
-                    lg: '304px',
-                    xl: '304px',
-                    xxl: '304px',
-                  },
-                  paddingLeft: {
-                    xs: `calc(8.33% + ${theme.spacing(1)})`,
-                    sm: `calc(8.33% + ${theme.spacing(1)})`,
-                    md: `calc(8.33% + ${theme.spacing(1)})`,
-                    lg: `calc(8.33% + ${theme.spacing(1)})`,
-                    xl: `calc(8.33% + ${theme.spacing(1)})`,
-                    xxl: `calc(8.33% + ${theme.spacing(1)})`,
-                  },
-                  paddingRight: {
-                    xs: `calc(8.33% + ${theme.spacing(1)})`,
-                    sm: `calc(8.33% + ${theme.spacing(1)})`,
-                    md: '0',
-                  },
-                }}
+                 <Grid
+  item
+  lg={1} // Size for large screens and above
+  justifyContent="center"
+  alignItems="center"
+  sx={{ 
+    display: {
+      xxs: 'none',  // Hide on xxs
+      sm: 'block',  // Show on sm
+      md: 'none',   // Hide on md
+      lg: 'block',  // Show on lg and above
+    },
+  }}
+>
+</Grid>
+              {/* First Column */}
+              <Grid
+                item
+                xxs={12}
+                sm={9}
+                md={6}
+                lg={4}
                 justifyContent="center"
+                alignItems="center"
               >
-                <img width="100%" src={image} alt="Questions" />
-              </Box>
+                <Box
+                  sx={{
+                    display: 'flex',
+                    width: {
+                      xxs: '100%',
+                      sm: '100%',
+                      md: '100%',
+                      lg: '304px',
+                    },
+                    justifyContent: {
+                      xxs: 'center',
+                      sm: 'flex-start',
+                      md: 'center',
+                    },
+                    alignItems: 'center',
+                    height: '100%',
+                    flexDirection: 'column',
+                    width: { md: '276px', xxs: '100%', lg: '100%' },
+                  }}
+                >
+                  <Typography
+                    sx={{
+                      textAlign: 'left',
+                      fontSize: { md: '30px', xxs: '25px' },
+                      fontFamily: 'Playfair Display Bold',
+                      pb: '16px',
+                      width: '100%',
+                    }}
+                    variant="h4"
+                  >
+                    Questions
+                  </Typography>
+                  <Typography
+                    sx={{
+                      textAlign: 'left',
+                      pb: { lg: '24px', xxs: '16px' },
+                      fontFamily: 'Calibre Regular',
+                    }}
+                  >
+                    Based on the answers to each category, the user’s health status is analyzed, and necessary tests are identified.
+                  </Typography>
+                </Box>
+              </Grid>
+
+              {/* Empty Grid item */}
+              <Grid item lg={1} justifyContent="center" alignItems="center"   sx={{ 
+    display: {
+      xxs: 'none',  // Hide on xxs
+      sm: 'block',  // Show on sm
+      md: 'none',   // Hide on md
+      lg: 'block',  // Show on lg and above
+    },
+  }}/>
+
+              {/* Image Column */}
+              <Grid item xxs={12} xs={12} sm={12} md={6} lg={6} xl={6} xxl={6}>
+                <Box
+                  sx={{
+                    display: 'flex',
+                    justifyContent: {
+                      xxs: 'flex-end',
+                      md: 'flex-end',
+                      lg: 'flex-start',
+                    },
+                    alignItems: 'center',
+                  }}
+                >
+                  <Box
+                    sx={{
+                      width: {md: '100%', xxs: '75%'},
+                      display: 'flex',
+                      justifyContent: {
+                        xxs: 'flex-end',
+                        md: 'flex-end',
+                        lg: 'flex-start',
+                      },
+                      alignItems: 'center',
+                    }}
+                  >
+                    {/* Conditionally render the image based on screen size */}
+                    <img
+                      src={isMdAndBelow ? smallImage : largeImage}
+                      alt="Questions"
+                      style={{
+                        width: '100%',
+                        objectFit: 'cover',
+                      }}
+                    />
+                  </Box>
+                </Box>
+              </Grid>
+
             </Grid>
-          </Grid>
-        </Container>
-      </Box>
-    </ThemeProvider>
+          </Container>
+        </Box>
+      </ThemeProvider>
     </div>
   );
 };
 
-export default withScrollEffect (QuestionsSection);
+export default withScrollEffect(QuestionsSection);

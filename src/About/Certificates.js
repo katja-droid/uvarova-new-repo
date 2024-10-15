@@ -16,7 +16,7 @@ const Certificates = () => {
             flexGrow: 1,
             display: 'flex',
             alignItems: 'stretch',
-            aspectRatio: { sm: '374 / 264', xs: 'unset' }, // Aspect ratio for sm and above, removed for xs and below
+            aspectRatio: { sm: '374 / 264', xxs: 'unset' }, // Aspect ratio for sm and above, removed for xs and below
             height: { lg: 'auto', xl: 'auto', xs: 'auto' }, // Ensure height adapts
             minHeight: '190px', // Minimum height to prevent shrinking
           }}

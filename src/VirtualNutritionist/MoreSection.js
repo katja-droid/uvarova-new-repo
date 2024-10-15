@@ -1,13 +1,29 @@
 import React from 'react';
-import { Box, Grid, Typography, Container } from '@mui/material';
+import { Box, Grid, Typography, Container, useMediaQuery } from '@mui/material';
 
-import image1 from '../assets/more-prof.png'; // Replace with your image paths
-import image2 from '../assets/more-met.png';
-import image3 from '../assets/more-forum.png';
+import image1 from '../assets/more-prof.png'; // Default image
+import image2 from '../assets/more-met.png'; // Default image
+import image3 from '../assets/more-forum.png'; // Default image
+import image1Md from '../assets/more-prof-md.png'; // Image for md breakpoint
+import image2Md from '../assets/more-met-md.png'; // Image for md breakpoint
+import image3Md from '../assets/more-forum-md.png'; // Image for md breakpoint
+
 import { Link } from 'react-router-dom';
 import withScrollEffect from '../withScrollEffect.js';
+import { useTheme } from '@mui/material/styles';
 
 const MoreSection = () => {
+  // Access the theme object to use breakpoints
+  const theme = useTheme();
+
+  // Detect if the current breakpoint is md
+  const isMd = useMediaQuery(theme.breakpoints.only('md'));
+
+  // Determine the images to use based on the current screen size
+  const imageSrc1 = isMd ? image1Md : image1;
+  const imageSrc2 = isMd ? image2Md : image2;
+  const imageSrc3 = isMd ? image3Md : image3;
+
   return (
     <Box
       sx={{
@@ -30,7 +46,7 @@ const MoreSection = () => {
               fontWeight: 600, // Calibre Semibold
               fontSize: '16px',
               color: '#0A0A14',
-                 mb:   '32px'
+              mb: '32px',
             }}
           >
             More Projects
@@ -41,9 +57,9 @@ const MoreSection = () => {
         <Grid container spacing={2}>
           {/* Item 1: Image + Text */}
           <Grid item xs={12} sm={12} lg={6} xl={4}>
-            <Box sx={{boxShadow: '0 1px 4px rgba(0, 0, 0, 0.05)', pb: '32px', borderRadius: '16px'}}>
-              <img src={image1} alt="Prof.world: automated recruiting" style={{ width: '100%' }} />
-              <Typography sx={{px: '30px'}}mt={2}>
+            <Box sx={{ boxShadow: '0 1px 4px rgba(0, 0, 0, 0.05)', pb: '32px', borderRadius: '16px' }}>
+              <img src={imageSrc1} alt="Prof.world: automated recruiting" style={{ width: '100%' }} />
+              <Typography sx={{ px: '30px' }} mt={2}>
                 <Link
                   to="/prof-world"
                   underline="none"
@@ -52,8 +68,7 @@ const MoreSection = () => {
                     fontWeight: 400, // Calibre Regular
                     fontSize: '18px',
                     color: '#0A0A14',
-                    
-                    textDecoration: 'none'
+                    textDecoration: 'none',
                   }}
                 >
                   <b>Prof.world:</b> Automated Recruiting
@@ -64,9 +79,9 @@ const MoreSection = () => {
 
           {/* Item 2: Image + Text */}
           <Grid item xs={12} sm={12} lg={6} xl={4}>
-            <Box sx={{boxShadow: '0 1px 4px rgba(0, 0, 0, 0.05)', pb: '32px', borderRadius: '16px'}}>
-              <img src={image2} alt="Metlife: digital forms" style={{ width: '100%' }} />
-              <Typography sx={{px: '30px'}} mt={2}>
+            <Box sx={{ boxShadow: '0 1px 4px rgba(0, 0, 0, 0.05)', pb: '32px', borderRadius: '16px' }}>
+              <img src={imageSrc2} alt="Metlife: Digital Forms" style={{ width: '100%' }} />
+              <Typography sx={{ px: '30px' }} mt={2}>
                 <Link
                   to="/metlife"
                   underline="none"
@@ -75,11 +90,10 @@ const MoreSection = () => {
                     fontWeight: 400, // Calibre Regular
                     fontSize: '18px',
                     color: '#0A0A14',
-                    
-                    textDecoration: 'none'
+                    textDecoration: 'none',
                   }}
                 >
-                  <b> Metlife:</b> Digital Forms
+                  <b>Metlife:</b> Digital Forms
                 </Link>
               </Typography>
             </Box>
@@ -87,9 +101,9 @@ const MoreSection = () => {
 
           {/* Item 3: Image + Text */}
           <Grid item xs={12} sm={12} lg={6} xl={4}>
-            <Box sx={{boxShadow: '0 1px 4px rgba(0, 0, 0, 0.05)', pb: '32px', borderRadius: '16px'}}>
-              <img src={image3} alt="Forum: Multi-Level Navigation" style={{ width: '100%' }} />
-              <Typography sx={{px: '30px'}} mt={2}>
+            <Box sx={{ boxShadow: '0 1px 4px rgba(0, 0, 0, 0.05)', pb: '32px', borderRadius: '16px' }}>
+              <img src={imageSrc3} alt="Forum: Multi-Level Navigation" style={{ width: '100%' }} />
+              <Typography sx={{ px: '30px' }} mt={2}>
                 <Link
                   to="/political-forum"
                   underline="none"
@@ -98,10 +112,10 @@ const MoreSection = () => {
                     fontWeight: 400, // Calibre Regular
                     fontSize: '18px',
                     color: '#0A0A14',
-                    textDecoration: 'none'
+                    textDecoration: 'none',
                   }}
                 >
-                  <b>Forum:</b>  Multi-Level Navigation
+                  <b>Forum:</b> Multi-Level Navigation
                 </Link>
               </Typography>
             </Box>
@@ -112,4 +126,4 @@ const MoreSection = () => {
   );
 };
 
-export default withScrollEffect (MoreSection);
+export default withScrollEffect(MoreSection);

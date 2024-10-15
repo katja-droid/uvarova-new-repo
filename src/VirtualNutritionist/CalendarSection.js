@@ -58,10 +58,18 @@ const CalendarSection = () => {
                 <Box
                   sx={{
                     display: 'flex',
-                    justifyContent: { xxs: 'center', md: 'flex-start' },
+                    justifyContent: { xxs: 'flex-end', md: 'flex-start' }, // Align right on xxs-sm
                   }}
                 >
-                  <Box sx={{ width: { xxs: '100%', md: '100%' } }}>
+                  <Box
+                    sx={{
+                      width: {
+                        xxs: '75%', // 3 columns equivalent to 25% on xxs-sm
+                        sm: '75%', // 3 columns equivalent to 25% on sm
+                        md: '100%', // Full width on md and above
+                      },
+                    }}
+                  >
                     {/* Conditionally render the image based on screen size */}
                     <img
                       src={isBelowMd ? smallImage : largeImage}
@@ -109,7 +117,7 @@ const CalendarSection = () => {
                 }}
               ></Grid>
               {/* Text Column (order it after the image on small screens) */}
-              <Grid item xs={12} lg={4} md={6} order={{xxs: 1, md: 2  }}>
+              <Grid item xs={12} lg={4} md={6} order={{ xxs: 1, md: 2 }}>
                 <Box>
                   <Typography
                     variant="h4"

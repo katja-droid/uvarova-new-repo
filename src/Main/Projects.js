@@ -163,106 +163,107 @@ const Projects = () => {
                 {item.heading}
               </Typography>
               <Typography
-                variant="body1"
-                sx={{
-                  width: {
-                    xxs: '268px',
-                    xs: '263px',
-                    sm: '236px',
-                    md: '263px',
-                    lg: '334px',
-                    xl: '334px',
-                  },
-                  paddingTop: '0',
-                  fontFamily: 'Calibre Regular',
-                  fontSize: {
-                    xxs: '18px',
-                    xs: '18px',
-                    sm: '16px',
-                    md: '18px',
-                    lg: '21px',
-                    xl: '21px',
-                  },
-                  pb: '10px',
-                }}
-              >
-                {item.description}
-              </Typography>
+  variant="body1"
+  sx={{
+    width: {
+      xxs: '268px',
+      xs: '263px',
+      sm: '236px',
+      md: '263px',
+      lg: '334px',
+      xl: '334px',
+    },
+    paddingTop: '0',
+    fontFamily: 'Calibre Regular',
+    fontSize: {
+      xxs: '18px',
+      xs: '18px',
+      sm: '16px',
+      md: '18px',
+      lg: '21px',
+      xl: '21px',
+    },
+    pb: '10px',
+    lineHeight: '1.5',
+    height: {
+      xxxl: '50px', // Fixed 50px height for xl and above
+      xxl: '50px',
+      xl: '50px',
+      lg: '44px',  // Fixed 44px height for lg
+      md: 'auto',  // Let it be auto for smaller screens
+      sm: 'auto',
+      xs: 'auto',
+      xxs: 'auto',
+    },
+    display: 'block', // Allow text to flow naturally
+    marginBottom: '12px', // Add 12px space between description and link
+  }}
+>
+  {item.description}
+</Typography>
 
-              <Link href={item.linkUrl} underline="none" color="inherit">
-                <Box
-                  style={{
-                    display: 'flex',
-                    flexDirection: 'column',
-                    alignItems: 'flex-start',
-                    position: 'relative',
-                    cursor: 'pointer',
-                    width: 'fit-content',
-                  }}
-                  sx={{
-                    paddingTop: {
-                      xxs: '12px',
-                      xs: '12px',
-                      sm: '16px',
-                      md: '16px',
-                      lg: '16px',
-                      xl: '16px',
-                    },
-                    fontSize: {
-                      xxs: '18px',
-                      xs: '18px',
-                      sm: '16px',
-                      md: '18px',
-                      lg: '21px',
-                      xl: '21px',
-                    },
-                  }}
-                  onMouseEnter={() => handleMouseEnter(index)}
-                  onMouseLeave={() => handleMouseLeave(index)}
-                >
-                  <Box display="flex" alignItems="center">
-                    <span
-                      style={{
-                        marginRight: '8px',
-                        fontFamily: 'Calibre Medium',
-                        color: '#0A0A14',
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        verticalAlign: 'middle',
-                      }}
-                    >
-                      {isAuthenticated || item.heading === 'Virtual Nutritionist'
-                        ? 'Read case study'
-                        : item.linkText}
-                      <Box>
-                        <img
-                          src={arrow}
-                          alt="Arrow"
-                          style={{
-                            height: 'auto',
-                            verticalAlign: 'middle',
-                            marginLeft: '8px',
-                          }}
-                        />
-                      </Box>
-                    </span>
-                  </Box>
-                  {/* Underline animation */}
-                  <Box
-                    sx={{
-                      content: '""',
-                      position: 'absolute',
-                      left: 0,
-                      bottom: -2,
-                      height: '0.5px',
-                      width: hoverState[index] ? '100%' : '0%',
-                      backgroundColor: '#0A0A14',
-                      transition: 'width 0.3s ease',
-                    }}
-                  ></Box>
-                </Box>
-              </Link>
+<Link href={item.linkUrl} underline="none" color="inherit">
+  <Box
+    style={{
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'flex-start',
+      position: 'relative',
+      cursor: 'pointer',
+      width: 'fit-content',
+    }}
+    sx={{
+      paddingTop: {
+        xxs: '12px',
+        xs: '12px',
+        sm: '16px',
+        md: '16px',
+        lg: '16px',
+        xl: '16px',
+      },
+      fontSize: {
+        xxs: '18px',
+        xs: '18px',
+        sm: '16px',
+        md: '18px',
+        lg: '21px',
+        xl: '21px',
+      },
+    }}
+    onMouseEnter={() => handleMouseEnter(index)}
+    onMouseLeave={() => handleMouseLeave(index)}
+  >
+    <Box display="flex" alignItems="center">
+      <span
+        style={{
+          marginRight: '8px',
+          fontFamily: 'Calibre Medium',
+          color: '#0A0A14',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          verticalAlign: 'middle',
+        }}
+      >
+        {isAuthenticated || item.heading === 'Virtual Nutritionist'
+          ? 'Read case study'
+          : item.linkText}
+        <Box>
+          <img
+            src={arrow}
+            alt="Arrow"
+            style={{
+              height: 'auto',
+              verticalAlign: 'middle',
+              marginLeft: '8px',
+            }}
+          />
+        </Box>
+      </span>
+    </Box>
+  </Box>
+</Link>
+
             </Box>
 
             {/* Image at the bottom */}

@@ -41,6 +41,9 @@ const MetUsabilityTesting = () => {
               >
                 Usability Testing
               </Typography>
+              <Typography component="span" sx={{ pl: 1, fontFamily: 'Calibre Regular', fontSize: '18px', pb: '24px', lineHeight: '26px' }}>
+              I tested the product at various stages of the project.
+              </Typography>
               <Box
                 component="ul"
                 sx={{

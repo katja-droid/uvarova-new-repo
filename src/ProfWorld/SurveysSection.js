@@ -26,7 +26,7 @@ const SurveysSection = () => {
             py: 0, // Removed padding from container
           }}
         >
-          <Grid container spacing={2} justifyContent="center" alignItems="center" xxs={12} lg={10} xl={12}  sx={{margin: '0 auto'}}>
+          <Grid container spacing={{ xs: 0, xl: 2 }}  justifyContent="center" alignItems="center" xxs={12} lg={10} xl={12}  sx={{margin: '0 auto'}}>
             {/* Text Section */}
             <Grid 
               item 
@@ -43,12 +43,12 @@ const SurveysSection = () => {
               }}
             >
               <Box>
-                <Typography sx={{ fontSize: { md: '40px', sm: '34px', xxs: '25px' }, fontFamily: 'Playfair Display Bold', pb: '24px' }} variant="h3">
+                <Typography sx={{ fontSize: { md: '40px', sm: '34px', xxs: '25px' }, fontFamily: 'Playfair Display Bold', pb: '16px' }} variant="h3">
                 Surveys </Typography>
                 <Typography sx={{ pb: { md: '24px', xxs: '16px' }, fontSize: '18px', lineHeight: '26px', fontFamily: 'Calibre Regular' }}>
                 The «Surveys» section is designed to collect feedback from employees and allow you to assess employee satisfaction and engagement.
                 </Typography>
-                <Typography sx={{ fontSize: '18px', lineHeight: '26px', fontFamily: 'Calibre Regular' }}>
+                <Typography sx={{ fontSize: '18px', lineHeight: '26px', fontFamily: 'Calibre Regular',  pb: { md: '24px', xxs: '16px' }, }}>
                 This section allows you to administer surveys at different stages of the employee lifecycle and assess employee engagement levels.
                 </Typography>
                </Box>

@@ -26,7 +26,7 @@ const CalendarSection = () => {
             py: 0, // Removed padding from container
           }}
         >
-          <Grid container spacing={2} justifyContent="center" alignItems="center" xxs={12} lg={10} xl={12}  sx={{margin: '0 auto'}}>
+          <Grid container spacing={{ xs: 0, xl: 2 }}  justifyContent="center" alignItems="center" xxs={12} lg={10} xl={12}  sx={{margin: '0 auto'}}>
             {/* Text Section */}
             <Grid 
               item 
@@ -43,12 +43,12 @@ const CalendarSection = () => {
               }}
             >
               <Box>
-                <Typography sx={{ fontSize: { md: '40px', sm: '34px', xxs: '25px' }, fontFamily: 'Playfair Display Bold', pb: '24px' }} variant="h3">
+                <Typography sx={{ fontSize: { md: '40px', sm: '34px', xxs: '25px' }, fontFamily: 'Playfair Display Bold', pb: '16px' }} variant="h3">
                 Сalendar</Typography>
                 <Typography sx={{ pb: { md: '24px', xxs: '16px' }, fontSize: '18px', lineHeight: '26px', fontFamily: 'Calibre Regular' }}>
                 The calendar facilitates effective time management by allowing users to manage their work time, quickly navigate dates, and track days of the week.
             </Typography>
-                <Typography sx={{ fontSize: '18px', lineHeight: '26px', fontFamily: 'Calibre Regular' }}>
+                <Typography sx={{ fontSize: '18px', lineHeight: '26px', fontFamily: 'Calibre Regular', pb: { md: '24px', xxs: '16px' }, }}>
                 Users can receive notifications, share schedules with other users, add new participants, and plan meetings.
                 </Typography>
                </Box>

@@ -28,7 +28,7 @@ const CompanyRegistrationAfterSection = () => {
           }}
           
         >
-          <Grid container spacing={2} justifyContent="center" alignItems="center" xxs={12} lg={10} xl={12}  sx={{margin: '0 auto'}}>
+          <Grid container spacing={{ xs: 0, xl: 2 }} justifyContent="center" alignItems="center" xxs={12} lg={10} xl={12}  sx={{margin: '0 auto'}}>
             {/* Text Section */}
             <Grid 
               item 
@@ -48,16 +48,16 @@ const CompanyRegistrationAfterSection = () => {
               <Typography sx={{ fontSize: { md: '40px', sm: '34px', xxs: '25px' }, fontFamily: 'Playfair Display Bold'}} variant="h3">
                 Company Registration
                 </Typography>
-                <Typography sx={{ fontSize: { md: '24px',  xxs: '18px' }, fontFamily: 'Playfair Display Bold', pb: '24px'}} variant="h3">
+                <Typography sx={{ fontSize: { md: '24px',  xxs: '18px' }, fontFamily: 'Playfair Display Bold', pb: '16px'}} variant="h3">
                 (after verification)
                 </Typography>
                 <Typography sx={{ pb: { md: '24px', xxs: '16px' }, fontSize: '18px', lineHeight: '26px', fontFamily: 'Calibre Regular' }}>
                 Once successfully authenticated, you will need to complete the company information, including legal address, physical address, contact information, and additional links.
    </Typography>
-                <Typography sx={{ fontSize: '18px', lineHeight: '26px', fontFamily: 'Calibre Regular' }}>
+                <Typography sx={{ fontSize: '18px', lineHeight: '26px', fontFamily: 'Calibre Regular', pb: { md: '24px', xxs: '16px' }, }}>
                 It is also important to specify key aspects of your company policies, mission, vision, and values, and to upload a document explaining your company’s standards.
                 </Typography>
-                <Typography sx={{ fontSize: '18px', lineHeight: '26px', fontFamily: 'Calibre Regular' }}>
+                <Typography sx={{ fontSize: '18px', lineHeight: '26px', fontFamily: 'Calibre Regular', pb: {xxs: '24px', xl: 0} }}>
                 Once all steps have been completed, you will receive notification of your new company’s incorporation.
                 </Typography>    </Box>
             </Grid>

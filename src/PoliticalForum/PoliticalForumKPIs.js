@@ -22,17 +22,14 @@ const PoliticalForumKPIs = () => {
         sx={{
           fontSize: { xxs: '30px', sm: '34px', md: '40px' },
           fontFamily: 'Playfair Display Bold',
-          pb: {
-            lg: '24px', // 24px for lg
-            xxs: '16px', // 16px for xxs to md
-          },
+          pb:  { xl: '32px', lg: '24px', xxs: '16px' }
         }}
       >
         Design KPIs
       </Typography>
 
       {/* Additional blocks styled like Analytics */}
-      <Box sx={{ display: 'flex', flexDirection: { xs: 'column', md: 'row' }, gap: '24px', pb: '32px' }}>
+      <Box sx={{ display: 'flex', flexDirection: { xs: 'column', md: 'row' }, gap: '24px', pb:  { xl: '32px', lg: '24px', xxs: '16px' } }}>
         <Box sx={{ border: '1px solid #EFEFF8', padding: '32px', flex: 1 }}>
           <Typography
             sx={{
@@ -63,7 +60,7 @@ const PoliticalForumKPIs = () => {
  
      
 
-      <Typography sx={{ fontSize: '18px', fontFamily: 'Calibre Regular', pt: '16px' }}>
+      <Typography sx={{ fontSize: '18px', fontFamily: 'Calibre Regular', pt: 0 }}>
         In detail, these attributes could be measured and tracked across a variety of user’s touch points:
       </Typography>
 

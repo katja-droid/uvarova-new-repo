@@ -13,10 +13,7 @@ const ProfWorldKPIs = () => {
             sx={{
               fontSize: { xxs: '30px', sm: '34px', md: '40px' },
               fontFamily: 'Playfair Display Bold',
-              pb: {
-                lg: '24px', // 24px for lg
-                xxs: '16px', // 16px for xxs to md
-              },
+              paddingBottom: { xl: '32px', lg: '24px', xxs: '24px' }, 
             }}
           >
             Design KPIs
@@ -28,7 +25,7 @@ const ProfWorldKPIs = () => {
       <Grid
         container
         justifyContent="center"
-        sx={{ py: 2, fontFamily: 'Calibre Regular', fontSize: '18px' }}
+        sx={{  fontFamily: 'Calibre Regular', fontSize: '18px' }}
       >
         <Grid item xl={8} xxs={12} md={10}>
           <Box

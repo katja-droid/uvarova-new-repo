@@ -207,7 +207,7 @@ const ProfWorld = () => {
       <CoverSection />
 
       <Container disableGutters maxWidth={false} sx={{ color: '#0A0A14' }}>
-        <Grid container justifyContent="space-between">
+        <Grid container justifyContent="space-between" sx={{pb: { xl: '80px', sm: '60px', xxs: '48px' }}}>
           {/* First Column */}
           <Grid item xs={12} lg={5}>
             <ProfClientOverview />
@@ -282,10 +282,10 @@ const ProfWorld = () => {
         <FixedNavbar sections={sections_} onSelectSection_={handleSelectSection_} activeSection_={activeSection_} />
       </div>
       <div ref={mainLayoutRef}>
-        <Box sx={{height:   { xl: '80px', sm: '60px', xxs: '48px' },  backgroundColor: '#F7F7F6'}}></Box>
+      <MainLayout />
       </div>
       {/* MainLayout Section */}
-        <MainLayout />
+       
 
       <TestingSection />
       <EvaliuationSection />

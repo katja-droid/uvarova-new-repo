@@ -19,7 +19,7 @@ const BeginSection = () => {
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
-          py: { xl: '80px', sm: '60px', xxs: '48px' },
+          pt: { xl: '80px', sm: '60px', xxs: '48px' },
           
         }}
       >
@@ -122,6 +122,7 @@ const BeginSection = () => {
             width: '100%',
             height: '92%', // Adjust based on aspect ratio
             zIndex: 2,
+            pb: { xl: '80px', sm: '60px', xxs: '48px' }
           }}
         >
           <img
@@ -136,19 +137,7 @@ const BeginSection = () => {
           />
         </Box>
       </Box>
-      <Box
-        sx={{
-          pb: {
-            xxs: '24px',
-            xs: '48px',
-            sm: '60px',
-            md: '84px',
-            lg: '84px',
-            xl: '84px',
-            xxl: '97px',
-          },
-        }}
-      ></Box>
+   
       </Box>
   );
 };

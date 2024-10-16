@@ -47,6 +47,10 @@ const ProfWorldConstraintsTwo = () => {
                   '& li': {
                     mb: '8px', // Adds spacing of 8px between sub-items
                   },
+                  pb: {
+                    xl: '32px', // Correct padding for xl
+                    xxs: '24px', // Correct padding for lg
+                  },
                 }}
               >
                 <li>

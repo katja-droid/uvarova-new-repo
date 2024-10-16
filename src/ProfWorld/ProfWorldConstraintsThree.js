@@ -15,6 +15,7 @@ const ProfWorldConstraintsThree = () => {
             fontFamily: 'Calibre Regular',
             fontSize: '16px', // Adjusted font size to 16px
             lineHeight: '24px',
+            
           }}
         >
           <Box
@@ -25,6 +26,7 @@ const ProfWorldConstraintsThree = () => {
               '& li': {
                 mb: '8px', // Adds spacing of 8px between list items
               },
+              
             }}
           >
             {/* Legal and Ethical Restrictions */}
@@ -46,6 +48,10 @@ const ProfWorldConstraintsThree = () => {
                   paddingLeft: '20px',
                   '& li': {
                     mb: '8px', // Adds spacing of 8px between sub-items
+                  },
+                  pb: {
+                    xl: '32px', // Correct padding for xl
+                    xxs: '24px', // Correct padding for lg
                   },
                 }}
               >

@@ -27,7 +27,7 @@ const CompanyRegistrationSection = () => {
             py: 0, // Removed padding from container
           }}
         >
-          <Grid container spacing={2} justifyContent="center" alignItems="center" xxs={12} lg={10} xl={12}  sx={{margin: '0 auto'}}>
+          <Grid container spacing={{ xs: 0, xl: 2 }} justifyContent="center" alignItems="center" xxs={12} lg={10} xl={12}  sx={{margin: '0 auto'}}>
             {/* Text Section */}
             <Grid 
               item 
@@ -46,14 +46,14 @@ const CompanyRegistrationSection = () => {
               <Box>
                 <Typography sx={{ fontSize: { md: '40px', sm: '34px', xxs: '25px' }, fontFamily: 'Playfair Display Bold' }} variant="h3">
                 Company Registration  </Typography>
-                <Typography sx={{ fontSize: { md: '24px',  xxs: '18px' }, fontFamily: 'Playfair Display Bold', pb: '24px'}} variant="h3">
+                <Typography sx={{ fontSize: { md: '24px',  xxs: '18px' }, fontFamily: 'Playfair Display Bold', pb: '16px'}} variant="h3">
                 (before verification)
                 </Typography>
                
                 <Typography sx={{ pb: { md: '24px', xxs: '16px' }, fontSize: '18px', lineHeight: '26px', fontFamily: 'Calibre Regular' }}>
                   To register a company before verification, you must enter the company name, specify the number of employees, provide the EDRPO code, select the field of activity, and describe the main products.
                 </Typography>
-                <Typography sx={{ fontSize: '18px', lineHeight: '26px', fontFamily: 'Calibre Regular' }}>
+                <Typography sx={{ fontSize: '18px', lineHeight: '26px', fontFamily: 'Calibre Regular', pb: {xxs: '24px', xl: 0} }}>
                   In addition, you must add a website link, upload a scanned copy of the EDRPO abstract, then review the data and wait for verification by a verifier.
                 </Typography>
               </Box>

@@ -30,7 +30,6 @@ const CorporateCultureSection = () => {
   xxs={12} lg={10} xl={12}
   sx={{
     textAlign: 'center',
-    pb: '24px',
     width: { xxs: '100%',  xl: '935px', xxl: '935px' }, // 100% width for xxs-lg, 935px for xl and xxl
     maxWidth: { xxs: '100%', lg: '100%', xl: '935px', xxl: '935px' }, // Ensuring it doesn't exceed 935px on xl-xxl
     mx: 'auto', // Center align the block horizontally
@@ -48,7 +47,6 @@ const CorporateCultureSection = () => {
   </Typography>
   <Typography
                 sx={{
-                  pb: { md: '24px', xxs: '16px' },
                   fontSize: '18px',
                   lineHeight: '26px',
                   fontFamily: 'Calibre Regular',

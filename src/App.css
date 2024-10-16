@@ -1,129 +1,94 @@
 /* Calibre Font Family */
+@font-face {
+  font-family: 'Calibre Regular';
+  src: url('assets/fonts/Calibre-Regular.woff2') format('woff2'),
+       url('assets/fonts/Calibre-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
 
 @font-face {
-     font-family: 'Calibre Regular';
-     src: url('assets/fonts/Calibre-Regular.woff2') format('woff2'),
-          url('assets/fonts/Calibre-Regular.woff') format('woff');
-     font-weight: 400;
-     font-style: normal;
-   }
-   
-   @font-face {
-     font-family: 'Calibre Medium';
-     src: url('assets/fonts/Calibre-Medium.woff2') format('woff2'),
-          url('assets/fonts/Calibre-Medium.woff') format('woff');
-     font-weight: 500;
-     font-style: normal;
-   }
-   
-   @font-face {
-     font-family: 'Calibre Semibold';
-     src: url('assets/fonts/Calibre-Semibold.woff2') format('woff2'),
-          url('assets/fonts/Calibre-Semibold.woff') format('woff');
-     font-weight: 600;
-     font-style: normal;
-   }
-   
-   @font-face {
-     font-family: 'Calibre Light';
-     src: url('assets/fonts/Calibre-Light.woff2') format('woff2'),
-          url('assets/fonts/Calibre-Light.woff') format('woff');
-     font-weight: 300;
-     font-style: normal;
-   }
-   
-   @font-face {
-     font-family: 'Calibre Bold';
-     src: url('assets/fonts/Calibre-Bold.woff2') format('woff2'),
-          url('assets/fonts/Calibre-Bold.woff') format('woff');
-     font-weight: 700;
-     font-style: normal;
-   }
- 
-   /* Playfair Display Font Family */
-   
-   @font-face {
-     font-family: 'Playfair Display Regular';
-     src: url('assets/fonts/PlayfairDisplay-Regular.woff2') format('woff2'),
-          url('assets/fonts/PlayfairDisplay-Regular.woff') format('woff');
-     font-weight: 400;
-     font-style: normal;
-   }
-   
-   @font-face {
-     font-family: 'Playfair Display Medium';
-     src: url('assets/fonts/PlayfairDisplay-Medium.woff2') format('woff2'),
-          url('assets/fonts/PlayfairDisplay-Medium.woff') format('woff');
-     font-weight: 500;
-     font-style: normal;
-   }
-   
-   @font-face {
-     font-family: 'Playfair Display Semibold';
-     src: url('assets/fonts/PlayfairDisplay-SemiBold.woff2') format('woff2'),
-          url('assets/fonts/PlayfairDisplay-SemiBold.woff') format('woff');
-     font-weight: 600;
-     font-style: normal;
-   }
-   
-   @font-face {
-     font-family: 'Playfair Display Bold';
-     src: url('assets/fonts/PlayfairDisplay-Bold.woff2') format('woff2'),
-          url('assets/fonts/PlayfairDisplay-Bold.woff') format('woff');
-     font-weight: 700;
-     font-style: normal;
-   }
-   
-   @font-face {
-     font-family: 'Playfair Display ExtraBold';
-     src: url('assets/fonts/PlayfairDisplay-ExtraBold.woff2') format('woff2'),
-          url('assets/fonts/PlayfairDisplay-ExtraBold.woff') format('woff');
-     font-weight: 800;
-     font-style: normal;
-   }
-   @font-face {
-    font-family: 'DMSerifText-Regular';
-    src: url('assets/fonts/DMSerifText-Regular.ttf') format('truetype');
-    font-weight: 800;
-    font-style: normal;
-  }
-  
-   /* Slick Carousel */
-.slick-prev,
-.slick-next {
-  display: none !important;
+  font-family: 'Calibre Medium';
+  src: url('assets/fonts/Calibre-Medium.woff2') format('woff2'),
+       url('assets/fonts/Calibre-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
 }
 
-.slick-dots li button {
-  background: transparent;
-  border: none;
+@font-face {
+  font-family: 'Calibre Semibold';
+  src: url('assets/fonts/Calibre-Semibold.woff2') format('woff2'),
+       url('assets/fonts/Calibre-Semibold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
 }
 
-.slick-dots li button:before {
-  display: none;
+@font-face {
+  font-family: 'Calibre Light';
+  src: url('assets/fonts/Calibre-Light.woff2') format('woff2'),
+       url('assets/fonts/Calibre-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
 }
 
-.slick-dots li img {
-  width: 20px; /* Set this based on your design */
-  height: 20px;
+@font-face {
+  font-family: 'Calibre Bold';
+  src: url('assets/fonts/Calibre-Bold.woff2') format('woff2'),
+       url('assets/fonts/Calibre-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
 }
 
-.slick-prev {
-  left: 10px;
+/* Playfair Display Font Family */
+@font-face {
+  font-family: 'Playfair Display Regular';
+  src: url('assets/fonts/PlayfairDisplay-Regular.woff2') format('woff2'),
+       url('assets/fonts/PlayfairDisplay-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
 }
 
-.slick-next {
-  right: 10px;
+@font-face {
+  font-family: 'Playfair Display Medium';
+  src: url('assets/fonts/PlayfairDisplay-Medium.woff2') format('woff2'),
+       url('assets/fonts/PlayfairDisplay-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
 }
 
-.slick-arrow {
-  z-index: 1;
+@font-face {
+  font-family: 'Playfair Display Semibold';
+  src: url('assets/fonts/PlayfairDisplay-SemiBold.woff2') format('woff2'),
+       url('assets/fonts/PlayfairDisplay-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
 }
-html {
-  scroll-behavior: smooth;
+
+@font-face {
+  font-family: 'Playfair Display Bold';
+  src: url('assets/fonts/PlayfairDisplay-Bold.woff2') format('woff2'),
+       url('assets/fonts/PlayfairDisplay-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Playfair Display ExtraBold';
+  src: url('assets/fonts/PlayfairDisplay-ExtraBold.woff2') format('woff2'),
+       url('assets/fonts/PlayfairDisplay-ExtraBold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+ font-family: 'DMSerifText-Regular';
+ src: url('assets/fonts/DMSerifText-Regular.ttf') format('truetype');
+ font-weight: 800;
+ font-style: normal;
 }
 .link-text {
-  position: relative;
+  position: relative; /* Make sure the link is relative for ::after to work properly */
+  display: inline-block; /* Ensure the link wraps tightly around the text */
 }
 
 .link-text:hover {
@@ -131,26 +96,43 @@ html {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  color: transparent;
+  color: transparent; /* Make text transparent */
 }
 
 .link-text:hover::after {
-  content: '';
+  content: ''; /* Ensures the ::after element is created */
   position: absolute;
   left: 0;
-  bottom: 22%; /* Set to 0 or slightly adjust to position it closer */
+  bottom: 30%;
   width: 100%;
-  height: 1px; /* Adjust thickness of the underline */
-  background-color: #0D99FF; /* Adjust color of the underline */
-  transition: background-color 0.3s ease;
+  height: 2px; /* Give enough height to make the underline visible */
+  background-color: #0D99FF; /* Set the underline color */
+  transition: width 0.3s ease; /* Smooth transition for the underline */
+  visibility: visible; /* Ensure the underline is visible */
 }
+
+
+/* Shadows */
+.bigShadow {
+box-shadow: 0 10.14px 31.19px rgba(0, 0, 0, 0.1);
+}
+
+.midShadow {
+box-shadow: 0 7.49px 22.46px rgba(0, 0, 0, 0.1);
+}
+
+.smallShadow {
+box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+html {
+scroll-behavior: smooth;
+}
+
 .gradient-text {
-  background: linear-gradient(90deg, #0D99FF, #99FAF4);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  color: transparent;
+background: linear-gradient(90deg, #0D99FF, #99FAF4);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+color: transparent;
 }
-.bigShadow{box-shadow: 0 10.14px 31.19px rgba(0, 0, 0, 0.1);}
-.midShadow{box-shadow: 0 7.49px 22.46px rgba(0, 0, 0, 0.1);}
-.smallShadow{box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);}

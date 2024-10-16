@@ -28,7 +28,7 @@ const RecruitmentSelectionSection = () => {
             py: 0, // Removed padding from container
           }}
         >
-          <Grid container spacing={2} justifyContent="center" alignItems="center" xxs={12} lg={10} xl={12}  sx={{margin: '0 auto'}}>
+          <Grid container spacing={{ xs: 0, xl: 2 }}  justifyContent="center" alignItems="center" xxs={12} lg={10} xl={12}  sx={{margin: '0 auto'}}>
             {/* Text Section */}
             <Grid 
               item 
@@ -45,12 +45,14 @@ const RecruitmentSelectionSection = () => {
               }}
             >
               <Box>
-                <Typography sx={{ fontSize: { md: '40px', sm: '34px', xxs: '25px' }, fontFamily: 'Playfair Display Bold', pb: '24px' }} variant="h3">
+                <Typography sx={{ fontSize: { md: '40px', sm: '34px', xxs: '25px' }, fontFamily: 'Playfair Display Bold', pb: '16px' }} variant="h3">
                 Recruitment Selection 
                 </Typography>
-                <Typography sx={{ pb: { md: '24px', xxs: '16px' }, fontSize: '18px', lineHeight: '26px', fontFamily: 'Calibre Regular' }}>
+                <Typography sx={{ pb: '16px', fontSize: '18px', lineHeight: '26px', fontFamily: 'Calibre Regular' }}>
                 This block plays an important role in strategic workforce planning, which is critical to a company’s success.
+                </Typography>  <Typography sx={{ pb: '16px', fontSize: '18px', lineHeight: '26px', fontFamily: 'Calibre Regular' }}>
 This block provides information on vacancies, fill deadlines, and budgets, as well as tools for searching and evaluating candidates.
+</Typography>  <Typography sx={{ pb: { md: '24px', xxs: '16px' }, fontSize: '18px', lineHeight: '26px', fontFamily: 'Calibre Regular' }}>
 In addition, this block provides customizable interview stages based on a company’s needs and helps define the requirements for each position.
 </Typography>
               </Box>

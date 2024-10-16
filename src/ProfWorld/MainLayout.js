@@ -12,20 +12,21 @@ import withScrollEffect from '../withScrollEffect.js';
 
 const MainLayout = () => {
   return (
+    
     <ThemeProvider theme={theme}>
       <Box
         sx={{
           position: 'relative',
           width: '100%',
           color: '#0A0A14',
-          pb: { xl: '80px', sm: '60px', xxs: '48px' },
+          py: { xl: '80px', sm: '60px', xxs: '48px' },
           backgroundColor: '#F7F7F6',
         }}
         id="main-p"
       >
         <Container disableGutters maxWidth={false} sx={{ width: '100%', py: 0 }}>
           {/* Main Section */}
-          <Grid container spacing={2} justifyContent="center">
+          <Grid container  justifyContent="center">
             <Grid
               item
               xs={12}
@@ -89,7 +90,7 @@ const MainLayout = () => {
                   justifyContent: 'center',
                   alignItems: 'center',
                   textAlign: 'center',
-                  
+                  pb: 0
                 }}
               >
                 <Box sx={{pt: {

@@ -15,7 +15,6 @@ const PoliticalForumNavVisualized = () => {
           backgroundColor: '#fff',
           color: '#0A0A14',
           py: { xl: '80px', sm: '60px', xxs: '48px' },
-          px: { xxs: '16px', sm: '24px', md: '48px', lg: '84px' },
           overflowX: 'hidden', // Prevent horizontal overflow
           boxSizing: 'border-box', // Account for padding in size calculations
         }}
@@ -54,7 +53,7 @@ const PoliticalForumNavVisualized = () => {
 
             {/* Section Two */}
             <Grid item xxs={12} xl={6}  sx={{ order: { xxs: 3, lg: 3 }, overflowX: 'hidden' }}>
-              <Box sx={{ backgroundColor: '#fff', py: '24px', borderRadius: '16px', boxSizing: 'border-box' }}>
+              <Box sx={{ backgroundColor: '#fff', py: '0', borderRadius: '16px', boxSizing: 'border-box' }}>
                 
                 <Typography sx={{ fontSize: '18px', lineHeight: '26px', fontFamily: 'Calibre Regular', mb: '8px' }}>
                   After testing a collection of tasks for the client, we began research to identify tasks that were potentially

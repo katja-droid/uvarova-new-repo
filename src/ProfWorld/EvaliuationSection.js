@@ -26,7 +26,7 @@ const EvaliuationSection = () => {
           }}
           
         >
-          <Grid container spacing={2} justifyContent="center" alignItems="center" xxs={12} lg={10} xl={12}  sx={{margin: '0 auto'}}>
+          <Grid container spacing={{ xs: 0, xl: 2 }}  justifyContent="center" alignItems="center" xxs={12} lg={10} xl={12}  sx={{margin: '0 auto'}}>
             {/* Text Section */}
             <Grid 
               item 
@@ -43,13 +43,15 @@ const EvaliuationSection = () => {
               }}
             >
               <Box>
-              <Typography sx={{ fontSize: { md: '40px', sm: '34px', xxs: '25px' }, fontFamily: 'Playfair Display Bold', pb: '24px' }} variant="h3">
-              Evaluation for Accurate Employee Selection
+              <Typography sx={{ fontSize: { md: '40px', sm: '34px', xxs: '25px' }, fontFamily: 'Playfair Display Bold', pb: '16px' }} variant="h3">
+              Evaluation for Accurate<br></br> Employee Selection
+                </Typography>
+                <Typography sx={{ pb: '16px', fontSize: '18px', lineHeight: '26px', fontFamily: 'Calibre Regular' }}>
+                The process is designed to assess a candidate’s potential, strengths and weaknesses, motivation, and other important factors.
                 </Typography>
                 <Typography sx={{ pb: { md: '24px', xxs: '16px' }, fontSize: '18px', lineHeight: '26px', fontFamily: 'Calibre Regular' }}>
-                The process is designed to assess a candidate’s potential, strengths and weaknesses, motivation, and other important factors.
-                There are a variety of tests that can be used for different purposes. For example, there are tests for personality traits, abilities, and knowledge.   </Typography>
-                  </Box>
+                There are a variety of tests that can be used for different purposes. For example, there are tests for personality traits, abilities, and knowledge.   
+                </Typography> </Box>
             </Grid>
 
             {/* GIF Section - Takes 7 cols on lg and xxl */}

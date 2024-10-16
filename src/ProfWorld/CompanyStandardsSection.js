@@ -24,7 +24,7 @@ const CompanyStandardsSection = () => {
             py: 0, // Removed padding from container
           }}
         >
-          <Grid container spacing={2} justifyContent="center" alignItems="center" xxs={12} lg={10} xl={12}  sx={{margin: '0 auto'}}>
+          <Grid container spacing={{ xs: 0, xl: 2 }}  justifyContent="center" alignItems="center" xxs={12} lg={10} xl={12}  sx={{margin: '0 auto'}}>
             {/* Text Section */}
             <Grid 
               item 
@@ -41,11 +41,13 @@ const CompanyStandardsSection = () => {
               }}
             >
               <Box>
-                <Typography sx={{ fontSize: { md: '40px', sm: '34px', xxs: '25px' }, fontFamily: 'Playfair Display Bold', pb: '24px' }} variant="h3">
+                <Typography sx={{ fontSize: { md: '40px', sm: '34px', xxs: '25px' }, fontFamily: 'Playfair Display Bold', pb: '16px' }} variant="h3">
                 Corporate Standards
                 </Typography>
-                <Typography sx={{ pb: { md: '24px', xxs: '16px' }, fontSize: '18px', lineHeight: '26px', fontFamily: 'Calibre Regular' }}>
+                <Typography sx={ {pb: '16px' , fontSize: '18px', lineHeight: '26px', fontFamily: 'Calibre Regular' }}>
                 The Corporate Standard consists of a library of informational materials that all employees must be familiar with.
+                </Typography>
+                <Typography sx={{ pb: { md: '24px', xxs: '16px' }, fontSize: '18px', lineHeight: '26px', fontFamily: 'Calibre Regular' }}>
                 This includes induction materials, company information (mission, values), company rules, dress code, brand guidelines, etc.     </Typography>
                 
               </Box>

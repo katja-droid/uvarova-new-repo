@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link as RouterLink } from 'react-router-dom';
 import { Box, Typography, Link, Grid } from '@mui/material';
 import email from './assets/contact-email.svg';
 import linkedin from './assets/contact-linkedin.svg';
@@ -25,7 +24,6 @@ const Contact = () => {
         flexDirection: 'column',
         color: '#0A0A14',
         paddingTop: '104px',
-       
       }}
     >
       <Box
@@ -63,9 +61,9 @@ const Contact = () => {
             margin: 0,
             width: {
               lg: '100%',
-              md:  '66.67%',
-              xxs: '100%'
-            }
+              md: '66.67%',
+              xxs: '100%',
+            },
           }}
         >
           Please feel free to reach out to me for collaboration and friendly greetings.
@@ -73,7 +71,7 @@ const Contact = () => {
       
         <Grid
           container
-          justifyContent="center"
+          justifyContent={{ lg: 'space-between', xs: 'center' }} // Space between for lg, centered for others
           spacing={2}
           sx={{ marginTop: '16px' }}
           columns={{ xxs: 4, xs: 4, sm: 8, md: 12, lg: 12, xl: 8, xxl: 8 }}
@@ -85,30 +83,21 @@ const Contact = () => {
               xxs={2} // Each icon takes 1/2 (50%) of width for xxs (2 columns out of 4)
               xs={2} // Takes 1/2 (50%) of the width for xs and below
               sm={4} // Takes 1/2 (50%) of the width for sm
-              md={5} // Takes 1/3 of the width on md (4 columns out of 12)
+              md={5} // Takes 5 columns out of 12 for md
               lg={2} // Takes 2 columns out of 12 for lg
               xl={2} // Takes 2 columns out of 8 for xl
               xxl={2} // Takes 2 columns out of 8 for xxl
               display="flex"
-              justifyContent={{
-                xxs: index % 2 === 0 ? 'flex-start' : 'flex-end',
-                xs: index % 2 === 0 ? 'flex-end' : 'flex-start',
-                sm: index % 2 === 0 ? 'flex-end' : 'flex-start',
-                md: 'center',
-                lg: 'space-between',
-                xl: 'center',
-                xxl: 'center',
-           }   }
+              justifyContent="center" // Center icons in their grid cells
               minWidth={{
                 xxs: '156px',
                 xs: '156px',
                 sm: '175px',
                 md: '175px',
-                lg: '147px',
+                lg: '175px', // Ensure consistent width for lg
                 xl: '175px',
                 xxl: '175px',
-         }     
-            }
+              }}
             >
               <Link href={item.link} target="_blank" rel="noopener noreferrer">
                 <Box
@@ -122,7 +111,7 @@ const Contact = () => {
                       xs: '156px',
                       sm: '175px',
                       md: '175px',
-                      lg: '147px',
+                      lg: '175px', // Keep width consistent for lg
                       xl: '175px',
                       xxl: '175px',
                     },
@@ -131,12 +120,11 @@ const Contact = () => {
                       xs: '160px',
                       sm: '160px',
                       md: '160px',
-                      lg: '87px',
+                      lg: '160px', // Keep height consistent for lg
                       xl: '160px',
                       xxl: '160px',
                     },
                   }}
-                  
                 />
               </Link>
             </Grid>
@@ -147,4 +135,4 @@ const Contact = () => {
   );
 };
 
-export default withScrollEffect (Contact);
+export default withScrollEffect(Contact);

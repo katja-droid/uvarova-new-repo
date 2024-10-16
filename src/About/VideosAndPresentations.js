@@ -24,7 +24,7 @@ const VideosAndPresentations = () => {
               }}
               alt="YouTube"
             />
-            <Typography sx={{ fontSize: '16px', fontFamily: 'Calibre Regular', pb: '8px' }}>
+            <Typography sx={{ fontSize: '16px', fontFamily: 'Calibre Regular', pb: '8px', color: '#0A0A14' }}>
               Beetroot Academy, the school where I studied design, asked me to provide feedback on a UI/UX design program.
             </Typography>
             <Typography sx={{ fontSize: '16px', fontFamily: 'Calibre Regular', color: '#646470' }}>May 2023</Typography>
@@ -46,7 +46,7 @@ const VideosAndPresentations = () => {
             }}
             alt="Presenter"
           />
-          <Typography sx={{ fontSize: '16px', fontFamily: 'Calibre Regular', pb: '8px' }}>
+          <Typography sx={{ fontSize: '16px', fontFamily: 'Calibre Regular', pb: '8px', color: '#0A0A14' }}>
             Acted as a presenter at Offline Beetup for 150 people. Topic: «How to live and work in Ukrainian IT during the crisis?».
           </Typography>
           <Typography sx={{ fontSize: '16px', fontFamily: 'Calibre Regular', color: '#646470' }}>July 2023</Typography>

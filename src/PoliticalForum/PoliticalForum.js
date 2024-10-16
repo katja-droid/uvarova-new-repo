@@ -214,7 +214,7 @@ const renderSection = () => {
 
 </Container>
 
-<PoliticalForumNavigationNavIssues/>
+<PoliticalForumNavIssues/>
 <PoliticalForumNavVisualized/>
 <div ref={calendarRef}>
 <Container disableGutters maxWidth={'100vw'} sx={{ color: '#0A0A14' }}>

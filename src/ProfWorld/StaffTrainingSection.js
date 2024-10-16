@@ -26,12 +26,12 @@ const StaffTrainingSection = () => {
             py: 0, // Removed padding from container
           }}
         >
-          <Grid container spacing={2} justifyContent="center" alignItems="center" xxs={12} lg={10} xl={12}  sx={{margin: '0 auto'}}>
+          <Grid container spacing={{ xs: 0, xl: 2 }}  justifyContent="center" alignItems="center" xxs={12} lg={10} xl={12}  sx={{margin: '0 auto'}}>
             {/* Text Section */}
             <Grid 
               item 
               xs={12} 
-              lg={5} 
+              lg={12}
               xl={5} 
               xxl={5}
               sx={{
@@ -44,12 +44,12 @@ const StaffTrainingSection = () => {
               }}
             >
               <Box>
-                <Typography sx={{ fontSize: { md: '40px', sm: '34px', xxs: '25px' }, fontFamily: 'Playfair Display Bold', pb: '24px' }} variant="h3">
+                <Typography sx={{ fontSize: { md: '40px', sm: '34px', xxs: '25px' }, fontFamily: 'Playfair Display Bold', pb: '16px' }} variant="h3">
                 Staff training    </Typography>
                 <Typography sx={{ pb: { md: '24px', xxs: '16px' }, fontSize: '18px', lineHeight: '26px', fontFamily: 'Calibre Regular' }}>
                 The training platform provides the ability to effectively assess knowledge, create tests and training programs, organize calendars, and evaluate progress.
                 </Typography>
-                <Typography sx={{ fontSize: '18px', lineHeight: '26px', fontFamily: 'Calibre Regular' }}>
+                <Typography sx={{ fontSize: '18px', lineHeight: '26px', fontFamily: 'Calibre Regular', pb: { md: '24px', xxs: '16px' }, }}>
                 This structured approach promotes staff motivation and skill development, positively impacting the overall success of the organization.
       </Typography>
               </Box>
@@ -58,7 +58,7 @@ const StaffTrainingSection = () => {
             <Grid 
               item 
               xs={12} 
-              lg={7} 
+              lg={12}
               xl={7} 
               xxl={7}
               xxxl={7}

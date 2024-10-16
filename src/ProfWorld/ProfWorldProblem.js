@@ -19,10 +19,7 @@ const ProfWorldProblem = () => {
             sx={{
               fontSize: { xxs: '30px', sm: '34px', md: '40px' },
               fontFamily: 'Playfair Display Bold',
-              pb: {
-                lg: '24px', // 24px for lg
-                xxs: '16px', // 16px for xxs to md
-              },
+              paddingBottom: { xl: '32px', lg: '24px', xxs: '24px' }, 
             }}
           >
             The Problem

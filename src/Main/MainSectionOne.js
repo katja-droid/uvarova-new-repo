@@ -171,7 +171,7 @@ const MainSectionOne = () => {
 
         <Box 
   sx={{ 
-    height: { md: '288px', lg: '341px', xl: '467px'},  
+    height: 'auto',
     px: 0, 
     py: 0 
   }}

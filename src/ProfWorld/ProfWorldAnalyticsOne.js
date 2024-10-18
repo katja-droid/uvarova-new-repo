@@ -14,10 +14,10 @@ const ProfWorldAnalyticsOne = () => {
         <Box
           sx={{
             border: '1px solid #EFEFF8',
-            padding: '32px',
+            padding: {xl: '32px', lg: '24px', xxs: '16px'},
             display: 'flex',
             flexDirection: 'column',
-            height: '100%', // Fills the height of the tallest card
+            height: { xl: '245px', md: '280px', xxs: 'auto' },
           }}
         >
           <Typography
@@ -26,26 +26,30 @@ const ProfWorldAnalyticsOne = () => {
               fontSize: '20px',
               fontWeight: 'bold',
               pb: '16px',
+              lineHeight: 'normal'
             }}
           >
-            1. Automation of Processes
+            1. Automation of processes
           </Typography>
           <Typography
             sx={{
               fontFamily: 'Calibre Regular',
               fontSize: '18px',
-              pb: '8px',
+              lineHeight: 'normal',
+              pb: '8px'
             }}
           >
-            Approximately <b>70% of SMBs</b> use CRM systems to manage customer and candidate data, making it much easier to interact and analyze.
+            Approximately <b>70% of SMBs</b> use CRM to manage customer and candidate data, making it much easier to interact and analyze.
           </Typography>
           <Typography
             sx={{
               fontFamily: 'Calibre Regular',
               fontSize: '18px',
+              lineHeight: 'normal'
             }}
           >
-            Automation can prevent you from creating a personal touch with candidates, which is sometimes important in the hiring process.
+          
+          By iterating information from different sources, making it easier to access data.
           </Typography>
         </Box>
       </Grid>
@@ -54,10 +58,10 @@ const ProfWorldAnalyticsOne = () => {
         <Box
           sx={{
             border: '1px solid #EFEFF8',
-            padding: '32px',
+            padding: {xl: '32px', lg: '24px', xxs: '16px'},
             display: 'flex',
             flexDirection: 'column',
-            height: '100%',
+            height: { xl: '245px', md: '280px', xxs: 'auto' },
           }}
         >
           <Typography
@@ -66,15 +70,17 @@ const ProfWorldAnalyticsOne = () => {
               fontSize: '20px',
               fontWeight: 'bold',
               pb: '16px',
+              lineHeight: 'normal'
             }}
           >
-            2. Dependence on Technology
+            2. Dependence on technology
           </Typography>
           <Typography
             sx={{
               fontFamily: 'Calibre Regular',
               fontSize: '18px',
               pb: '8px',
+              lineHeight: 'normal'
             }}
           >
             Technological errors can lead to loss of candidate data or difficult interactions.
@@ -83,8 +89,10 @@ const ProfWorldAnalyticsOne = () => {
             sx={{
               fontFamily: 'Calibre Regular',
               fontSize: '18px',
+              lineHeight: 'normal'
             }}
           >
+            
             Automation can prevent you from creating a personal touch with candidates, which is sometimes important in the hiring process.
           </Typography>
         </Box>
@@ -94,10 +102,10 @@ const ProfWorldAnalyticsOne = () => {
         <Box
           sx={{
             border: '1px solid #EFEFF8',
-            padding: '32px',
+            padding: {xl: '32px', lg: '24px', xxs: '16px'},
             display: 'flex',
             flexDirection: 'column',
-            height: '100%',
+            height: { xl: '265px', lg: '249px', md: '302px', xxs: 'auto' },
           }}
         >
           <Typography
@@ -106,30 +114,40 @@ const ProfWorldAnalyticsOne = () => {
               fontSize: '20px',
               fontWeight: 'bold',
               pb: '16px',
+              lineHeight: '20px'
             }}
           >
-            3. CRM Systems for Recruiters
+            3. CRM systems for recruiters
           </Typography>
           <Typography
             sx={{
               fontFamily: 'Calibre Regular',
               fontSize: '18px',
-              pb: '8px',
+              lineHeight: '20px',
+              pb: '8px'
             }}
           >
-            According to reports, about <b>75% of recruiters</b> say that using an ATS increases their efficiency. Data helps improve candidate selection, allowing HR to track key metrics and evaluate the effectiveness of different candidate sources.
+            According to reports, about <b>75% of recruiters</b> say that recruiters say that using an ATS increases their efficiency.
           </Typography>
-        </Box>
+          <Typography
+            sx={{
+              fontFamily: 'Calibre Regular',
+              fontSize: '18px',
+              lineHeight: 'normal'
+            }}
+          >
+          Data helps improve candidate selection, allowing HR to track key metrics and evaluate the effectiveness of different candidate sources.
+          </Typography></Box>
       </Grid>
 
       <Grid item md={6} xs={12} sx={{ display: 'flex', height: 'auto' }}>
         <Box
           sx={{
             border: '1px solid #EFEFF8',
-            padding: '32px',
+            padding: {xl: '32px', lg: '24px', xxs: '16px'},
             display: 'flex',
             flexDirection: 'column',
-            height: '100%',
+            height: { xl: '265px', lg: '249px', md: '302px', xxs: 'auto' },
           }}
         >
           <Typography
@@ -138,19 +156,30 @@ const ProfWorldAnalyticsOne = () => {
               fontSize: '20px',
               fontWeight: 'bold',
               pb: '16px',
+              lineHeight: 'normal'
             }}
           >
-            4. Complexity of Implementation
+           4. Complexity of implementation
           </Typography>
           <Typography
             sx={{
               fontFamily: 'Calibre Regular',
               fontSize: '18px',
-              pb: '8px',
+              lineHeight: 'normal'
             }}
           >
-            The CRM implementation process can be lengthy and costly, and not all companies can afford it. Employees need to be trained on the new software, which can slow down workflows.
-          </Typography>
+         The CRM implementation process can be lengthy and costly, and not all companies can afford it.
+         </Typography>
+         <Typography
+            sx={{
+              fontFamily: 'Calibre Regular',
+              fontSize: '18px',
+              lineHeight: 'normal',
+              pb: '8px'
+            }}
+          >
+         Employees need to be trained on the new software, which can slow down workflows.    
+         </Typography>
         </Box>
       </Grid>
     </Grid>

@@ -31,7 +31,7 @@ const About = () => {
       <Grid item xxl={8} xl={8} lg={8} md={12} sm={12} xs={12} sx={{ p: 0 }}>
         <Grid container spacing={0} sx={{ p: 0, m: 0 }}>
           <Grid item xs={12} sx={{ mb: '24px' }}> {/* 48px margin bottom */}
-            <Box sx={{ height: { xl: '343px', xx: '249px' }, p: 0 }}>
+            <Box sx={{ height: 'auto', p: 0 }}>
               <img src={communityEvent} width="100%" alt="Community Event" style={{ height: 'auto', objectFit: 'cover' }} />
             </Box>
           </Grid>

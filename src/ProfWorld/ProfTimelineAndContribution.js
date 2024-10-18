@@ -24,7 +24,7 @@ const ProfTimelineAndContribution = ({ contribution, tools }) => {
         Timeline
       </Typography>
       <Typography sx={{ fontSize: '18px', lineHeight: '26px', pb: '8px', fontFamily: 'Calibre Regular', fontSize: '23px', lineHeight: '26px', pb: '8px' }}>
-        <b>May 2022 — May 2024</b> ~ 2 years
+        <b>May 2022 — May 2024</b> <span style={{color: '#8A8A8A'}}>~ 2 years</span>
       </Typography>
 
       {/* My role */}
@@ -46,7 +46,7 @@ const ProfTimelineAndContribution = ({ contribution, tools }) => {
         My role
       </Typography>
       <Typography sx={{ fontSize: '18px', lineHeight: '26px', pb: '8px', fontFamily: 'Calibre Regular', fontSize: '23px', lineHeight: '26px', pb: '8px' }}>
-        <b>UX/UI Designer</b> ~ 2 years
+        <b>UX/UI Designer</b>
       </Typography>
       <Typography sx={{ fontSize: '18px', lineHeight: '26px', pb: '8px', fontFamily: 'Calibre Regular' }}>
         Developed functional products with user expectations in mind and emphasized uniqueness from competing products. Conducted research and analysis, including surveys and focus groups, to focus on developing key features with user expectations in mind.
@@ -126,9 +126,35 @@ const ProfTimelineAndContribution = ({ contribution, tools }) => {
               mb: { xs: '8px', md: '10px' },
             }}
           >
-            <Link to={item.href} style={{ color: '#0A0A14', textDecoration: 'none', fontSize: '18px', fontFamily: 'Calibre Regular', cursor: item.href === '#' ? 'default' : 'pointer',  }}>
-              {item.name}
-            </Link>
+           {item.href === '#' ? (
+  <Typography
+    sx={{
+      color: '#0A0A14',
+      textDecoration: 'none',
+      fontSize: '18px',
+      fontFamily: 'Calibre Regular',
+      cursor: 'default', // No pointer cursor for non-link
+    }}
+  >
+    {item.name}
+  </Typography>
+) : (
+  <Link
+    to={item.href}
+    rel="noopener noreferrer"
+    target="_blank"
+    style={{
+      color: '#0A0A14',
+      textDecoration: 'none',
+      fontSize: '18px',
+      fontFamily: 'Calibre Regular',
+      cursor: 'pointer',
+    }}
+  >
+    {item.name}
+  </Link>
+)}
+
           </Box>
         ))}
       </Box>

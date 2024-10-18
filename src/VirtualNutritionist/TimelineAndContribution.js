@@ -166,10 +166,35 @@ const TimelineAndContribution = ({ tools }) => {
               mb: { xs: '8px', md: '10px' },
             }}
           >
-              <Link to={item.href} style={{ color: '#0A0A14', textDecoration: 'none', fontSize: '18px', fontFamily: 'Calibre Regular' }}>
-        
-            {item.name}
-            </Link>
+             {item.href === '#' ? (
+  <Typography
+    sx={{
+      color: '#0A0A14',
+      textDecoration: 'none',
+      fontSize: '18px',
+      fontFamily: 'Calibre Regular',
+      cursor: 'default', // No pointer cursor for non-link
+    }}
+  >
+    {item.name}
+  </Typography>
+) : (
+  <Link
+    to={item.href}
+    rel="noopener noreferrer"
+    target="_blank"
+    style={{
+      color: '#0A0A14',
+      textDecoration: 'none',
+      fontSize: '18px',
+      fontFamily: 'Calibre Regular',
+      cursor: 'pointer',
+    }}
+  >
+    {item.name}
+  </Link>
+)}
+
             
           </Box>
         ))}

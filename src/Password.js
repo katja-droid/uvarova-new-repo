@@ -23,13 +23,13 @@ const Password = ({ login }) => {
       const redirectTo = location.state?.from || '/'; // Redirect to the intended page or home
       navigate(redirectTo); // Redirect after successful login
     } else {
-      setError(true); // Show error message when password is incorrect
+      setError(true); // Show error message and add red border when password is incorrect
     }
   };
 
   return (
     <ThemeProvider theme={theme}>
-      <Container disableGutters maxWidth={false} sx={{ minHeight: '100vh' }}>
+      <Container disableGutters maxWidth={false} sx={{ minHeight: '100vh', backgroundColor: '#F5F5F5' }}>
         {/* Navbar */}
         <Grid container>
           <Grid item xxs={12}>
@@ -46,7 +46,6 @@ const Password = ({ login }) => {
                     md: '100%',
                     sm: '250px',
                     xxs: '240px'
-                   
                   }}} >
               <Typography 
                 variant='h2' 
@@ -93,17 +92,19 @@ const Password = ({ login }) => {
                     },
                     '& .MuiOutlinedInput-root': {
                       borderRadius: '4px',
-                      border: 'none',  // Remove border initially
+                      border: error ? '1px solid #F14C4C !important' : 'none',  // Apply red border if error
+                      padding: '14px 8px 14px 16px', // Set padding for the box around text and arrow: top/bottom: 14px, left: 16px, right: 8px
                       '&.Mui-focused': {
                         boxShadow: '0px 15px 20px rgba(0, 0, 0, 0.05)', // Focused shadow
+                        border: error ? '1px solid #F14C4C !important' : 'none', // Override border on focus if error
                       },
                     },
                     '& .MuiOutlinedInput-notchedOutline': {
-                      border: 'none', // No border by default
+                      border: error ? '1px solid #F14C4C !important' : 'none', // Conditionally apply red border
                     },
                     '& .MuiOutlinedInput-input': {
-                      padding: '14px 14px 16px 8px',
                       fontSize: '17px',  // Font size
+                      padding: 0, // Remove any internal padding from the input itself
                       '&::placeholder': {
                         color: '#D9D9D9',  // Placeholder color
                         opacity: 1, // Ensures the color is not reduced by default browser styles
@@ -113,20 +114,11 @@ const Password = ({ login }) => {
                     '& .MuiInputBase-input': {
                       outline: 'none',
                       boxShadow: 'none',
-                      '&::before': {
-                        content: "''",
-                        display: 'inline-block',
-                        width: '6px',
-                        height: '6px',
-                        backgroundColor: '#0A0A14',
-                        borderRadius: '50%',
-                        marginRight: '2px',
-                      },
                     },
                   }}
                   InputProps={{
                     endAdornment: (
-                      <InputAdornment position="end">
+                      <InputAdornment position="end" sx={{ padding: 0, margin: 0 }}> {/* Remove any padding from InputAdornment */}
                         <button
                           type="submit"
                           style={{
@@ -145,22 +137,20 @@ const Password = ({ login }) => {
 
              {/* Error message below the input */}
              {error && (
-                
                 <Box sx={{
-                  width: { lg: '474px', md: '374px', sm: '370px', xs: '100%' }, py: '8px', letterSpacing: '1.5px'}}>
-                  <Typography sx={{ color: '#F14C4C', fontSize: '15px', textAlign: 'left' }}>
+                  width: { xxs: '100%' }, py: '8px', letterSpacing: '1.5px'}}>
+                  <Typography sx={{ color: '#F14C4C', fontSize: '15px', textAlign: 'left', width: '100%', fontFamily: 'Calibre Light' }}>
                     Incorrect password
                   </Typography>
-                  </Box>
-                )}
+                </Box>
+              )}
               </form>
             </Grid>
           </Grid>
-             
         </Box>
       </Container>
     </ThemeProvider>
   );
 };
 
-export default withScrollEffect (Password);
+export default withScrollEffect(Password);

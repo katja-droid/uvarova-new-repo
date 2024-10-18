@@ -11,7 +11,30 @@
   overflow-x: auto; /* Enable scrolling */
   scrollbar-width: none; /* Firefox: hide scrollbar */
   -ms-overflow-style: none;  /* IE and Edge: hide scrollbar */
+  /* Smooth scrolling */
+
+  scroll-behavior: smooth;
+  overflow-x: auto;
+  white-space: nowrap;
+
+
 }
+
+.navbarProject-overflow {
+  justify-content: flex-start; /* Align navbar to the left if overflowing */
+}
+
+.navbar-project-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;  /* Ensure it's aligned to the left of the screen */
+  width: 100%; /* Take the full width of the viewport */
+  overflow-x: auto; /* Enable horizontal scrolling */
+  white-space: nowrap; /* Prevent wrapping */
+  z-index: 1000;
+  background-color: white;
+}
+
 
 .navbarProject::-webkit-scrollbar {
   display: none; /* Chrome, Safari, and Opera: hide scrollbar */
@@ -25,7 +48,6 @@
   padding: 0;
   white-space: nowrap; /* Prevent wrapping */
 }
-
 
 .navbarProject-link {
   color: #8A8A8A;
@@ -49,5 +71,3 @@
     padding-left: 15px; /* Add some padding to the left for better spacing */
   }
 }
-
-/* Class-based selectors only, no general selectors */

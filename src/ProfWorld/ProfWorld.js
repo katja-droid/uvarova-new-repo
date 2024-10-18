@@ -103,9 +103,12 @@ const ProfWorld = () => {
   const [activeSection, setActiveSection] = useState('problem'); // Default section
   const [activeLink, setActiveLink] = useState('');
   const [isNavbarVisible, setIsNavbarVisible] = useState(false);  // Navbar initially hidden
-  
+  const [isNavbarProjectVisible, setIsNavbarProjectVisibleVisible] = useState(false);  // Navbar initially hidden
   const navbarRef = useRef(null);
   const calendarRef = useRef(null);
+  const navbarProjectRef = useRef(null);
+  const navbarProjectStartRef = useRef(null);
+  const navbarProjectEndRef = useRef(null);
   const mainLayoutRef = useRef(null);  // Ref for MainLayout section
   const [activeSection_, setActiveSection_] = useState('problem'); // Default section
   // Function to handle section selection
@@ -143,8 +146,45 @@ const ProfWorld = () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+  useEffect(() => {
+    const handleScrollProject = () => {
+      // Get the positions of the start and end of the navbar project section
+      const navbarProjectStartTop = navbarProjectStartRef.current?.offsetTop || 0;
+      const navbarProjectEndTop = navbarProjectEndRef.current?.offsetTop || document.body.scrollHeight; // Fallback to end of document
+      
+      const scrollY = window.scrollY; // Current scroll position
+      
+      // Display NavbarProject if within the correct scroll range
+      if (scrollY >= navbarProjectStartTop && scrollY < navbarProjectEndTop) {
+        setIsNavbarProjectVisibleVisible(true);
+      } else {
+        setIsNavbarProjectVisibleVisible(false);
+      }
   
-
+      // Highlight active section based on scroll position
+      sections.forEach((section) => {
+        const sectionElement = document.getElementById(section.id);
+        if (sectionElement) {
+          const sectionTop = sectionElement.offsetTop;
+          const sectionHeight = sectionElement.offsetHeight;
+  
+          if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+            setActiveSection(section.id);
+          }
+        }
+      });
+    };
+  
+    // Add the scroll event listener
+    window.addEventListener('scroll', handleScrollProject);
+  
+    // Cleanup the scroll listener on unmount
+    return () => {
+      window.removeEventListener('scroll', handleScrollProject);
+    };
+  }, []);
+  
+  
   // Dynamic rendering of sections based on selected section
   const renderSection = () => {
     switch (activeSection) {
@@ -227,46 +267,96 @@ const ProfWorld = () => {
        
       </Container>
 
-      <Container disableGutters maxWidth={false} sx={{ color: '#0A0A14' }}>
+      <Container  disableGutters maxWidth={false} sx={{ color: '#0A0A14' }}>
         <FinalDesignSection />
       </Container>
-
+ 
       {/* Full-width section */}
       <ProfFullWidthSection />
       {activeSection !== "constraints" && activeSection !== "analytics" ? (
   <>
+  <div ref={navbarProjectStartRef} style={{
+  whiteSpace: 'nowrap',
+  overflowX: 'auto', // CSS 'overflow-x: auto;'
+  scrollbarWidth: 'none', // CSS 'scrollbar-width: none;'
+  msOverflowStyle: 'none', // CSS '-ms-overflow-style: none;'
+  left: 0
+}}>
+  <NavbarProject activeLink={activeSection} sections={sections} onSelectSection={handleSelectSection} />
+  </div>
     <Grid container justifyContent="center" spacing={0}>
     <Grid container justifyContent="center" spacing={0} >
-      <Grid item xxs={12} justifyContent="center" >
+    <div
+    ref={navbarProjectRef}
+    style={{
+      position: 'fixed',
+      top: '0',
+      left: '0',
+      display: isNavbarProjectVisible ? 'block' : 'none',
+      zIndex: 1000,
+      width: '100vw', // Use viewport width
+      overflowX: 'auto', // Enable horizontal scrolling
+      whiteSpace: 'nowrap', // Prevent wrapping, ensuring items flow horizontally
+      scrollbarWidth: 'none', // Hide scrollbar in Firefox
+      msOverflowStyle: 'none', // Hide scrollbar in IE/Edge
+      scrollBehavior: 'smooth', // Smooth scrolling
+    }}
+  >
+    <Grid item xxs={12} justifyContent="center" >
         <NavbarProject activeLink={activeSection} sections={sections} onSelectSection={handleSelectSection} />
         </Grid>
+        </div>
+       
         {/* Apply scroll effect to the rendered section */}
         {withScrollEffect(() => renderSection())()}
-  
+       
       </Grid>
+      
     </Grid>
+    <div ref={navbarProjectEndRef} style={{height: '1px'}}></div>
   </>
 ) : (
   <>
+  <div ref={navbarProjectStartRef} style={{
+
+
+}}>
+  <NavbarProject activeLink={activeSection} sections={sections} onSelectSection={handleSelectSection} />
+  </div>
     <Grid container justifyContent="center" spacing={0} >
+    
       <Grid container justifyContent="center" spacing={0} >
+      <div ref={navbarProjectRef} style={{
+  position: 'fixed',
+  top: '0',
+  left: '0', // Ensure it's positioned at the top-left of the screen
+  display: isNavbarProjectVisible ? 'block' : 'none',  // Toggle visibility
+  zIndex: 1000,
+  width: '100%',
+  overflow: 'auto',
+
+
+}}>
         <Grid item xxs={12} >
           <NavbarProject activeLink={activeSection} sections={sections} onSelectSection={handleSelectSection} />
         </Grid>
+        </div>
       </Grid>
       {/* Apply scroll effect to the rendered section */}
       {withScrollEffect(() => renderSection())()}
+      <div ref={navbarProjectEndRef} style={{height: '1px'}}></div>
     </Grid>
+   
   </>
 )}
-
+  <div ref={navbarProjectEndRef} >
       <Container disableGutters maxWidth={false} sx={{  color: '#0A0A14' }}>
       <Grid container justifyContent="center" spacing={0} sx={{ py: 2 }}>
       <Grid item  xxs={12} lg={10}>
 <BeginSection/>
 </Grid>
 </Grid>
-</Container>
+</Container></div>
       <CompanyRegistrationSection />
       <SecurityServiceSection />
       <CompanyRegistrationAfterSection />

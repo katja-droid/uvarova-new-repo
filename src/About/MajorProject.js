@@ -47,7 +47,7 @@ const MajorProject = () => {
             SaaS platform for automating HR processes
           </Link>
         </b>, 
-        which reduced routine tasks by up to 70%, covering all stages from defining the product’s goals to handing off the design to developers and ensuring quality.
+        <b>which reduced routine tasks by up to 70%</b>, covering all stages from defining the product’s goals to handing off the design to developers and ensuring quality.
       </Typography>
     </>
   );

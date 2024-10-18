@@ -49,7 +49,7 @@ const Contact = () => {
           Let's Connect
         </Typography>
         <Typography
-          className='contactText'
+          className="contactText"
           variant="body1"
           component="p"
           sx={{
@@ -66,9 +66,9 @@ const Contact = () => {
             },
           }}
         >
-          Please feel free to reach out to me for collaboration and friendly greetings.
+          Feel free to reach out for collaborations or just a friendly hello 
         </Typography>
-      
+
         <Grid
           container
           justifyContent={{ lg: 'space-between', xs: 'center' }} // Space between for lg, centered for others
@@ -104,7 +104,7 @@ const Contact = () => {
                   component="img"
                   src={item.imgSrc}
                   alt={item.alt}
-                  className='contactSocial'
+                  className="contactSocial"
                   sx={{
                     width: {
                       xxs: '156px',
@@ -123,6 +123,10 @@ const Contact = () => {
                       lg: '160px', // Keep height consistent for lg
                       xl: '160px',
                       xxl: '160px',
+                    },
+                    transition: 'box-shadow 0.3s ease-in-out', // Smooth transition for hover effect
+                    '&:hover': {
+                      boxShadow: '0px 20px 50px rgba(0, 0, 0, 0.1)', // Hover box shadow effect
                     },
                   }}
                 />

@@ -28,7 +28,7 @@ const NavbarProject = ({ sections, onSelectSection, activeLink }) => {
       sx={{
         py: { lg: '47px', sm: '32px' },
         mb: '16px',
-        mt: { xl: '80px', sm: '60px', xxs: '48px' },
+      
         justifyContent: isOverflowing ? 'flex-start' : 'center', // Dynamic justification based on overflow
       }}
     >

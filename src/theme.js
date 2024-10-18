@@ -13,6 +13,9 @@ const theme = createTheme({
       xxxl: 1600,
     },
   },
+  typography: {
+    fontFamily: '"Calibre Regular"',
+  },
   components: {
     MuiContainer: {
       styleOverrides: {

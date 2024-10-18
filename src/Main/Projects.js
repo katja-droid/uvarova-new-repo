@@ -63,11 +63,11 @@ const Projects = () => {
 
   const getImageStyles = (index) => {
     switch (index) {
-      case 0: // Image 1, 3, 4 have the same border radius and alignment
+      case 0:
       case 2:
       case 3:
         return {
-          justifyContent: 'flex-end', // Align right
+          justifyContent: 'flex-end',
           borderRadius: {
             xxxl: '30px 0 0 0',
             xxl: '30px 0 0 0',
@@ -87,9 +87,9 @@ const Projects = () => {
             xxs: '252px',
           },
         };
-      case 1: // Image 2 has different border radius and centered alignment
+      case 1:
         return {
-          justifyContent: 'center', // Align center
+          justifyContent: 'center',
           borderRadius: {
             xxxl: '30px 30px 0 0',
             xxl: '30px 30px 0 0',
@@ -125,14 +125,12 @@ const Projects = () => {
               display: 'flex',
               flexDirection: 'column',
               justifyContent: 'space-between',
-              height: '100%', // Ensure all blocks are the same height
-              borderRadius: '16px', // Apply 16px border radius to all corners
-              overflow: 'hidden', // Ensure content inside respects the border radius
-              boxShadow: '0 1px 4px rgba(0, 0, 0, 0.05)'
-
+              height: '100%',
+              borderRadius: '16px',
+              overflow: 'hidden',
+              boxShadow: '0 1px 4px rgba(0, 0, 0, 0.05)',
             }}
           >
-            {/* Content area at the top */}
             <Box
               sx={{
                 padding: {
@@ -143,7 +141,7 @@ const Projects = () => {
                   lg: '40px',
                   xl: '40px',
                 },
-                flexGrow: 1, // Allow content area to grow to fill available space
+                flexGrow: 1,
               }}
             >
               <Typography
@@ -163,116 +161,142 @@ const Projects = () => {
                 {item.heading}
               </Typography>
               <Typography
-  variant="body1"
-  sx={{
-    width: {
-      xxs: '268px',
-      xs: '263px',
-      sm: '236px',
-      md: '263px',
-      lg: '334px',
-      xl: '334px',
-    },
-    paddingTop: '0',
-    fontFamily: 'Calibre Regular',
-    fontSize: {
-      xxs: '18px',
-      xs: '18px',
-      sm: '16px',
-      md: '18px',
-      lg: '21px',
-      xl: '21px',
-    },
-    pb: '10px',
-    lineHeight: '1.5',
-    height: {
-      xxxl: '50px', // Fixed 50px height for xl and above
-      xxl: '50px',
-      xl: '50px',
-      lg: '44px',  // Fixed 44px height for lg
-      md: 'auto',  // Let it be auto for smaller screens
-      sm: 'auto',
-      xs: 'auto',
-      xxs: 'auto',
-    },
-    display: 'block', // Allow text to flow naturally
-    marginBottom: '12px', // Add 12px space between description and link
-  }}
->
-  {item.description}
-</Typography>
+                variant="body1"
+                sx={{
+                  width: {
+                    xxs: '268px',
+                    xs: '263px',
+                    sm: '236px',
+                    md: '263px',
+                    lg: '334px',
+                    xl: '334px',
+                  },
+                  paddingTop: '0',
+                  fontFamily: 'Calibre Regular',
+                  fontSize: {
+                    xxs: '18px',
+                    xs: '18px',
+                    sm: '16px',
+                    md: '18px',
+                    lg: '21px',
+                    xl: '21px',
+                  },
+                  pb: '10px',
+                  lineHeight: '1.5',
+                  height: {
+                    xxxl: '50px',
+                    xxl: '50px',
+                    xl: '50px',
+                    lg: '44px',
+                    md: 'auto',
+                    sm: 'auto',
+                    xs: 'auto',
+                    xxs: 'auto',
+                  },
+                  display: 'block',
+                  marginBottom: '12px',
+                }}
+              >
+                {item.description}
+              </Typography>
 
-<Link href={item.linkUrl} underline="none" color="inherit">
-  <Box
-    style={{
-      display: 'flex',
-      flexDirection: 'column',
-      alignItems: 'flex-start',
-      position: 'relative',
-      cursor: 'pointer',
-      width: 'fit-content',
-    }}
-    sx={{
-      paddingTop: {
-        xxs: '12px',
-        xs: '12px',
-        sm: '16px',
-        md: '16px',
-        lg: '16px',
-        xl: '16px',
-      },
-      fontSize: {
-        xxs: '18px',
-        xs: '18px',
-        sm: '16px',
-        md: '18px',
-        lg: '21px',
-        xl: '21px',
-      },
-    }}
-    onMouseEnter={() => handleMouseEnter(index)}
-    onMouseLeave={() => handleMouseLeave(index)}
-  >
-    <Box display="flex" alignItems="center">
-      <span
-        style={{
-          marginRight: '8px',
-          fontFamily: 'Calibre Medium',
-          color: '#0A0A14',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          verticalAlign: 'middle',
-        }}
-      >
-        {isAuthenticated || item.heading === 'Virtual Nutritionist'
-          ? 'Read case study'
-          : item.linkText}
-        <Box>
-          <img
-            src={arrow}
-            alt="Arrow"
-            style={{
-              height: 'auto',
-              verticalAlign: 'middle',
-              marginLeft: '8px',
-            }}
-          />
-        </Box>
-      </span>
-    </Box>
-  </Box>
-</Link>
-
+              <Link href={item.linkUrl} underline="none" color="inherit">
+                <Box
+                  style={{
+                    display: 'flex',
+                    flexDirection: 'column',
+                    alignItems: 'flex-start',
+                    position: 'relative',
+                    cursor: 'pointer',
+                    width: 'fit-content',
+                  }}
+                  sx={{
+                    paddingTop: {
+                      xxs: '12px',
+                      xs: '12px',
+                      sm: '16px',
+                      md: '16px',
+                      lg: '16px',
+                      xl: '16px',
+                    },
+                    fontSize: {
+                      xxs: '18px',
+                      xs: '18px',
+                      sm: '16px',
+                      md: '18px',
+                      lg: '21px',
+                      xl: '21px',
+                    },
+                  }}
+                  onMouseEnter={() => handleMouseEnter(index)}
+                  onMouseLeave={() => handleMouseLeave(index)}
+                >
+                  <Box
+                    display="flex"
+                    alignItems="center"
+                    sx={{
+                      borderBottom: '1px solid transparent',
+                      ':hover': {
+                        borderBottom: '1px solid #0A0A14',
+                      },
+                      paddingTop: '8px',
+                      paddingBottom: '3.2px',
+                    }}
+                  >
+                    <span
+                      style={{
+                        fontFamily: 'Calibre Medium',
+                        color: '#0A0A14',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        verticalAlign: 'middle',
+                        padding: '0',
+                        margin: '0',
+                      }}
+                    >
+                      {isAuthenticated || item.heading === 'Virtual Nutritionist'
+                        ? 'Read case study'
+                        : item.linkText}
+                      <Box>
+                        <img
+                          src={arrow}
+                          alt="Arrow"
+                          style={{
+                            height: 'auto',
+                            verticalAlign: 'middle',
+                            marginLeft: '8px',
+                          }}
+                        />
+                      </Box>
+                    </span>
+                  </Box>
+                </Box>
+              </Link>
             </Box>
 
-            {/* Image at the bottom */}
             <Box
               display="flex"
-              justifyContent={index === 1 ? 'center' : 'flex-end'} // Ensure center alignment for Nutritionist image
+              justifyContent={index === 1 ? 'center' : 'flex-end'}
               sx={{
                 alignSelf: 'flex-end',
-                width: '100%', // Make sure the Box takes up full width
+                width: '100%',
+                paddingLeft: {
+                  xxxl: index === 0 || index === 2 || index === 3 ? '30px' : '30px',
+                  xl: index === 0 || index === 2 || index === 3 ? '30px' : '30px',
+                  lg: index === 0 || index === 2 || index === 3 ? '21.97px' : '21.97px',
+                  md: index === 0 || index === 2 || index === 3 ? '14px' : '14px',
+                  sm: index === 0 || index === 2 || index === 3 ? '24px' : '24px',
+                  xxs: index === 0 || index === 2 || index === 3 ? '16px' : '16px',
+                },
+                paddingRight: {
+                  xxxl: index === 1 ? '30px' : '0',
+                  xl: index === 1 ? '30px' : '0',
+                  lg: index === 1 ? '21.97px' : '0',
+                  md: index === 1 ? '14px' : '0',
+                  sm: index === 1 ? '24px' : '0',
+                  xxs: index === 1 ? '16px' : '0',
+                },
                 paddingTop: {
                   xxxl: '122px',
                   xxl: '51px',
@@ -281,7 +305,7 @@ const Projects = () => {
                   md: '24px',
                   sm: '27px',
                   xxs: '12px',
-                }, // Add padding top for different breakpoints
+                },
               }}
             >
               <Box
@@ -289,10 +313,10 @@ const Projects = () => {
                 src={item.imageUrl}
                 alt={item.heading}
                 sx={{
-                  height: getImageStyles(index).height, // Apply the specific height
-                  borderRadius: getImageStyles(index).borderRadius, // Apply custom border radius
+                  height: getImageStyles(index).height,
+                  borderRadius: getImageStyles(index).borderRadius,
                   display: 'block',
-                  maxWidth: '100%', // Ensure the image doesn't overflow
+                  maxWidth: '100%',
                 }}
               />
             </Box>

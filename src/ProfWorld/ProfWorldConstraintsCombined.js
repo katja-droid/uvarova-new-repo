@@ -36,7 +36,7 @@ const ProjectsConstraintsCombined = () => {
                   fontSize: '16px',
                 }}
               >
-                Temporary Restrictions:
+                Temporary restrictions:
               </Typography>
               <Box
                 component="ul"
@@ -63,7 +63,7 @@ const ProjectsConstraintsCombined = () => {
                   fontSize: '16px',
                 }}
               >
-                Budget Restrictions:
+                Budget restrictions:
               </Typography>
               <Box
                 component="ul"
@@ -90,7 +90,7 @@ const ProjectsConstraintsCombined = () => {
                   fontSize: '16px',
                 }}
               >
-                Technological Limitations:
+                Technological limitations:
               </Typography>
               <Box
                 component="ul"
@@ -117,7 +117,7 @@ const ProjectsConstraintsCombined = () => {
                   fontSize: '16px',
                 }}
               >
-                Human Resources:
+                Human resources:
               </Typography>
               <Box
                 component="ul"
@@ -144,7 +144,7 @@ const ProjectsConstraintsCombined = () => {
                   fontSize: '16px',
                 }}
               >
-                Legal and Ethical Restrictions:
+                Legal and ethical restrictions:
               </Typography>
               <Box
                 component="ul"
@@ -171,7 +171,7 @@ const ProjectsConstraintsCombined = () => {
                   fontSize: '16px',
                 }}
               >
-                Qualitative Restrictions:
+                Qualitative restrictions:
               </Typography>
               <Box
                 component="ul"

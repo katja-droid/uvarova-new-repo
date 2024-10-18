@@ -78,7 +78,7 @@ const ProfWorldGoal = () => {
             >
               <li>
                 <Typography sx={{ fontWeight: 'bold', marginBottom: '16px' }}> {/* Padding below "1. Main Objectives" */}
-                  1. Main Objectives of the Project:
+                  1. Main objectives of the project:
                 </Typography>
                 <Box
                   component="ul"
@@ -100,7 +100,7 @@ const ProfWorldGoal = () => {
 
               <li>
                 <Typography sx={{ fontWeight: 'bold', marginBottom: '16px' }}> {/* Padding below "2. Secondary Goals" */}
-                  2. Secondary Goals of the Project:
+                  2. Secondary goals of the project:
                 </Typography>
                 <Box
                   component="ul"

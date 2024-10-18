@@ -5,6 +5,7 @@ import theme from '../theme'; // Import your custom theme
 import backgroundImage from '../assets/begin-background.png'; // Import the background image
 import gif from '../assets/pw1.gif'; // Import the GIF
 import withScrollEffect from '../withScrollEffect.js';
+import RatioGif from './RatioGif.js';
 
 const BeginSection = () => {
   return (
@@ -84,59 +85,13 @@ const BeginSection = () => {
         sx={{
           position: 'relative',
           width: '100%',
-          paddingTop: '66.95%', // Aspect ratio for 935px width and 626px height
-          backgroundColor: '#fff',
-          color: '#0A0A14',
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          overflow: 'hidden',
-          margin: '0 auto', // Center the entire block on the page
+         
           
         }}
       >
         {/* Background Image Container */}
-        <Box
-          sx={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-            backgroundImage: `url(${backgroundImage})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            backgroundRepeat: 'no-repeat', // Ensure the GIF is above the background
-            borderRadius: '4px',
-           
-          }}
-        />
-
-        {/* GIF Overlay */}
-        <Box
-          sx={{
-            position: 'absolute',
-            bottom: 0, // Position the GIF at the bottom
-            left: '50%',
-            transform: 'translateX(-50%)', // Center the GIF horizontally
-            width: '100%',
-            height: '92%', // Adjust based on aspect ratio
-            zIndex: 2,
-            pb: { xl: '80px', sm: '60px', xxs: '48px' }
-          }}
-        >
-          <img
-            src={gif}
-            alt="Begin Section GIF"
-            style={{
-              width: '100%', // Set the GIF width to fill the coverer
-              height: '100%', // Set the GIF height to fill the coverer
-              objectFit: 'cover', // Ensure the GIF fits within the dimensions
-            }}
-            className="bigShadow"
-          />
-        </Box>
-      </Box>
+        <RatioGif image={gif} backgroundImage={backgroundImage}/>
+       </Box>
    
       </Box>
   );

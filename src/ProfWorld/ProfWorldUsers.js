@@ -4,7 +4,7 @@ import withScrollEffect from '../withScrollEffect.js';
 
 const ProfWorldUsers = () => {
   return (
-    <Container disableGutters maxWidth={false} sx={{  pb:  { xl: '80px', sm: '60px', xxs: '48px' }}}>
+    <Container disableGutters maxWidth={false} sx={{ pb: { xl: '80px', sm: '60px', xxs: '48px' } }}>
       {/* Container for the title */}
       <Grid container justifyContent="center" spacing={0}>
         <Grid item xl={8} xxs={12} lg={10}>
@@ -13,7 +13,7 @@ const ProfWorldUsers = () => {
             sx={{
               fontSize: { xxs: '30px', sm: '34px', md: '40px' },
               fontFamily: 'Playfair Display Bold',
-              paddingBottom: { xl: '32px', lg: '24px', xxs: '24px' }, 
+              paddingBottom: { xl: '32px', lg: '24px', xxs: '24px' },
             }}
           >
             Users
@@ -25,16 +25,16 @@ const ProfWorldUsers = () => {
       <Grid
         container
         justifyContent="center"
-        sx={{ 
-          py: 2, 
-          fontFamily: 'Calibre Regular', 
+        sx={{
+          py: 2,
+          fontFamily: 'Calibre Regular',
           fontSize: '18px',
         }}
         spacing={{ xxs: 2, sm: 2, md: 2, lg: 3, xl: 4 }} // Adjust spacing for horizontal gaps
       >
         <Grid item xl={8} xxs={12} lg={10}>
-          <Grid 
-            container 
+          <Grid
+            container
             spacing={{ xxs: 2, sm: 2, md: 2, lg: 3, xl: 4 }} // Adjust spacing for vertical gaps
             alignItems="stretch" // Ensure items in a row are of the same height
           >
@@ -49,13 +49,14 @@ const ProfWorldUsers = () => {
                     pb: '8px',
                   }}
                 >
-                  1. HR Managers and Recruiters
+                  1. HR managers and recruiters
                 </Typography>
                 <Typography
                   sx={{
                     fontFamily: 'Calibre Regular',
                     fontSize: '18px', // Text 18px
                     pb: '8px',
+                    pl: '16px', // Padding left for indentation
                   }}
                 >
                   <b>Role:</b> Responsible for sourcing, screening, and managing candidates; maintaining employee records and documentation.
@@ -64,6 +65,7 @@ const ProfWorldUsers = () => {
                   sx={{
                     fontFamily: 'Calibre Regular',
                     fontSize: '18px', // Text 18px
+                    pl: '16px', // Padding left for indentation
                   }}
                 >
                   <b>Needs:</b> Efficient candidate tracking, automation of routine tasks, ability to interact with other systems and services.
@@ -81,13 +83,14 @@ const ProfWorldUsers = () => {
                     pb: '8px',
                   }}
                 >
-                  2. Managers and Team Leaders
+                  2. Managers and team leaders
                 </Typography>
                 <Typography
                   sx={{
                     fontFamily: 'Calibre Regular',
                     fontSize: '18px', // Text 18px
                     pb: '8px',
+                    pl: '16px', // Padding left for indentation
                   }}
                 >
                   <b>Role:</b> Making strategic decisions, monitoring department and employee performance, analyzing productivity.
@@ -96,6 +99,7 @@ const ProfWorldUsers = () => {
                   sx={{
                     fontFamily: 'Calibre Regular',
                     fontSize: '18px', // Text 18px
+                    pl: '16px', // Padding left for indentation
                   }}
                 >
                   <b>Needs:</b> Access to up-to-date data on team performance, ability to monitor business status in real time.
@@ -114,13 +118,14 @@ const ProfWorldUsers = () => {
                     pb: '8px',
                   }}
                 >
-                  3. Company Employees
+                  3. Company employees
                 </Typography>
                 <Typography
                   sx={{
                     fontFamily: 'Calibre Regular',
                     fontSize: '18px', // Text 18px
                     pb: '8px',
+                    pl: '16px', // Padding left for indentation
                   }}
                 >
                   <b>Role:</b> Perform work tasks, interact with other colleagues, manage their own requests for vacation, time off, etc.
@@ -129,6 +134,7 @@ const ProfWorldUsers = () => {
                   sx={{
                     fontFamily: 'Calibre Regular',
                     fontSize: '18px', // Text 18px
+                    pl: '16px', // Padding left for indentation
                   }}
                 >
                   <b>Needs:</b> Ease of creating requests and interacting with HR, especially around absence, requesting time off, and accessing information about colleagues.

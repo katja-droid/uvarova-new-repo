@@ -12,7 +12,8 @@ const ProfWorldAnalytics = () => {
     <ProfWorldAnalyticsTwo/>
   ]
   return (
-    <Box sx={{pb: { xl: '80px', sm: '60px', xxs: '48px' },}}>
+    <Box sx={{pb: { xl: '80px', sm: '60px', xxs: '48px' },
+   }}>
     <Container id="profWorldAnalytics" disableGutters maxWidth={false} >
       {/* Container for the title */}
       <Grid container justifyContent="center" spacing={0} >

@@ -37,7 +37,7 @@ const ProfWorldConstraintsTwo = () => {
                   fontFamily: 'Calibre Regular',
                 }}
               >
-                Technological Limitations:
+                Technological limitations:
               </Typography>
               <Box
                 component="ul"
@@ -72,7 +72,7 @@ const ProfWorldConstraintsTwo = () => {
                   fontFamily: 'Calibre Regular',
                 }}
               >
-                Human Resources:
+                Human resources:
               </Typography>
               <Box
                 component="ul"

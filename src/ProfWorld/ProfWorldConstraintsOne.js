@@ -37,7 +37,7 @@ const ProfWorldConstraintsOne = () => {
                   fontFamily: 'Calibre Regular',
                 }}
               >
-                Temporary Restrictions:
+                Temporary restrictions:
               </Typography>
               <Box
                 component="ul"
@@ -72,7 +72,7 @@ const ProfWorldConstraintsOne = () => {
                   fontFamily: 'Calibre Regular',
                 }}
               >
-                Budget Restrictions:
+                Budget restrictions:
               </Typography>
               <Box
                 component="ul"

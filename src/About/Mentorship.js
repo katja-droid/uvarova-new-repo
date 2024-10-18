@@ -38,6 +38,8 @@ const Mentorship = () => {
         <b>
           <Link 
             to="https://beetroot.academy/" 
+              rel="noopener noreferrer"
+            target="_blank"
             style={{ 
               color: '#0A0A14', 
               fontSize: '20px',

@@ -39,7 +39,7 @@ const ProfWorldConstraintsThree = () => {
                   fontFamily: 'Calibre Regular',
                 }}
               >
-                Legal and Ethical Restrictions:
+                Legal and ethical restrictions:
               </Typography>
               <Box
                 component="ul"
@@ -74,7 +74,7 @@ const ProfWorldConstraintsThree = () => {
                   fontFamily: 'Calibre Regular',
                 }}
               >
-                Qualitative Restrictions:
+                Qualitative restrictions:
               </Typography>
               <Box
                 component="ul"

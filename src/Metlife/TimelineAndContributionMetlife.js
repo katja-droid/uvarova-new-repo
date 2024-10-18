@@ -130,7 +130,7 @@ const TimelineAndContributionMetlife = ({ tools }) => {
               display: 'inline-block',
               color: '#0A0A14',
               mr: { xs: '8px', md: '10px' },
-              mb: { xs: '8px', md: 0 },
+              mb: { xs: '8px', md: '10px' },
             }}
           >
             {item.name}

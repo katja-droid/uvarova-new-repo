@@ -8,7 +8,7 @@ const ProfWorldProblem = () => {
       disableGutters
       maxWidth={false}
       sx={{
-       pb:  { xl: '80px', sm: '60px', xxs: '48px' }
+       pb:  { xl: '80px', sm: '60px', xxs: '48px' },
       }}
     >
       {/* Container for the title */}
@@ -44,6 +44,7 @@ const ProfWorldProblem = () => {
                   xxs: '16px', // 16px for xxs to md
                 },
                 color: '#646470',
+                fontSize: '18px',
               }}
             >
               Based on the user interviews that were conducted, the findings
@@ -51,61 +52,61 @@ const ProfWorldProblem = () => {
             </Typography>
 
             {/* Problem 1 */}
-            <Typography sx={{ fontWeight: 'bold'}}>
-              1. Inefficient Recruitment:
+            <Typography sx={{ fontWeight: 'bold', fontSize: '18px',}}>
+              1. Inefficient recruitment:
             </Typography>
-            <Typography sx={{ mb: { lg: '24px', xxs: '16px' } }}>
+            <Typography sx={{ mb: { lg: '24px', xxs: '16px' } , fontSize: '18px',}}>
               Inefficient and time-consuming recruitment process without automation.
             </Typography>
 
             {/* Problem 2 */}
-            <Typography sx={{ fontWeight: 'bold'}}>
-              2. Undefined Job Profiles:
+            <Typography sx={{ fontWeight: 'bold', fontSize: '18px',}}>
+              2. Undefined job profiles:
             </Typography>
-            <Typography sx={{ mb: { lg: '24px', xxs: '16px' } }}>
+            <Typography sx={{ mb: { lg: '24px', xxs: '16px', fontSize: '18px', } }}>
               Lack of clear definition of company, department, and position profiles,
               making it difficult to properly assess candidates.
             </Typography>
 
             {/* Problem 3 */}
-            <Typography sx={{ fontWeight: 'bold' }}>
-              3. Delayed Candidate Testing:
+            <Typography sx={{ fontWeight: 'bold', fontSize: '18px', }}>
+              3. Delayed candidate testing:
             </Typography>
-            <Typography sx={{ mb: { lg: '24px', xxs: '16px' } }}>
+            <Typography sx={{ mb: { lg: '24px', xxs: '16px', fontSize: '18px', } }}>
               Lack of promptness in testing candidates with interpretation output,
               leading to overlooked risks such as theft, information leakage, and others.
             </Typography>
 
             {/* Problem 4 */}
-            <Typography sx={{ fontWeight: 'bold' }}>
-              4. Inaccurate Personality Assessment:
+            <Typography sx={{ fontWeight: 'bold', fontSize: '18px', }}>
+              4. Inaccurate personality assessment:
             </Typography>
-            <Typography sx={{ mb: { lg: '24px', xxs: '16px' } }}>
+            <Typography sx={{ mb: { lg: '24px', xxs: '16px', fontSize: '18px', } }}>
               Lack of accuracy in determining whether a candidate’s personality profile
               matches the job profile.
             </Typography>
 
             {/* Problem 5 */}
-            <Typography sx={{ fontWeight: 'bold' }}>
-              5. Lack of Psychodiagnostics:
+            <Typography sx={{ fontWeight: 'bold', fontSize: '18px', }}>
+              5. Lack of psychodiagnostics:
             </Typography>
-            <Typography sx={{ mb: { lg: '24px', xxs: '16px' } }}>
+            <Typography sx={{ mb: { lg: '24px', xxs: '16px', fontSize: '18px', } }}>
               Lack of effective psychodiagnostics to help determine people compatibility,
               team building, and identifying informal leaders.
             </Typography>
 
             {/* Problem 6 */}
-            <Typography sx={{ fontWeight: 'bold' }}>
-              6. Insufficient HR Automation:
+            <Typography sx={{ fontWeight: 'bold', fontSize: '18px', }}>
+              6. Insufficient HR automation:
             </Typography>
-            <Typography sx={{ mb: { lg: '24px', xxs: '16px' } }}>
+            <Typography sx={{ mb: { lg: '24px', xxs: '16px', fontSize: '18px', } }}>
               Insufficient automation of HR functions, making it difficult to evaluate
               personnel, build corporate culture, administration, and adaptation.
             </Typography>
 
             {/* Problem 7 */}
-            <Typography sx={{ fontWeight: 'bold'}}>
-              7. Calendar Integration Issues:
+            <Typography sx={{ fontWeight: 'bold', fontSize: '18px',}}>
+              7. Calendar integration issues:
             </Typography>
             <Typography sx={{ mb: { lg: '24px', xxs: '16px' } }}>
               Non-integrated Outlook calendar creates difficulties in planning and

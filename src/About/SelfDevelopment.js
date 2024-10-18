@@ -24,9 +24,15 @@ const SelfDevelopment = () => {
           fontFamily: 'Calibre Regular',
           fontSize: '20px',
           color: '#0A0A14',
+          '& b': { 
+            fontFamily: 'Calibre Medium', // Apply Calibre Medium for bold text
+            fontWeight: '500', // Ensure medium weight
+          },
         }}
       >
-        In addition to my professional activities, I actively strive for self-development by participating in thematic events and master classes in UX/UI design, public speaking, and English language learning. I also strive to continuously improve my skills and knowledge by publishing articles on <Link style={{color: '#0A0A14', fontSize: '20px',}} className="link-text" to="https://medium.com/">Medium</Link> and completing basic <Link style={{color: '#0A0A14', fontSize: '20px',}} className="link-text" to="https://owu.com.ua/">HTML/CSS</Link>  courses.
+        In addition to my professional activities, I actively strive for self-development by participating in thematic events and master classes in UX/UI design, public speaking, and English language learning. I also strive to continuously improve my skills and knowledge by publishing articles on <b> <Link   rel="noopener noreferrer"
+            target="_blank" style={{color: '#0A0A14', fontSize: '20px',}} className="link-text" to="https://medium.com/">Medium</Link></b> and completing basic <b><Link style={{color: '#0A0A14', fontSize: '20px',}} className="link-text"   rel="noopener noreferrer"
+            target="_blank" to="https://owu.com.ua/">HTML/CSS</Link></b>  courses.
       </Typography>
     </>
   );

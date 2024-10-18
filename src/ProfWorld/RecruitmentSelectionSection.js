@@ -6,6 +6,7 @@ import img from '../assets/pw5.gif'; // Replace with your image
 import bg from '../assets/begin-background.png'; // Replace with your image
 import RatioGif from './RatioGif';
 import withScrollEffect from '../withScrollEffect.js';
+import FormattedText from '../FormattedText'; // Import your FormattedText component
 
 const RecruitmentSelectionSection = () => {
   return (
@@ -28,7 +29,7 @@ const RecruitmentSelectionSection = () => {
             py: 0, // Removed padding from container
           }}
         >
-          <Grid container spacing={{ xs: 0, xl: 2 }}  justifyContent="center" alignItems="center" xxs={12} lg={10} xl={12}  sx={{margin: '0 auto'}}>
+          <Grid container spacing={{ xs: 0, xl: 2 }} justifyContent="center" alignItems="center" xxs={12} lg={10} xl={12} sx={{ margin: '0 auto' }}>
             {/* Text Section */}
             <Grid 
               item 
@@ -39,22 +40,22 @@ const RecruitmentSelectionSection = () => {
                 order: { xs: 1, xl: 1 }, // Text comes first on all screens
                 display: 'flex',
                 flexDirection: 'column',
-                justifyContent: { xxs: 'center', lg: 'flex-start' }, // Center vertically on small screens
-                alignItems: { xxs: 'center', lg: 'flex-start' }, // Center horizontally on small screens
-                textAlign: { lg: 'left' }, // Center text on small screens, left-align on large screens
+                justifyContent: { xs: 'center', lg: 'flex-start' }, // Center vertically on small screens
+                alignItems: { xs: 'center', lg: 'flex-start' }, // Center horizontally on small screens
+                textAlign: { lg: 'left' }, // Left-align text
               }}
             >
               <Box>
-                <Typography sx={{ fontSize: { md: '40px', sm: '34px', xxs: '25px' }, fontFamily: 'Playfair Display Bold', pb: '16px' }} variant="h3">
-                Recruitment Selection 
+                <Typography
+                  sx={{ fontSize: { md: '40px', sm: '34px', xxs: '25px' }, fontFamily: 'Playfair Display Bold', pb: '16px' }}
+                  variant="h3"
+                >
+                  Recruitment Selection 
                 </Typography>
-                <Typography sx={{ pb: '16px', fontSize: '18px', lineHeight: '26px', fontFamily: 'Calibre Regular' }}>
-                This block plays an important role in strategic workforce planning, which is critical to a company’s success.
-                </Typography>  <Typography sx={{ pb: '16px', fontSize: '18px', lineHeight: '26px', fontFamily: 'Calibre Regular' }}>
-This block provides information on vacancies, fill deadlines, and budgets, as well as tools for searching and evaluating candidates.
-</Typography>  <Typography sx={{ pb: { md: '24px', xxs: '16px' }, fontSize: '18px', lineHeight: '26px', fontFamily: 'Calibre Regular' }}>
-In addition, this block provides customizable interview stages based on a company’s needs and helps define the requirements for each position.
-</Typography>
+
+                <FormattedText
+                  text={`This block plays an important role in strategic workforce planning, which is critical to a company’s success.\n\nThis block provides information on vacancies, fill deadlines, and budgets, as well as tools for searching and evaluating candidates.\n\nIn addition, this block provides customizable interview stages based on a company’s needs and helps define the requirements for each position.`}
+                />
               </Box>
             </Grid>
 
@@ -68,8 +69,8 @@ In addition, this block provides customizable interview stages based on a com
               sx={{
                 order: { xs: 2, xl: 2 }, // Image comes second on all screens
                 display: 'flex',
-                justifyContent: {xxs: 'center', xxxl: 'flex-end'},
-                width:{
+                justifyContent: { xxs: 'center', xxxl: 'flex-end' },
+                width: {
                     xxxl: '673px'
                 }
               }}
@@ -78,11 +79,10 @@ In addition, this block provides customizable interview stages based on a com
                 sx={{
                   width: '100%',
                   borderRadius: '8px', // Optional: add some styling to the image
-                  
-                  maxWidth: {xxxl: '673px'},
+                  maxWidth: { xxxl: '673px' },
                 }}
               >
-              <RatioGif image={img} backgroundImage={bg}></RatioGif>
+                <RatioGif image={img} backgroundImage={bg} />
               </Box>
             </Grid>
           </Grid>
@@ -92,4 +92,4 @@ In addition, this block provides customizable interview stages based on a com
   );
 };
 
-export default withScrollEffect (RecruitmentSelectionSection);
+export default withScrollEffect(RecruitmentSelectionSection);

@@ -4,16 +4,16 @@ import withScrollEffect from '../withScrollEffect.js';
 
 const ProfWorldKPIs = () => {
   return (
-    <Container disableGutters maxWidth={false} sx={{pb: { xl: '80px', lg: '40px', sm: '32px', xxs: '16px' }}}>
+    <Container disableGutters maxWidth={false} sx={{ pb: { xl: '80px', lg: '40px', sm: '32px', xxs: '16px' } }}>
       {/* Container for the title */}
-      <Grid container justifyContent="center" spacing={0} >
+      <Grid container justifyContent="center" spacing={0}>
         <Grid item xl={8} xxs={12} md={10}>
           <Typography
             variant="h3"
             sx={{
               fontSize: { xxs: '30px', sm: '34px', md: '40px' },
               fontFamily: 'Playfair Display Bold',
-              paddingBottom: { xl: '32px', lg: '24px', xxs: '24px' }, 
+              paddingBottom: { xl: '32px', lg: '24px', xxs: '24px' },
             }}
           >
             Design KPIs
@@ -25,20 +25,20 @@ const ProfWorldKPIs = () => {
       <Grid
         container
         justifyContent="center"
-        sx={{  fontFamily: 'Calibre Regular', fontSize: '18px' }}
+        sx={{ fontFamily: 'Calibre Regular' }} // Set font family for all content
       >
         <Grid item xl={8} xxs={12} md={10}>
           <Box
             sx={{
               fontFamily: 'Calibre Regular',
-              fontSize: '18px',
-              lineHeight: '26px',
+              fontSize: '18px', // Set base font size to 18px
+              lineHeight: 'normal', // Set line height to normal for all content
             }}
           >
-            <Typography sx={{ pb: '16px', color: '#646470' }}>
+            <Typography sx={{color: '#646470', fontSize: '18px', lineHeight: 'normal', mb: { xl: '32px', xxs: '24px' } }}>
               For the successful implementation of the project aimed at automating the personnel preparation process, quantitative performance indicators (KPIs) were established within each category of constraints.
             </Typography>
-            <Typography sx={{ fontWeight: 'bold' }}>
+            <Typography sx={{ fontSize: '18px', lineHeight: 'normal', fontFamily: 'Calibre Semibold' }}>
               Potential KPIs and Target Values:
             </Typography>
 
@@ -47,14 +47,16 @@ const ProfWorldKPIs = () => {
               sx={{
                 listStyle: 'none',
                 paddingLeft: 0,
+                marginBottom: { xl: '32px', xxs: '24px' }, // Space after each main list
                 '& li': {
-                  mb: '25px', // Adds spacing between list items
+                  mb: '24px', // Adds spacing between numbered list items
+                  lineHeight: 'normal', // Set line height to normal for list items
                 },
               }}
             >
               {/* Time Constraints */}
               <li>
-                <Typography sx={{ fontWeight: 'bold' }}>
+                <Typography sx={{  fontSize: '18px', lineHeight: 'normal', fontFamily: 'Calibre Medium' }}>
                   1. Time Constraints:
                 </Typography>
                 <Box
@@ -64,6 +66,8 @@ const ProfWorldKPIs = () => {
                     paddingLeft: '20px',
                     '& li': {
                       mb: 0, // Removes margin between disc items
+                      fontSize: '18px', // Ensure sub-item font size is 18px
+                      lineHeight: 'normal', // Set line height to normal for sub-items
                     },
                   }}
                 >
@@ -78,7 +82,7 @@ const ProfWorldKPIs = () => {
 
               {/* Budget Constraints */}
               <li>
-                <Typography sx={{ fontWeight: 'bold' }}>
+                <Typography sx={{ fontSize: '18px', lineHeight: 'normal', fontFamily: 'Calibre Medium'  }}>
                   2. Budget Constraints:
                 </Typography>
                 <Box
@@ -88,6 +92,8 @@ const ProfWorldKPIs = () => {
                     paddingLeft: '20px',
                     '& li': {
                       mb: 0, // Removes margin between disc items
+                      fontSize: '18px', // Ensure sub-item font size is 18px
+                      lineHeight: 'normal', // Set line height to normal for sub-items
                     },
                   }}
                 >
@@ -102,7 +108,7 @@ const ProfWorldKPIs = () => {
 
               {/* Technological Constraints */}
               <li>
-                <Typography sx={{ fontWeight: 'bold' }}>
+                <Typography sx={{  fontSize: '18px', lineHeight: 'normal', fontFamily: 'Calibre Medium'  }}>
                   3. Technological Constraints:
                 </Typography>
                 <Box
@@ -112,6 +118,8 @@ const ProfWorldKPIs = () => {
                     paddingLeft: '20px',
                     '& li': {
                       mb: 0, // Removes margin between disc items
+                      fontSize: '18px', // Ensure sub-item font size is 18px
+                      lineHeight: 'normal', // Set line height to normal for sub-items
                     },
                   }}
                 >
@@ -126,7 +134,7 @@ const ProfWorldKPIs = () => {
 
               {/* Human Resources */}
               <li>
-                <Typography sx={{ fontWeight: 'bold' }}>
+                <Typography sx={{ fontSize: '18px', lineHeight: 'normal',  fontFamily: 'Calibre Medium'  }}>
                   4. Human Resources:
                 </Typography>
                 <Box
@@ -136,6 +144,8 @@ const ProfWorldKPIs = () => {
                     paddingLeft: '20px',
                     '& li': {
                       mb: 0, // Removes margin between disc items
+                      fontSize: '18px', // Ensure sub-item font size is 18px
+                      lineHeight: 'normal', // Set line height to normal for sub-items
                     },
                   }}
                 >
@@ -150,7 +160,7 @@ const ProfWorldKPIs = () => {
 
               {/* Legal and Ethical Constraints */}
               <li>
-                <Typography sx={{ fontWeight: 'bold' }}>
+                <Typography sx={{ fontSize: '18px', lineHeight: 'normal', fontFamily: 'Calibre Medium'  }}>
                   5. Legal and Ethical Constraints:
                 </Typography>
                 <Box
@@ -160,6 +170,8 @@ const ProfWorldKPIs = () => {
                     paddingLeft: '20px',
                     '& li': {
                       mb: 0, // Removes margin between disc items
+                      fontSize: '18px', // Ensure sub-item font size is 18px
+                      lineHeight: 'normal', // Set line height to normal for sub-items
                     },
                   }}
                 >
@@ -174,7 +186,7 @@ const ProfWorldKPIs = () => {
 
               {/* Quality Constraints */}
               <li>
-                <Typography sx={{ fontWeight: 'bold' }}>
+                <Typography sx={{fontSize: '18px', lineHeight: 'normal',  fontFamily: 'Calibre Medium'  }}>
                   6. Quality Constraints:
                 </Typography>
                 <Box
@@ -184,6 +196,8 @@ const ProfWorldKPIs = () => {
                     paddingLeft: '20px',
                     '& li': {
                       mb: 0, // Removes margin between disc items
+                      fontSize: '18px', // Ensure sub-item font size is 18px
+                      lineHeight: 'normal', // Set line height to normal for sub-items
                     },
                   }}
                 >
@@ -197,7 +211,7 @@ const ProfWorldKPIs = () => {
               </li>
             </Box>
 
-            <Typography sx={{ pt: '16px' }}>
+            <Typography sx={{  fontSize: '18px', lineHeight: 'normal', mb: { xl: '32px', xxs: '24px' } }}>
               These performance indicators will help not only to track the project results but also to manage all constraints, thereby ensuring its successful completion.
             </Typography>
           </Box>
@@ -207,4 +221,4 @@ const ProfWorldKPIs = () => {
   );
 };
 
-export default withScrollEffect (ProfWorldKPIs);
+export default withScrollEffect(ProfWorldKPIs);

@@ -47,6 +47,7 @@ const ProfWorldUsers = () => {
                     fontSize: '20px', // Headings 20px
                     fontWeight: 'bold',
                     pb: '8px',
+                    lineHeight: 'normal',
                   }}
                 >
                   1. HR managers and recruiters
@@ -57,6 +58,7 @@ const ProfWorldUsers = () => {
                     fontSize: '18px', // Text 18px
                     pb: '8px',
                     pl: '16px', // Padding left for indentation
+                    lineHeight: 'normal',
                   }}
                 >
                   <b>Role:</b> Responsible for sourcing, screening, and managing candidates; maintaining employee records and documentation.
@@ -66,6 +68,7 @@ const ProfWorldUsers = () => {
                     fontFamily: 'Calibre Regular',
                     fontSize: '18px', // Text 18px
                     pl: '16px', // Padding left for indentation
+                    lineHeight: 'normal',
                   }}
                 >
                   <b>Needs:</b> Efficient candidate tracking, automation of routine tasks, ability to interact with other systems and services.
@@ -81,6 +84,7 @@ const ProfWorldUsers = () => {
                     fontSize: '20px', // Headings 20px
                     fontWeight: 'bold',
                     pb: '8px',
+                    lineHeight: 'normal',
                   }}
                 >
                   2. Managers and team leaders
@@ -91,6 +95,7 @@ const ProfWorldUsers = () => {
                     fontSize: '18px', // Text 18px
                     pb: '8px',
                     pl: '16px', // Padding left for indentation
+                    lineHeight: 'normal',
                   }}
                 >
                   <b>Role:</b> Making strategic decisions, monitoring department and employee performance, analyzing productivity.
@@ -100,6 +105,7 @@ const ProfWorldUsers = () => {
                     fontFamily: 'Calibre Regular',
                     fontSize: '18px', // Text 18px
                     pl: '16px', // Padding left for indentation
+                    lineHeight: 'normal',
                   }}
                 >
                   <b>Needs:</b> Access to up-to-date data on team performance, ability to monitor business status in real time.
@@ -116,6 +122,7 @@ const ProfWorldUsers = () => {
                     fontSize: '20px', // Headings 20px
                     fontWeight: 'bold',
                     pb: '8px',
+                    lineHeight: 'normal',
                   }}
                 >
                   3. Company employees
@@ -126,6 +133,7 @@ const ProfWorldUsers = () => {
                     fontSize: '18px', // Text 18px
                     pb: '8px',
                     pl: '16px', // Padding left for indentation
+                    lineHeight: 'normal',
                   }}
                 >
                   <b>Role:</b> Perform work tasks, interact with other colleagues, manage their own requests for vacation, time off, etc.
@@ -135,6 +143,7 @@ const ProfWorldUsers = () => {
                     fontFamily: 'Calibre Regular',
                     fontSize: '18px', // Text 18px
                     pl: '16px', // Padding left for indentation
+                    lineHeight: 'normal',
                   }}
                 >
                   <b>Needs:</b> Ease of creating requests and interacting with HR, especially around absence, requesting time off, and accessing information about colleagues.

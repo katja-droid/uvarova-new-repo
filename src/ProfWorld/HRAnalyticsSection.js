@@ -2,8 +2,9 @@ import React from 'react';
 import { Box, Typography, Container, Grid } from '@mui/material';
 import { ThemeProvider } from '@mui/material/styles';
 import theme from '../theme'; // Import your custom theme
-import img from '../assets/hranalytics.png'
+import img from '../assets/hranalytics.png'; // Replace with your image
 import withScrollEffect from '../withScrollEffect.js';
+import FormattedText from '../FormattedText'; // Adjust the path as necessary
 
 const HRAnalyticsSection = () => {
   return (
@@ -17,7 +18,7 @@ const HRAnalyticsSection = () => {
         }}
         id="hr-analytics-p"
       >
-        {/* Text and GIF Section */}
+        {/* Text and Image Section */}
         <Container
           disableGutters
           maxWidth={false}
@@ -26,7 +27,7 @@ const HRAnalyticsSection = () => {
             py: 0, // Removed padding from container
           }}
         >
-          <Grid container spacing={{ xs: 0, xl: 2 }}  justifyContent="center" alignItems="center" xxs={12} lg={10} xl={12}  sx={{margin: '0 auto'}}>
+          <Grid container spacing={{ xs: 0, xl: 2 }} justifyContent="center" alignItems="center" xxs={12} lg={10} xl={12} sx={{ margin: '0 auto' }}>
             {/* Text Section */}
             <Grid 
               item 
@@ -39,21 +40,25 @@ const HRAnalyticsSection = () => {
                 flexDirection: 'column',
                 justifyContent: { xxs: 'center', lg: 'flex-start' }, // Center vertically on small screens
                 alignItems: { xxs: 'center', lg: 'flex-start' }, // Center horizontally on small screens
-                textAlign:  'left'  // Center text on small screens, left-align on large
+                textAlign: 'left' // Center text on small screens, left-align on large
               }}
             >
               <Box>
-              <Typography sx={{ fontSize: { md: '40px', sm: '34px', xxs: '25px' }, fontFamily: 'Playfair Display Bold', pb: '16px' }} variant="h3">
-              HR analytics</Typography>
-                <Typography sx={{ pb: { md: '24px', xxs: '16px' }, fontSize: '18px', lineHeight: '26px', fontFamily: 'Calibre Regular' }}>
-                HR Analytics is a set of methods for evaluating the effectiveness of the hiring process, allowing HR professionals and recruiters to analyze costs and risks while identifying the best candidates.
-               </Typography>
-               <Typography sx={{ pb: { md: '24px', xxs: '16px' }, fontSize: '18px', lineHeight: '26px', fontFamily: 'Calibre Regular' }}>
-               The system includes analytical data with the ability to generate reports on key parameters such as job availability, recruiter performance, and test results.
-               </Typography>
-               </Box>
-                </Grid>
-                 {/* GIF Section - Takes 7 cols on lg and xxl */}
+                <Typography sx={{ fontSize: { md: '40px', sm: '34px', xxs: '25px' }, fontFamily: 'Playfair Display Bold', pb: '16px' }} variant="h3">
+                  HR Analytics
+                </Typography>
+                <FormattedText 
+                  text="HR Analytics is a set of methods for evaluating the effectiveness of the hiring process, allowing HR professionals and recruiters to analyze costs and risks while identifying the best candidates."
+                  sx={{ pb: '8px', fontSize: '18px', lineHeight: '26px', fontFamily: 'Calibre Regular' }}
+                />
+                <FormattedText 
+                  text="The system includes analytical data with the ability to generate reports on key parameters such as job availability, recruiter performance, and test results."
+                  sx={{ pb: { md: '24px', xxs: '16px' }, fontSize: '18px', lineHeight: '26px', fontFamily: 'Calibre Regular' }}
+                />
+              </Box>
+            </Grid>
+
+            {/* GIF Section - Takes 7 cols on lg and xxl */}
             <Grid 
               item 
               xxs={12} 
@@ -61,13 +66,11 @@ const HRAnalyticsSection = () => {
               xxl={7}
               xxxl={7}
               sx={{
-                order: { xxs: 2, xl: 1 }
+                order: { xxs: 2, xl: 1 } // Image comes second on smaller screens
               }}
             >
-              <Box sx={{ display: 'flex', justifyContent: 'center', // GIF comes second on smaller screens, first on larger screens
-                 maxWidth: {xxxl: '673px'}, }}>
-                {/* Use RatioGif here with a GIF */}
-              <img src={img} width="100%"/>
+              <Box sx={{ display: 'flex', justifyContent: 'center', maxWidth: { xxxl: '673px' } }}>
+                <img src={img} alt="HR Analytics" width="100%" />
               </Box>
             </Grid>
           </Grid>
@@ -77,4 +80,4 @@ const HRAnalyticsSection = () => {
   );
 };
 
-export default withScrollEffect (HRAnalyticsSection);
+export default withScrollEffect(HRAnalyticsSection);

@@ -4,6 +4,7 @@ import { ThemeProvider } from '@mui/material/styles';
 import theme from '../theme'; // Import your custom theme
 import img from '../assets/profworld-survey.png'; // Replace with your image
 import withScrollEffect from '../withScrollEffect.js';
+import FormattedText from '../FormattedText'; // Adjust the path as necessary
 
 const SurveysSection = () => {
   return (
@@ -15,7 +16,7 @@ const SurveysSection = () => {
           color: '#0A0A14',
           py: { xl: '80px', sm: '60px', xxs: '48px' },
         }}
-       id="surveys-p"
+        id="surveys-p"
       >
         {/* Text and Image Section */}
         <Container
@@ -26,7 +27,7 @@ const SurveysSection = () => {
             py: 0, // Removed padding from container
           }}
         >
-          <Grid container spacing={{ xs: 0, xl: 2 }}  justifyContent="center" alignItems="center" xxs={12} lg={10} xl={12}  sx={{margin: '0 auto'}}>
+          <Grid container spacing={{ xs: 0, xl: 2 }} justifyContent="center" alignItems="center" xxs={12} lg={10} xl={12} sx={{ margin: '0 auto' }}>
             {/* Text Section */}
             <Grid 
               item 
@@ -44,16 +45,20 @@ const SurveysSection = () => {
             >
               <Box>
                 <Typography sx={{ fontSize: { md: '40px', sm: '34px', xxs: '25px' }, fontFamily: 'Playfair Display Bold', pb: '16px' }} variant="h3">
-                Surveys </Typography>
-                <Typography sx={{ pb: { md: '24px', xxs: '16px' }, fontSize: '18px', lineHeight: '26px', fontFamily: 'Calibre Regular' }}>
-                The «Surveys» section is designed to collect feedback from employees and allow you to assess employee satisfaction and engagement.
+                  Surveys
                 </Typography>
-                <Typography sx={{ fontSize: '18px', lineHeight: '26px', fontFamily: 'Calibre Regular',  pb: { md: '24px', xxs: '16px' }, }}>
-                This section allows you to administer surveys at different stages of the employee lifecycle and assess employee engagement levels.
-                </Typography>
-               </Box>
+                <FormattedText 
+                  text="The «Surveys» section is designed to collect feedback from employees and allow you to assess employee satisfaction and engagement."
+                  sx={{ pb: '8px', fontSize: '18px', lineHeight: '26px', fontFamily: 'Calibre Regular' }}
+                />
+                <FormattedText 
+                  text="This section allows you to administer surveys at different stages of the employee lifecycle and assess employee engagement levels."
+                  sx={{ fontSize: '18px', lineHeight: '26px', fontFamily: 'Calibre Regular', pb: { md: '24px', xxs: '16px' }}}
+                />
+              </Box>
             </Grid>
-                                 {/* Image Section - Takes 7 cols on lg and xxl */}
+
+            {/* Image Section - Takes 7 cols on lg and xxl */}
             <Grid 
               item 
               xxs={12} 
@@ -63,22 +68,20 @@ const SurveysSection = () => {
               sx={{
                 order: { xxs: 2, xl: 2 }, // Image comes second on all screens
                 display: 'flex',
-                justifyContent: {xxs: 'center', xxxl: 'flex-end'},
-                width:{
-                    xxxl: '673px'
+                justifyContent: { xxs: 'center', xxxl: 'flex-end' },
+                width: {
+                  xxxl: '673px'
                 }
               }}
             >
               <Box
                 component="img"
                 src={img}
-                alt="Security Service Office"
+                alt="Surveys Section"
                 sx={{
                   width: '100%',
                   borderRadius: '8px', // Optional: add some styling to the image
-                  
-                  maxWidth: {xxxl: '673px'},
-
+                  maxWidth: { xxxl: '673px' },
                 }}
               />
             </Grid>
@@ -89,4 +92,4 @@ const SurveysSection = () => {
   );
 };
 
-export default withScrollEffect (SurveysSection);
+export default withScrollEffect(SurveysSection);

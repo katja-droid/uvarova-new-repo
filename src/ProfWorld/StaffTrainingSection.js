@@ -4,6 +4,7 @@ import { ThemeProvider } from '@mui/material/styles';
 import theme from '../theme'; // Import your custom theme
 import img from '../assets/stafftraining.png'; // Replace with your image
 import withScrollEffect from '../withScrollEffect.js';
+import FormattedText from '../FormattedText'; // Adjust the path as necessary
 
 const StaffTrainingSection = () => {
   return (
@@ -26,7 +27,7 @@ const StaffTrainingSection = () => {
             py: 0, // Removed padding from container
           }}
         >
-          <Grid container spacing={{ xs: 0, xl: 2 }}  justifyContent="center" alignItems="center" xxs={12} lg={10} xl={12}  sx={{margin: '0 auto'}}>
+          <Grid container spacing={{ xs: 0, xl: 2 }} justifyContent="center" alignItems="center" xxs={12} lg={10} xl={12} sx={{ margin: '0 auto' }}>
             {/* Text Section */}
             <Grid 
               item 
@@ -45,16 +46,20 @@ const StaffTrainingSection = () => {
             >
               <Box>
                 <Typography sx={{ fontSize: { md: '40px', sm: '34px', xxs: '25px' }, fontFamily: 'Playfair Display Bold', pb: '16px' }} variant="h3">
-                Staff training    </Typography>
-                <Typography sx={{ pb: { md: '24px', xxs: '16px' }, fontSize: '18px', lineHeight: '26px', fontFamily: 'Calibre Regular' }}>
-                The training platform provides the ability to effectively assess knowledge, create tests and training programs, organize calendars, and evaluate progress.
+                  Staff Training
                 </Typography>
-                <Typography sx={{ fontSize: '18px', lineHeight: '26px', fontFamily: 'Calibre Regular', pb: { md: '24px', xxs: '16px' }, }}>
-                This structured approach promotes staff motivation and skill development, positively impacting the overall success of the organization.
-      </Typography>
+                <FormattedText 
+                  text="The training platform provides the ability to effectively assess knowledge, create tests and training programs, organize calendars, and evaluate progress."
+                  sx={{ pb: { md: '24px', xxs: '16px' }, fontSize: '18px', lineHeight: '26px', fontFamily: 'Calibre Regular' }}
+                />
+                <FormattedText 
+                  text="This structured approach promotes staff motivation and skill development, positively impacting the overall success of the organization."
+                  sx={{ fontSize: '18px', lineHeight: '26px', fontFamily: 'Calibre Regular', pb: { md: '24px', xxs: '16px' }}}
+                />
               </Box>
             </Grid>
-                                 {/* Image Section - Takes 7 cols on lg and xxl */}
+
+            {/* Image Section - Takes 7 cols on lg and xxl */}
             <Grid 
               item 
               xs={12} 
@@ -65,21 +70,20 @@ const StaffTrainingSection = () => {
               sx={{
                 order: { xs: 2, lg: 2 }, // Image comes second on all screens
                 display: 'flex',
-                justifyContent: {xxs: 'center', xxxl: 'flex-end'},
-                width:{
-                    xxxl: '673px'
+                justifyContent: { xxs: 'center', xxxl: 'flex-end' },
+                width: {
+                  xxxl: '673px'
                 }
               }}
             >
               <Box
                 component="img"
                 src={img}
-                alt="Security Service Office"
+                alt="Staff Training"
                 sx={{
                   width: '100%',
-                  maxWidth: {xxxl: '673px'},
+                  maxWidth: { xxxl: '673px' },
                   borderRadius: '4px', // Optional: add some styling to the image
-                  
                 }}
               />
             </Grid>
@@ -90,4 +94,4 @@ const StaffTrainingSection = () => {
   );
 };
 
-export default withScrollEffect (StaffTrainingSection);
+export default withScrollEffect(StaffTrainingSection);

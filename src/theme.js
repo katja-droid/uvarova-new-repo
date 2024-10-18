@@ -15,6 +15,14 @@ const theme = createTheme({
   },
   typography: {
     fontFamily: '"Calibre Regular"',
+    lineHeight: 1.2,
+    h1: {
+      lineHeight: 1.2,
+    },
+    h2: {
+      lineHeight: 1.2,
+    },
+    
   },
   components: {
     MuiContainer: {

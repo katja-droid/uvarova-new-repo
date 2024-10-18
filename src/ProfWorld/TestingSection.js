@@ -6,6 +6,7 @@ import img from '../assets/pw4.gif'; // Replace with your image
 import bg from '../assets/begin-background.png'; // Replace with your image
 import RatioGif from './RatioGif';
 import withScrollEffect from '../withScrollEffect.js';
+import FormattedText from '../FormattedText'; // Import your FormattedText component
 
 const TestingSection = () => {
   return (
@@ -28,7 +29,7 @@ const TestingSection = () => {
             py: 0, // Removed padding from container
           }}
         >
-          <Grid container spacing={{ xs: 0, xl: 2 }}   justifyContent="center" alignItems="center" xxs={12} lg={10} xl={12}  sx={{margin: '0 auto'}}>
+          <Grid container spacing={{ xs: 0, xl: 2 }} justifyContent="center" alignItems="center" xxs={12} lg={10} xl={12} sx={{ margin: '0 auto' }}>
             {/* Text Section */}
             <Grid 
               item 
@@ -41,16 +42,17 @@ const TestingSection = () => {
                 flexDirection: 'column',
                 justifyContent: { xs: 'center', lg: 'flex-start' }, // Center vertically on small screens
                 alignItems: { xs: 'center', lg: 'flex-start' }, // Center horizontally on small screens
-                textAlign: 'left' , // Center text on small screens, left-align on large screens
+                textAlign: 'left', // Left-align text
               }}
             >
               <Box>
                 <Typography sx={{ fontSize: { md: '40px', sm: '34px', xxs: '25px' }, fontFamily: 'Playfair Display Bold', pb: '16px' }} variant="h3">
-                Testing 
+                  Testing
                 </Typography>
-                <Typography sx={{ pb: { md: '24px', xxs: '16px' }, fontSize: '18px', lineHeight: '26px', fontFamily: 'Calibre Regular' }}>
-                In collaboration with psychologists, a «Test block» was developed that includes various psychological tests for more accurate candidate selection.    </Typography>
-          
+                
+                <FormattedText
+                  text={`In collaboration with psychologists, a "Test block" was developed that includes various psychological tests for more accurate candidate selection.`}
+                />
               </Box>
             </Grid>
 
@@ -64,8 +66,8 @@ const TestingSection = () => {
               sx={{
                 order: { xs: 2, xl: 2 }, // Image comes second on all screens
                 display: 'flex',
-                justifyContent: {xxs: 'center', xxxl: 'flex-end'},
-                width:{
+                justifyContent: { xxs: 'center', xxxl: 'flex-end' },
+                width: {
                     xxxl: '673px'
                 }
               }}
@@ -74,10 +76,10 @@ const TestingSection = () => {
                 sx={{
                   width: '100%',
                   borderRadius: '8px',
-                  maxWidth: {xxxl: '673px'},
+                  maxWidth: { xxxl: '673px' },
                 }}
               >
-              <RatioGif image={img} backgroundImage={bg}></RatioGif>
+                <RatioGif image={img} backgroundImage={bg} />
               </Box>
             </Grid>
           </Grid>
@@ -87,4 +89,4 @@ const TestingSection = () => {
   );
 };
 
-export default withScrollEffect (TestingSection);
+export default withScrollEffect(TestingSection);

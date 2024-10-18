@@ -9,9 +9,9 @@ const ProfWorldGoal = () => {
       maxWidth={false}
       sx={{
         paddingBottom: { xl: '40px', lg: '32px', sm: '32px', xxs: '16px' },
-        display: 'flex', // Flex container to manage vertical alignment
-        flexDirection: 'column', // Ensure column layout
-        justifyContent: 'flex-start', // Align everything at the top
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'flex-start',
       }}
     >
       {/* Container for the title */}
@@ -19,7 +19,7 @@ const ProfWorldGoal = () => {
         container
         justifyContent="center"
         spacing={0}
-        sx={{ margin: 0, padding: 0 }} // Remove any margin or padding
+        sx={{ margin: 0, padding: 0 }}
       >
         <Grid
           item
@@ -28,7 +28,7 @@ const ProfWorldGoal = () => {
           lg={10}
           sx={{
             padding: 0,
-            margin: 0, // Ensure no extra padding/margin at the top
+            margin: 0,
           }}
         >
           <Typography
@@ -36,7 +36,7 @@ const ProfWorldGoal = () => {
             sx={{
               fontSize: { xxs: '30px', sm: '34px', md: '40px' },
               fontFamily: 'Playfair Display Bold',
-              paddingBottom: { xl: '32px', lg: '24px', xxs: '24px' }, // Control padding under the title
+              paddingBottom: { xl: '32px', lg: '24px', xxs: '24px' },
             }}
           >
             Goals of the Project
@@ -48,7 +48,7 @@ const ProfWorldGoal = () => {
       <Grid
         container
         justifyContent="center"
-        sx={{ fontFamily: 'Calibre Regular', fontSize: '18px', margin: 0, padding: 0 }} // Remove extra spacing
+        sx={{ fontFamily: 'Calibre Regular', fontSize: '18px', margin: 0, padding: 0 }}
       >
         <Grid
           item
@@ -57,7 +57,7 @@ const ProfWorldGoal = () => {
           lg={10}
           sx={{
             padding: 0,
-            margin: 0, // Ensure no extra padding/margin
+            margin: 0,
           }}
         >
           <Box
@@ -73,41 +73,46 @@ const ProfWorldGoal = () => {
                 listStyle: 'none',
                 paddingLeft: 0,
                 margin: 0,
-                
               }}
             >
               <li>
-                <Typography sx={{ fontWeight: 'bold', marginBottom: '16px' }}> {/* Padding below "1. Main Objectives" */}
+                <Typography sx={{ fontWeight: 'bold', marginBottom: '16px',   fontSize: '18px', }}>
                   1. Main objectives of the project:
                 </Typography>
                 <Box
                   component="ul"
                   sx={{
                     listStyleType: 'disc',
+                    paddingBottom: { xl: '32px', lg: '24px', xxs: '24px' },
                     '& li': {
-                      marginBottom: '8px', // Adds spacing of 8px between sub-items
+                      marginBottom: '8px',
+                      fontWeight: 'normal', // Set normal font weight for sub-items
+                     
                     },
                   }}
                 >
                   <li>
                     <b>Automating the personnel selection process:</b> creating a system to ensure an effective match between an employee’s personality profile, job profile, and company profile.
                   </li>
-                  <li>
+                  <li >
                     <b>Profile definition:</b> development of methods to accurately define the personality profile, job profile, and company profile for successful recruitment.
                   </li>
                 </Box>
               </li>
 
               <li>
-                <Typography sx={{ fontWeight: 'bold', marginBottom: '16px' }}> {/* Padding below "2. Secondary Goals" */}
+                <Typography sx={{ fontWeight: 'bold', marginBottom: '16px',   fontSize: '18px' }}>
                   2. Secondary goals of the project:
                 </Typography>
                 <Box
                   component="ul"
                   sx={{
                     listStyleType: 'disc',
+                    paddingBottom: { xl: '32px', lg: '24px', xxs: '24px' },
                     '& li': {
-                      marginBottom: '8px', // Adds spacing of 8px between sub-items
+                      marginBottom: '8px',
+                      fontWeight: 'normal', // Set normal font weight for sub-items
+                      
                     },
                   }}
                 >

@@ -6,10 +6,11 @@ import backgroundImage from '../assets/begin-background.png'; // Import the back
 import gif from '../assets/pw1.gif'; // Import the GIF
 import withScrollEffect from '../withScrollEffect.js';
 import RatioGif from './RatioGif.js';
+import FormattedText from '../FormattedText'; // Import your FormattedText component
 
 const BeginSection = () => {
   return (
-        <Box>
+    <Box>
       {/* Text Section */}
       <Box
         sx={{
@@ -21,7 +22,6 @@ const BeginSection = () => {
           justifyContent: 'center',
           alignItems: 'center',
           pt: { xl: '80px', sm: '60px', xxs: '48px' },
-          
         }}
       >
         <Container
@@ -46,11 +46,7 @@ const BeginSection = () => {
           >
             {/* First Column - Text Content */}
             <Grid item xxs={12} sm={12} md={10} lg={10} xl={10} xxl={10}>
-              <Box
-                sx={{
-                  width: '100%',
-                }}
-              >
+              <Box sx={{ width: '100%' }}>
                 <Typography
                   sx={{
                     textAlign: 'center',
@@ -62,18 +58,15 @@ const BeginSection = () => {
                 >
                   Where to begin?
                 </Typography>
-                <Typography
-                  sx={{
-                    textAlign: { md: 'center', xxs: 'left' },
-                    fontSize: '18px',
-                    lineHeight: '26px',
-                    fontFamily: 'Calibre Regular',
-                    pb: { lg: '24px', xxs: '16px' },
-                  }}
-                >
-                  First of all, you need to sign in or to create a new account.<br />
-                  There is also an opportunity to choose the desired language (Ukrainian, English, or Russian).
-                </Typography>
+                <Box sx={{  }}>
+                  <FormattedText
+                    text={`First of all, you need to <span style="font-family: Calibre Medium">sign in</span> or to <span style="font-family: Calibre Medium">create a new account.</span>`}
+                  />
+                </Box>
+                <FormattedText
+                  text={`There is also an opportunity to<span style="font-family: Calibre Medium"> choose the desired language</span> (Ukrainian, English, or Russian).`}
+                />
+                <Box sx={{ pb: { md: '24px', xxs: '16px' } }} />
               </Box>
             </Grid>
           </Grid>
@@ -85,15 +78,12 @@ const BeginSection = () => {
         sx={{
           position: 'relative',
           width: '100%',
-         
-          
         }}
       >
         {/* Background Image Container */}
-        <RatioGif image={gif} backgroundImage={backgroundImage}/>
-       </Box>
-   
+        <img src={gif} width="100%" />
       </Box>
+    </Box>
   );
 };
 

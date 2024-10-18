@@ -44,7 +44,7 @@ const CompanyStandardsSection = () => {
                 <Typography sx={{ fontSize: { md: '40px', sm: '34px', xxs: '25px' }, fontFamily: 'Playfair Display Bold', pb: '16px' }} variant="h3">
                 Corporate Standards
                 </Typography>
-                <Typography sx={ {pb: '16px' , fontSize: '18px', lineHeight: '26px', fontFamily: 'Calibre Regular' }}>
+                <Typography sx={ {pb: '8px',  fontSize: '18px', lineHeight: '26px', fontFamily: 'Calibre Regular' }}>
                 The Corporate Standard consists of a library of informational materials that all employees must be familiar with.
                 </Typography>
                 <Typography sx={{ pb: { md: '24px', xxs: '16px' }, fontSize: '18px', lineHeight: '26px', fontFamily: 'Calibre Regular' }}>

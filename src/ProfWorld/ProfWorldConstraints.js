@@ -46,7 +46,8 @@ const ProfWorldConstraints = () => {
               <Typography sx={{  pb: {
                   lg: '24px', // 24px for lg
                   xxs: '24px', // 24px for lg
-                  
+                   fontSize: '18px',
+                   lineHeight: 1.4,
                   xl: '32px'
                 }, color: '#646470' }}>
                 When analyzing a project to automate the personnel training process, several key limitations (constraints) can be identified that can contribute to its successful implementation. Below are the possible options and their descriptions:

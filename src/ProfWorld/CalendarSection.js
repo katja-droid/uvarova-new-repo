@@ -4,6 +4,7 @@ import { ThemeProvider } from '@mui/material/styles';
 import theme from '../theme'; // Import your custom theme
 import img from '../assets/profcalendar.png'; // Replace with your image
 import withScrollEffect from '../withScrollEffect.js';
+import FormattedText from '../FormattedText'; // Adjust the path as necessary
 
 const CalendarSection = () => {
   return (
@@ -26,7 +27,7 @@ const CalendarSection = () => {
             py: 0, // Removed padding from container
           }}
         >
-          <Grid container spacing={{ xs: 0, xl: 2 }}  justifyContent="center" alignItems="center" xxs={12} lg={10} xl={12}  sx={{margin: '0 auto'}}>
+          <Grid container spacing={{ xs: 0, xl: 2 }} justifyContent="center" alignItems="center" xxs={12} lg={10} xl={12} sx={{ margin: '0 auto' }}>
             {/* Text Section */}
             <Grid 
               item 
@@ -44,16 +45,21 @@ const CalendarSection = () => {
             >
               <Box>
                 <Typography sx={{ fontSize: { md: '40px', sm: '34px', xxs: '25px' }, fontFamily: 'Playfair Display Bold', pb: '16px' }} variant="h3">
-                Сalendar</Typography>
-                <Typography sx={{ pb: { md: '24px', xxs: '16px' }, fontSize: '18px', lineHeight: '26px', fontFamily: 'Calibre Regular' }}>
-                The calendar facilitates effective time management by allowing users to manage their work time, quickly navigate dates, and track days of the week.
-            </Typography>
-                <Typography sx={{ fontSize: '18px', lineHeight: '26px', fontFamily: 'Calibre Regular', pb: { md: '24px', xxs: '16px' }, }}>
-                Users can receive notifications, share schedules with other users, add new participants, and plan meetings.
+                  Calendar
                 </Typography>
-               </Box>
+                <FormattedText 
+                  text="The calendar facilitates effective time management by allowing users to manage their work time, quickly navigate dates, and track days of the week."
+                  sx={{ pb: '8px', fontSize: '18px', lineHeight: '26px', fontFamily: 'Calibre Regular' }}
+                />
+                <FormattedText 
+                  text="Users can receive notifications, share schedules with other users, add new participants, and plan meetings."
+                  sx={{ fontSize: '18px', lineHeight: '26px', fontFamily: 'Calibre Regular', pb: { md: '24px', xxs: '16px' }}}
+                />
+              </Box>
             </Grid>
-               <Grid 
+
+            {/* Image Section */}
+            <Grid 
               item 
               xs={12} 
               xl={7} 
@@ -63,8 +69,6 @@ const CalendarSection = () => {
                 order: { xxs: 2, xl: 2 }, // Image comes second on all screens
                 display: 'flex',
                 justifyContent: 'center',
-                width:{
-                }
               }}
             >
               <Box
@@ -73,8 +77,7 @@ const CalendarSection = () => {
                 alt="Security Service Office"
                 sx={{
                   width: '100%',
-                  maxWidth: {xxxl: '673px'},
-            
+                  maxWidth: { xxxl: '673px' },
                   borderRadius: '8px', // Optional: add some styling to the image
                 }}
               />
